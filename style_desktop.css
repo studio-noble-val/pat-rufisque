@@ -50,6 +50,27 @@
             justify-content: center; /*center horizontaly*/
             flex-direction: column; /* Stack elements vertically */
         }
+
+        .hero-split {
+            display: flex;
+            align-items: center;
+            min-height: 70vh; /* Hauteur du viewport */
+            background-color: #f8f9fa; /* Couleur de fond légère */
+        }
+        .hero-split .hero-text-content {
+            padding: 2rem;
+        }
+        .hero-split .hero-image {
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+        }
+        .feature-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: .25rem;
+        }
+
         .demo-card {
             border: 1px solid #ccc;
             padding: 20px;
