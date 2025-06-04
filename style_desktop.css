@@ -1,0 +1,109 @@
+        .hero {
+            /* background-color: #f0f0f0; */ /* Remove background color */
+            padding: 0; /* remove padding*/
+            text-align: center;
+            height: 30vh; /* keep 30 vh for the header */
+            position: relative;
+            min-height: 300px; /* Add a minimum height */
+            display: flex; /* Make .hero a flex container */
+            align-items: center; /* Vertically center the .hero-text */
+        }
+        .hero .carousel{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .hero .carousel-inner{
+            height: 100%;
+        }
+        .hero .carousel-item{
+            height: 100%;
+        }
+        .hero .carousel-item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Add this line */
+        }
+        .hero-text {
+            position: relative; /* Position the text on top */
+            z-index: 1; /* Ensure the text is in the foreground */
+            width: 100%;
+            color: white; /* Set text color to white */
+            text-shadow: 2px 2px 4px #000000; /* Add a text shadow */
+            display: flex; /* make the text as a flex container*/
+            align-items: center; /* center verticaly */
+            justify-content: center; /* center horizontaly */
+            height: 100%; /* take all the space of the header*/
+            flex-direction: column; /* Stack elements vertically */
+        }
+        .hero-text /*.container*/{
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+            /*padding: 10px;*/ /*remove the padding*/
+            /*border-radius: 10px;*/ /*remove border radius*/
+            width: 100%; /*take all the width*/
+            height: 100%; /*take all the height*/
+            display: flex; /*use flex to center the text*/
+            align-items: center; /* center verticaly*/
+            justify-content: center; /*center horizontaly*/
+            flex-direction: column; /* Stack elements vertically */
+        }
+        .demo-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+            /*height: 100%;  */ /* Remove the height property */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            /*justify-content: space-between;  Remove this*/
+        }
+        .demo-card .btn{
+            width: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            height: 100vh;
+        }
+
+        main {
+            flex-grow: 1;
+            margin-top: 30vh; /* Fix the overlapping issue */
+        }
+        footer {
+            height: 10vh;
+        }
+        .container {
+            height: 100%; /* Ensure the container takes the full height */
+            display: flex;
+            flex-direction: column;
+        }
+        .row {
+            display: flex; /* Make the row a flex container */
+            align-items: stretch; /* Vertically center items */
+            justify-content: center; /* Center items horizontally */
+            height: 100%; /*take all the height*/
+        }
+        .col-md-4{
+            display: flex;
+            flex-direction: column;
+        }
+        .demo-card h2{
+            flex-grow: 1;
+        }
+        .logo-footer {
+          height: 8vh; /* Adjust the logo height as needed */
+          width: auto; /* Maintain aspect ratio */
+        }
