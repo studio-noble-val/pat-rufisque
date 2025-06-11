@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide-react@0.292.0/dist/umd/lucide-react.min.js"></script> <!-- Ajout de Lucide Icons -->
     <!-- Plus tard, nous pourrons ajouter des icônes ici, par exemple Font Awesome ou Lucide via CDN -->
 </head>
 <body>
@@ -29,8 +30,7 @@
                     <p>4 cuisines centrales</p>
                 </div>
                 <div class="hero-image-placeholder">
-                    <!-- L'image principale animée viendra ici -->
-                    <p>[Espace réservé pour l'image principale de la PAT]</p>
+                    <img src="https://placehold.co/800x450/4CAF50/FFFFFF/png?text=PAT+Rufisque+Action" alt="Image principale illustrant la Politique Alimentaire Territoriale de Rufisque">
                 </div>
             </div>
         </section>
@@ -42,34 +42,30 @@
 
                 <div class="axe-item">
                     <div class="axe-image">
-                        <p>[Placeholder Image Axe 1]</p>
-                        <!-- <img src="images/axe1.jpg" alt="Description de l'image pour l'axe 1"> -->
+                        <img src="https://placehold.co/500x350/2196F3/FFFFFF/png?text=Gouvernance" alt="Illustration de la gouvernance alimentaire locale">
                     </div>
                     <div class="axe-content">
-                        <!-- Icone à ajouter plus tard <i class="icon-axe1"></i> -->
-                        <h3>1. Gouvernance Alimentaire Locale et Participative</h3>
+                        <h3><i data-lucide="users"></i> 1. Gouvernance Alimentaire Locale et Participative</h3>
                         <p>Renforcer les capacités des acteurs locaux et promouvoir une prise de décision inclusive pour une politique alimentaire adaptée aux besoins du territoire.</p>
                     </div>
                 </div>
 
                 <div class="axe-item axe-item-reverse">
                     <div class="axe-image">
-                        <p>[Placeholder Image Axe 2]</p>
-                        <!-- <img src="images/axe2.jpg" alt="Description de l'image pour l'axe 2"> -->
+                        <img src="https://placehold.co/500x350/FF9800/FFFFFF/png?text=Systèmes+Durables" alt="Illustration du renforcement des systèmes alimentaires durables">
                     </div>
                     <div class="axe-content">
-                        <h3>2. Renforcement des Systèmes Alimentaires Durables</h3>
+                        <h3><i data-lucide="recycle"></i> 2. Renforcement des Systèmes Alimentaires Durables</h3>
                         <p>Soutenir les producteurs locaux, améliorer les circuits courts et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire.</p>
                     </div>
                 </div>
 
                 <div class="axe-item">
                     <div class="axe-image">
-                        <p>[Placeholder Image Axe 3]</p>
-                        <!-- <img src="images/axe3.jpg" alt="Description de l'image pour l'axe 3"> -->
+                        <img src="https://placehold.co/500x350/009688/FFFFFF/png?text=Éducation+Nutrition" alt="Illustration de l'éducation nutritionnelle et accès à une alimentation saine">
                     </div>
                     <div class="axe-content">
-                        <h3>3. Éducation Nutritionnelle et Accès à une Alimentation Saine</h3>
+                        <h3><i data-lucide="heart-pulse"></i> 3. Éducation Nutritionnelle et Accès à une Alimentation Saine</h3>
                         <p>Sensibiliser les populations aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les plus vulnérables.</p>
                     </div>
                 </div>
@@ -83,22 +79,21 @@
 
                 <div class="actions-grid">
                     <div class="action-card">
-                        <!-- Icone <i class="icon-action1"></i> -->
-                        <div class="card-icon-placeholder">[Icône]</div>
+                        <div class="card-icon"><i data-lucide="utensils-crossed"></i></div>
                         <h3>Cantines Scolaires Améliorées</h3>
                         <p>Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.</p>
                         <span class="impact-badge">Impact Direct</span>
                     </div>
 
                     <div class="action-card">
-                        <div class="card-icon-placeholder">[Icône]</div>
+                        <div class="card-icon"><i data-lucide="sprout"></i></div>
                         <h3>Soutien aux Producteurs Locaux</h3>
                         <p>Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.</p>
                         <span class="impact-badge">Économie Locale</span>
                     </div>
 
                     <div class="action-card">
-                        <div class="card-icon-placeholder">[Icône]</div>
+                        <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
                         <h3>Ateliers de Sensibilisation</h3>
                         <p>Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.</p>
                         <span class="impact-badge">Santé Publique</span>
@@ -157,9 +152,9 @@
             <div class="footer-col">
                 <h4>Suivez-nous</h4>
                 <div class="social-links">
-                    <a href="#" title="Facebook">[F]</a> <!-- Placeholder pour icône Facebook -->
-                    <a href="#" title="Twitter">[T]</a> <!-- Placeholder pour icône Twitter -->
-                    <a href="#" title="LinkedIn">[L]</a> <!-- Placeholder pour icône LinkedIn -->
+                    <a href="#" title="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" title="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" title="Linkedin"><i data-lucide="linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -168,5 +163,9 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        // Initialisation de Lucide Icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>

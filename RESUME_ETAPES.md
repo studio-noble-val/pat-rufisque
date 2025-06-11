@@ -122,3 +122,21 @@
         *   Application de `fadeInSection` aux classes `.hero-section`, `.axes-section`, `.actions-section`, `.alliance-section`.
         *   Application de `scaleUpHeroImage` à la classe `.hero-image-placeholder` avec un délai.
 *   **Résultat :** Les sections principales de la page apparaissent désormais avec une légère animation de fondu et de translation. Le placeholder de l'image dans la section Hero a également une animation d'apparition discrète. Ces effets ajoutent un dynamisme subtil à la page, qui sera plus visible avec les visuels finaux.
+
+## Étape 7 : Intégration des Premiers Visuels (Images et Icônes)
+
+*   **Objectifs :**
+    *   Remplacer les placeholders d'images par des images réelles (ou de service) dans les sections Hero et Axes Stratégiques.
+    *   Intégrer des icônes Lucide (via CDN) pour les Actions Concrètes, les liens sociaux du footer, et à côté des titres des Axes Stratégiques.
+    *   Assurer la responsivité des images.
+*   **Fichiers modifiés :**
+    *   `index.html`:
+        *   Ajout du script CDN de Lucide Icons dans `<head>`.
+        *   Ajout du script d'initialisation `lucide.createIcons();` avant `</body>`.
+        *   Remplacement des placeholders d'images par des balises `<img>` (utilisant `placehold.co` pour l'exemple) avec attributs `alt`.
+        *   Remplacement des placeholders d'icônes par des balises `<i data-lucide="nom-de-l-icone"></i>`.
+    *   `css/style.css`:
+        *   Styles pour `.hero-image-placeholder img` et `.axe-image img` pour la responsivité et l'affichage (`object-fit`).
+        *   Styles pour les icônes Lucide : `.axe-content h3 svg`, `.card-icon` (remplace `.card-icon-placeholder`), `.card-icon svg`, `.social-links svg`.
+        *   Ajout de `overflow: hidden` sur les conteneurs d'images pour gérer les `border-radius`.
+*   **Résultat :** Le site affiche désormais des images dans les sections Hero et Axes Stratégiques, ainsi que des icônes vectorielles dans plusieurs sections (Axes, Actions, Footer). Cela améliore considérablement l'aspect visuel et la clarté du contenu. Les animations sont plus perceptibles avec les visuels.

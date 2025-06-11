@@ -122,8 +122,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: scaleUpHeroImage 1s 0.5s ease-in-out backwards; /* Animation avec délai */
+    animation: scaleUpHeroImage 1s 0.5s ease-in-out backwards;
+    overflow: hidden; /* Pour s'assurer que l'image ne dépasse pas si elle est plus grande que le conteneur */
 }
+
+.hero-image-placeholder img {
+    width: 100%;
+    height: auto; /* Conserver les proportions */
+    max-width: 600px; /* Limiter la taille max de l'image dans le hero */
+    border-radius: 6px;
+}
+
 
 /* Footer Styles */
 footer {
@@ -181,22 +190,35 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+    overflow: hidden; /* Pour que l'image ne dépasse pas les coins arrondis */
 }
 
-.axe-image p { /* Style pour le texte placeholder de l'image */
-    color: #777;
-    font-style: italic;
+.axe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* S'assure que l'image couvre la zone, peut rogner */
+    display: block; /* Enlève l'espace sous l'image */
 }
+
+/* .axe-image p { ... }  Supprimé car plus de texte placeholder */
 
 .axe-content {
     flex: 1; /* Prend 50% de la largeur */
 }
+
 
 .axe-content h3 {
     font-size: 1.8em;
     font-family: 'Montserrat', sans-serif; /* Police pour les titres de section */
     color: #4CAF50; /* Vert thématique */
     margin-bottom: 15px;
+}
+
+.axe-content h3 svg { /* Style pour les icônes Lucide dans les titres h3 */
+    width: 1.1em; /* Taille relative au texte */
+    height: 1.1em;
+    margin-right: 8px;
+    vertical-align: -0.15em; /* Ajustement vertical */
 }
 
 .axe-content p {
@@ -237,10 +259,11 @@ footer {
     box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
-.card-icon-placeholder {
+.card-icon { /* Remplacement de .card-icon-placeholder */
     width: 60px;
     height: 60px;
-    background-color: #e0e0e0; /* Placeholder color */
+    background-color: #4CAF50; /* Fond vert pour l'icône */
+    color: #fff; /* Icône blanche */
     border-radius: 50%;
     margin: 0 auto 20px auto;
     display: flex;
@@ -249,6 +272,11 @@ footer {
     color: #777;
     font-style: italic;
     font-size: 0.9em;
+}
+
+.card-icon svg { /* Style pour les icônes Lucide dans les cartes */
+    width: 30px;
+    height: 30px;
 }
 
 .action-card h3 {
@@ -414,8 +442,15 @@ footer {
 .social-links a {
     color: #fff;
     margin-right: 15px;
-    font-size: 1.5em; /* Augmenter la taille pour les placeholders textuels */
-    /* Remplacer par des icônes SVG ou une police d'icônes plus tard */
+    font-size: 1.2em; /* Taille de base pour le conteneur d'icône */
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #4CAF50; /* Changement de couleur au survol */
+}
+.social-links svg { /* Style pour les icônes Lucide dans les liens sociaux */
+    width: 24px;
+    height: 24px;
 }
 
 .footer-bottom {
