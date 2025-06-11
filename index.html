@@ -3,81 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Démo mViewer - Maquette 3: Moderne Structuré</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style_desktop.css">
-    <style>
-
-    </style>
+    <meta name="description" content="Site vitrine de l'ONG pour la Politique Alimentaire Territoriale de Rufisque.">
+    <title>PAT Rufisque - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Plus tard, nous pourrons ajouter des icônes ici, par exemple Font Awesome ou Lucide via CDN -->
 </head>
 <body>
-    <header class="hero-split">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 hero-text-content d-flex flex-column justify-content-center">
-                    <h1 class="display-4">Bienvenue sur {Nom du site}</h1>
-                    <p class="lead">Plateforme de partage et diffusion des données sur la sécurité alimentaire dans le département de Rufisque.</p>
-                    <p><a href="#nos-actions" class="btn btn-primary btn-lg">Explorer nos actions</a></p>
+    <!-- Le header a été supprimé pour l'intégration en iframe -->
+
+    <main>
+        <section id="accueil" class="hero-section">
+            <div class="container hero-content">
+                <h1>Ensemble, cultivons l'avenir de Rufisque :<br><span class="highlight">Une Alimentation Saine, Durable et Accessible à Tous.</span></h1>
+                <p class="subtitle">Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.</p>
+                <div class="hero-buttons">
+                    <a href="#axes" class="btn btn-primary">Découvrir les Axes</a>
+                    <a href="#actions" class="btn btn-secondary">Voir nos Actions</a>
                 </div>
-                <div class="col-md-6 hero-image" style="background-image: url('https://discover-senegal.com/wp-content/uploads/2019/05/fruits-legumes-1-1.jpg');">
-                    <!-- Image gérée par CSS -->
+                <div class="hero-stats">
+                    <!-- Statistiques flottantes (ex: 5,500+ élèves, 4 cuisines centrales) viendront ici -->
+                    <p>+5500 élèves bénéficiaires</p>
+                    <p>4 cuisines centrales</p>
+                </div>
+                <div class="hero-image-placeholder">
+                    <!-- L'image principale animée viendra ici -->
+                    <p>[Espace réservé pour l'image principale de la PAT]</p>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <main class="container mt-5" id="nos-actions">
-        <div class="row align-items-center feature-section my-5">
-            <div class="col-md-5">
-                <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/4/2017/04/03-25-2013irrigation.jpg" alt="Zones Agricoles">
-            </div>
-            <div class="col-md-7">
-                <h2>Zones agricoles</h2>
-                <p>Analyse et visualisation des zones agricoles, des systèmes d'irrigation et des enjeux fonciers pour une gestion durable des terres.</p>
-                <a href="tabular-content.html" class="btn btn-outline-primary">Accéder aux données</a>
-            </div>
-        </div>
+        <section id="axes" class="axes-section">
+            <div class="container">
+                <h2 class="section-title">Nos Axes Stratégiques</h2>
+                <p class="section-subtitle">Les piliers de notre action pour une transformation durable du système alimentaire de Rufisque.</p>
 
-        <hr class="my-5">
+                <div class="axe-item">
+                    <div class="axe-image">
+                        <p>[Placeholder Image Axe 1]</p>
+                        <!-- <img src="images/axe1.jpg" alt="Description de l'image pour l'axe 1"> -->
+                    </div>
+                    <div class="axe-content">
+                        <!-- Icone à ajouter plus tard <i class="icon-axe1"></i> -->
+                        <h3>1. Gouvernance Alimentaire Locale et Participative</h3>
+                        <p>Renforcer les capacités des acteurs locaux et promouvoir une prise de décision inclusive pour une politique alimentaire adaptée aux besoins du territoire.</p>
+                    </div>
+                </div>
 
-        <div class="row align-items-center feature-section my-5">
-            <div class="col-md-7 order-md-2">
-                <h2>Transformation alimentaire</h2>
-                <p>Visualisation des acteurs de la transformation alimentaire et de leurs contributions à l'économie locale et l'approvisionnement en produits locaux.</p>
-                <a href="story-content.html" class="btn btn-outline-primary">Accéder aux données</a>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="https://picsum.photos/id/239/600/400" alt="Transformation Alimentaire"> <!-- Image placeholder -->
-            </div>
-        </div>
+                <div class="axe-item axe-item-reverse">
+                    <div class="axe-image">
+                        <p>[Placeholder Image Axe 2]</p>
+                        <!-- <img src="images/axe2.jpg" alt="Description de l'image pour l'axe 2"> -->
+                    </div>
+                    <div class="axe-content">
+                        <h3>2. Renforcement des Systèmes Alimentaires Durables</h3>
+                        <p>Soutenir les producteurs locaux, améliorer les circuits courts et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire.</p>
+                    </div>
+                </div>
 
-        <hr class="my-5">
+                <div class="axe-item">
+                    <div class="axe-image">
+                        <p>[Placeholder Image Axe 3]</p>
+                        <!-- <img src="images/axe3.jpg" alt="Description de l'image pour l'axe 3"> -->
+                    </div>
+                    <div class="axe-content">
+                        <h3>3. Éducation Nutritionnelle et Accès à une Alimentation Saine</h3>
+                        <p>Sensibiliser les populations aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les plus vulnérables.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="row align-items-center feature-section my-5">
-            <div class="col-md-5">
-                <img src="https://picsum.photos/id/1060/600/400" alt="Cantines Scolaires"> <!-- Image placeholder -->
+        <section id="actions" class="actions-section">
+            <div class="container">
+                <h2 class="section-title">Nos Actions Concrètes</h2>
+                <p class="section-subtitle">Des initiatives tangibles qui améliorent le quotidien et construisent un système alimentaire résilient.</p>
+
+                <div class="actions-grid">
+                    <div class="action-card">
+                        <!-- Icone <i class="icon-action1"></i> -->
+                        <div class="card-icon-placeholder">[Icône]</div>
+                        <h3>Cantines Scolaires Améliorées</h3>
+                        <p>Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.</p>
+                        <span class="impact-badge">Impact Direct</span>
+                    </div>
+
+                    <div class="action-card">
+                        <div class="card-icon-placeholder">[Icône]</div>
+                        <h3>Soutien aux Producteurs Locaux</h3>
+                        <p>Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.</p>
+                        <span class="impact-badge">Économie Locale</span>
+                    </div>
+
+                    <div class="action-card">
+                        <div class="card-icon-placeholder">[Icône]</div>
+                        <h3>Ateliers de Sensibilisation</h3>
+                        <p>Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.</p>
+                        <span class="impact-badge">Santé Publique</span>
+                    </div>
+                </div>
+
+                <div class="actions-cta">
+                    <p>Pour une analyse approfondie de nos stratégies et de nos impacts, consultez notre étude complète :</p>
+                    <a href="chemin/vers/votre/etude_sat_2027.pdf" target="_blank" class="btn btn-primary">Télécharger l'étude SAT 2027 (PDF)</a>
+                </div>
             </div>
-            <div class="col-md-7">
-                <h2>Cantines scolaires</h2>
-                <p>Suivi et analyse des cantines scolaires, des bénéficiaires et de l'impact sur la réussite scolaire et la nutrition des élèves.</p>
-                <a href="story-content.html" class="btn btn-outline-primary">Accéder aux données</a>
+        </section>
+
+        <section id="alliance" class="alliance-section">
+            <div class="container">
+                <h2 class="section-title">Notre Alliance Territoriale</h2>
+                <p class="section-subtitle">Une gouvernance multi-acteurs pour une action concertée et efficace sur le territoire de Rufisque.</p>
+
+                <div class="alliance-content">
+                    <div class="acteurs-visualisation">
+                        <h4>Les Acteurs Clés de la PAT :</h4>
+                        <ul>
+                            <li><span class="acteur-badge collectivites">Collectivités Locales</span> Ville de Rufisque, Communes</li>
+                            <li><span class="acteur-badge societe-civile">Société Civile</span> Organisations paysannes, Associations de consommateurs</li>
+                            <li><span class="acteur-badge secteur-prive">Secteur Privé</span> Entreprises agro-alimentaires, Commerçants</li>
+                            <li><span class="acteur-badge recherche">Recherche & Formation</span> Universités, Centres techniques</li>
+                            <li><span class="acteur-badge partenaires-tf">Partenaires Techniques & Financiers</span> ONG Nationales et Internationales, Bailleurs</li>
+                        </ul>
+                        <p class="placeholder-viz">[Espace pour une visualisation plus graphique des acteurs]</p>
+                    </div>
+
+                    <blockquote class="alliance-citation">
+                        <p>"La force de notre initiative réside dans la collaboration étroite entre tous les maillons de la chaîne alimentaire, du producteur au consommateur, avec l'appui de nos partenaires."</p>
+                        <footer>- Un acteur de la PAT Rufisque</footer>
+                    </blockquote>
+                </div>
+                <!-- Section coopération internationale à développer si besoin -->
             </div>
-        </div>
+        </section>
+        <!-- Les autres sections viendront ici -->
     </main>
 
-    <footer class="bg-light text-center py-3 mt-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 text-md-start">
-              <p>&copy; 2023 Département de Rufisque. Tous droits réservés.</p>
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h4>PAT Rufisque</h4>
+                <p>Engagés pour une alimentation saine, durable et accessible à tous sur le territoire de Rufisque.</p>
+                <!-- Placeholder pour logo si besoin -->
             </div>
-            <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9LRCu-nuhCD2fbbe15Q8Nj2BKN94fDlyDA&s" alt="Logo GRDR" class="logo-footer" style="max-height: 50px;">
-              <img src="https://cdrufisque.com/wp-content/uploads/2023/10/Logo-CDR.png" alt="Logo Département de Rufisque" class="logo-footer ms-3" style="max-height: 50px;">
+            <div class="footer-col">
+                <h4>Contactez-nous</h4>
+                <p>Adresse : [Votre Adresse, Rufisque]</p>
+                <p>Email : <a href="mailto:contact@patrufisque.org">contact@patrufisque.org</a></p>
+                <p>Téléphone : [Votre Numéro de Téléphone]</p>
             </div>
-          </div>
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook">[F]</a> <!-- Placeholder pour icône Facebook -->
+                    <a href="#" title="Twitter">[T]</a> <!-- Placeholder pour icône Twitter -->
+                    <a href="#" title="LinkedIn">[L]</a> <!-- Placeholder pour icône LinkedIn -->
+                </div>
+            </div>
         </div>
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PAT Rufisque. Tous droits réservés. Conçu avec passion.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

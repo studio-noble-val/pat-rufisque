@@ -94,14 +94,14 @@
         body {
             display: flex;
             flex-direction: column;
+            min-height: 100vh; /* S'assurer que le body prend au moins toute la hauteur de la fenêtre */
         }
         header {
-            height: 100vh;
-        }
-
+         height: 100vh; /* Supprimé pour laisser .hero-split gérer la hauteur de l'en-tête
         main {
             flex-grow: 1;
-            margin-top: 30vh; /* Fix the overlapping issue */
+            /* margin-top: 30vh; */ /* Fix the overlapping issue - Cette ligne DOIT être commentée ou supprimée. */
+                                 /* La classe .mt-5 de Bootstrap sur <main> gère déjà une marge supérieure. */
         }
         footer {
             height: 10vh;
