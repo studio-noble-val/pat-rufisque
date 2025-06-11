@@ -3,6 +3,7 @@
 ## Étape 0 : Préparation et Structure de Base du Projet
 
 *   **Objectifs :**
+    *   POC par Lovable ici : https://lovable.dev/projects/8b447fa2-ef78-4ba7-9d40-b915033654a9
     *   Mise en place d'une structure de dossiers (css, js, images).
     *   Création des fichiers initiaux : `index.html`, `css/style.css`, `js/script.js`.
     *   Initialisation de `RESUME_ETAPES.md`.
