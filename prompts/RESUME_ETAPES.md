@@ -166,3 +166,26 @@
 5.  **Navigation :**
     *   Mise à jour du CTA sur `index.html` (section "Axes Stratégiques") pour pointer vers `page-gouvernance-alimentaire.html`.
     *   Mise à jour des liens de navigation croisée en bas de la page pour pointer vers les autres pages thématiques pertinentes.
+
+## Étape 11 : Développement de la Page Thématique "Renforcement des Systèmes Alimentaires Durables"
+
+**Objectif :** Créer la page thématique pour l'Axe 2, en se concentrant sur la zone maraîchère de Lendeng, et en intégrant les contenus sur l'emploi, le foncier et l'irrigation.
+
+**Création du fichier `page-systemes-alimentaires-durables.html` :**
+
+1.  **Blueprint basé sur les pages thématiques précédentes :**
+    *   Maintien de la structure cohérente (header, titre/métriques, onglets, navigation croisée, footer).
+2.  **Thème Visuel :**
+    *   Couleur thématique principale : Vert PAT (#4CAF50), pour souligner le lien avec l'agriculture et la durabilité.
+    *   Emoji thématique : 🌿 pour "Systèmes Alimentaires Durables".
+3.  **Intégration des Contenus Textuels (Zone de Lendeng) :**
+    *   Répartition des trois textes fournis dans un système à trois onglets :
+        *   **Onglet 1 : "🧑‍🌾 GIE Lendeng : Emplois & Dynamiques Sociales"** : Rôle du GIE, enjeux emploi, accueil jeunes/migrants.
+        *   **Onglet 2 : "🏞️ Foncier Agricole de Lendeng : Préservation & Enjeux"** : Statut réglementaire, menaces, mobilisations, et liens vers documents (loi foncière, plaidoyers).
+        *   **Onglet 3 : "💧 Irrigation à Lendeng : Défis & Solutions"** : Problématique de l'accès à l'eau (SEN'EAU), potentiel du bassin de rétention, et liens vers études.
+4.  **Mise en Page et Style :**
+    *   Utilisation de Tailwind CSS, mise en forme pour la lisibilité (titres, listes, blocs de citation/statistiques).
+    *   Ajout de commentaires `<!-- CLIENT_NOTE: ... -->` pour suggestions d'illustrations et liens vers documents.
+5.  **Navigation :**
+    *   Ajout d'un CTA sur `index.html` (section "Axes Stratégiques") pour pointer vers `page-systemes-alimentaires-durables.html`.
+    *   Mise à jour des liens de navigation croisée.
