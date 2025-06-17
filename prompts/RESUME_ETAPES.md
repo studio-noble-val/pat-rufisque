@@ -141,3 +141,28 @@
         *   Styles pour les icônes Lucide : `.axe-content h3 svg`, `.card-icon` (remplace `.card-icon-placeholder`), `.card-icon svg`, `.social-links svg`.
         *   Ajout de `overflow: hidden` sur les conteneurs d'images pour gérer les `border-radius`.
 *   **Résultat :** Le site affiche désormais des images dans les sections Hero et Axes Stratégiques, ainsi que des icônes vectorielles dans plusieurs sections (Axes, Actions, Footer). Cela améliore considérablement l'aspect visuel et la clarté du contenu. Les animations sont plus perceptibles avec les visuels.
+
+## Étape 10 : Développement de la Page Thématique "Gouvernance Alimentaire Locale et Participative"
+
+**Objectif :** Créer et structurer la page thématique dédiée à la gouvernance alimentaire, en intégrant les contenus textuels fournis et en maintenant la cohérence UI/UX avec les autres pages.
+
+**Création du fichier `page-gouvernance-alimentaire.html` :**
+
+1.  **Blueprint basé sur `page-cantines-scolaires.html` :**
+    *   Réutilisation de la structure générale (header sticky, section titre/métriques, système d'onglets, navigation croisée, footer).
+    *   Adaptation des éléments spécifiques au thème de la gouvernance.
+2.  **Thème Visuel :**
+    *   Couleur thématique principale : Orange (pour le badge, les métriques, et certains éléments de design spécifiques).
+    *   Emoji thématique : 🤝 pour "Gouvernance Alimentaire".
+3.  **Intégration des Contenus Textuels :**
+    *   Répartition des trois textes fournis dans un système à trois onglets :
+        *   **Onglet 1 : "TPE Agroalimentaires : Enjeux & Soutien"** (Emoji 🏭) : Intégration du texte sur les TPE, leurs défis, et le plan d'action du PAT. Ajout de placeholders pour illustration et témoignage.
+        *   **Onglet 2 : "Charte Restauration Scolaire Locale"** (Emoji 📜) : Intégration du texte sur la charte des femmes restauratrices, ses principes, et son processus de co-construction. Ajout d'un placeholder pour illustration et un lien vers le document de la charte.
+        *   **Onglet 3 : "Impact TPE : Emploi & Genre"** (Emoji 👩🏽‍🍳) : Intégration du texte sur les enjeux d'emploi et de genre dans les TPE, avec mise en avant de statistiques et des actions du programme AMOPAR. Ajout d'un placeholder pour illustration.
+4.  **Mise en Page et Style :**
+    *   Utilisation de classes Tailwind CSS pour la structure et le style, en cohérence avec les autres pages.
+    *   Mise en forme des textes avec titres, paragraphes, listes, et blocs de citation/statistiques pour une meilleure lisibilité.
+    *   Ajout de commentaires `<!-- CLIENT_NOTE: ... -->` pour suggérer des emplacements d'illustrations et un témoignage.
+5.  **Navigation :**
+    *   Mise à jour du CTA sur `index.html` (section "Axes Stratégiques") pour pointer vers `page-gouvernance-alimentaire.html`.
+    *   Mise à jour des liens de navigation croisée en bas de la page pour pointer vers les autres pages thématiques pertinentes.
