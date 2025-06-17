@@ -189,3 +189,17 @@
 5.  **Navigation :**
     *   Ajout d'un CTA sur `index.html` (section "Axes Stratégiques") pour pointer vers `page-systemes-alimentaires-durables.html`.
     *   Mise à jour des liens de navigation croisée.
+
+    ## Étape 12 : Refactorisation - Amélioration UX des Onglets et Navigation
+
+**Objectif :** Améliorer la visibilité et l'intuitivité des systèmes d'onglets sur les pages thématiques suite aux retours client, et corriger les liens de navigation croisée.
+
+**Modifications apportées aux fichiers `page-cantines-scolaires.html`, `page-gouvernance-alimentaire.html`, `page-systemes-alimentaires-durables.html` :**
+
+1.  **Amélioration du style des onglets :**
+    *   Les onglets ont été redessinés pour avoir une apparence plus "bouton" avec des bordures, un fond distinct, et des coins arrondis en haut.
+    *   L'onglet actif est mis en évidence avec un fond `bg-pat-green-principal` et un texte blanc.
+    *   Les onglets inactifs ont un fond `bg-gray-200` et un texte `text-gray-600`, avec un effet de survol (`hover:bg-gray-300 hover:text-gray-800`) pour améliorer l'affordance.
+    *   Le script JavaScript de gestion des onglets a été mis à jour pour appliquer ces nouvelles classes de style.
+2.  **Correction de la navigation croisée :**
+    *   Vérification et correction des attributs `href` dans les sections "Explorer d'autres thématiques" pour assurer que les liens pointent vers les bonnes pages et que les textes descriptifs sont cohérents.
