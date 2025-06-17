@@ -8,24 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shared-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Polices de base (Tailwind les gère via la config, mais on peut les forcer ici si besoin) */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: #333; /* Couleur de texte par défaut de style.css */
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* Couleurs principales inspirées de style.css et page-cantines-scolaires.html */
-        .bg-pat-green-principal { background-color: #4CAF50; }
-        .text-pat-green-principal { color: #4CAF50; }
-        .border-pat-green-principal { border-color: #4CAF50; }
-        .hover\:bg-pat-green-dark:hover { background-color: #388E3C; } /* Assombrir le vert PAT au survol */
-        .hover\:text-pat-green-dark:hover { color: #388E3C; }
-
         /* Dégradé pour la section Hero (similaire à style.css) */
         .hero-gradient {
             background: linear-gradient(135deg, #6fbf73 0%, #4caf50 100%);
@@ -78,7 +63,7 @@
     <main class="flex-grow">
         <section id="accueil" class="hero-gradient text-white py-20 px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center min-h-[80vh]">
             <div class="container mx-auto">
-                <h1 class="text-4xl sm:text-5xl lg:text-[2.8em] font-bold mb-5 leading-tight">Rufisque s'engage pour une alimentation locale, saine et durable</h1>
+                <h1 class="text-4xl sm:text-5xl font-bold mb-5 leading-tight">Rufisque s'engage pour une alimentation locale, saine et durable</h1>
                 <p class="text-lg sm:text-xl opacity-90 mb-8 max-w-3xl mx-auto">Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.</p>
                 <div class="space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
                     <a href="#axes" class="inline-block btn-hero-primary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Découvrir les Axes</a>
@@ -96,7 +81,7 @@
 
         <section id="axes" class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
             <div class="container mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">Nos Axes Stratégiques</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">Nos Axes Stratégiques</h2>
                 <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">Les piliers de notre action pour une transformation durable du système alimentaire de Rufisque.</p>
 
                 <div class="space-y-12">
@@ -150,7 +135,7 @@
 
         <section id="actions" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
             <div class="container mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">Nos Actions Concrètes</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">Nos Actions Concrètes</h2>
                 <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">Des initiatives tangibles qui améliorent le quotidien et construisent un système alimentaire résilient.</p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -159,7 +144,7 @@
                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pat-green-principal text-white mx-auto mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21h20"/><path d="M6 17h.01"/><path d="M6 13h.01"/><path d="M18 17h-.01"/><path d="M18 13h-.01"/><path d="M12 17v-4"/><path d="M12 7V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h4a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V6"/></svg>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2" style="color: #2c522d;">Cantines Scolaires Améliorées</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-pat-green-darker mb-2">Cantines Scolaires Améliorées</h3>
                         <p class="text-gray-600 text-sm mb-4 flex-grow">Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.</p>
                         <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">Impact Direct</span>
                     </div>
@@ -169,7 +154,7 @@
                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pat-green-principal text-white mx-auto mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c0-2.21-1.79-4-4-4V2c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v14c0 2.21 1.79 4 4 4ZM14 20c0-2.21 1.79-4 4-4V2c0-.55.45-1 1-1h1c.55 0 1 .45 1 1v14c0 2.21-1.79 4-4 4Z"/></svg>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2" style="color: #2c522d;">Soutien aux Producteurs Locaux</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-pat-green-darker mb-2">Soutien aux Producteurs Locaux</h3>
                         <p class="text-gray-600 text-sm mb-4 flex-grow">Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.</p>
                         <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">Économie Locale</span>
                     </div>
@@ -179,7 +164,7 @@
                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pat-green-principal text-white mx-auto mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2" style="color: #2c522d;">Ateliers de Sensibilisation</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-pat-green-darker mb-2">Ateliers de Sensibilisation</h3>
                         <p class="text-gray-600 text-sm mb-4 flex-grow">Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.</p>
                         <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">Santé Publique</span>
                     </div>
@@ -194,7 +179,7 @@
 
         <section id="alliance" class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
             <div class="container mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">Notre Alliance Territoriale</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">Notre Alliance Territoriale</h2>
                 <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">Une gouvernance multi-acteurs pour une action concertée et efficace sur le territoire de Rufisque.</p>
 
                 <div class="flex flex-col md:flex-row gap-8 items-start">

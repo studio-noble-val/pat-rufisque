@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gouvernance Alimentaire - PAT Rufisque</title>
+    <link rel="stylesheet" href="css/shared-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Styles communs (similaires à page-cantines-scolaires) */
-        .bg-pat-green-principal { background-color: #4CAF50; /* Vert principal PAT */ }
-        .text-pat-green-principal { color: #4CAF50; }
-        .border-pat-green-principal { border-color: #4CAF50; }
-
         /* Couleur thématique pour Gouvernance Alimentaire (Orange) */
         .bg-theme-gouvernance { background-color: #FF9800; /* Orange */ }
         .text-theme-gouvernance { color: #FF9800; }
@@ -26,14 +22,6 @@
         .text-theme-cantines { color: #2196F3; } /* Bleu cantines */
         .text-theme-zones-agricoles { color: #4CAF50; } /* Vert pour Zones Agricoles (cohérence avec PAT) */
         /* .text-theme-transformation { color: #9C27B0; } /* Violet transformation */
-
-
-        .sticky-header {
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -57,7 +45,7 @@
             <span class="inline-block bg-theme-gouvernance text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
                 🤝 Gouvernance Alimentaire
             </span>
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                 Une Gouvernance Locale et Participative
             </h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
@@ -85,21 +73,21 @@
         <div class="mb-16">
             <!-- Navigation des onglets -->
             <div class="border-b border-gray-300 mb-6">
-                <nav class="-mb-px flex space-x-4 md:space-x-8" aria-label="Tabs">
+                <nav class="flex flex-wrap -mb-px" aria-label="Tabs">
                     <button id="tab-button-tpe"
-                            class="tab-button whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm text-pat-green-principal border-pat-green-principal"
+                            class="tab-button whitespace-nowrap mr-2 py-3 px-4 border-x border-t rounded-t-lg font-medium text-sm bg-pat-green-principal text-white"
                             data-tab-target="#tab-panel-tpe"
                             role="tab" aria-controls="tab-panel-tpe" aria-selected="true">
                         TPE Agroalimentaires : Enjeux & Soutien
                     </button>
                     <button id="tab-button-charte"
-                            class="tab-button whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300 border-transparent"
+                            class="tab-button whitespace-nowrap mr-2 py-3 px-4 border-x border-t rounded-t-lg font-medium text-sm bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-800"
                             data-tab-target="#tab-panel-charte"
                             role="tab" aria-controls="tab-panel-charte" aria-selected="false">
                         Charte Restauration Scolaire Locale
                     </button>
                     <button id="tab-button-emploi-genre"
-                            class="tab-button whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300 border-transparent"
+                            class="tab-button whitespace-nowrap mr-2 py-3 px-4 border-x border-t rounded-t-lg font-medium text-sm bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-800"
                             data-tab-target="#tab-panel-emploi-genre"
                             role="tab" aria-controls="tab-panel-emploi-genre" aria-selected="false">
                         Impact TPE : Emploi & Genre
@@ -112,7 +100,7 @@
                 <!-- Panneau 1: TPE Agroalimentaires : Enjeux & Soutien -->
                 <div id="tab-panel-tpe" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-tpe">
                     <section>
-                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
                             <span class="text-3xl mr-3">🏭</span> Les TPE agroalimentaires de Rufisque : leviers pour un système alimentaire durable
                         </h3>
                         <p class="text-gray-700 mb-4">
@@ -166,7 +154,7 @@
                 <!-- Panneau 2: Charte Restauration Scolaire Locale -->
                 <div id="tab-panel-charte" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-charte">
                     <section>
-                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
                             <span class="text-3xl mr-3">📜</span> Charte des femmes restauratrices pour une alimentation locale de qualité en milieu scolaire
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -214,7 +202,7 @@
                 <!-- Panneau 3: Impact TPE : Emploi & Genre -->
                 <div id="tab-panel-emploi-genre" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-emploi-genre">
                     <section>
-                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
                             <span class="text-3xl mr-3">👩🏽‍🍳</span> Emploi et genre dans les TPE agroalimentaires de Rufisque : un levier à valoriser
                         </h3>
                         <p class="text-gray-700 mb-6">
@@ -265,11 +253,10 @@
                     <h4 class="text-lg font-semibold text-theme-cantines mt-2">Cantines Scolaires</h4>
                     <p class="text-sm text-gray-600">Nutrition et éducation pour nos enfants.</p>
                 </a>
-                <!-- Mettre à jour le lien vers la prochaine page thématique (ex: Zones Agricoles) -->
-                <a href="page-zones-agricoles.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                <a href="page-systemes-alimentaires-durables.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
                     <span class="text-3xl">🌾</span>
                     <h4 class="text-lg font-semibold text-theme-zones-agricoles mt-2">Zones Agricoles & Production</h4>
-                    <p class="text-sm text-gray-600">Soutenir nos producteurs locaux.</p>
+                    <p class="text-sm text-gray-600">Focus sur la zone de Lendeng.</p>
                 </a>
             </div>
         </section>
@@ -293,18 +280,21 @@
                     const targetPanelId = button.getAttribute('data-tab-target');
 
                     tabButtons.forEach(btn => {
-                        btn.classList.remove('text-pat-green-principal', 'border-pat-green-principal');
-                        btn.classList.add('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300', 'border-transparent');
+                        // Classes pour onglet inactif
+                        btn.classList.remove('bg-pat-green-principal', 'text-white');
+                        btn.classList.add('bg-gray-200', 'text-gray-600', 'hover:bg-gray-300', 'hover:text-gray-800');
                         btn.setAttribute('aria-selected', 'false');
                     });
                     tabPanels.forEach(panel => {
                         panel.classList.add('hidden');
                     });
 
-                    button.classList.add('text-pat-green-principal', 'border-pat-green-principal');
-                    button.classList.remove('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300', 'border-transparent');
+                    // Activer le bouton cliqué
+                    button.classList.remove('bg-gray-200', 'text-gray-600', 'hover:bg-gray-300', 'hover:text-gray-800');
+                    button.classList.add('bg-pat-green-principal', 'text-white');
                     button.setAttribute('aria-selected', 'true');
 
+                    // Afficher le panneau cible
                     const targetPanel = document.querySelector(targetPanelId);
                     if (targetPanel) {
                         targetPanel.classList.remove('hidden');

@@ -1,0 +1,28 @@
+/* Polices de base */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333; /* Couleur de texte par défaut */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Couleurs principales du PAT */
+.bg-pat-green-principal { background-color: #4CAF50; }
+.text-pat-green-principal { color: #4CAF50; }
+.border-pat-green-principal { border-color: #4CAF50; }
+.hover\:bg-pat-green-dark:hover { background-color: #388E3C; }
+.hover\:text-pat-green-dark:hover { color: #388E3C; }
+.text-pat-green-darker { color: #2c522d; } /* Pour les titres des cartes d'action sur index.html */
+
+/* Header Sticky (commun à toutes les pages thématiques) */
+.sticky-header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #fff; /* Assurer un fond pour le header sticky */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre standard pour le header */
+}
+
+/* Autres styles globaux potentiels à ajouter ici */

@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Systèmes Alimentaires Durables - PAT Rufisque</title>
+    <link rel="stylesheet" href="css/shared-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Styles communs */
-        .bg-pat-green-principal { background-color: #4CAF50; /* Vert principal PAT */ }
-        .text-pat-green-principal { color: #4CAF50; }
-        .border-pat-green-principal { border-color: #4CAF50; }
-
         /* Couleur thématique pour Systèmes Alimentaires Durables (Vert PAT) */
         .bg-theme-sad { background-color: #4CAF50; /* Vert principal PAT */ }
         .text-theme-sad { color: #4CAF50; }
@@ -25,13 +21,6 @@
         /* Autres couleurs thématiques pour la navigation croisée */
         .text-theme-cantines { color: #2196F3; } /* Bleu cantines */
         .text-theme-gouvernance { color: #FF9800; } /* Orange gouvernance */
-
-        .sticky-header {
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -55,7 +44,7 @@
             <span class="inline-block bg-theme-sad text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
                 🌿 Systèmes Alimentaires Durables
             </span>
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                 Renforcer la Durabilité de Notre Alimentation
             </h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
@@ -83,21 +72,21 @@
         <div class="mb-16">
             <!-- Navigation des onglets -->
             <div class="border-b border-gray-300 mb-6">
-                <nav class="-mb-px flex space-x-4 md:space-x-8 overflow-x-auto" aria-label="Tabs">
+                <nav class="flex flex-wrap -mb-px" aria-label="Tabs">
                     <button id="tab-button-gie-lendeng"
-                            class="tab-button whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm text-pat-green-principal border-pat-green-principal"
+                            class="tab-button whitespace-nowrap mr-2 py-3 px-4 border-x border-t rounded-t-lg font-medium text-sm bg-pat-green-principal text-white"
                             data-tab-target="#tab-panel-gie-lendeng"
                             role="tab" aria-controls="tab-panel-gie-lendeng" aria-selected="true">
                         🧑‍🌾 GIE Lendeng : Emplois & Dynamiques Sociales
                     </button>
                     <button id="tab-button-foncier-lendeng"
-                            class="tab-button whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300 border-transparent"
+                            class="tab-button whitespace-nowrap mr-2 py-3 px-4 border-x border-t rounded-t-lg font-medium text-sm bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-800"
                             data-tab-target="#tab-panel-foncier-lendeng"
                             role="tab" aria-controls="tab-panel-foncier-lendeng" aria-selected="false">
                         🏞️ Foncier Agricole : Préservation & Enjeux
                     </button>
                     <button id="tab-button-irrigation-lendeng"
-                            class="tab-button whitespace-nowrap py-3 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300 border-transparent"
+                            class="tab-button whitespace-nowrap mr-2 py-3 px-4 border-x border-t rounded-t-lg font-medium text-sm bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-800"
                             data-tab-target="#tab-panel-irrigation-lendeng"
                             role="tab" aria-controls="tab-panel-irrigation-lendeng" aria-selected="false">
                         💧 Irrigation à Lendeng : Défis & Solutions
@@ -110,7 +99,7 @@
                 <!-- Panneau 1: GIE Lendeng : Emplois & Dynamiques Sociales -->
                 <div id="tab-panel-gie-lendeng" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-gie-lendeng">
                     <section>
-                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
                             <span class="text-3xl mr-3">🧑‍🌾</span> Le GIE des Maraîchers de Lendeng : Rôle et Impacts
                         </h3>
                         <p class="text-gray-700 mb-6">
@@ -150,7 +139,7 @@
                 <!-- Panneau 2: Foncier Agricole de Lendeng : Préservation & Enjeux -->
                 <div id="tab-panel-foncier-lendeng" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-foncier-lendeng">
                     <section>
-                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
                             <span class="text-3xl mr-3">🏞️</span> La Zone Maraîchère de Lendeng : Un Patrimoine Agricole à Préserver
                         </h3>
                         <p class="text-gray-700 mb-4">
@@ -189,7 +178,7 @@
                 <!-- Panneau 3: Irrigation à Lendeng : Défis & Solutions -->
                 <div id="tab-panel-irrigation-lendeng" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-irrigation-lendeng">
                     <section>
-                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
                             <span class="text-3xl mr-3">💧</span> Enjeux de l’irrigation dans la zone maraîchère de Lendeng
                         </h3>
                         <p class="text-gray-700 mb-6">
@@ -263,18 +252,21 @@
                     const targetPanelId = button.getAttribute('data-tab-target');
 
                     tabButtons.forEach(btn => {
-                        btn.classList.remove('text-pat-green-principal', 'border-pat-green-principal');
-                        btn.classList.add('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300', 'border-transparent');
+                        // Classes pour onglet inactif
+                        btn.classList.remove('bg-pat-green-principal', 'text-white');
+                        btn.classList.add('bg-gray-200', 'text-gray-600', 'hover:bg-gray-300', 'hover:text-gray-800');
                         btn.setAttribute('aria-selected', 'false');
                     });
                     tabPanels.forEach(panel => {
                         panel.classList.add('hidden');
                     });
 
-                    button.classList.add('text-pat-green-principal', 'border-pat-green-principal');
-                    button.classList.remove('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300', 'border-transparent');
+                    // Activer le bouton cliqué
+                    button.classList.remove('bg-gray-200', 'text-gray-600', 'hover:bg-gray-300', 'hover:text-gray-800');
+                    button.classList.add('bg-pat-green-principal', 'text-white');
                     button.setAttribute('aria-selected', 'true');
 
+                    // Afficher le panneau cible
                     const targetPanel = document.querySelector(targetPanelId);
                     if (targetPanel) {
                         targetPanel.classList.remove('hidden');
