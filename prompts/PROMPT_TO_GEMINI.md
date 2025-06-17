@@ -44,6 +44,26 @@ Nous allons nous concentrer sur les points suivants, en procédant étape par é
             *   Lier cette nouvelle page depuis `index.html` si pertinent (par exemple, rendre le titre de l'axe cliquable dans la section "Axes Stratégiques" sur la page d'accueil, ou ajouter un bouton "En savoir plus").
         *   Ajouter des styles CSS de base pour `.map-container` (ex: hauteur minimale, bordure) dans `style.css`.
 
+## Étape 9 (suite) : Homogénéisation de la Page d'Accueil (`index.html`)
+
+**Objectif :** Aligner le style de la page d'accueil (`index.html`) avec celui de la page thématique "Cantines Scolaires" (`page-cantines-scolaires.html`), en adoptant Tailwind CSS et en s'inspirant des styles existants de `css/style.css` pour une transition cohérente.
+
+**Modifications apportées au fichier `index.html` :**
+
+1.  **Adoption de Tailwind CSS :**
+    *   Remplacement du lien vers `css/style.css` par le CDN de Tailwind CSS.
+    *   Utilisation extensive des classes utilitaires de Tailwind pour la mise en page, la typographie, les espacements, les couleurs, et les ombres.
+2.  **Stylisation des Sections avec Tailwind et CSS Personnalisé :**
+    *   **Général :** Définition des polices de base ('Open Sans', 'Montserrat') et des couleurs principales (`bg-pat-green-principal`, `text-pat-green-principal`, etc.) dans une balise `<style>` pour compléter Tailwind et refléter les intentions de `css/style.css`.
+    *   **Section Hero (`#accueil`) :** Application d'un dégradé de fond (`hero-gradient`), stylisation des titres, boutons (`btn-hero-primary`, `btn-hero-secondary`), et de l'image placeholder.
+    *   **Section Axes Stratégiques (`#axes`) :** Utilisation de cartes avec images et textes alternés, stylisation des titres d'axe avec icônes SVG et couleur thématique. Fond de section alterné (`bg-section-alt`).
+    *   **Section Actions Concrètes (`#actions`) :** Cartes d'action avec icônes SVG dans des cercles colorés, titres spécifiques, et badges d'impact (`badge-impact`). Bouton CTA stylisé.
+    *   **Section Alliance Territoriale (`#alliance`) :** Mise en page en grille, liste des acteurs avec badges colorés spécifiques (`badge-acteur-*`), et citation mise en valeur.
+    *   **Footer :** Stylisation avec des couleurs de fond sombres (`bg-footer-dark`, `bg-footer-bottom-dark`), titres et textes avec couleurs adaptées, et icônes sociales en SVG.
+3.  **Intégration d'Icônes SVG :** Remplacement des icônes Lucide par des SVG inline pour une meilleure intégration et contrôle.
+4.  **Cohérence Visuelle :** Harmonisation de l'apparence des éléments (cartes, titres, boutons, badges, espacements) pour une expérience utilisateur unifiée entre la page d'accueil et les pages thématiques.
+
+
 3.  **Étape 10 (Optionnel, si le temps le permet) : Petites Améliorations et JavaScript**
     *   **Placeholder de visualisation des acteurs :** Si nous avons une idée simple pour remplacer le `[Espace pour une visualisation plus graphique des acteurs]` par quelque chose de plus visuel (même sans JS complexe), nous pouvons l'explorer.
     *   **JavaScript pour interactions simples :**

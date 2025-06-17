@@ -8,167 +8,248 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/lucide-react@0.292.0/dist/umd/lucide-react.min.js"></script> <!-- Ajout de Lucide Icons -->
-    <!-- Plus tard, nous pourrons ajouter des icônes ici, par exemple Font Awesome ou Lucide via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Polices de base (Tailwind les gère via la config, mais on peut les forcer ici si besoin) */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333; /* Couleur de texte par défaut de style.css */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Couleurs principales inspirées de style.css et page-cantines-scolaires.html */
+        .bg-pat-green-principal { background-color: #4CAF50; }
+        .text-pat-green-principal { color: #4CAF50; }
+        .border-pat-green-principal { border-color: #4CAF50; }
+        .hover\:bg-pat-green-dark:hover { background-color: #388E3C; } /* Assombrir le vert PAT au survol */
+        .hover\:text-pat-green-dark:hover { color: #388E3C; }
+
+        /* Dégradé pour la section Hero (similaire à style.css) */
+        .hero-gradient {
+            background: linear-gradient(135deg, #6fbf73 0%, #4caf50 100%);
+        }
+
+        /* Couleurs pour les boutons de la section Hero */
+        .btn-hero-primary {
+            background-color: #2c522d; /* Vert foncé de style.css */
+            border: 2px solid #2c522d;
+        }
+        .btn-hero-primary:hover {
+            background-color: #1e3a1f; /* Assombri */
+        }
+        .btn-hero-secondary {
+            background-color: transparent;
+            border: 2px solid #fff;
+        }
+        .btn-hero-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Couleurs pour les badges d'impact des cartes d'action (similaire à style.css) */
+        .badge-impact {
+            background-color: #e6f4ea; /* Vert clair */
+            color: #4CAF50; /* Vert moyen */
+        }
+
+        /* Couleurs pour les badges des acteurs (similaire à style.css) */
+        .badge-acteur-collectivites { background-color: #2196F3; } /* Bleu */
+        .badge-acteur-societe { background-color: #FF9800; } /* Orange */
+        .badge-acteur-prive { background-color: #795548; } /* Marron */
+        .badge-acteur-recherche { background-color: #607D8B; } /* Gris bleu */
+        .badge-acteur-partenaires { background-color: #009688; } /* Teal */
+
+        /* Couleur de fond pour les sections alternées */
+        .bg-section-alt {
+            background-color: #f9f9f9; /* Léger fond gris de style.css */
+        }
+        /* Couleur de fond pour le footer (similaire à style.css) */
+        .bg-footer-dark { background-color: #2c3e50; }
+        .bg-footer-bottom-dark { background-color: #233140; }
+        .text-footer-light { color: #ecf0f1; } /* Blanc cassé pour titres footer */
+        .text-footer-muted { color: #bdc3c7; } /* Gris clair pour texte footer */
+
+    </style>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
     <!-- Le header a été supprimé pour l'intégration en iframe -->
 
-    <main>
-        <section id="accueil" class="hero-section">
-            <div class="container hero-content">
-                <h1>Rufisque s'engage pour une alimentation locale, saine et durable</h1>
-                <p class="subtitle">Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.</p>
-                <div class="hero-buttons">
-                    <a href="#axes" class="btn btn-primary">Découvrir les Axes</a>
-                    <a href="#actions" class="btn btn-secondary">Voir nos Actions</a>
-                    <a href="test2.html" class="btn btn-secondary">Test</a>
+    <main class="flex-grow">
+        <section id="accueil" class="hero-gradient text-white py-20 px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center min-h-[80vh]">
+            <div class="container mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-[2.8em] font-bold mb-5 leading-tight">Rufisque s'engage pour une alimentation locale, saine et durable</h1>
+                <p class="text-lg sm:text-xl opacity-90 mb-8 max-w-3xl mx-auto">Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.</p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
+                    <a href="#axes" class="inline-block btn-hero-primary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Découvrir les Axes</a>
+                    <a href="#actions" class="inline-block btn-hero-secondary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Voir nos Actions</a>
                 </div>
-                <div class="hero-stats">
-                    <!-- Statistiques flottantes (ex: 5,500+ élèves, 4 cuisines centrales) viendront ici -->
+                <div class="flex justify-center gap-x-8 gap-y-4 flex-wrap text-lg font-semibold mb-10">
                     <p>+5500 élèves bénéficiaires</p>
                     <p>4 cuisines centrales</p>
                 </div>
-                <div class="hero-image-placeholder">
-                    <img src="https://placehold.co/800x450/4CAF50/FFFFFF/png?text=PAT+Rufisque+Action" alt="Image principale illustrant la Politique Alimentaire Territoriale de Rufisque">
+                <div class="max-w-3xl mx-auto bg-black bg-opacity-10 p-3 sm:p-5 rounded-lg shadow-xl">
+                    <img src="https://placehold.co/800x450/4CAF50/FFFFFF/png?text=PAT+Rufisque+en+Action" alt="Image principale illustrant la Politique Alimentaire Territoriale de Rufisque" class="rounded-md w-full">
                 </div>
             </div>
         </section>
 
-        <section id="axes" class="axes-section">
-            <div class="container">
-                <h2 class="section-title">Nos Axes Stratégiques</h2>
-                <p class="section-subtitle">Les piliers de notre action pour une transformation durable du système alimentaire de Rufisque.</p>
+        <section id="axes" class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
+            <div class="container mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">Nos Axes Stratégiques</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">Les piliers de notre action pour une transformation durable du système alimentaire de Rufisque.</p>
 
-                <div class="axe-item">
-                    <div class="axe-image">
-                        <img src="https://placehold.co/500x350/2196F3/FFFFFF/png?text=Gouvernance" alt="Illustration de la gouvernance alimentaire locale">
+                <div class="space-y-12">
+                    <!-- Axe 1 -->
+                    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10 bg-white p-6 md:p-8 rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:w-1/2 w-full">
+                            <img src="https://placehold.co/500x350/2196F3/FFFFFF/png?text=Gouvernance" alt="Illustration de la gouvernance alimentaire locale" class="rounded-md object-cover h-64 md:h-full w-full">
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-pat-green-principal mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                1. Gouvernance Alimentaire Locale et Participative
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed">Renforcer les capacités des acteurs locaux et promouvoir une prise de décision inclusive pour une politique alimentaire adaptée aux besoins du territoire.</p>
+                        </div>
                     </div>
-                    <div class="axe-content">
-                        <h3><i data-lucide="users"></i> 1. Gouvernance Alimentaire Locale et Participative</h3>
-                        <p>Renforcer les capacités des acteurs locaux et promouvoir une prise de décision inclusive pour une politique alimentaire adaptée aux besoins du territoire.</p>
-                    </div>
-                </div>
 
-                <div class="axe-item axe-item-reverse">
-                    <div class="axe-image">
-                        <img src="https://placehold.co/500x350/FF9800/FFFFFF/png?text=Systèmes+Durables" alt="Illustration du renforcement des systèmes alimentaires durables">
+                    <!-- Axe 2 -->
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10 bg-white p-6 md:p-8 rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:w-1/2 w-full">
+                            <img src="https://placehold.co/500x350/FF9800/FFFFFF/png?text=Systèmes+Durables" alt="Illustration du renforcement des systèmes alimentaires durables" class="rounded-md object-cover h-64 md:h-full w-full">
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-pat-green-principal mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+                                2. Renforcement des Systèmes Alimentaires Durables
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed">Soutenir les producteurs locaux, améliorer les circuits courts et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire.</p>
+                        </div>
                     </div>
-                    <div class="axe-content">
-                        <h3><i data-lucide="recycle"></i> 2. Renforcement des Systèmes Alimentaires Durables</h3>
-                        <p>Soutenir les producteurs locaux, améliorer les circuits courts et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire.</p>
-                    </div>
-                </div>
 
-                <div class="axe-item">
-                    <div class="axe-image">
-                        <img src="https://placehold.co/500x350/009688/FFFFFF/png?text=Éducation+Nutrition" alt="Illustration de l'éducation nutritionnelle et accès à une alimentation saine">
+                    <!-- Axe 3 -->
+                    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10 bg-white p-6 md:p-8 rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:w-1/2 w-full">
+                            <img src="https://placehold.co/500x350/009688/FFFFFF/png?text=Éducation+Nutrition" alt="Illustration de l'éducation nutritionnelle et accès à une alimentation saine" class="rounded-md object-cover h-64 md:h-full w-full">
+                        </div>
+                        <div class="md:w-1/2 w-full">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-pat-green-principal mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                                3. Éducation Nutritionnelle et Accès à une Alimentation Saine
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">Sensibiliser les populations aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les plus vulnérables.</p>
+                            <a href="page-cantines-scolaires.html" class="inline-block mt-2 px-5 py-2 border-2 border-pat-green-principal text-pat-green-principal font-semibold rounded-md hover:bg-pat-green-principal hover:text-white transition-colors duration-300 text-sm">Explorer ce thème</a>
+                        </div>
                     </div>
-                    <div class="axe-content">
-                        <h3><i data-lucide="heart-pulse"></i> 3. Éducation Nutritionnelle et Accès à une Alimentation Saine</h3>
-                        <p>Sensibiliser les populations aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les plus vulnérables.</p>
-                        <a href="page-cantines-scolaires.html" class="btn btn-secondary btn-sm mt-2">Explorer ce thème</a>
-                    </div>
-                    
                 </div>
             </div>
         </section>
 
-        <section id="actions" class="actions-section">
-            <div class="container">
-                <h2 class="section-title">Nos Actions Concrètes</h2>
-                <p class="section-subtitle">Des initiatives tangibles qui améliorent le quotidien et construisent un système alimentaire résilient.</p>
+        <section id="actions" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">Nos Actions Concrètes</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">Des initiatives tangibles qui améliorent le quotidien et construisent un système alimentaire résilient.</p>
 
-                <div class="actions-grid">
-                    <div class="action-card">
-                        <div class="card-icon"><i data-lucide="utensils-crossed"></i></div>
-                        <h3>Cantines Scolaires Améliorées</h3>
-                        <p>Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.</p>
-                        <span class="impact-badge">Impact Direct</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Action Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pat-green-principal text-white mx-auto mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21h20"/><path d="M6 17h.01"/><path d="M6 13h.01"/><path d="M18 17h-.01"/><path d="M18 13h-.01"/><path d="M12 17v-4"/><path d="M12 7V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h4a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V6"/></svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2" style="color: #2c522d;">Cantines Scolaires Améliorées</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.</p>
+                        <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">Impact Direct</span>
                     </div>
 
-                    <div class="action-card">
-                        <div class="card-icon"><i data-lucide="sprout"></i></div>
-                        <h3>Soutien aux Producteurs Locaux</h3>
-                        <p>Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.</p>
-                        <span class="impact-badge">Économie Locale</span>
+                    <!-- Action Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pat-green-principal text-white mx-auto mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c0-2.21-1.79-4-4-4V2c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v14c0 2.21 1.79 4 4 4ZM14 20c0-2.21 1.79-4 4-4V2c0-.55.45-1 1-1h1c.55 0 1 .45 1 1v14c0 2.21-1.79 4-4 4Z"/></svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2" style="color: #2c522d;">Soutien aux Producteurs Locaux</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.</p>
+                        <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">Économie Locale</span>
                     </div>
 
-                    <div class="action-card">
-                        <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
-                        <h3>Ateliers de Sensibilisation</h3>
-                        <p>Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.</p>
-                        <span class="impact-badge">Santé Publique</span>
+                    <!-- Action Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pat-green-principal text-white mx-auto mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2" style="color: #2c522d;">Ateliers de Sensibilisation</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.</p>
+                        <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">Santé Publique</span>
                     </div>
                 </div>
 
-                <div class="actions-cta">
-                    <p>Pour une analyse approfondie de nos stratégies et de nos impacts, consultez notre étude complète :</p>
-                    <a href="chemin/vers/votre/etude_sat_2027.pdf" target="_blank" class="btn btn-primary">Télécharger l'étude SAT 2027 (PDF)</a>
+                <div class="mt-12 text-center">
+                    <p class="text-lg text-gray-700 mb-4">Pour une analyse approfondie de nos stratégies et de nos impacts, consultez notre étude complète :</p>
+                    <a href="chemin/vers/votre/etude_sat_2027.pdf" target="_blank" class="inline-block btn-hero-primary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Télécharger l'étude SAT 2027 (PDF)</a>
                 </div>
             </div>
         </section>
 
-        <section id="alliance" class="alliance-section">
-            <div class="container">
-                <h2 class="section-title">Notre Alliance Territoriale</h2>
-                <p class="section-subtitle">Une gouvernance multi-acteurs pour une action concertée et efficace sur le territoire de Rufisque.</p>
+        <section id="alliance" class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
+            <div class="container mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 text-center">Notre Alliance Territoriale</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">Une gouvernance multi-acteurs pour une action concertée et efficace sur le territoire de Rufisque.</p>
 
-                <div class="alliance-content">
-                    <div class="acteurs-visualisation">
-                        <h4>Les Acteurs Clés de la PAT :</h4>
-                        <ul>
-                            <li><span class="acteur-badge collectivites">Collectivités Locales</span> Ville de Rufisque, Communes</li>
-                            <li><span class="acteur-badge societe-civile">Société Civile</span> Organisations paysannes, Associations de consommateurs</li>
-                            <li><span class="acteur-badge secteur-prive">Secteur Privé</span> Entreprises agro-alimentaires, Commerçants</li>
-                            <li><span class="acteur-badge recherche">Recherche & Formation</span> Universités, Centres techniques</li>
-                            <li><span class="acteur-badge partenaires-tf">Partenaires Techniques & Financiers</span> ONG Nationales et Internationales, Bailleurs</li>
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-3/5 bg-white p-8 rounded-lg shadow-lg">
+                        <h4 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-pat-green-principal inline-block">Les Acteurs Clés de la PAT :</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-gray-700"><span class="text-xs font-bold px-2.5 py-1 rounded-full badge-acteur-collectivites text-white">Collectivités Locales</span> Ville de Rufisque, Communes</li>
+                            <li class="flex items-center gap-3 text-gray-700"><span class="text-xs font-bold px-2.5 py-1 rounded-full badge-acteur-societe text-white">Société Civile</span> Organisations paysannes, Associations de consommateurs</li>
+                            <li class="flex items-center gap-3 text-gray-700"><span class="text-xs font-bold px-2.5 py-1 rounded-full badge-acteur-prive text-white">Secteur Privé</span> Entreprises agro-alimentaires, Commerçants</li>
+                            <li class="flex items-center gap-3 text-gray-700"><span class="text-xs font-bold px-2.5 py-1 rounded-full badge-acteur-recherche text-white">Recherche & Formation</span> Universités, Centres techniques</li>
+                            <li class="flex items-center gap-3 text-gray-700"><span class="text-xs font-bold px-2.5 py-1 rounded-full badge-acteur-partenaires text-white">Partenaires T&F</span> ONG Nationales et Internationales, Bailleurs</li>
                         </ul>
-                        <p class="placeholder-viz">[Espace pour une visualisation plus graphique des acteurs]</p>
+                        <p class="mt-6 p-4 bg-gray-200 text-center text-gray-600 rounded-md italic text-sm">[Espace pour une visualisation plus graphique des acteurs]</p>
                     </div>
 
-                    <blockquote class="alliance-citation">
-                        <p>"La force de notre initiative réside dans la collaboration étroite entre tous les maillons de la chaîne alimentaire, du producteur au consommateur, avec l'appui de nos partenaires."</p>
-                        <footer>- Un acteur de la PAT Rufisque</footer>
+                    <blockquote class="md:w-2/5 bg-green-50 border-l-4 border-pat-green-principal p-6 rounded-r-lg shadow-lg">
+                        <p class="text-lg italic text-gray-700 leading-relaxed">"La force de notre initiative réside dans la collaboration étroite entre tous les maillons de la chaîne alimentaire, du producteur au consommateur, avec l'appui de nos partenaires."</p>
+                        <footer class="mt-4 text-right text-md text-pat-green-principal font-semibold">- Un acteur de la PAT Rufisque</footer>
                     </blockquote>
                 </div>
-                <!-- Section coopération internationale à développer si besoin -->
             </div>
         </section>
-        <!-- Les autres sections viendront ici -->
     </main>
 
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-col">
-                <h4>PAT Rufisque</h4>
-                <p>Engagés pour une alimentation saine, durable et accessible à tous sur le territoire de Rufisque.</p>
-                <!-- Placeholder pour logo si besoin -->
+    <footer class="bg-footer-dark text-white pt-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8 pb-10">
+            <div>
+                <h4 class="text-lg font-semibold text-footer-light mb-4 pb-2 border-b border-pat-green-principal inline-block">PAT Rufisque</h4>
+                <p class="text-sm text-footer-muted leading-relaxed">Engagés pour une alimentation saine, durable et accessible à tous sur le territoire de Rufisque.</p>
             </div>
-            <div class="footer-col">
-                <h4>Contactez-nous</h4>
-                <p>Adresse : [Votre Adresse, Rufisque]</p>
-                <p>Email : <a href="mailto:contact@patrufisque.org">contact@patrufisque.org</a></p>
-                <p>Téléphone : [Votre Numéro de Téléphone]</p>
+            <div>
+                <h4 class="text-lg font-semibold text-footer-light mb-4 pb-2 border-b border-pat-green-principal inline-block">Contactez-nous</h4>
+                <p class="text-sm text-footer-muted">Adresse : [Votre Adresse, Rufisque]</p>
+                <p class="text-sm text-footer-muted">Email : <a href="mailto:contact@patrufisque.org" class="text-pat-green-principal hover:underline">contact@patrufisque.org</a></p>
+                <p class="text-sm text-footer-muted">Téléphone : [Votre Numéro de Téléphone]</p>
             </div>
-            <div class="footer-col">
-                <h4>Suivez-nous</h4>
-                <div class="social-links">
-                    <a href="#" title="Facebook"><i data-lucide="facebook"></i></a>
-                    <a href="#" title="Twitter"><i data-lucide="twitter"></i></a>
-                    <a href="#" title="Linkedin"><i data-lucide="linkedin"></i></a>
+            <div>
+                <h4 class="text-lg font-semibold text-footer-light mb-4 pb-2 border-b border-pat-green-principal inline-block">Suivez-nous</h4>
+                <div class="flex space-x-4">
+                    <a href="#" title="Facebook" class="text-white hover:text-pat-green-principal transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-10 4.49-10 10s4.5 10 10 10 10-4.49 10-10S17.5 2.04 12 2.04zM13.6 12.76h-1.31v5.44h-2.1V12.76H9.11V11.1h1.08V9.92c0-1.08.53-1.76 1.86-1.76h1.28v1.63h-.89c-.26 0-.37.12-.37.39v1.01h1.28l-.19 1.66z"/></svg>
+                    </a>
+                    <a href="#" title="Twitter" class="text-white hover:text-pat-green-principal transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10s4.5 10 10 10S22 17.51 22 12.04 17.5 2.04 12 2.04zm5.15 7.47c-.01.11-.01.22-.01.34 0 3.4-2.62 7.32-7.4 7.32-1.47 0-2.84-.42-3.99-1.15.21.02.41.04.62.04 1.22 0 2.33-.41 3.22-1.09-.9-.02-1.91-.6-2.21-1.58.14.02.27.04.41.04.23 0 .46-.04.67-.08-1.14-.23-1.99-1.21-1.99-2.4v-.02c.35.19.75.31 1.17.33-.69-.46-1.14-1.25-1.14-2.14 0-.46.12-.9.35-1.28 1.23 1.48 3.05 2.45 5.11 2.55-.12-.46-.09-1.32.52-1.91.84-.82 2.22-.82 3.06 0 .41-.08.79-.22 1.12-.42-.14.42-.42.78-.79.99.36-.04.71-.14 1.03-.28-.24.35-.54.67-.88.93z"/></svg>
+                    </a>
+                    <a href="#" title="Linkedin" class="text-white hover:text-pat-green-principal transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.48 2.04 2 6.52 2 12.04s4.48 10 10 10 10-4.48 10-10S17.52 2.04 12 2.04zM8.44 18.4H6.12V9.73h2.32v8.67zM7.28 8.71c-.77 0-1.39-.62-1.39-1.39S6.51 5.93 7.28 5.93s1.39.62 1.39 1.39- S8.05 8.71 7.28 8.71zm10.39 9.69h-2.31v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.57 1.06-1.57 2.16v4.17H9.91V9.73h2.21v1.02h.03c.31-.59 1.07-1.21 2.18-1.21 2.33 0 2.76 1.53 2.76 3.52v4.12z"/></svg>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 PAT Rufisque. Tous droits réservés. Conçu avec passion.</p>
+        <div class="bg-footer-bottom-dark text-center py-4">
+            <p class="text-xs text-footer-muted">&copy; 2024 PAT Rufisque. Tous droits réservés. Conçu avec passion.</p>
         </div>
     </footer>
+    <!-- Le script js/script.js est conservé s'il y a d'autres logiques, sinon il peut être retiré -->
     <script src="js/script.js"></script>
-    <script>
-        // Initialisation de Lucide Icons
-        lucide.createIcons();
-    </script>
+    <!-- Le script Lucide est retiré car les icônes sont en SVG inline -->
 </body>
 </html>
