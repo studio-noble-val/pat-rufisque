@@ -203,3 +203,13 @@
     *   Le script JavaScript de gestion des onglets a été mis à jour pour appliquer ces nouvelles classes de style.
 2.  **Correction de la navigation croisée :**
     *   Vérification et correction des attributs `href` dans les sections "Explorer d'autres thématiques" pour assurer que les liens pointent vers les bonnes pages et que les textes descriptifs sont cohérents.
+    
+## Étape 13 : Ajustement de la Taille d'une Icône SVG
+
+**Objectif :** Augmenter la taille d'une icône SVG spécifique pour une meilleure visibilité.
+
+**Modifications apportées au fichier `index.html` :**
+
+1.  **Icône SVG de l'Axe 1 (Gouvernance Alimentaire) :**
+    *   Les attributs `width` et `height` de l'icône SVG ont été modifiés de `24` à `72` pour tripler sa taille.
+    *   Les classes Tailwind redondantes (`w-7 h-7`) qui définissaient la taille ont été supprimées de cette icône spécifique pour permettre aux attributs SVG de prendre effet.
