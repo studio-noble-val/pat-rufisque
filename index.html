@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/shared-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+
         /* Dégradé pour la section Hero (similaire à style.css) */
         .hero-gradient {
             background: linear-gradient(135deg, #6fbf73 0%, #4caf50 100%);
@@ -61,17 +62,28 @@
     <!-- Le header a été supprimé pour l'intégration en iframe -->
 
     <main class="flex-grow">
-        <section id="accueil" class="hero-gradient text-white py-20 px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center min-h-[80vh]">
-            <div class="container mx-auto">
-                <h1 class="text-4xl sm:text-5xl font-bold mb-5 leading-tight">Rufisque s'engage pour une alimentation locale, saine et durable</h1>
-                <p class="text-lg sm:text-xl opacity-90 mb-8 max-w-3xl mx-auto">Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.</p>
-                <div class="space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
-                    <a href="#axes" class="inline-block btn-hero-primary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Découvrir les Axes</a>
-                    <a href="#actions" class="inline-block btn-hero-secondary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Voir nos Actions</a>
+        <section id="accueil" class="hero-gradient text-white py-20 px-4 sm:px-6 lg:px-8 min-h-[80vh] flex items-center">
+            <div class="container mx-auto flex flex-col md:flex-row items-center md:text-left">
+                <div class="md:w-5/12 mb-8 md:mb-0 md:pr-8 text-center md:text-left">
+                    <h1 class="text-4xl sm:text-5xl font-bold mb-5 leading-tight">Rufisque s'engage pour une alimentation locale, saine et durable</h1>
+                    <p class="text-lg sm:text-xl opacity-90 mb-8 max-w-3xl mx-auto md:mx-0">Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.</p>
+                    <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#axes" class="inline-block btn-hero-primary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Découvrir les Axes</a>
+                        <a href="#actions" class="inline-block btn-hero-secondary text-white font-bold py-3 px-6 rounded-md shadow-md hover:shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 text-base">Voir nos Actions</a>
+                    </div>
                 </div>
-
-                <div class="max-w-3xl mx-auto bg-black bg-opacity-10 p-3 sm:p-5 rounded-lg shadow-xl">
-                    <img src="https://placehold.co/800x450/4CAF50/FFFFFF/png?text=PAT+Rufisque+en+Action" alt="Image principale illustrant la Politique Alimentaire Territoriale de Rufisque" class="rounded-md w-full">
+                <div class="md:w-7/12">
+                    <!-- Video Facade for performance -->
+                    <div id="video-container" class="bg-black bg-opacity-10 p-3 sm:p-5 rounded-lg shadow-xl aspect-video">
+                        <div id="video-facade" class="relative w-full h-full bg-cover bg-center rounded-md cursor-pointer group" style="background-image: url('https://i.ytimg.com/vi/J5zmO3twxZk/hqdefault.jpg');" data-videoid="J5zmO3twxZk">
+                            <!-- Play Button Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300 rounded-md">
+                                <svg class="w-16 h-16 sm:w-20 sm:h-20 text-white transform group-hover:scale-110 transition-transform duration-300 drop-shadow-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -115,8 +127,8 @@
 
                     <!-- Axe 3 -->
                     <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10 bg-white p-6 md:p-8 rounded-lg shadow-lg overflow-hidden">
-                        <div class="md:w-1/2 w-full">
-                            <img src="https://placehold.co/500x350/009688/FFFFFF/png?text=Éducation+Nutrition" alt="Illustration de l'éducation nutritionnelle et accès à une alimentation saine" class="rounded-md object-cover h-64 md:h-full w-full">
+                        <div class="md:w-1/2 w-full order-2 md:order-1">
+                            <img src="https://placehold.co/500x350/FF9800/FFFFFF/png?text=Systèmes+Durables" alt="Illustration du renforcement des systèmes alimentaires durables" class="rounded-md object-cover h-64 md:h-full w-full">
                         </div>
                         <div class="md:w-1/2 w-full">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
@@ -129,6 +141,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
@@ -237,5 +250,30 @@
     <!-- Le script js/script.js est conservé s'il y a d'autres logiques, sinon il peut être retiré -->
     <script src="js/script.js"></script>
     <!-- Le script Lucide est retiré car les icônes sont en SVG inline -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoFacade = document.getElementById('video-facade');
+            const videoContainer = document.getElementById('video-container');
+
+            if (videoFacade && videoContainer) {
+                videoFacade.addEventListener('click', function() {
+                    const videoId = this.dataset.videoid;
+                    const iframe = document.createElement('iframe');
+                    
+                    iframe.setAttribute('class', 'w-full h-full rounded-lg');
+                    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`);
+                    iframe.setAttribute('title', 'Vidéo illustrant la Politique Alimentaire Territoriale de Rufisque');
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+                    iframe.setAttribute('allowfullscreen', '');
+                    
+                    // Replace the facade with the iframe
+                    videoContainer.innerHTML = '';
+                    videoContainer.appendChild(iframe);
+                    videoContainer.classList.remove('p-3', 'sm:p-5', 'bg-opacity-10'); // Remove padding for the iframe to fit
+                }, { once: true }); // The event listener will be removed after it runs once.
+            }
+        });
+    </script>
 </body>
 </html>

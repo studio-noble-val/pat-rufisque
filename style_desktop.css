@@ -1,4 +1,7 @@
-        .hero {
+               html {
+            scroll-behavior: smooth;
+        }
+       .hero {
             /* background-color: #f0f0f0; */ /* Remove background color */
             padding: 0; /* remove padding*/
             text-align: center;
