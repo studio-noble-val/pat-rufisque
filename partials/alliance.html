@@ -1,0 +1,21 @@
+<section id="alliance" class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">{{alliance.titre}}</h2>
+        <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">{{alliance.description}}</p>
+
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+            <div class="md:w-3/5 bg-white p-8 rounded-lg shadow-lg">
+                <h4 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-pat-green-principal inline-block">{{alliance.acteurs_titre}}</h4>
+                <ul class="space-y-3" id="alliance-acteurs-list">
+                    <!-- Les éléments de la liste des acteurs seront injectés ici par JavaScript -->
+                </ul>
+            </div>
+
+            <blockquote class="md:w-2/5 bg-green-50 border-l-4 border-pat-green-principal p-6 rounded-r-lg shadow-lg">
+                <p class="text-lg italic text-gray-700 leading-relaxed">"{{alliance.citation.texte}}"</p>
+                <footer class="mt-4 text-right text-md text-pat-green-principal font-semibold">{{alliance.citation.auteur}}</footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+

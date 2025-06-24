@@ -1,0 +1,92 @@
+{
+    "accueil": {
+        "titre": "Rufisque s'engage pour une alimentation locale, saine et durable",
+        "description": "Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.",
+        "bouton_primaire": "Découvrir les Axes",
+        "bouton_secondaire": "Voir nos Actions",
+        "video_id": "J5zmO3twxZk",
+        "video_thumbnail": "statics/thumb_vid_pat_index.JPG"
+    },
+    "axes_strategiques": {
+        "titre": "Nos Axes Stratégiques",
+        "description": "Les piliers de notre action pour une transformation durable du système alimentaire de Rufisque.",
+        "axes": [
+            {
+                "id": "gouvernance",
+                "numero": 1,
+                "titre": "Gouvernance Alimentaire Locale et Participative",
+                "description": "Renforcer les capacités des acteurs locaux et promouvoir une prise de décision inclusive pour une politique alimentaire adaptée aux besoins du territoire.",
+                "lien_page": "page-gouvernance-alimentaire.html",
+                "image_url": "statics/thumb_vid_pat_gouvernance.jpg",
+                "image_alt": "Illustration de la gouvernance alimentaire locale"
+            },
+            {
+                "id": "systemes",
+                "numero": 2,
+                "titre": "Renforcement des Systèmes Alimentaires Durables",
+                "description": "Soutenir les producteurs locaux, améliorer les circuits courts et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire.",
+                "lien_page": "page-systemes-alimentaires-durables.html",
+                "image_url": "statics/thumb_vid_pat_agriculture.jpg",
+                "image_alt": "Illustration du renforcement des systèmes alimentaires durables"
+            },
+            {
+                "id": "education",
+                "numero": 3,
+                "titre": "Éducation Nutritionnelle et Accès à une Alimentation Saine",
+                "description": "Sensibiliser les populations aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les plus vulnérables.",
+                "lien_page": "page-cantines-scolaires.html",
+                "image_url": "statics/thumb_vid_pat_cantines.jpg",
+                "image_alt": "Illustration de l'éducation nutritionnelle et de l'accès à une alimentation saine"
+            }
+        ]
+    },
+    "actions_concretes": {
+        "titre": "Nos Actions Concrètes",
+        "description": "Des initiatives tangibles qui améliorent le quotidien et construisent un système alimentaire résilient.",
+        "actions": [
+            {
+                "titre": "Cantines Scolaires Améliorées",
+                "description": "Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.",
+                "badge": "Impact Direct"
+            },
+            {
+                "titre": "Soutien aux Producteurs Locaux",
+                "description": "Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.",
+                "badge": "Économie Locale"
+            },
+            {
+                "titre": "Ateliers de Sensibilisation",
+                "description": "Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.",
+                "badge": "Santé Publique"
+            }
+        ],
+        "cta_etude": {
+            "texte": "Pour une analyse approfondie de nos stratégies et de nos impacts, consultez notre étude complète :",
+            "bouton": "Télécharger l'étude SAT 2027 (PDF)",
+            "lien_pdf": "chemin/vers/votre/etude_sat_2027.pdf"
+        }
+    },
+    "alliance": {
+        "titre": "Notre Alliance Territoriale",
+        "description": "Une gouvernance multi-acteurs pour une action concertée et efficace sur le territoire de Rufisque.",
+        "acteurs_titre": "Les Acteurs Clés de la PAT :",
+        "acteurs_liste": [
+            {"nom": "Collectivités Locales", "details": "Ville de Rufisque, Communes", "badge_class": "badge-acteur-collectivites"},
+            {"nom": "Société Civile", "details": "Organisations paysannes, Associations de consommateurs", "badge_class": "badge-acteur-societe"},
+            {"nom": "Secteur Privé", "details": "Entreprises agro-alimentaires, Commerçants", "badge_class": "badge-acteur-prive"},
+            {"nom": "Recherche & Formation", "details": "Universités, Centres techniques", "badge_class": "badge-acteur-recherche"},
+            {"nom": "Partenaires T&F", "details": "ONG Nationales et Internationales, Bailleurs", "badge_class": "badge-acteur-partenaires"}
+        ],
+        "citation": {
+            "texte": "\"La force de notre initiative réside dans la collaboration étroite entre tous les maillons de la chaîne alimentaire, du producteur au consommateur, avec l'appui de nos partenaires.\"",
+            "auteur": "- Un acteur de la PAT Rufisque"
+        }
+    },
+    "footer": {
+        "contact": {
+            "adresse": "[Votre Adresse, Rufisque]",
+            "email": "contact@patrufisque.org",
+            "telephone": "[Votre Numéro de Téléphone]"
+        }
+    }
+}
