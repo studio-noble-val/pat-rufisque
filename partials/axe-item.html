@@ -16,13 +16,11 @@
                 {{titre}}
             </h3>
             
-            <!-- Nouveau conteneur pour Picto (fixed size) et (Description + CTA) -->
-            <!-- Ce conteneur prendra la hauteur restante et organisera le picto et le bloc de texte -->
-            <div class="flex flex-col md:flex-row gap-6 items-start flex-grow">
-                <!-- Picto (taille fixe et grande) -->
-                <!-- flex-shrink-0 pour s'assurer qu'il garde sa taille même si l'espace est limité -->
-                <div class="flex-shrink-0 mx-auto md:mx-0"> 
-                    <img src="{{picto_url}}" alt="{{picto_alt}}" class="h-56 w-56 object-contain"> <!-- Taille augmentée (224px) -->
+            <!-- Conteneur sous le titre: Picto à gauche, (Description + CTA) à droite -->
+            <div class="flex-grow flex flex-col md:flex-row gap-6 items-start h-full">
+                <!-- Picto avec une taille fixe pour garantir l'uniformité -->
+                <div class="flex-shrink-0 mx-auto md:mx-0">
+                    <img src="{{picto_url}}" alt="{{picto_alt}}" class="h-56 w-56 object-contain">
                 </div>
                 
                 <!-- Bloc Description + CTA -->
@@ -31,8 +29,7 @@
                         {{description}}
                     </p>
                     
-                    <!-- Le CTA est aligné au début de sa ligne et poussé vers le bas si la description est longue -->
-                    <a href="{{lien_page}}" class="inline-flex items-center justify-center self-start mt-auto px-6 py-3 border-2 border-pat-green-darker text-pat-green-darker font-bold rounded-lg shadow-lg hover:bg-pat-green-darker hover:bg-opacity-10 transition-all duration-300 text-base group">
+                    <a href="{{lien_page}}" class="inline-flex items-center justify-center self-center px-6 py-3 border-2 border-pat-green-darker text-pat-green-darker font-bold rounded-lg shadow-lg hover:bg-pat-green-darker hover:bg-opacity-10 transition-all duration-300 text-base group">
                         <span>Explorer cet axe</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
