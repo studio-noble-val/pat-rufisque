@@ -1,13 +1,46 @@
-<div class="flex flex-col md:flex-row {{flex_direction_class}} items-center gap-6 md:gap-10 bg-white p-6 md:p-8 rounded-lg shadow-lg overflow-hidden">
-    <div class="md:w-1/2 w-full">
-        <img src="{{image_url}}" alt="{{image_alt}}" class="rounded-md object-cover h-64 md:h-full w-full">
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl">
+
+    <!-- Corps de la carte: Image à gauche, Contenu à droite -->
+    <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+        
+        <!-- Colonne Image -->
+        <div class="w-full {{image_column_order_class}}">
+            <img src="{{image_url}}" alt="{{image_alt}}" class="rounded-xl object-cover w-full h-auto max-h-96 shadow-md aspect-video"> 
+            <!-- aspect-video pour un ratio 16:9, max-h-96 pour limiter la hauteur -->
+        </div>
+
+        <!-- Colonne Contenu -->
+        <div class="w-full flex flex-col h-full">
+            <!-- Titre mis en valeur -->
+            <h3 class="text-2xl sm:text-3xl font-bold text-pat-green-darker mb-4">
+                {{titre}}
+            </h3>
+            
+            <!-- Nouveau conteneur pour Picto (fixed size) et (Description + CTA) -->
+            <!-- Ce conteneur prendra la hauteur restante et organisera le picto et le bloc de texte -->
+            <div class="flex flex-col md:flex-row gap-6 items-start flex-grow">
+                <!-- Picto (taille fixe et grande) -->
+                <!-- flex-shrink-0 pour s'assurer qu'il garde sa taille même si l'espace est limité -->
+                <div class="flex-shrink-0 mx-auto md:mx-0"> 
+                    <img src="{{picto_url}}" alt="{{picto_alt}}" class="h-56 w-56 object-contain"> <!-- Taille augmentée (224px) -->
+                </div>
+                
+                <!-- Bloc Description + CTA -->
+                <div class="flex flex-col flex-grow h-full">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        {{description}}
+                    </p>
+                    
+                    <!-- Le CTA est aligné au début de sa ligne et poussé vers le bas si la description est longue -->
+                    <a href="{{lien_page}}" class="inline-flex items-center justify-center self-start mt-auto px-6 py-3 border-2 border-pat-green-darker text-pat-green-darker font-bold rounded-lg shadow-lg hover:bg-pat-green-darker hover:bg-opacity-10 transition-all duration-300 text-base group">
+                        <span>Explorer cet axe</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="md:w-1/2 w-full">
-        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <h3 class="text-xl sm:text-2xl font-semibold text-pat-green-principal mb-3 flex items-center gap-2">
-            {{numero}}. {{titre}}
-        </h3>
-        <p class="text-gray-700 leading-relaxed">{{description}}</p>
-        <a href="{{lien_page}}" class="inline-block mt-4 px-5 py-2 border-2 border-pat-green-principal text-pat-green-principal font-semibold rounded-md hover:bg-pat-green-principal hover:text-white transition-colors duration-300 text-sm">Explorer cet axe</a>
-    </div>
+
 </div>

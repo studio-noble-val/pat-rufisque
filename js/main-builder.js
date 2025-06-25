@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         contenu.axes_strategiques.axes.forEach((axe, index) => {
             const axeData = {
                 ...axe, // Copie toutes les propriétés de l'objet axe
-                flex_direction_class: index % 2 === 1 ? 'md:flex-row-reverse' : '' // Ajoute la classe pour l'agencement alterné
+                image_column_order_class: index % 2 === 1 ? 'md:order-last' : '' // Ajoute la classe pour l'agencement alterné de l'image dans la grille
             };
             axesItemsHtml += render(axeItemTpl, axeData);
         });

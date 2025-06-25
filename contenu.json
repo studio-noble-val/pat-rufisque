@@ -18,7 +18,9 @@
                 "description": "Renforcer les capacités des acteurs locaux et promouvoir une prise de décision inclusive pour une politique alimentaire adaptée aux besoins du territoire.",
                 "lien_page": "page-gouvernance-alimentaire.html",
                 "image_url": "statics/thumb_vid_pat_gouvernance.jpg",
-                "image_alt": "Illustration de la gouvernance alimentaire locale"
+                "image_alt": "Illustration de la gouvernance alimentaire locale",
+                "picto_url": "statics/pictoAxe-gouvernance.JPG",
+                "picto_alt": "Picto de la gouvernance alimentaire locale"
             },
             {
                 "id": "systemes",
@@ -27,7 +29,9 @@
                 "description": "Soutenir les producteurs locaux, améliorer les circuits courts et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire.",
                 "lien_page": "page-systemes-alimentaires-durables.html",
                 "image_url": "statics/thumb_vid_pat_agriculture.jpg",
-                "image_alt": "Illustration du renforcement des systèmes alimentaires durables"
+                "image_alt": "Illustration du renforcement des systèmes alimentaires durables",
+                "picto_url": "statics/pictoAxe-agriculture.JPG",
+                "picto_alt": "Picto des systèmes alimentaires durable"
             },
             {
                 "id": "education",
@@ -36,7 +40,9 @@
                 "description": "Sensibiliser les populations aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les plus vulnérables.",
                 "lien_page": "page-cantines-scolaires.html",
                 "image_url": "statics/thumb_vid_pat_cantines.jpg",
-                "image_alt": "Illustration de l'éducation nutritionnelle et de l'accès à une alimentation saine"
+                "image_alt": "Illustration de l'éducation nutritionnelle et de l'accès à une alimentation saine",
+                "picto_url": "statics/pictoAxe-cantine.JPG",
+                "picto_alt": "Picto des cantines"
             }
         ]
     },
