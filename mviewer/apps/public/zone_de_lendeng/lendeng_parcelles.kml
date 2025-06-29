@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="parcelles" id="parcelles">
+	<SimpleField name="OBJECTID" type="float"></SimpleField>
+	<SimpleField name="Shape_Leng" type="float"></SimpleField>
+	<SimpleField name="Shape_Area" type="float"></SimpleField>
+</Schema>
+<Folder><name>parcelles</name>
+  <Placemark id="parcelles.1">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="Shape_Leng">298.293086758000470</SimpleData>
+		<SimpleData name="Shape_Area">5393.178345938781604</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2460079651201,14.7130957454716,0 -17.2459379280215,14.7130511726811,0 -17.2458902170118,14.7130072435867,0 -17.2458045339669,14.7129731760563,0 -17.245631260029,14.7129491998556,0 -17.2456043830322,14.7128930914523,0 -17.2456445048835,14.7126574053394,0 -17.245647205575,14.7125263329237,0 -17.2456367423597,14.7124003882811,0 -17.2457295987468,14.7121690565344,0 -17.2459009969219,14.7122495535803,0 -17.2461399338074,14.7124656724449,0 -17.2462131471353,14.712549581475,0 -17.2463734832807,14.7126801635634,0 -17.2463064669414,14.7127572986342,0 -17.2463101937549,14.7128202958946,0 -17.2462605845958,14.7129663104091,0 -17.2462103745455,14.7130216970249,0 -17.2461524054512,14.7131367479857,0 -17.2460079651201,14.7130957454716,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.2">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="Shape_Leng">207.827187615916699</SimpleData>
+		<SimpleData name="Shape_Area">2504.292961032483163</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2463717555976,14.7133295029711,0 -17.2463059107758,14.713301087353,0 -17.2461524054512,14.7131367479857,0 -17.2462103745455,14.7130216970249,0 -17.2462605845958,14.7129663104091,0 -17.2463101937549,14.7128202958946,0 -17.2463064669414,14.7127572986342,0 -17.2463734832807,14.7126801635634,0 -17.2465167881576,14.7128695411309,0 -17.2466556074666,14.7130518250451,0 -17.2467544875574,14.7132481097792,0 -17.246582424077,14.7132907999403,0 -17.2464671971482,14.7133309989262,0 -17.2463717555976,14.7133295029711,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.3">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="Shape_Leng">331.790125397344696</SimpleData>
+		<SimpleData name="Shape_Area">6014.459426383566097</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2465982034599,14.7139996181851,0 -17.2465978629764,14.7139663605206,0 -17.246561314278,14.7139476937422,0 -17.2463556017823,14.7138869444423,0 -17.2462210800978,14.7138834077561,0 -17.2461104614482,14.7139074202515,0 -17.2461760871304,14.7138359593276,0 -17.2462383444139,14.7135117875818,0 -17.2463059107758,14.713301087353,0 -17.2463717555976,14.7133295029711,0 -17.2464671971482,14.7133309989262,0 -17.246582424077,14.7132907999403,0 -17.2467544875574,14.7132481097792,0 -17.2468809893655,14.7134940288204,0 -17.2470673769458,14.7138371953732,0 -17.2470690877792,14.7140042714475,0 -17.2470291375573,14.7141064395712,0 -17.2465982034599,14.7139996181851,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.4">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="Shape_Leng">202.485846175784701</SimpleData>
+		<SimpleData name="Shape_Area">1649.832167629869673</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2473005290111,14.7145020401245,0 -17.2471791152155,14.7144653571679,0 -17.2469342085421,14.7144242005799,0 -17.2470062478169,14.7142007973846,0 -17.2470291375573,14.7141064395712,0 -17.2470690877792,14.7140042714475,0 -17.2470673769458,14.7138371953732,0 -17.2472004599499,14.7140683877204,0 -17.2474026319185,14.7145178760648,0 -17.2473005290111,14.7145020401245,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.5">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="Shape_Leng">192.714198445354157</SimpleData>
+		<SimpleData name="Shape_Area">2472.530484398817407</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.246708899826,14.7145963998274,0 -17.2466228633687,14.7145791156964,0 -17.2465651749596,14.714535163407,0 -17.2464882332516,14.7144277419051,0 -17.2464663465368,14.7143866029364,0 -17.2464820291088,14.7142411080398,0 -17.2465219469181,14.7141130765708,0 -17.2465522684514,14.7140734353195,0 -17.2470062478169,14.7142007973846,0 -17.2469342085421,14.7144242005799,0 -17.2468643846578,14.7146398588551,0 -17.246708899826,14.7145963998274,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.6">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="Shape_Leng">462.954804647579238</SimpleData>
+		<SimpleData name="Shape_Area">8868.678750782408315</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2458743900487,14.7146692416823,0 -17.245873749191,14.7146692108509,0 -17.2457111043264,14.7146613123642,0 -17.2456299619819,14.7143893087143,0 -17.2456308223488,14.7140878489762,0 -17.2456959751776,14.7139874868071,0 -17.2457028705088,14.7136195315287,0 -17.245631260029,14.7129491998556,0 -17.2458045339669,14.7129731760563,0 -17.2458902170118,14.7130072435867,0 -17.2459379280215,14.7130511726811,0 -17.2460079651201,14.7130957454716,0 -17.2461524054512,14.7131367479857,0 -17.2463059107758,14.713301087353,0 -17.2462383444139,14.7135117875818,0 -17.2461760871304,14.7138359593276,0 -17.2461104614482,14.7139074202515,0 -17.2460587449929,14.7141194883352,0 -17.2459955114222,14.7143727039954,0 -17.2459460518189,14.7146046605188,0 -17.2459443580514,14.714678076616,0 -17.2458743900487,14.7146692416823,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.7">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="Shape_Leng">191.107418051628997</SimpleData>
+		<SimpleData name="Shape_Area">2051.546989239194318</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2473029244756,14.7147859746181,0 -17.2471094576922,14.7147600578826,0 -17.246954644022,14.7147123477163,0 -17.2468643846578,14.7146398588551,0 -17.2469342085421,14.7144242005799,0 -17.2471791152155,14.7144653571679,0 -17.2473005290111,14.7145020401245,0 -17.2474026319185,14.7145178760648,0 -17.2475595946816,14.7147900050889,0 -17.2475122969126,14.7148151314382,0 -17.2474190980384,14.7148160357165,0 -17.2473029244756,14.7147859746181,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.8">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="Shape_Leng">520.062111148257031</SimpleData>
+		<SimpleData name="Shape_Area">7977.914633695035263</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.245845443604,14.7149261564735,0 -17.245873749191,14.7146692108509,0 -17.2458743900487,14.7146692416823,0 -17.2459443580514,14.714678076616,0 -17.2459460518189,14.7146046605188,0 -17.2459955114222,14.7143727039954,0 -17.2460587449929,14.7141194883352,0 -17.2461104614482,14.7139074202515,0 -17.2462210800978,14.7138834077561,0 -17.2463556017823,14.7138869444423,0 -17.246561314278,14.7139476937422,0 -17.2465978629764,14.7139663605206,0 -17.2465982034599,14.7139996181851,0 -17.2470291375573,14.7141064395712,0 -17.2470062478169,14.7142007973846,0 -17.2465522684514,14.7140734353195,0 -17.2465219469181,14.7141130765708,0 -17.2464820291088,14.7142411080398,0 -17.2464663465368,14.7143866029364,0 -17.2464882332516,14.7144277419051,0 -17.2465651749596,14.714535163407,0 -17.2466228633687,14.7145791156964,0 -17.246708899826,14.7145963998274,0 -17.2468643846578,14.7146398588551,0 -17.246954644022,14.7147123477163,0 -17.2468368764321,14.7147715702645,0 -17.2465274959527,14.7148248383469,0 -17.2463526705961,14.7149365574322,0 -17.2461099422837,14.7149344974945,0 -17.2459889558505,14.7149441151043,0 -17.245845443604,14.7149261564735,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.9">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="Shape_Leng">290.795558094876696</SimpleData>
+		<SimpleData name="Shape_Area">2943.759476991891006</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2454417782539,14.71520530887,0 -17.2453451228802,14.7151030592538,0 -17.2452757214974,14.7149744259675,0 -17.2451991190164,14.7146925349824,0 -17.2453664691843,14.7147193534511,0 -17.2453311191346,14.7148493138647,0 -17.2453909626035,14.7148427875919,0 -17.2455399216051,14.7149424213011,0 -17.2456295471413,14.7148324458716,0 -17.2457111043264,14.7146613123642,0 -17.245873749191,14.7146692108509,0 -17.245845443604,14.7149261564735,0 -17.2457169173791,14.7152908004117,0 -17.2456659435206,14.7152760591873,0 -17.2456135990408,14.715293206197,0 -17.2455142118286,14.7153551783207,0 -17.2454417782539,14.71520530887,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.10">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="Shape_Leng">225.264625643240237</SimpleData>
+		<SimpleData name="Shape_Area">2487.374285142324425</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2470697804518,14.7150739985815,0 -17.2473029244756,14.7147859746181,0 -17.2474190980384,14.7148160357165,0 -17.2475122969126,14.7148151314382,0 -17.2475595946816,14.7147900050889,0 -17.2476719823314,14.7150396320608,0 -17.2475296696971,14.7152017853552,0 -17.2474037085104,14.7151381797789,0 -17.2474042396433,14.7151900366579,0 -17.247487493673,14.7152488712327,0 -17.2473371034552,14.715403323379,0 -17.2470697804518,14.7150739985815,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.11">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="Shape_Leng">278.953507186408842</SimpleData>
+		<SimpleData name="Shape_Area">4089.162844963408588</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2464726679434,14.7152780849931,0 -17.2463526705961,14.7149365574322,0 -17.2465274959527,14.7148248383469,0 -17.2468368764321,14.7147715702645,0 -17.246954644022,14.7147123477163,0 -17.2471094576922,14.7147600578826,0 -17.2473029244756,14.7147859746181,0 -17.2470697804518,14.7150739985815,0 -17.2468745613492,14.7151797772701,0 -17.2465024213198,14.7154260278199,0 -17.2464726679434,14.7152780849931,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.12">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="Shape_Leng">225.772321682384984</SimpleData>
+		<SimpleData name="Shape_Area">2150.408602728517508</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2452282770329,14.7154679936908,0 -17.2451356737241,14.7153829794309,0 -17.2450915159062,14.715336963852,0 -17.2450995473852,14.7151515661074,0 -17.2450473102947,14.7150922004582,0 -17.2451991190164,14.7146925349824,0 -17.2452757214974,14.7149744259675,0 -17.2453451228802,14.7151030592538,0 -17.2454417782539,14.71520530887,0 -17.2455142118286,14.7153551783207,0 -17.2453698046963,14.7154536388473,0 -17.2453866399988,14.7155342969888,0 -17.2452282770329,14.7154679936908,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.13">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="Shape_Leng">182.881141527359858</SimpleData>
+		<SimpleData name="Shape_Area">1823.092518084483572</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2468745613492,14.7151797772701,0 -17.2470697804518,14.7150739985815,0 -17.2473371034552,14.715403323379,0 -17.2474210123777,14.715506693201,0 -17.2471459011295,14.7156791530124,0 -17.2468745613492,14.7151797772701,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.14">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="Shape_Leng">228.751120027829671</SimpleData>
+		<SimpleData name="Shape_Area">2834.967289476081987</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2466492807684,14.7158320537956,0 -17.2465024213198,14.7154260278199,0 -17.2468745613492,14.7151797772701,0 -17.2471459011295,14.7156791530124,0 -17.2470928891982,14.715741617333,0 -17.2470347447163,14.7156594265925,0 -17.2469325970172,14.7156891282874,0 -17.2467710630538,14.7158545162292,0 -17.2466492807684,14.7158320537956,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.15">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="Shape_Leng">192.322435190532360</SimpleData>
+		<SimpleData name="Shape_Area">1951.552617773785187</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2474501007866,14.7161021642526,0 -17.2475269038388,14.7159224295423,0 -17.2478344763517,14.7155564720997,0 -17.2479268767277,14.7155431119983,0 -17.2479898317324,14.7157486813943,0 -17.2479553030629,14.7157913064714,0 -17.2478386398419,14.7159353300816,0 -17.2477056583322,14.7161505786733,0 -17.2475108455989,14.7161643072739,0 -17.2474501007866,14.7161021642526,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.16">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="Shape_Leng">435.327480311127317</SimpleData>
+		<SimpleData name="Shape_Area">12064.936619710635568</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2455756104019,14.7160109995831,0 -17.2455132977908,14.7157527070865,0 -17.2454649753215,14.7156035499159,0 -17.2455924029368,14.715479100175,0 -17.2457134351696,14.7153006809125,0 -17.2457169173791,14.7152908004117,0 -17.245845443604,14.7149261564735,0 -17.2459889558505,14.7149441151043,0 -17.2461099422837,14.7149344974945,0 -17.2463526705961,14.7149365574322,0 -17.2464726679434,14.7152780849931,0 -17.2465024213198,14.7154260278199,0 -17.2466492807684,14.7158320537956,0 -17.2462513268489,14.7160112510033,0 -17.245938548452,14.716197003577,0 -17.2458668930056,14.7161734592352,0 -17.2456699859278,14.7162252219975,0 -17.2455756104019,14.7160109995831,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.17">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="Shape_Leng">131.885525651141876</SimpleData>
+		<SimpleData name="Shape_Area">1014.700379779939453</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2478192848566,14.7161943653902,0 -17.2477056583322,14.7161505786733,0 -17.2478386398419,14.7159353300816,0 -17.2479553030629,14.7157913064714,0 -17.2480351383737,14.7159267874268,0 -17.2480792185093,14.7160369134275,0 -17.2479651047699,14.7161751685871,0 -17.2479290988902,14.7162371662456,0 -17.2478192848566,14.7161943653902,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.18">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="Shape_Leng">356.708899664148930</SimpleData>
+		<SimpleData name="Shape_Area">6351.121346738485045</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2482834077019,14.7160656399072,0 -17.2481482590873,14.7157926520723,0 -17.2480382251027,14.7153439113743,0 -17.2480377116321,14.7152937936508,0 -17.2480953561287,14.7152538608304,0 -17.2483240053615,14.7152516415263,0 -17.2485420969869,14.7152867690956,0 -17.2486992309702,14.715245870313,0 -17.2487882934469,14.715288635538,0 -17.2487709603964,14.715412244731,0 -17.24863749004,14.7154135405125,0 -17.2486382424412,14.7154869589621,0 -17.2487900027476,14.7154772462686,0 -17.2487806553951,14.7157315835505,0 -17.2487848734055,14.7158762960818,0 -17.248614755892,14.7160776595939,0 -17.2483584280168,14.7162561023683,0 -17.2482834077019,14.7160656399072,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.19">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="Shape_Leng">221.371634265819637</SimpleData>
+		<SimpleData name="Shape_Area">2168.605890255027134</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2488411193311,14.7163535761378,0 -17.2487927907845,14.7160393017971,0 -17.2487848734055,14.7158762960818,0 -17.2487806553951,14.7157315835505,0 -17.2488638377921,14.7156421726079,0 -17.249018680187,14.7157118857524,0 -17.2490360989,14.7158053146643,0 -17.2491569239269,14.7158570984742,0 -17.24916882999,14.7158951626111,0 -17.2491636808343,14.7160580159696,0 -17.2489885144562,14.716073993651,0 -17.249065763842,14.7162330797027,0 -17.2490258790344,14.7162880350618,0 -17.24882691239,14.7163821239192,0 -17.2488411193311,14.7163535761378,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.20">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="Shape_Leng">204.546208925444120</SimpleData>
+		<SimpleData name="Shape_Area">2110.924757023288294</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2483584280168,14.7162561023683,0 -17.248614755892,14.7160776595939,0 -17.2487848734055,14.7158762960818,0 -17.2487927907845,14.7160393017971,0 -17.2488411193311,14.7163535761378,0 -17.24882691239,14.7163821239192,0 -17.2484029634784,14.7165683500195,0 -17.2483584280168,14.7162561023683,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.21">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="Shape_Leng">183.941576452024634</SimpleData>
+		<SimpleData name="Shape_Area">1627.314302347698003</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2476530442671,14.71662195943,0 -17.2476310019789,14.7165790024255,0 -17.2476443770016,14.7165206108681,0 -17.2475986669964,14.7164820949174,0 -17.2474951002721,14.7163281625953,0 -17.2474100991848,14.716131167366,0 -17.2474501007866,14.7161021642526,0 -17.2475108455989,14.7161643072739,0 -17.2477056583322,14.7161505786733,0 -17.2478192848566,14.7161943653902,0 -17.2479290988902,14.7162371662456,0 -17.2478794049898,14.7163417692244,0 -17.2477975221821,14.7164692964675,0 -17.247702102389,14.7166601636793,0 -17.2476530442671,14.71662195943,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.22">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="Shape_Leng">177.010125591577690</SimpleData>
+		<SimpleData name="Shape_Area">2033.464397156076302</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2473144354027,14.7166683800158,0 -17.2472632163933,14.7166168731087,0 -17.247213497034,14.7165591488652,0 -17.2471393760618,14.7164730951807,0 -17.2471170813143,14.7164458123848,0 -17.2471291026704,14.7164011686169,0 -17.2472488071982,14.7162481120363,0 -17.2474100991848,14.716131167366,0 -17.2474951002721,14.7163281625953,0 -17.2475986669964,14.7164820949174,0 -17.2476443770016,14.7165206108681,0 -17.2476310019789,14.7165790024255,0 -17.2475912236152,14.7166249085561,0 -17.2475513453309,14.7166634184081,0 -17.2474892020117,14.7166831727827,0 -17.2473983652166,14.7166972449485,0 -17.2473144354027,14.7166683800158,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.23">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="Shape_Leng">192.758910936610789</SimpleData>
+		<SimpleData name="Shape_Area">2188.315775756736002</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2477567414692,14.7167846140109,0 -17.247729933498,14.7167281041644,0 -17.247702102389,14.7166601636793,0 -17.2477975221821,14.7164692964675,0 -17.2478794049898,14.7163417692244,0 -17.2479290988902,14.7162371662456,0 -17.247975626322,14.7162693892069,0 -17.2480163392313,14.7163194203458,0 -17.248101993199,14.7162846250952,0 -17.2481506615979,14.7162955778997,0 -17.2482026257147,14.7164573890401,0 -17.2482132246869,14.7166559075321,0 -17.2479812149026,14.7167116370662,0 -17.2478670974881,14.7168081606846,0 -17.2477852239431,14.716815912523,0 -17.2477567414692,14.7167846140109,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.24">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="Shape_Leng">177.911221555812659</SimpleData>
+		<SimpleData name="Shape_Area">1729.442907910457961</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2488215900525,14.7166030943267,0 -17.2487936499882,14.7164326219632,0 -17.2488412093916,14.7164008554224,0 -17.2490790731636,14.7162902146717,0 -17.2491884706209,14.7162603006771,0 -17.2491412860625,14.7163779798262,0 -17.2491323198292,14.7165292598323,0 -17.2491119014935,14.716735847064,0 -17.2490486591432,14.7167835778101,0 -17.2489240024969,14.7168249973733,0 -17.2488510014299,14.7168470025253,0 -17.2488215900525,14.7166030943267,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.25">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="Shape_Leng">128.473571907215529</SimpleData>
+		<SimpleData name="Shape_Area">965.878754898640750</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.24740110016,14.7167851613142,0 -17.2473983652166,14.7166972449485,0 -17.2474892020117,14.7166831727827,0 -17.2475513453309,14.7166634184081,0 -17.2475912236152,14.7166249085561,0 -17.2476310019789,14.7165790024255,0 -17.2476530442671,14.71662195943,0 -17.247702102389,14.7166601636793,0 -17.247729933498,14.7167281041644,0 -17.2477567414692,14.7167846140109,0 -17.2477852239431,14.716815912523,0 -17.2477037594884,14.7168573441551,0 -17.2475385357082,14.7169732899706,0 -17.24740110016,14.7167851613142,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.26">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="Shape_Leng">184.351367094050431</SimpleData>
+		<SimpleData name="Shape_Area">2138.445275282429520</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2485001710474,14.7170325351849,0 -17.2484100728608,14.7166291575657,0 -17.2484384866187,14.7165819105669,0 -17.2487936499882,14.7164326219632,0 -17.2488215900525,14.7166030943267,0 -17.2488510014299,14.7168470025253,0 -17.2487175129234,14.7169419852477,0 -17.2485554505489,14.7170433342453,0 -17.2485001710474,14.7170325351849,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.27">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="Shape_Leng">396.832496533322740</SimpleData>
+		<SimpleData name="Shape_Area">9159.289628644239201</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2466555833845,14.7170880610098,0 -17.2464178489861,14.7169579800579,0 -17.2460622628562,14.716861595259,0 -17.2456312431356,14.7167319710257,0 -17.245938548452,14.716197003577,0 -17.2462513268489,14.7160112510033,0 -17.2466601790821,14.7162870581699,0 -17.2465909432987,14.7163966564176,0 -17.2468592260125,14.7165376510808,0 -17.2469169942673,14.7166782626811,0 -17.2466541285431,14.7170922169304,0 -17.2466555833845,14.7170880610098,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.28">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="Shape_Leng">163.433592099159853</SimpleData>
+		<SimpleData name="Shape_Area">1632.126174308315285</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2479329466582,14.7170733542348,0 -17.24784821837,14.7169199124331,0 -17.2477852239431,14.716815912523,0 -17.2478670974881,14.7168081606846,0 -17.2479812149026,14.7167116370662,0 -17.2482132246869,14.7166559075321,0 -17.2482872217453,14.7168869097864,0 -17.2481883755834,14.7169616140249,0 -17.2480622033802,14.7171117322854,0 -17.2479851016246,14.717140166791,0 -17.2479329466582,14.7170733542348,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.29">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="Shape_Leng">155.281998932693682</SimpleData>
+		<SimpleData name="Shape_Area">1445.974988976236091</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2476855404021,14.7171914684802,0 -17.2475385357082,14.7169732899706,0 -17.2477037594884,14.7168573441551,0 -17.2477852239431,14.716815912523,0 -17.24784821837,14.7169199124331,0 -17.2479329466582,14.7170733542348,0 -17.2479851016246,14.717140166791,0 -17.248024626595,14.7172173904775,0 -17.2477862251039,14.7172969087718,0 -17.2476855404021,14.7171914684802,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.30">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="Shape_Leng">233.792996027714963</SimpleData>
+		<SimpleData name="Shape_Area">2546.648975109753792</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2468161037354,14.7173281607561,0 -17.2467856859551,14.7173109344847,0 -17.2467478274828,14.7171353309517,0 -17.246998311825,14.7167628822794,0 -17.2471520593002,14.7166125367375,0 -17.247213497034,14.7165591488652,0 -17.2472632163933,14.7166168731087,0 -17.2473144354027,14.7166683800158,0 -17.2473983652166,14.7166972449485,0 -17.24740110016,14.7167851613142,0 -17.2471523439985,14.7170354175005,0 -17.246961104178,14.7171871667969,0 -17.2468906818725,14.7173489702942,0 -17.2468161037354,14.7173281607561,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.31">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="Shape_Leng">174.418144703584517</SimpleData>
+		<SimpleData name="Shape_Area">1785.051457930863080</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2473890929392,14.7173120389375,0 -17.2471523439985,14.7170354175005,0 -17.24740110016,14.7167851613142,0 -17.2475385357082,14.7169732899706,0 -17.2476855404021,14.7171914684802,0 -17.2473937883217,14.7173583357013,0 -17.2473890929392,14.7173120389375,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.32">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">32</SimpleData>
+		<SimpleData name="Shape_Leng">226.052139992875425</SimpleData>
+		<SimpleData name="Shape_Area">2813.983092253854920</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2487853481207,14.7174144164073,0 -17.2486759114711,14.7173657565901,0 -17.2485630948913,14.7172908375737,0 -17.2485267647914,14.7172208356616,0 -17.248511750099,14.7171019181444,0 -17.2486012192892,14.717039910931,0 -17.2487079004057,14.7169777040463,0 -17.2488526604604,14.7168885833409,0 -17.2489436811468,14.7168466347797,0 -17.2489232670362,14.7169412604958,0 -17.2489338510254,14.7169667187139,0 -17.2491011168952,14.7169906563427,0 -17.249075732876,14.7171364767009,0 -17.2490462256357,14.7171553787648,0 -17.2490941095892,14.7174757362437,0 -17.2487853481207,14.7174144164073,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.33">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">33</SimpleData>
+		<SimpleData name="Shape_Leng">140.311174529330856</SimpleData>
+		<SimpleData name="Shape_Area">1181.009369752783641</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.246961104178,14.7171871667969,0 -17.2471523439985,14.7170354175005,0 -17.2473890929392,14.7173120389375,0 -17.2473937883217,14.7173583357013,0 -17.2472244969677,14.7174994752568,0 -17.246961104178,14.7171871667969,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.34">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">34</SimpleData>
+		<SimpleData name="Shape_Leng">207.296363044698467</SimpleData>
+		<SimpleData name="Shape_Area">1857.591845020016990</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2477862251039,14.7172969087718,0 -17.248024626595,14.7172173904775,0 -17.2479851016246,14.717140166791,0 -17.2480622033802,14.7171117322854,0 -17.2481883755834,14.7169616140249,0 -17.2482872217453,14.7168869097864,0 -17.2482884824286,14.7170099318918,0 -17.2483242184311,14.7170919060399,0 -17.2483851033193,14.7171811624778,0 -17.2483496243093,14.7172443866064,0 -17.2481515796844,14.7173772918763,0 -17.2480733256209,14.7174298077784,0 -17.2479385183162,14.7175202753252,0 -17.2477862251039,14.7172969087718,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.35">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">35</SimpleData>
+		<SimpleData name="Shape_Leng">749.974212190934963</SimpleData>
+		<SimpleData name="Shape_Area">18027.574607937047404</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2447304833625,14.7171867140095,0 -17.2449023466834,14.7170100774144,0 -17.2448065404406,14.7169375367515,0 -17.2444810763318,14.7169897034295,0 -17.2443380471871,14.7165839557089,0 -17.2445753605239,14.7164078642584,0 -17.2449734521392,14.7163531178654,0 -17.2451793059563,14.7156454459122,0 -17.2453866399988,14.7155342969888,0 -17.2453698046963,14.7154536388473,0 -17.2455142118286,14.7153551783207,0 -17.2456135990408,14.715293206197,0 -17.2456659435206,14.7152760591873,0 -17.2457169173791,14.7152908004117,0 -17.2457134351696,14.7153006809125,0 -17.2455924029368,14.715479100175,0 -17.2454649753215,14.7156035499159,0 -17.2455132977908,14.7157527070865,0 -17.2455756104019,14.7160109995831,0 -17.2456699859278,14.7162252219975,0 -17.2458668930056,14.7161734592352,0 -17.245938548452,14.716197003577,0 -17.2456312431356,14.7167319710257,0 -17.2453331219858,14.7173806532323,0 -17.2451381358371,14.7176195176833,0 -17.2447304833625,14.7171867140095,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.36">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">36</SimpleData>
+		<SimpleData name="Shape_Leng">117.704157082113227</SimpleData>
+		<SimpleData name="Shape_Area">844.613554465827178</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2481515796844,14.7173772918763,0 -17.2483496243093,14.7172443866064,0 -17.2484036243085,14.7172913883006,0 -17.2484530963622,14.7175871653085,0 -17.2483181553834,14.7176470966963,0 -17.2481515796844,14.7173772918763,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.37">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">37</SimpleData>
+		<SimpleData name="Shape_Leng">98.774643186217844</SimpleData>
+		<SimpleData name="Shape_Area">498.117201473918840</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2485718837074,14.7175495507804,0 -17.2485415531715,14.7173754576422,0 -17.2485428183931,14.7173522606578,0 -17.2485630948913,14.7172908375737,0 -17.2486759114711,14.7173657565901,0 -17.2487178729891,14.7175430003306,0 -17.2486905689079,14.7175507927909,0 -17.2486962239969,14.7176030209122,0 -17.2486870004084,14.7176419976961,0 -17.2486513741636,14.7176566176517,0 -17.2486078034743,14.7176570406973,0 -17.2485718837074,14.7175495507804,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.38">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">38</SimpleData>
+		<SimpleData name="Shape_Leng">172.795093429849402</SimpleData>
+		<SimpleData name="Shape_Area">1971.816442218063912</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.247526896005,14.7176662202097,0 -17.2474020918047,14.7174402148142,0 -17.2473937883217,14.7173583357013,0 -17.2476855404021,14.7171914684802,0 -17.2477862251039,14.7172969087718,0 -17.2479385183162,14.7175202753252,0 -17.2477623574376,14.7176264256631,0 -17.2476267533606,14.7176881692776,0 -17.2475699337173,14.7177212389427,0 -17.247526896005,14.7176662202097,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.39">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">39</SimpleData>
+		<SimpleData name="Shape_Leng">407.504918162610522</SimpleData>
+		<SimpleData name="Shape_Area">10679.244361180863052</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2458192262246,14.7178225641969,0 -17.2456097928079,14.7175633592245,0 -17.2453331219858,14.7173806532323,0 -17.2456312431356,14.7167319710257,0 -17.2460622628562,14.716861595259,0 -17.2464178489861,14.7169579800579,0 -17.2466555833845,14.7170880610098,0 -17.2466541285431,14.7170922169304,0 -17.2464738756222,14.7176070219664,0 -17.2462575822585,14.7176091199242,0 -17.2461544282386,14.7177225202813,0 -17.24582042932,14.7178235590694,0 -17.2458192262246,14.7178225641969,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.40">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">40</SimpleData>
+		<SimpleData name="Shape_Leng">210.916265152513006</SimpleData>
+		<SimpleData name="Shape_Area">2386.929384947540257</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2468862039595,14.717786991773,0 -17.2468192580585,14.7177691368599,0 -17.2468312222509,14.7176849106571,0 -17.2467722164654,14.7174999059158,0 -17.2467707824803,14.7173598826419,0 -17.2468161037354,14.7173281607561,0 -17.2468906818725,14.7173489702942,0 -17.246961104178,14.7171871667969,0 -17.2472244969677,14.7174994752568,0 -17.2471757377087,14.7175352341439,0 -17.2472476204157,14.7175733886732,0 -17.2471671002162,14.7177861637854,0 -17.2471522197328,14.7178596445294,0 -17.2468862039595,14.717786991773,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.41">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">41</SimpleData>
+		<SimpleData name="Shape_Leng">152.166374789316279</SimpleData>
+		<SimpleData name="Shape_Area">1056.718162631142832</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.247478969187,14.7178245555156,0 -17.24746010014,14.7177851637855,0 -17.2475699337173,14.7177212389427,0 -17.2476267533606,14.7176881692776,0 -17.2477623574376,14.7176264256631,0 -17.2479385183162,14.7175202753252,0 -17.2480155399316,14.7175724296875,0 -17.2479761814292,14.7176135647681,0 -17.2479009169414,14.7176840653869,0 -17.2478742170164,14.7177259115497,0 -17.2478084123637,14.7177800304938,0 -17.2477181378547,14.7179011220226,0 -17.2476297310683,14.717919915221,0 -17.247478969187,14.7178245555156,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.42">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">42</SimpleData>
+		<SimpleData name="Shape_Leng">177.356230754635163</SimpleData>
+		<SimpleData name="Shape_Area">1571.425585869834094</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2480807573843,14.7178840004783,0 -17.2479682236326,14.717748906621,0 -17.2479009169414,14.7176840653869,0 -17.2479761814292,14.7176135647681,0 -17.2480155399316,14.7175724296875,0 -17.2479385183162,14.7175202753252,0 -17.2480733256209,14.7174298077784,0 -17.2480906224719,14.7174493920569,0 -17.2481762252812,14.7175459052376,0 -17.2483838628286,14.7179095120997,0 -17.2482374621792,14.7179982401477,0 -17.2480807573843,14.7178840004783,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.43">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">43</SimpleData>
+		<SimpleData name="Shape_Leng">309.163419112131578</SimpleData>
+		<SimpleData name="Shape_Area">2540.102054009249969</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2468623818883,14.7179213157051,0 -17.246831181487,14.7179120716499,0 -17.2466744665713,14.7178759154773,0 -17.2468192580585,14.7177691368599,0 -17.2468862039595,14.717786991773,0 -17.2471522197328,14.7178596445294,0 -17.2471671002162,14.7177861637854,0 -17.2472476204157,14.7175733886732,0 -17.2471757377087,14.7175352341439,0 -17.2472244969677,14.7174994752568,0 -17.2473937883217,14.7173583357013,0 -17.2474020918047,14.7174402148142,0 -17.247526896005,14.7176662202097,0 -17.2475699337173,14.7177212389427,0 -17.24746010014,14.7177851637855,0 -17.2473153230748,14.7179041900463,0 -17.2472695458924,14.7179142433565,0 -17.2470772649112,14.7180122561262,0 -17.2468220981468,14.7181101668898,0 -17.2468623818883,14.7179213157051,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.44">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">44</SimpleData>
+		<SimpleData name="Shape_Leng">174.460619385874708</SimpleData>
+		<SimpleData name="Shape_Area">1861.129225311499113</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2473421217468,14.7183102145841,0 -17.2473493941051,14.718079291646,0 -17.2473452994314,14.7179945815761,0 -17.2473153230748,14.7179041900463,0 -17.24746010014,14.7177851637855,0 -17.247478969187,14.7178245555156,0 -17.2476297310683,14.717919915221,0 -17.2476646537352,14.7179555803538,0 -17.2476790434558,14.71797302891,0 -17.2476962220906,14.7180289138873,0 -17.2477033368407,14.7183097918479,0 -17.2473421217468,14.7183102145841,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.45">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">45</SimpleData>
+		<SimpleData name="Shape_Leng">405.616827260069385</SimpleData>
+		<SimpleData name="Shape_Area">4059.740303088059591</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2477553764029,14.7185456117736,0 -17.2478373559464,14.7185283915929,0 -17.2478512168563,14.7184819057056,0 -17.2478488236149,14.7184603443879,0 -17.2478485548004,14.7184341101475,0 -17.247870223567,14.7183989122327,0 -17.2479782187335,14.7182659117009,0 -17.2480540971046,14.7181921604838,0 -17.2481321648229,14.7181188090423,0 -17.2482374621792,14.7179982401477,0 -17.2483838628286,14.7179095120997,0 -17.2481762252812,14.7175459052376,0 -17.2480906224719,14.7174493920569,0 -17.2480733256209,14.7174298077784,0 -17.2481515796844,14.7173772918763,0 -17.2483181553834,14.7176470966963,0 -17.2484530963622,14.7175871653085,0 -17.2484662352499,14.7176657157451,0 -17.2484786860517,14.7178201498979,0 -17.2485230593852,14.7181533628114,0 -17.2485572680509,14.7183103658661,0 -17.2485228972692,14.7183677812915,0 -17.2484342196258,14.7184029061217,0 -17.2483453232081,14.7184362530821,0 -17.2482024544699,14.7184897370144,0 -17.2481442445275,14.7185148773571,0 -17.2479152960559,14.7185593464203,0 -17.2477926267067,14.7185791183203,0 -17.2477493749926,14.7185796158363,0 -17.2477553764029,14.7185456117736,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.46">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">46</SimpleData>
+		<SimpleData name="Shape_Leng">317.498796953907913</SimpleData>
+		<SimpleData name="Shape_Area">4422.087036965433981</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2454309459119,14.7184806403677,0 -17.2452684967427,14.7183572680904,0 -17.2454731360492,14.7180953600549,0 -17.2458192262246,14.7178225641969,0 -17.24582042932,14.7178235590694,0 -17.2459009168666,14.717890113663,0 -17.2459813142059,14.7180033466728,0 -17.2460263752762,14.7179916145546,0 -17.2460267729248,14.7178946233332,0 -17.2461386546765,14.7179345786543,0 -17.2461231029436,14.7180471673112,0 -17.246101621566,14.7181477530803,0 -17.2458852193361,14.7183539118275,0 -17.2459689545787,14.7184931098875,0 -17.2458162314054,14.71857123617,0 -17.2457877159792,14.7185181308874,0 -17.2457457385203,14.7184572962857,0 -17.2456911552828,14.7184894240633,0 -17.2456763760251,14.7185362070147,0 -17.2455172249634,14.7186059076298,0 -17.2454309459119,14.7184806403677,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.47">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">47</SimpleData>
+		<SimpleData name="Shape_Leng">291.156300788176281</SimpleData>
+		<SimpleData name="Shape_Area">4571.292334263389421</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2462837968643,14.7185816114923,0 -17.2460665526357,14.7184647319688,0 -17.2461362232137,14.7182179077454,0 -17.246101621566,14.7181477530803,0 -17.2461231029436,14.7180471673112,0 -17.246275545694,14.7180329091363,0 -17.2464905867507,14.7180541615837,0 -17.2465272033817,14.7178359819835,0 -17.2466744665713,14.7178759154773,0 -17.246831181487,14.7179120716499,0 -17.2468623818883,14.7179213157051,0 -17.2468220981468,14.7181101668898,0 -17.246684096108,14.7183861624949,0 -17.2465980228532,14.7185913321088,0 -17.2465980933463,14.7185982154632,0 -17.2462837968643,14.7185816114923,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.48">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">48</SimpleData>
+		<SimpleData name="Shape_Leng">340.123117733832601</SimpleData>
+		<SimpleData name="Shape_Area">4275.163441421928837</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2473400968747,14.7184641605061,0 -17.2473421217468,14.7183102145841,0 -17.2477033368407,14.7183097918479,0 -17.2476962220906,14.7180289138873,0 -17.2476790434558,14.71797302891,0 -17.2476646537352,14.7179555803538,0 -17.2476297310683,14.717919915221,0 -17.2477181378547,14.7179011220226,0 -17.2478084123637,14.7177800304938,0 -17.2478742170164,14.7177259115497,0 -17.2479009169414,14.7176840653869,0 -17.2479682236326,14.717748906621,0 -17.2480807573843,14.7178840004783,0 -17.2482374621792,14.7179982401477,0 -17.2481321648229,14.7181188090423,0 -17.2480540971046,14.7181921604838,0 -17.2479782187335,14.7182659117009,0 -17.247870223567,14.7183989122327,0 -17.2478485548004,14.7184341101475,0 -17.2478488236149,14.7184603443879,0 -17.2478512168563,14.7184819057056,0 -17.2478373559464,14.7185283915929,0 -17.2477553764029,14.7185456117736,0 -17.2477493749926,14.7185796158363,0 -17.2473537471251,14.7186147657326,0 -17.2473400968747,14.7184641605061,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.49">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">49</SimpleData>
+		<SimpleData name="Shape_Leng">284.725039019333849</SimpleData>
+		<SimpleData name="Shape_Area">4887.985894530595942</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2465986783974,14.7186553430591,0 -17.2465980933463,14.7185982154632,0 -17.2465980228532,14.7185913321088,0 -17.246684096108,14.7183861624949,0 -17.2468220981468,14.7181101668898,0 -17.2470772649112,14.7180122561262,0 -17.2472695458924,14.7179142433565,0 -17.2473153230748,14.7179041900463,0 -17.2473452994314,14.7179945815761,0 -17.2473493941051,14.718079291646,0 -17.2473421217468,14.7183102145841,0 -17.2473400968747,14.7184641605061,0 -17.2473537471251,14.7186147657326,0 -17.2469557093916,14.7186746898013,0 -17.2465986783974,14.7186553430591,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.50">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">50</SimpleData>
+		<SimpleData name="Shape_Leng">162.038631935205700</SimpleData>
+		<SimpleData name="Shape_Area">1376.300915928644827</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2452684967427,14.7183572680904,0 -17.2454309459119,14.7184806403677,0 -17.2455172249634,14.7186059076298,0 -17.2455713382406,14.7187104217104,0 -17.2450651780152,14.7188090332658,0 -17.2452684967427,14.7183572680904,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.51">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">51</SimpleData>
+		<SimpleData name="Shape_Leng">0.553552811452967</SimpleData>
+		<SimpleData name="Shape_Area">0.003836204994900</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2450651780152,14.7188090332658,0 -17.245065048216,14.7188093218488,0 -17.2450627339297,14.7188095096323,0 -17.2450651780152,14.7188090332658,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.52">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">52</SimpleData>
+		<SimpleData name="Shape_Leng">796.194357592655820</SimpleData>
+		<SimpleData name="Shape_Area">22827.346447867839743</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2444044637053,14.718746445478,0 -17.2443817383719,14.7186753495608,0 -17.2444631871012,14.7184453283595,0 -17.2445050967592,14.7183598379167,0 -17.2443968743899,14.7183165167968,0 -17.2443250358934,14.7181508239717,0 -17.2442028140577,14.7180502141166,0 -17.2437202442009,14.7178971178962,0 -17.2436718983388,14.71800405189,0 -17.2435298239446,14.7179667632146,0 -17.2433699314234,14.7178567903029,0 -17.2434749048268,14.7174840328243,0 -17.243891469627,14.7177349455608,0 -17.2439382300347,14.717652546191,0 -17.2442019314857,14.7174197977735,0 -17.244310164609,14.7173658477676,0 -17.244379806643,14.7174195034676,0 -17.2446807430419,14.7172161806583,0 -17.2447304833625,14.7171867140095,0 -17.2451381358371,14.7176195176833,0 -17.2453331219858,14.7173806532323,0 -17.2456097928079,14.7175633592245,0 -17.2458192262246,14.7178225641969,0 -17.2454731360492,14.7180953600549,0 -17.2452684967427,14.7183572680904,0 -17.2450651780152,14.7188090332658,0 -17.2450627339297,14.7188095096323,0 -17.2448232711091,14.7188289846672,0 -17.2446001703795,14.718831147222,0 -17.2444044637053,14.718746445478,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.53">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">53</SimpleData>
+		<SimpleData name="Shape_Leng">215.899309972810784</SimpleData>
+		<SimpleData name="Shape_Area">2802.651721058751264</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2481442445275,14.7185148773571,0 -17.2482024544699,14.7184897370144,0 -17.2483453232081,14.7184362530821,0 -17.2484342196258,14.7184029061217,0 -17.2485228972692,14.7183677812915,0 -17.2487078936425,14.7189648937857,0 -17.2482925527606,14.7190170371083,0 -17.2481442445275,14.7185148773571,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.54">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">54</SimpleData>
+		<SimpleData name="Shape_Leng">500.087205263938870</SimpleData>
+		<SimpleData name="Shape_Area">9202.432190290512153</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2475405150212,14.7191320747771,0 -17.2471437275879,14.7190625620355,0 -17.2470583661368,14.7189988833463,0 -17.2470569324829,14.7188589251662,0 -17.2469731851283,14.7188597377794,0 -17.2468836044592,14.7190749373273,0 -17.2465297593615,14.7190341557953,0 -17.2465262395023,14.718690452434,0 -17.2465986783974,14.7186553430591,0 -17.2469557093916,14.7186746898013,0 -17.2473537471251,14.7186147657326,0 -17.2477493749926,14.7185796158363,0 -17.2477926267067,14.7185791183203,0 -17.2479152960559,14.7185593464203,0 -17.2481442445275,14.7185148773571,0 -17.2482925527606,14.7190170371083,0 -17.2480680926795,14.7190638029648,0 -17.2479128275563,14.7190823391224,0 -17.2477767399673,14.7191337557021,0 -17.2476562471071,14.7191689171406,0 -17.2475405150212,14.7191320747771,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.55">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">55</SimpleData>
+		<SimpleData name="Shape_Leng">262.922661896652187</SimpleData>
+		<SimpleData name="Shape_Area">3292.085280409914958</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2488828923193,14.7189851231696,0 -17.248758352428,14.7184307564445,0 -17.2490390822046,14.7183567748367,0 -17.2490633409458,14.7183910416072,0 -17.2490742165405,14.7185199064787,0 -17.2490803448235,14.718604420486,0 -17.2491275460089,14.7187109829944,0 -17.2491649734042,14.7187416405316,0 -17.249198130779,14.7188544509201,0 -17.2492610338861,14.7192135116283,0 -17.2489531445002,14.7192919217955,0 -17.2488828923193,14.7189851231696,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.56">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">56</SimpleData>
+		<SimpleData name="Shape_Leng">199.651249519414506</SimpleData>
+		<SimpleData name="Shape_Area">2372.830342546757038</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2486827620106,14.7194567608907,0 -17.2484664909976,14.7194390888888,0 -17.2484033092027,14.7194085810137,0 -17.2483714042262,14.719281531256,0 -17.2482925527606,14.7190170371083,0 -17.2487078936425,14.7189648937857,0 -17.2487247039882,14.7190403292792,0 -17.2488657459619,14.7194732082014,0 -17.2486827620106,14.7194567608907,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.57">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">57</SimpleData>
+		<SimpleData name="Shape_Leng">92.890364983568233</SimpleData>
+		<SimpleData name="Shape_Area">528.015620275870333</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2490376793031,14.7195072551144,0 -17.2491082283825,14.7194593421753,0 -17.2492087627092,14.7194417488102,0 -17.2492767487386,14.7194069791346,0 -17.2492950989221,14.7194064051458,0 -17.2493099113531,14.7195543206978,0 -17.2493078447785,14.7196203105099,0 -17.2490731083361,14.7196225905079,0 -17.2490376793031,14.7195072551144,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.58">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">58</SimpleData>
+		<SimpleData name="Shape_Leng">138.522136709431635</SimpleData>
+		<SimpleData name="Shape_Area">1036.033012504927456</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2484534193584,14.7196275919351,0 -17.2484664909976,14.7194390888888,0 -17.2486827620106,14.7194567608907,0 -17.2488657459619,14.7194732082014,0 -17.2489201367852,14.7196811343886,0 -17.2488577278149,14.7196817404886,0 -17.2484534193584,14.7196275919351,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.59">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">59</SimpleData>
+		<SimpleData name="Shape_Leng">239.900659645765302</SimpleData>
+		<SimpleData name="Shape_Area">3648.652644914861412</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2470425482197,14.7192903456828,0 -17.2471437275879,14.7190625620355,0 -17.2475405150212,14.7191320747771,0 -17.2476562471071,14.7191689171406,0 -17.2476303381934,14.7192124190311,0 -17.2475996688145,14.7193653770922,0 -17.2475422283283,14.7195649481483,0 -17.2475430012925,14.719640387634,0 -17.2475533556918,14.7197066770864,0 -17.2473405056763,14.7197255567945,0 -17.2471510521838,14.7197377788056,0 -17.2470425482197,14.7192903456828,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.60">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">60</SimpleData>
+		<SimpleData name="Shape_Leng">283.042184201679561</SimpleData>
+		<SimpleData name="Shape_Area">4499.868051906151777</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2481891994228,14.7198327496819,0 -17.2480287959281,14.7198343069535,0 -17.2479751007625,14.7195741611298,0 -17.2478879181937,14.7192893277856,0 -17.2478133654701,14.7192221490099,0 -17.2477767399673,14.7191337557021,0 -17.2479128275563,14.7190823391224,0 -17.2480680926795,14.7190638029648,0 -17.2482925527606,14.7190170371083,0 -17.2483714042262,14.719281531256,0 -17.2484033092027,14.7194085810137,0 -17.2484664909976,14.7194390888888,0 -17.2484534193584,14.7196275919351,0 -17.2484381897819,14.7198472038494,0 -17.2481891994228,14.7198327496819,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.61">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">61</SimpleData>
+		<SimpleData name="Shape_Leng">157.320468646899570</SimpleData>
+		<SimpleData name="Shape_Area">1431.991978550133354</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2487373390435,14.7199144159309,0 -17.2484741227083,14.7198853807526,0 -17.2484381897819,14.7198472038494,0 -17.2484534193584,14.7196275919351,0 -17.2488577278149,14.7196817404886,0 -17.2489201367852,14.7196811343886,0 -17.2489303102791,14.7198342298316,0 -17.2489129480876,14.7199403179763,0 -17.2487373390435,14.7199144159309,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.62">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">62</SimpleData>
+		<SimpleData name="Shape_Leng">219.504543190810324</SimpleData>
+		<SimpleData name="Shape_Area">2910.633170859177426</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2470332179829,14.7200249056677,0 -17.2468908670364,14.7198870991612,0 -17.2469744051639,14.7197712097709,0 -17.2471510521838,14.7197377788056,0 -17.2473405056763,14.7197255567945,0 -17.2475533556918,14.7197066770864,0 -17.2475822171861,14.7198914382264,0 -17.2475711351858,14.7199068950442,0 -17.247544395395,14.719913800988,0 -17.247526781376,14.7199190010266,0 -17.2475291803428,14.7201531288582,0 -17.2471090071772,14.7201921085021,0 -17.2470332179829,14.7200249056677,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.63">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">63</SimpleData>
+		<SimpleData name="Shape_Leng">198.864471220910133</SimpleData>
+		<SimpleData name="Shape_Area">1358.869577141568243</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2491475776134,14.7198218274678,0 -17.2490731083361,14.7196225905079,0 -17.2493078447785,14.7196203105099,0 -17.2493681026597,14.7198111659917,0 -17.2493791019082,14.7199911605951,0 -17.2493946227548,14.7201273919668,0 -17.2494040961489,14.7201951616724,0 -17.2494569796203,14.7203117025807,0 -17.2493811250739,14.7203388118153,0 -17.2491475776134,14.7198218274678,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.64">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">64</SimpleData>
+		<SimpleData name="Shape_Leng">193.030486918620682</SimpleData>
+		<SimpleData name="Shape_Area">1329.784359107012051</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2491110981726,14.7203541655682,0 -17.2489089192411,14.7203508670821,0 -17.2489129480876,14.7199403179763,0 -17.2489303102791,14.7198342298316,0 -17.2489201367852,14.7196811343886,0 -17.2489485332812,14.7197485387461,0 -17.2492423443203,14.72035041775,0 -17.2491903740217,14.7203756116375,0 -17.2491110981726,14.7203541655682,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.65">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">65</SimpleData>
+		<SimpleData name="Shape_Leng">297.440677543068432</SimpleData>
+		<SimpleData name="Shape_Area">4970.979978800857680</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.248236224157,14.7203159127783,0 -17.2480933103312,14.7202633050909,0 -17.2480926125621,14.7201952241963,0 -17.2479318013029,14.7201520378307,0 -17.2479528173608,14.7201013307281,0 -17.2480151001786,14.7200521674098,0 -17.2480287959281,14.7198343069535,0 -17.2481891994228,14.7198327496819,0 -17.2484381897819,14.7198472038494,0 -17.2484741227083,14.7198853807526,0 -17.2487373390435,14.7199144159309,0 -17.2489129480876,14.7199403179763,0 -17.2489089192411,14.7203508670821,0 -17.2488096214619,14.7203647005039,0 -17.248616659362,14.7203915833656,0 -17.248236224157,14.7203159127783,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.66">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">66</SimpleData>
+		<SimpleData name="Shape_Leng">273.289707151296568</SimpleData>
+		<SimpleData name="Shape_Area">2170.364583216581650</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2493811250739,14.7203388118153,0 -17.2494569796203,14.7203117025807,0 -17.2494040961489,14.7201951616724,0 -17.2493946227548,14.7201273919668,0 -17.2493791019082,14.7199911605951,0 -17.2493681026597,14.7198111659917,0 -17.2493078447785,14.7196203105099,0 -17.2493099113531,14.7195543206978,0 -17.2492950989221,14.7194064051458,0 -17.2492947194023,14.71940261941,0 -17.2493537581057,14.7193937460754,0 -17.2494402252918,14.7193929061532,0 -17.2494674207003,14.7196633696945,0 -17.2495269908105,14.7198448088395,0 -17.2495532209702,14.7198399071472,0 -17.2496713762499,14.7203176123695,0 -17.2494266837948,14.720408356987,0 -17.2493811250739,14.7203388118153,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.67">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">67</SimpleData>
+		<SimpleData name="Shape_Leng">434.960484006923537</SimpleData>
+		<SimpleData name="Shape_Area">5851.070492536330676</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2471090071772,14.7201921085021,0 -17.2475291803428,14.7201531288582,0 -17.247526781376,14.7199190010266,0 -17.247544395395,14.719913800988,0 -17.2475711351858,14.7199068950442,0 -17.2475822171861,14.7198914382264,0 -17.2475533556918,14.7197066770864,0 -17.2475430012925,14.719640387634,0 -17.2475422283283,14.7195649481483,0 -17.2475996688145,14.7193653770922,0 -17.2476303381934,14.7192124190311,0 -17.2476562471071,14.7191689171406,0 -17.2477767399673,14.7191337557021,0 -17.2478133654701,14.7192221490099,0 -17.2478879181937,14.7192893277856,0 -17.2479751007625,14.7195741611298,0 -17.2480287959281,14.7198343069535,0 -17.2478821016367,14.7198651618748,0 -17.2477852218808,14.7199179110091,0 -17.247761996596,14.7204030302329,0 -17.2475063566648,14.7204055116668,0 -17.2472286016175,14.7204961557577,0 -17.2471090071772,14.7201921085021,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.68">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">68</SimpleData>
+		<SimpleData name="Shape_Leng">668.638648217521904</SimpleData>
+		<SimpleData name="Shape_Area">19710.281193107846775</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2439064360034,14.7199401042661,0 -17.2441027653332,14.7198149791191,0 -17.2438366587917,14.7190491672841,0 -17.2440673169077,14.7189749853554,0 -17.2454148393438,14.7188242966501,0 -17.245416032812,14.7189408927625,0 -17.2451926456472,14.7192410558311,0 -17.2453092559618,14.7193543734429,0 -17.2455064361505,14.7195067610756,0 -17.2453942185437,14.7196090145664,0 -17.2453040122124,14.7197538379373,0 -17.2446779626831,14.719953022142,0 -17.244366838643,14.7203969276869,0 -17.2440904067418,14.7206231545543,0 -17.2439064360034,14.7199401042661,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.69">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">69</SimpleData>
+		<SimpleData name="Shape_Leng">218.611039423262753</SimpleData>
+		<SimpleData name="Shape_Area">2103.632530603903433</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2483051770946,14.7207463042931,0 -17.2483901038951,14.7205411606667,0 -17.2481702971206,14.7205195500171,0 -17.248236224157,14.7203159127783,0 -17.248616659362,14.7203915833656,0 -17.2488096214619,14.7203647005039,0 -17.2488159536205,14.7203960223695,0 -17.2486054670214,14.7207764215448,0 -17.2483051770946,14.7207463042931,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.70">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">70</SimpleData>
+		<SimpleData name="Shape_Leng">338.518546659343883</SimpleData>
+		<SimpleData name="Shape_Area">4265.665536618976148</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2478496450461,14.7207916101428,0 -17.2477673781183,14.7207496146452,0 -17.2478214127001,14.7204721638827,0 -17.2477873388393,14.7204544212469,0 -17.247761996596,14.7204030302329,0 -17.2477852218808,14.7199179110091,0 -17.2478821016367,14.7198651618748,0 -17.2480287959281,14.7198343069535,0 -17.2480151001786,14.7200521674098,0 -17.2479528173608,14.7201013307281,0 -17.2479318013029,14.7201520378307,0 -17.2480926125621,14.7201952241963,0 -17.2480933103312,14.7202633050909,0 -17.248236224157,14.7203159127783,0 -17.2481702971206,14.7205195500171,0 -17.2483901038951,14.7205411606667,0 -17.2483051770946,14.7207463042931,0 -17.2482420769881,14.7207906435369,0 -17.2480613653751,14.7208426671651,0 -17.2478496450461,14.7207916101428,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.71">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">71</SimpleData>
+		<SimpleData name="Shape_Leng">259.456612595162994</SimpleData>
+		<SimpleData name="Shape_Area">3778.442139130318537</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.248935642865,14.7210015262753,0 -17.2489089192411,14.7203508670821,0 -17.2491110981726,14.7203541655682,0 -17.2491903740217,14.7203756116375,0 -17.2492423443203,14.72035041775,0 -17.2495832206273,14.7209999068867,0 -17.248935642865,14.7210015262753,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.72">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">72</SimpleData>
+		<SimpleData name="Shape_Leng">617.398768385815401</SimpleData>
+		<SimpleData name="Shape_Area">22070.918900306842261</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2443535394214,14.7211944350024,0 -17.2442502764561,14.7211570789684,0 -17.2439680396602,14.7211528436105,0 -17.2440904067418,14.7206231545543,0 -17.244366838643,14.7203969276869,0 -17.2446779626831,14.719953022142,0 -17.2453040122124,14.7197538379373,0 -17.2453942185437,14.7196090145664,0 -17.2458051575172,14.719784880149,0 -17.2459711075389,14.7201588985227,0 -17.2456585346719,14.7205701169638,0 -17.2454758149669,14.7209661541897,0 -17.2450290885742,14.7209704860041,0 -17.2449493776733,14.7210495710654,0 -17.2445427557975,14.721223010271,0 -17.2443535394214,14.7211944350024,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.73">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">73</SimpleData>
+		<SimpleData name="Shape_Leng">336.018857152751877</SimpleData>
+		<SimpleData name="Shape_Area">5090.822161596296610</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2465168467972,14.7211663107059,0 -17.2464147656287,14.7208203434352,0 -17.2464130378286,14.7206516429879,0 -17.2464610981451,14.7203131640407,0 -17.2464676712262,14.7200438086999,0 -17.2466325661907,14.720165229798,0 -17.2467930894393,14.7205457295587,0 -17.2469694429911,14.7211922335164,0 -17.2465796546371,14.7213575833419,0 -17.2465168467972,14.7211663107059,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.74">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">74</SimpleData>
+		<SimpleData name="Shape_Leng">292.993590821886471</SimpleData>
+		<SimpleData name="Shape_Area">3725.396552060788963</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2485679184999,14.721122821808,0 -17.2486054670214,14.7207764215448,0 -17.2488159536205,14.7203960223695,0 -17.2488096214619,14.7203647005039,0 -17.2489089192411,14.7203508670821,0 -17.248935642865,14.7210015262753,0 -17.2489361996617,14.7210150865306,0 -17.2489259938734,14.7213975658667,0 -17.2486166869055,14.7214936683157,0 -17.2485679184999,14.721122821808,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.75">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">75</SimpleData>
+		<SimpleData name="Shape_Leng">442.150011114060021</SimpleData>
+		<SimpleData name="Shape_Area">11198.798911039439190</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2473625445331,14.721549527025,0 -17.2469694429911,14.7211922335164,0 -17.2467930894393,14.7205457295587,0 -17.2472286016175,14.7204961557577,0 -17.2475063566648,14.7204055116668,0 -17.247761996596,14.7204030302329,0 -17.2477873388393,14.7204544212469,0 -17.2478214127001,14.7204721638827,0 -17.2477673781183,14.7207496146452,0 -17.2478496450461,14.7207916101428,0 -17.2480613653751,14.7208426671651,0 -17.2479346056302,14.7209992344302,0 -17.2479298887743,14.7210390971948,0 -17.2477008184349,14.7214063816213,0 -17.2476219155269,14.7216231005497,0 -17.2473625445331,14.721549527025,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.76">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">76</SimpleData>
+		<SimpleData name="Shape_Leng">287.733529108614334</SimpleData>
+		<SimpleData name="Shape_Area">4997.716007751124380</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2481992377469,14.7214839666508,0 -17.2479652087213,14.7210990625271,0 -17.2479298887743,14.7210390971948,0 -17.2479346056302,14.7209992344302,0 -17.2480613653751,14.7208426671651,0 -17.2482420769881,14.7207906435369,0 -17.2483051770946,14.7207463042931,0 -17.2486054670214,14.7207764215448,0 -17.2485679184999,14.721122821808,0 -17.2486166869055,14.7214936683157,0 -17.2484067551314,14.7215696965427,0 -17.2482184236874,14.7216379016763,0 -17.2481992377469,14.7214839666508,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.77">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">77</SimpleData>
+		<SimpleData name="Shape_Leng">635.399698710272901</SimpleData>
+		<SimpleData name="Shape_Area">20200.711179989044467</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2456277447398,14.7217199844733,0 -17.2453361477955,14.7216369494087,0 -17.2450021028858,14.7216321651848,0 -17.2449703103134,14.7214380522982,0 -17.2449493776733,14.7210495710654,0 -17.2450290885742,14.7209704860041,0 -17.2454758149669,14.7209661541897,0 -17.2456585346719,14.7205701169638,0 -17.2459711075389,14.7201588985227,0 -17.2461114340802,14.7199723884429,0 -17.2463556828801,14.7199967321558,0 -17.2464676712262,14.7200438086999,0 -17.2464610981451,14.7203131640407,0 -17.2464130378286,14.7206516429879,0 -17.2464147656287,14.7208203434352,0 -17.2465168467972,14.7211663107059,0 -17.2465796546371,14.7213575833419,0 -17.2462366582565,14.7215525781271,0 -17.2459461046734,14.7216301661191,0 -17.2459132212507,14.7217769121115,0 -17.2456277447398,14.7217199844733,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.78">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">78</SimpleData>
+		<SimpleData name="Shape_Leng">413.045226817785533</SimpleData>
+		<SimpleData name="Shape_Area">8310.410938245520811</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2486598168855,14.722032849199,0 -17.2484683789744,14.7217536106979,0 -17.2484067551314,14.7215696965427,0 -17.2486166869055,14.7214936683157,0 -17.2489259938734,14.7213975658667,0 -17.2489361996617,14.7210150865306,0 -17.248935642865,14.7210015262753,0 -17.2495832206273,14.7209999068867,0 -17.2497172309417,14.7212313100013,0 -17.2497224158881,14.7213191129257,0 -17.2495892248783,14.7214466433469,0 -17.2493408024147,14.7215876661882,0 -17.2491178561096,14.7217363635171,0 -17.248846654521,14.7219975775565,0 -17.2487952193722,14.7220319072678,0 -17.2486598168855,14.722032849199,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.79">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">79</SimpleData>
+		<SimpleData name="Shape_Leng">76.159457557741561</SimpleData>
+		<SimpleData name="Shape_Area">365.076009121082734</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2441391766199,14.7222564002573,0 -17.2441459112381,14.722100293276,0 -17.2443472084771,14.7221152011676,0 -17.2443423384822,14.7222344194403,0 -17.2443276588043,14.7222635788192,0 -17.2441391766199,14.7222564002573,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.80">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">80</SimpleData>
+		<SimpleData name="Shape_Leng">229.668970029395211</SimpleData>
+		<SimpleData name="Shape_Area">2929.063140591296815</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.24824062464,14.7222563850132,0 -17.2481575780398,14.72217905646,0 -17.2480965774974,14.7220821158226,0 -17.2484683789744,14.7217536106979,0 -17.2486598168855,14.722032849199,0 -17.2487952193722,14.7220319072678,0 -17.2485313773355,14.7224056127645,0 -17.2483527677763,14.7223879592791,0 -17.2482531049908,14.7224191683887,0 -17.24824062464,14.7222563850132,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.81">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">81</SimpleData>
+		<SimpleData name="Shape_Leng">453.546788407619886</SimpleData>
+		<SimpleData name="Shape_Area">10043.575504683372856</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2437185414109,14.7224291483711,0 -17.2436296274594,14.7223133841721,0 -17.2434301039778,14.722259169076,0 -17.2438193166651,14.721542740747,0 -17.2439680396602,14.7211528436105,0 -17.2442502764561,14.7211570789684,0 -17.2443535394214,14.7211944350024,0 -17.2445427557975,14.721223010271,0 -17.2445340967788,14.7217731636827,0 -17.2444530941638,14.7217921118152,0 -17.2443203832025,14.7220396761557,0 -17.2443472084771,14.7221152011676,0 -17.2441459112381,14.722100293276,0 -17.2441391766199,14.7222564002573,0 -17.2439897352232,14.7222429367355,0 -17.2439614003913,14.7223799842506,0 -17.2439848028765,14.7224253074341,0 -17.2439391380853,14.7224649680391,0 -17.2437185414109,14.7224291483711,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.82">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">82</SimpleData>
+		<SimpleData name="Shape_Leng">417.483885480075287</SimpleData>
+		<SimpleData name="Shape_Area">8541.073670596808370</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2476914894803,14.7224389514154,0 -17.2475778565806,14.7221925962287,0 -17.2475102756003,14.7219297344896,0 -17.2476219155269,14.7216231005497,0 -17.2477008184349,14.7214063816213,0 -17.2479298887743,14.7210390971948,0 -17.2479652087213,14.7210990625271,0 -17.2481992377469,14.7214839666508,0 -17.2482184236874,14.7216379016763,0 -17.2484067551314,14.7215696965427,0 -17.2484683789744,14.7217536106979,0 -17.2480965774974,14.7220821158226,0 -17.2481575780398,14.72217905646,0 -17.2479445328375,14.7223680446943,0 -17.2478462774692,14.7224792416473,0 -17.2476914894803,14.7224389514154,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.83">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">83</SimpleData>
+		<SimpleData name="Shape_Leng">304.210283056265894</SimpleData>
+		<SimpleData name="Shape_Area">5072.388704778727515</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2452610976429,14.7225501674174,0 -17.2453214953019,14.7221882521694,0 -17.2452820981142,14.7219091668828,0 -17.2453361477955,14.7216369494087,0 -17.2456277447398,14.7217199844733,0 -17.2459132212507,14.7217769121115,0 -17.2456228463177,14.7226159954207,0 -17.2452610976429,14.7225501674174,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.84">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">84</SimpleData>
+		<SimpleData name="Shape_Leng">288.028576475900309</SimpleData>
+		<SimpleData name="Shape_Area">3615.219981405492945</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2472126210329,14.7227496832333,0 -17.2472578264795,14.7227264103118,0 -17.2473531001818,14.7226761615405,0 -17.2472117361169,14.7223234834794,0 -17.2475102756003,14.7219297344896,0 -17.2475778565806,14.7221925962287,0 -17.2476914894803,14.7224389514154,0 -17.2478462774692,14.7224792416473,0 -17.247727206048,14.7226405808392,0 -17.2477294929475,14.7226932419438,0 -17.2477298147693,14.7227154025279,0 -17.2473207387772,14.7228887973597,0 -17.2472126210329,14.7227496832333,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.85">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">85</SimpleData>
+		<SimpleData name="Shape_Leng">236.052891462496063</SimpleData>
+		<SimpleData name="Shape_Area">3062.992321128414915</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2477538469429,14.7229103074215,0 -17.2477298147693,14.7227154025279,0 -17.2477294929475,14.7226932419438,0 -17.247727206048,14.7226405808392,0 -17.2478462774692,14.7224792416473,0 -17.2479445328375,14.7223680446943,0 -17.2481575780398,14.72217905646,0 -17.24824062464,14.7222563850132,0 -17.2482531049908,14.7224191683887,0 -17.2483841022414,14.7225601668199,0 -17.2481550283742,14.7227030996513,0 -17.2478402173693,14.7229669065565,0 -17.2477538469429,14.7229103074215,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.86">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">86</SimpleData>
+		<SimpleData name="Shape_Leng">681.046240654299254</SimpleData>
+		<SimpleData name="Shape_Area">23917.242345604689035</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2457855076182,14.722854730175,0 -17.245619470345,14.7227607384818,0 -17.2456228463177,14.7226159954207,0 -17.2459132212507,14.7217769121115,0 -17.2459461046734,14.7216301661191,0 -17.2462366582565,14.7215525781271,0 -17.2465796546371,14.7213575833419,0 -17.2469694429911,14.7211922335164,0 -17.2473625445331,14.721549527025,0 -17.2476219155269,14.7216231005497,0 -17.2475102756003,14.7219297344896,0 -17.2472117361169,14.7223234834794,0 -17.2468592177827,14.7227199064869,0 -17.2466042022063,14.7225591394771,0 -17.246402728831,14.7225079412172,0 -17.2463352413389,14.7228152108081,0 -17.24621844447,14.722709399728,0 -17.2460982717701,14.7228266193505,0 -17.2460236663328,14.7229274241644,0 -17.2460018464954,14.7229851007158,0 -17.2457855076182,14.722854730175,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.87">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">87</SimpleData>
+		<SimpleData name="Shape_Leng">475.642333480181208</SimpleData>
+		<SimpleData name="Shape_Area">8234.914483447688326</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2493860994859,14.7228911656344,0 -17.2490643745269,14.7227036166321,0 -17.2490682675877,14.7225944906274,0 -17.2486060426956,14.722478477776,0 -17.2483841022414,14.7225601668199,0 -17.2482531049908,14.7224191683887,0 -17.2483527677763,14.7223879592791,0 -17.2485313773355,14.7224056127645,0 -17.2487952193722,14.7220319072678,0 -17.2490618033099,14.7220928706337,0 -17.2493036911107,14.7221150698423,0 -17.249397687244,14.722126526934,0 -17.2493639688139,14.7222876654908,0 -17.2499070853925,14.7224689146667,0 -17.2499943873264,14.7225374693906,0 -17.2498292181596,14.7226519140936,0 -17.2496001038185,14.7228911644355,0 -17.2494911035023,14.7229651658239,0 -17.2493860994859,14.7228911656344,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.88">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">88</SimpleData>
+		<SimpleData name="Shape_Leng">244.387674895210381</SimpleData>
+		<SimpleData name="Shape_Area">3141.047793704070500</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2485430897567,14.7228403520315,0 -17.2481550283742,14.7227030996513,0 -17.2483841022414,14.7225601668199,0 -17.2486060426956,14.722478477776,0 -17.2490682675877,14.7225944906274,0 -17.2490643745269,14.7227036166321,0 -17.2490367665215,14.7227824949992,0 -17.2489690021745,14.7229859957731,0 -17.2485430897567,14.7228403520315,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.89">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">89</SimpleData>
+		<SimpleData name="Shape_Leng">589.743663371910088</SimpleData>
+		<SimpleData name="Shape_Area">12844.493031040208734</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2501481003286,14.7227561639201,0 -17.2502433707273,14.7226426107149,0 -17.2500875256001,14.7225188622031,0 -17.2499943873264,14.7225374693906,0 -17.2499070853925,14.7224689146667,0 -17.2493639688139,14.7222876654908,0 -17.249397687244,14.722126526934,0 -17.2493036911107,14.7221150698423,0 -17.2490618033099,14.7220928706337,0 -17.2487952193722,14.7220319072678,0 -17.248846654521,14.7219975775565,0 -17.2491178561096,14.7217363635171,0 -17.2493408024147,14.7215876661882,0 -17.2495892248783,14.7214466433469,0 -17.2497224158881,14.7213191129257,0 -17.2499729257588,14.7217149184406,0 -17.2503680510337,14.7222924497578,0 -17.2506123079708,14.7226000416391,0 -17.2504571302821,14.7228363648165,0 -17.2503322182259,14.7229839080165,0 -17.2501481003286,14.7227561639201,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.90">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">90</SimpleData>
+		<SimpleData name="Shape_Leng">445.507230146455981</SimpleData>
+		<SimpleData name="Shape_Area">6260.029188766712650</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2472784344963,14.7231089386805,0 -17.2471639970066,14.7230553187446,0 -17.2469444664692,14.7231512581103,0 -17.2469373077117,14.7231302182961,0 -17.2469081787531,14.7230940758832,0 -17.2468859505649,14.7230641225705,0 -17.2466937963294,14.7229290909234,0 -17.2466126572401,14.7229997044173,0 -17.2464694741639,14.723168378878,0 -17.2462528179245,14.7230561892452,0 -17.246322101319,14.7229102791046,0 -17.2463352413389,14.7228152108081,0 -17.246402728831,14.7225079412172,0 -17.2466042022063,14.7225591394771,0 -17.2468592177827,14.7227199064869,0 -17.2472117361169,14.7223234834794,0 -17.2473531001818,14.7226761615405,0 -17.2472578264795,14.7227264103118,0 -17.2472126210329,14.7227496832333,0 -17.2473207387772,14.7228887973597,0 -17.2474572479312,14.723064444012,0 -17.247359950972,14.7231211917333,0 -17.2473035527869,14.7231677074413,0 -17.2472784344963,14.7231089386805,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.91">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">91</SimpleData>
+		<SimpleData name="Shape_Leng">785.589075029967489</SimpleData>
+		<SimpleData name="Shape_Area">26673.629629920607840</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2447894022329,14.7233176630546,0 -17.2444816204055,14.7233133917661,0 -17.2440419527476,14.7232560236262,0 -17.2440703571071,14.7230796851321,0 -17.2440315946784,14.7227276019929,0 -17.2439848028765,14.7224253074341,0 -17.2439614003913,14.7223799842506,0 -17.2439897352232,14.7222429367355,0 -17.2441391766199,14.7222564002573,0 -17.2443276588043,14.7222635788192,0 -17.2443423384822,14.7222344194403,0 -17.2443472084771,14.7221152011676,0 -17.2443203832025,14.7220396761557,0 -17.2444530941638,14.7217921118152,0 -17.2445340967788,14.7217731636827,0 -17.2445427557975,14.721223010271,0 -17.2449493776733,14.7210495710654,0 -17.2449703103134,14.7214380522982,0 -17.2450021028858,14.7216321651848,0 -17.2453361477955,14.7216369494087,0 -17.2452820981142,14.7219091668828,0 -17.2453214953019,14.7221882521694,0 -17.2452610976429,14.7225501674174,0 -17.2456228463177,14.7226159954207,0 -17.245619470345,14.7227607384818,0 -17.245570167271,14.7228909400577,0 -17.245491838189,14.7230227802674,0 -17.2454045658149,14.7231477879219,0 -17.2451440703493,14.7232520686938,0 -17.2450535355353,14.7233341031809,0 -17.2447894022329,14.7233176630546,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.92">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">92</SimpleData>
+		<SimpleData name="Shape_Leng">310.984959869884847</SimpleData>
+		<SimpleData name="Shape_Area">5631.496647722205125</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.243459020903,14.7231929501812,0 -17.2434387818483,14.7231464975878,0 -17.2434673425225,14.7230010901821,0 -17.2435600975743,14.7227061632178,0 -17.2436583122122,14.7226287604696,0 -17.2436568180246,14.7224827091561,0 -17.2437185414109,14.7224291483711,0 -17.2439391380853,14.7224649680391,0 -17.2439848028765,14.7224253074341,0 -17.2440315946784,14.7227276019929,0 -17.2440703571071,14.7230796851321,0 -17.2440419527476,14.7232560236262,0 -17.2440513057584,14.7233579756978,0 -17.2435142310289,14.7233971837675,0 -17.243459020903,14.7231929501812,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.93">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">93</SimpleData>
+		<SimpleData name="Shape_Leng">57.871026689885440</SimpleData>
+		<SimpleData name="Shape_Area">9.352573446990903</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2434387818483,14.7231464975878,0 -17.243459020903,14.7231929501812,0 -17.2435142310289,14.7233971837675,0 -17.2434387818483,14.7231464975878,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.94">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">94</SimpleData>
+		<SimpleData name="Shape_Leng">223.969099627767946</SimpleData>
+		<SimpleData name="Shape_Area">1.405551214253379</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2435142310289,14.7233971837675,0 -17.2440513057584,14.7233579756978,0 -17.2439367300946,14.72336656754,0 -17.2430146494845,14.7234336537676,0 -17.2435142310289,14.7233971837675,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.95">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">95</SimpleData>
+		<SimpleData name="Shape_Leng">287.654539134455831</SimpleData>
+		<SimpleData name="Shape_Area">4431.746832523734156</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2466361020963,14.7234571609362,0 -17.2465027070027,14.7234292350645,0 -17.2464611036139,14.7233381648387,0 -17.2464110741558,14.7233245488132,0 -17.2464694741639,14.723168378878,0 -17.2466126572401,14.7229997044173,0 -17.2466937963294,14.7229290909234,0 -17.2468859505649,14.7230641225705,0 -17.2469081787531,14.7230940758832,0 -17.2469373077117,14.7231302182961,0 -17.2469444664692,14.7231512581103,0 -17.2471639970066,14.7230553187446,0 -17.2472784344963,14.7231089386805,0 -17.2473035527869,14.7231677074413,0 -17.2473841039315,14.7233561682027,0 -17.2474243698208,14.7234088202412,0 -17.2472533755964,14.7234436145656,0 -17.247138855108,14.7235000514388,0 -17.2469321112364,14.7235359984948,0 -17.2466361020963,14.7234571609362,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.96">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">96</SimpleData>
+		<SimpleData name="Shape_Leng">224.941902988685513</SimpleData>
+		<SimpleData name="Shape_Area">1904.493278827641234</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2428733741036,14.7236338684719,0 -17.242978004688,14.7233263152839,0 -17.2430426973972,14.7231376090867,0 -17.2432970565749,14.7231351445779,0 -17.2434387818483,14.7231464975878,0 -17.2435142310289,14.7233971837675,0 -17.2430146494845,14.7234336537676,0 -17.2430324085173,14.723651798,0 -17.2428733741036,14.7236338684719,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.97">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">97</SimpleData>
+		<SimpleData name="Shape_Leng">109.210575653331858</SimpleData>
+		<SimpleData name="Shape_Area">20.903325491730541</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.242978004688,14.7233263152839,0 -17.2428733741036,14.7236338684719,0 -17.2430324085173,14.723651798,0 -17.2428658676551,14.7236534115218,0 -17.242978004688,14.7233263152839,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.98">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">98</SimpleData>
+		<SimpleData name="Shape_Leng">438.799196060249017</SimpleData>
+		<SimpleData name="Shape_Area">3722.901635857529527</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2502599503767,14.723559032699,0 -17.2502627069288,14.7235153607261,0 -17.2503216487668,14.7233744546206,0 -17.2502538939986,14.723163420746,0 -17.250065558933,14.7228283181702,0 -17.2497019917061,14.7230928839884,0 -17.2495083722676,14.7230279273572,0 -17.2494911035023,14.7229651658239,0 -17.2496001038185,14.7228911644355,0 -17.2498292181596,14.7226519140936,0 -17.2499943873264,14.7225374693906,0 -17.2500875256001,14.7225188622031,0 -17.2502433707273,14.7226426107149,0 -17.2501481003286,14.7227561639201,0 -17.2503322182259,14.7229839080165,0 -17.2504571302821,14.7228363648165,0 -17.2503921150886,14.7230565879097,0 -17.2504314699629,14.7232358061015,0 -17.2504249355462,14.7233452965367,0 -17.2504092954924,14.7234285212249,0 -17.2503694228468,14.7235948246278,0 -17.2502599503767,14.723559032699,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.99">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">99</SimpleData>
+		<SimpleData name="Shape_Leng">302.378776798300862</SimpleData>
+		<SimpleData name="Shape_Area">3923.968185640625961</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2441156532838,14.7235965795722,0 -17.2440453112825,14.7236054601108,0 -17.2439448283135,14.7236341320062,0 -17.243944100733,14.7235841671493,0 -17.2439367300946,14.72336656754,0 -17.2440513057584,14.7233579756978,0 -17.2440419527476,14.7232560236262,0 -17.2444816204055,14.7233133917661,0 -17.2447894022329,14.7233176630546,0 -17.2450535355353,14.7233341031809,0 -17.244855954216,14.7236312441778,0 -17.2446797515427,14.7236565639039,0 -17.2445822786274,14.7236289319234,0 -17.2444040419255,14.7236603357012,0 -17.2441156532838,14.7235965795722,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.100">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">100</SimpleData>
+		<SimpleData name="Shape_Leng">302.258268310313383</SimpleData>
+		<SimpleData name="Shape_Area">4274.211656239222975</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2506727250836,14.7236375687557,0 -17.2503694228468,14.7235948246278,0 -17.2504092954924,14.7234285212249,0 -17.2504249355462,14.7233452965367,0 -17.2504314699629,14.7232358061015,0 -17.2503921150886,14.7230565879097,0 -17.2504571302821,14.7228363648165,0 -17.2506123079708,14.7226000416391,0 -17.2508496800976,14.7230699990372,0 -17.2507932281353,14.7231406773998,0 -17.2508405599547,14.72320024797,0 -17.2508251288963,14.7234992786033,0 -17.2508514148515,14.7236569723609,0 -17.2506666550671,14.7236825740233,0 -17.2506727250836,14.7236375687557,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.101">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">101</SimpleData>
+		<SimpleData name="Shape_Leng">317.755839288173604</SimpleData>
+		<SimpleData name="Shape_Area">3142.940164204112534</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.250111053453,14.7237382176065,0 -17.2501317406473,14.7235928819625,0 -17.2500067221464,14.7233493659556,0 -17.2497019917061,14.7230928839884,0 -17.250065558933,14.7228283181702,0 -17.2502538939986,14.723163420746,0 -17.2503216487668,14.7233744546206,0 -17.2502627069288,14.7235153607261,0 -17.2502599503767,14.723559032699,0 -17.2503694228468,14.7235948246278,0 -17.2501975690272,14.72374138749,0 -17.2501203739127,14.7238596097961,0 -17.2500348263553,14.7239481635234,0 -17.250111053453,14.7237382176065,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.102">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">102</SimpleData>
+		<SimpleData name="Shape_Leng">287.246690324669544</SimpleData>
+		<SimpleData name="Shape_Area">2967.949353197318487</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2460112212643,14.723892909525,0 -17.2459150993752,14.723765160508,0 -17.2457608012761,14.7238423104061,0 -17.2455711020807,14.7239371605306,0 -17.2455373428377,14.7238644217531,0 -17.2454493786159,14.7238896117093,0 -17.2453371728393,14.7239532292203,0 -17.2452754913727,14.7238521136941,0 -17.2453350962382,14.7238117113477,0 -17.2454076543163,14.7237635846163,0 -17.2454748412386,14.7236700720438,0 -17.245686597925,14.7235894375271,0 -17.2457458735022,14.7235560578572,0 -17.2457539060253,14.7234573716531,0 -17.2459486400736,14.7235035578905,0 -17.2460284713834,14.723485866509,0 -17.2461788597159,14.7236772598849,0 -17.2461750972252,14.7238631654025,0 -17.2461383992878,14.7239897074338,0 -17.2460112212643,14.723892909525,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.103">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">103</SimpleData>
+		<SimpleData name="Shape_Leng">441.067417463789980</SimpleData>
+		<SimpleData name="Shape_Area">7372.119275386095978</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2461750972252,14.7238631654025,0 -17.2461788597159,14.7236772598849,0 -17.2460284713834,14.723485866509,0 -17.2459486400736,14.7235035578905,0 -17.2457539060253,14.7234573716531,0 -17.2457604213499,14.7233773346893,0 -17.2458319843454,14.7232729489124,0 -17.2459102901451,14.7231395755306,0 -17.2459710939191,14.7230327081828,0 -17.2460018464954,14.7229851007158,0 -17.2460236663328,14.7229274241644,0 -17.2460982717701,14.7228266193505,0 -17.24621844447,14.722709399728,0 -17.2463352413389,14.7228152108081,0 -17.246322101319,14.7229102791046,0 -17.2462528179245,14.7230561892452,0 -17.2464694741639,14.723168378878,0 -17.2464110741558,14.7233245488132,0 -17.2464611036139,14.7233381648387,0 -17.2465027070027,14.7234292350645,0 -17.2466361020963,14.7234571609362,0 -17.2469321112364,14.7235359984948,0 -17.2468672697448,14.7236374533046,0 -17.2463457436118,14.7240292600341,0 -17.2461750972252,14.7238631654025,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.104">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">104</SimpleData>
+		<SimpleData name="Shape_Leng">208.737345565514318</SimpleData>
+		<SimpleData name="Shape_Area">1911.355388062273050</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2479425926925,14.7240035010005,0 -17.2479409018287,14.7240060961069,0 -17.2480172210599,14.7237859135775,0 -17.2480137874622,14.7234509687015,0 -17.2482951042986,14.7235221658763,0 -17.2484188987137,14.7235728436557,0 -17.2482501015679,14.7237851609911,0 -17.2481796969363,14.7239398521623,0 -17.2482398899169,14.7240749495651,0 -17.248193195293,14.7241032066009,0 -17.2479425926925,14.7240035010005,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.105">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">105</SimpleData>
+		<SimpleData name="Shape_Leng">251.727021212566598</SimpleData>
+		<SimpleData name="Shape_Area">2204.652545860920327</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2449822185369,14.7240509077472,0 -17.2452754913727,14.7238521136941,0 -17.2453371728393,14.7239532292203,0 -17.2454493786159,14.7238896117093,0 -17.2455373428377,14.7238644217531,0 -17.2455711020807,14.7239371605306,0 -17.2457608012761,14.7238423104061,0 -17.2458490328054,14.7240877004947,0 -17.2449251422826,14.7241814376319,0 -17.2449822185369,14.7240509077472,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.106">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">106</SimpleData>
+		<SimpleData name="Shape_Leng">535.470438558696060</SimpleData>
+		<SimpleData name="Shape_Area">11222.310359888149833</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2474041852012,14.7241068396827,0 -17.2470911006988,14.7239781687773,0 -17.2469782174062,14.7239959075739,0 -17.2470667556985,14.7236708028883,0 -17.2469161138501,14.723696922483,0 -17.2468672697448,14.7236374533046,0 -17.2469321112364,14.7235359984948,0 -17.247138855108,14.7235000514388,0 -17.2472533755964,14.7234436145656,0 -17.2474243698208,14.7234088202412,0 -17.2473841039315,14.7233561682027,0 -17.2473035527869,14.7231677074413,0 -17.247359950972,14.7231211917333,0 -17.2474572479312,14.723064444012,0 -17.2473207387772,14.7228887973597,0 -17.2477298147693,14.7227154025279,0 -17.2477538469429,14.7229103074215,0 -17.2478402173693,14.7229669065565,0 -17.247788389521,14.7231857715148,0 -17.2478648872531,14.7233614936205,0 -17.2480137874622,14.7234509687015,0 -17.2480172210599,14.7237859135775,0 -17.2479409018287,14.7240060961069,0 -17.2477999569031,14.7242224282193,0 -17.2474041852012,14.7241068396827,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.107">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">107</SimpleData>
+		<SimpleData name="Shape_Leng">635.366990803023896</SimpleData>
+		<SimpleData name="Shape_Area">14275.302753203211978</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2440073851994,14.7241665038992,0 -17.2439448283135,14.7236341320062,0 -17.2440453112825,14.7236054601108,0 -17.2441156532838,14.7235965795722,0 -17.2444040419255,14.7236603357012,0 -17.2445822786274,14.7236289319234,0 -17.2446797515427,14.7236565639039,0 -17.244855954216,14.7236312441778,0 -17.2450535355353,14.7233341031809,0 -17.2451440703493,14.7232520686938,0 -17.2454045658149,14.7231477879219,0 -17.245491838189,14.7230227802674,0 -17.245570167271,14.7228909400577,0 -17.245619470345,14.7227607384818,0 -17.2457855076182,14.722854730175,0 -17.2460018464954,14.7229851007158,0 -17.2459710939191,14.7230327081828,0 -17.2459102901451,14.7231395755306,0 -17.2458319843454,14.7232729489124,0 -17.2457604213499,14.7233773346893,0 -17.2457539060253,14.7234573716531,0 -17.2457458735022,14.7235560578572,0 -17.245686597925,14.7235894375271,0 -17.2454748412386,14.7236700720438,0 -17.2454076543163,14.7237635846163,0 -17.2453350962382,14.7238117113477,0 -17.2452754913727,14.7238521136941,0 -17.2449822185369,14.7240509077472,0 -17.2449251422826,14.7241814376319,0 -17.2440128183059,14.7242622441963,0 -17.2440073851994,14.7241665038992,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.108">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">108</SimpleData>
+		<SimpleData name="Shape_Leng">231.956066930027731</SimpleData>
+		<SimpleData name="Shape_Area">3290.063122645544354</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2482398899169,14.7240749495651,0 -17.2481796969363,14.7239398521623,0 -17.2482501015679,14.7237851609911,0 -17.2484188987137,14.7235728436557,0 -17.2485499815129,14.7237409299067,0 -17.2488705719962,14.7239523374647,0 -17.2487672221508,14.7242429105447,0 -17.2485111048708,14.724201161277,0 -17.2484347778333,14.7242621864248,0 -17.2482398899169,14.7240749495651,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.109">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">109</SimpleData>
+		<SimpleData name="Shape_Leng">232.045891035530758</SimpleData>
+		<SimpleData name="Shape_Area">2768.485969872368059</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2425996366235,14.7243465815083,0 -17.2428658676551,14.7236534115218,0 -17.2430324085173,14.723651798,0 -17.2430905371417,14.7243658071483,0 -17.2425996366235,14.7243465815083,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.110">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">110</SimpleData>
+		<SimpleData name="Shape_Leng">702.966380219531857</SimpleData>
+		<SimpleData name="Shape_Area">26066.579326291008329</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2492690968285,14.7241671616164,0 -17.2488705719962,14.7239523374647,0 -17.2485499815129,14.7237409299067,0 -17.2484188987137,14.7235728436557,0 -17.2482951042986,14.7235221658763,0 -17.2480137874622,14.7234509687015,0 -17.2478648872531,14.7233614936205,0 -17.247788389521,14.7231857715148,0 -17.2478402173693,14.7229669065565,0 -17.2481550283742,14.7227030996513,0 -17.2485430897567,14.7228403520315,0 -17.2489690021745,14.7229859957731,0 -17.2490367665215,14.7227824949992,0 -17.2490643745269,14.7227036166321,0 -17.2493860994859,14.7228911656344,0 -17.2494911035023,14.7229651658239,0 -17.2495083722676,14.7230279273572,0 -17.2497019917061,14.7230928839884,0 -17.2500067221464,14.7233493659556,0 -17.2501317406473,14.7235928819625,0 -17.250111053453,14.7237382176065,0 -17.2500348263553,14.7239481635234,0 -17.2500196955928,14.7239898378845,0 -17.2498785359086,14.7240666693107,0 -17.2497350427048,14.7242735788717,0 -17.2496702188156,14.7243559063429,0 -17.2492690968285,14.7241671616164,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.111">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">111</SimpleData>
+		<SimpleData name="Shape_Leng">252.359280520157171</SimpleData>
+		<SimpleData name="Shape_Area">3450.451444073738458</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2467521010864,14.7243551612163,0 -17.2466475295262,14.7243445719885,0 -17.2464001008578,14.7240821676651,0 -17.2463457436118,14.7240292600341,0 -17.2468672697448,14.7236374533046,0 -17.2469161138501,14.723696922483,0 -17.2470667556985,14.7236708028883,0 -17.2469782174062,14.7239959075739,0 -17.2468952184051,14.7242429084122,0 -17.2468152164651,14.7244209133125,0 -17.2467521010864,14.7243551612163,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.112">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">112</SimpleData>
+		<SimpleData name="Shape_Leng">313.571768996446053</SimpleData>
+		<SimpleData name="Shape_Area">5842.781291211397729</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2503823925362,14.7242600541345,0 -17.2503052177547,14.7241189089468,0 -17.2500196955928,14.7239898378845,0 -17.2500348263553,14.7239481635234,0 -17.2501203739127,14.7238596097961,0 -17.2501975690272,14.72374138749,0 -17.2503694228468,14.7235948246278,0 -17.2506727250836,14.7236375687557,0 -17.2506666550671,14.7236825740233,0 -17.2508514148515,14.7236569723609,0 -17.250891449573,14.7236686633517,0 -17.2509420228346,14.724121689166,0 -17.2508999931412,14.7244100953494,0 -17.2503823925362,14.7242600541345,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.113">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">113</SimpleData>
+		<SimpleData name="Shape_Leng">308.687364835198082</SimpleData>
+		<SimpleData name="Shape_Area">4317.507464723393241</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2474037275013,14.7245226056947,0 -17.2472358001764,14.7245061706328,0 -17.2471111783558,14.7244610326324,0 -17.2469413002141,14.7244626815645,0 -17.2469420294809,14.7245014162644,0 -17.2467407235763,14.7244865001899,0 -17.2467521010864,14.7243551612163,0 -17.2468152164651,14.7244209133125,0 -17.2468952184051,14.7242429084122,0 -17.2469782174062,14.7239959075739,0 -17.2470911006988,14.7239781687773,0 -17.2474041852012,14.7241068396827,0 -17.2477999569031,14.7242224282193,0 -17.2476633531396,14.7244320970268,0 -17.247574104439,14.7245221605035,0 -17.247533333696,14.7245737135773,0 -17.2474037275013,14.7245226056947,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.114">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">114</SimpleData>
+		<SimpleData name="Shape_Leng">193.641319285589248</SimpleData>
+		<SimpleData name="Shape_Area">2290.058039783032655</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.25022990587,14.7245151898283,0 -17.2502868659357,14.7244490152318,0 -17.250328998322,14.7243862004378,0 -17.2503823925362,14.7242600541345,0 -17.2508999931412,14.7244100953494,0 -17.2507185137411,14.7247471185016,0 -17.2506028162091,14.7247512385769,0 -17.25022990587,14.7245151898283,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.115">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">115</SimpleData>
+		<SimpleData name="Shape_Leng">292.815410441017036</SimpleData>
+		<SimpleData name="Shape_Area">4562.664394808985890</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2493088665608,14.7247745914445,0 -17.2491000997626,14.7245822317624,0 -17.248919222257,14.7245289113977,0 -17.2488882176922,14.7244649080801,0 -17.2489096055562,14.7243604740384,0 -17.2488721017225,14.7243291640814,0 -17.2487672221508,14.7242429105447,0 -17.2488705719962,14.7239523374647,0 -17.2492690968285,14.7241671616164,0 -17.2496702188156,14.7243559063429,0 -17.2493855686846,14.7248274284091,0 -17.2493088665608,14.7247745914445,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.116">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">116</SimpleData>
+		<SimpleData name="Shape_Leng">217.150285651599290</SimpleData>
+		<SimpleData name="Shape_Area">2567.128732558315733</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2474168351663,14.7251539417639,0 -17.2474054070202,14.7250050372362,0 -17.247533333696,14.7245737135773,0 -17.247574104439,14.7245221605035,0 -17.2476633531396,14.7244320970268,0 -17.2476833667951,14.7245433175717,0 -17.2478407542364,14.7247620476181,0 -17.2477880566825,14.7249408257966,0 -17.2478135871302,14.7249995506908,0 -17.2477835251263,14.7251829664764,0 -17.2474168351663,14.7251539417639,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.117">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">117</SimpleData>
+		<SimpleData name="Shape_Leng">471.795011204827574</SimpleData>
+		<SimpleData name="Shape_Area">11185.087649302609861</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2461429679332,14.725183691637,0 -17.246000239185,14.7252198698622,0 -17.2459341364143,14.7248125224228,0 -17.2458490328054,14.7240877004947,0 -17.2457608012761,14.7238423104061,0 -17.2459150993752,14.723765160508,0 -17.2460112212643,14.723892909525,0 -17.2461383992878,14.7239897074338,0 -17.2461750972252,14.7238631654025,0 -17.2463457436118,14.7240292600341,0 -17.2464001008578,14.7240821676651,0 -17.2466475295262,14.7243445719885,0 -17.2467521010864,14.7243551612163,0 -17.2467407235763,14.7244865001899,0 -17.2466837036642,14.7248634446737,0 -17.2466692238923,14.7250209132747,0 -17.2465910415563,14.7252288571998,0 -17.2463814929636,14.7252308908027,0 -17.2461429679332,14.725183691637,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.118">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">118</SimpleData>
+		<SimpleData name="Shape_Leng">323.803994504082084</SimpleData>
+		<SimpleData name="Shape_Area">5938.115770590751708</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2471290551243,14.725137575182,0 -17.2469345056343,14.7251446174356,0 -17.2467816556261,14.7250175794839,0 -17.2466692238923,14.7250209132747,0 -17.2466837036642,14.7248634446737,0 -17.2467407235763,14.7244865001899,0 -17.2469420294809,14.7245014162644,0 -17.2469413002141,14.7244626815645,0 -17.2471111783558,14.7244610326324,0 -17.2472358001764,14.7245061706328,0 -17.2474037275013,14.7245226056947,0 -17.247533333696,14.7245737135773,0 -17.2474054070202,14.7250050372362,0 -17.2474168351663,14.7251539417639,0 -17.2474168955808,14.7252172608962,0 -17.2471202188984,14.7252469100816,0 -17.2471290551243,14.725137575182,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.119">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">119</SimpleData>
+		<SimpleData name="Shape_Leng">503.716212274512486</SimpleData>
+		<SimpleData name="Shape_Area">9178.613749237554657</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2491418646024,14.7251171020517,0 -17.2491066222325,14.7251793907507,0 -17.2485354088925,14.7247813510935,0 -17.2477999569031,14.7242224282193,0 -17.2479409018287,14.7240060961069,0 -17.2479425926925,14.7240035010005,0 -17.248193195293,14.7241032066009,0 -17.2482398899169,14.7240749495651,0 -17.2484347778333,14.7242621864248,0 -17.2485111048708,14.724201161277,0 -17.2487672221508,14.7242429105447,0 -17.2488721017225,14.7243291640814,0 -17.2489096055562,14.7243604740384,0 -17.2488882176922,14.7244649080801,0 -17.248919222257,14.7245289113977,0 -17.2491000997626,14.7245822317624,0 -17.2493088665608,14.7247745914445,0 -17.2493855686846,14.7248274284091,0 -17.2493220976984,14.7249111675447,0 -17.2494594900324,14.7250316270328,0 -17.2493516363144,14.7252584030986,0 -17.2491418646024,14.7251171020517,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.120">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">120</SimpleData>
+		<SimpleData name="Shape_Leng">433.435882868251099</SimpleData>
+		<SimpleData name="Shape_Area">9984.315414236582001</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2499250041109,14.7251629962053,0 -17.2496677540721,14.7249049019605,0 -17.2493855686846,14.7248274284091,0 -17.2496702188156,14.7243559063429,0 -17.2497350427048,14.7242735788717,0 -17.2498785359086,14.7240666693107,0 -17.2500196955928,14.7239898378845,0 -17.2503052177547,14.7241189089468,0 -17.2503823925362,14.7242600541345,0 -17.250328998322,14.7243862004378,0 -17.2502868659357,14.7244490152318,0 -17.25022990587,14.7245151898283,0 -17.2506028162091,14.7247512385769,0 -17.2504698675644,14.7250085128798,0 -17.2503563790523,14.7250096161621,0 -17.2502716520441,14.725262731586,0 -17.2499250041109,14.7251629962053,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.121">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">121</SimpleData>
+		<SimpleData name="Shape_Leng">446.655785264203587</SimpleData>
+		<SimpleData name="Shape_Area">7805.262654265001402</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2487621989804,14.725379812142,0 -17.2486160849916,14.7252128471071,0 -17.2485182218473,14.7252519115009,0 -17.2484142207585,14.7253609121043,0 -17.2482938075755,14.7252820122542,0 -17.2482372074662,14.7251294960296,0 -17.2479936603868,14.7249059406085,0 -17.2478407542364,14.7247620476181,0 -17.2476833667951,14.7245433175717,0 -17.2476633531396,14.7244320970268,0 -17.2477999569031,14.7242224282193,0 -17.2485354088925,14.7247813510935,0 -17.2491066222325,14.7251793907507,0 -17.2490334130933,14.7252916080628,0 -17.24882485263,14.7254673522566,0 -17.2487621989804,14.725379812142,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.122">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">122</SimpleData>
+		<SimpleData name="Shape_Leng">1093.145745737390371</SimpleData>
+		<SimpleData name="Shape_Area">53371.040349396869715</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2430905371417,14.7243658071483,0 -17.2430324085173,14.723651798,0 -17.2430146494845,14.7234336537676,0 -17.2439367300946,14.72336656754,0 -17.243944100733,14.7235841671493,0 -17.2439448283135,14.7236341320062,0 -17.2440073851994,14.7241665038992,0 -17.2440128183059,14.7242622441963,0 -17.2449251422826,14.7241814376319,0 -17.2458490328054,14.7240877004947,0 -17.2459341364143,14.7248125224228,0 -17.246000239185,14.7252198698622,0 -17.2460315384507,14.725413759457,0 -17.2454175902152,14.7254609729319,0 -17.2449165888315,14.725499498864,0 -17.2436914684208,14.7255687677614,0 -17.243190950378,14.7255991977765,0 -17.2430905371417,14.7243658071483,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.123">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">123</SimpleData>
+		<SimpleData name="Shape_Leng">355.571799883800395</SimpleData>
+		<SimpleData name="Shape_Area">5002.930311306323347</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2425766270746,14.724406491191,0 -17.2425996366235,14.7243465815083,0 -17.2430905371417,14.7243658071483,0 -17.243190950378,14.7255991977765,0 -17.2430587768091,14.7256216421375,0 -17.2425766270746,14.724406491191,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.124">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">124</SimpleData>
+		<SimpleData name="Shape_Leng">500.380039232560648</SimpleData>
+		<SimpleData name="Shape_Area">6601.747238632379776</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2458318681429,14.7261181098484,0 -17.2458781050538,14.7260511664382,0 -17.2458973731347,14.7259856159177,0 -17.2457801479972,14.7259564441725,0 -17.2457428243576,14.725896494377,0 -17.2458236275891,14.7257153836841,0 -17.2454175902152,14.7254609729319,0 -17.2460315384507,14.725413759457,0 -17.246000239185,14.7252198698622,0 -17.2461429679332,14.725183691637,0 -17.2463814929636,14.7252308908027,0 -17.2465910415563,14.7252288571998,0 -17.2466692238923,14.7250209132747,0 -17.2467816556261,14.7250175794839,0 -17.2469345056343,14.7251446174356,0 -17.2468663765196,14.7252236125083,0 -17.246721801117,14.7251790348537,0 -17.2466539331545,14.72536253474,0 -17.2465958332439,14.7254348465465,0 -17.2465140810937,14.7254959048588,0 -17.2464522604308,14.7255889888842,0 -17.2461777534867,14.7258538198755,0 -17.2459913015608,14.726083643496,0 -17.2459641015245,14.7260721614559,0 -17.2459152176858,14.7261369132867,0 -17.2458318681429,14.7261181098484,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.125">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">125</SimpleData>
+		<SimpleData name="Shape_Leng">456.560443334361139</SimpleData>
+		<SimpleData name="Shape_Area">10000.115547232575409</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2480349541832,14.7259824921272,0 -17.2477270602398,14.7256405894302,0 -17.2478112799374,14.7254960662515,0 -17.2477676253462,14.7254123891586,0 -17.2477835251263,14.7251829664764,0 -17.2478135871302,14.7249995506908,0 -17.2477880566825,14.7249408257966,0 -17.2478407542364,14.7247620476181,0 -17.2479936603868,14.7249059406085,0 -17.2482372074662,14.7251294960296,0 -17.2482938075755,14.7252820122542,0 -17.2484142207585,14.7253609121043,0 -17.2485182218473,14.7252519115009,0 -17.2486160849916,14.7252128471071,0 -17.2487621989804,14.725379812142,0 -17.2486860756929,14.7256491985258,0 -17.2486566408667,14.7258968639692,0 -17.248452224497,14.7261029137751,0 -17.2484150865915,14.7261112979026,0 -17.2482307354044,14.7261529163262,0 -17.248078968644,14.7262183154111,0 -17.2480349541832,14.7259824921272,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.126">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">126</SimpleData>
+		<SimpleData name="Shape_Leng">269.638233052135490</SimpleData>
+		<SimpleData name="Shape_Area">3278.179859217819740</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2475150545672,14.7257848688525,0 -17.247451310428,14.725478505508,0 -17.2477676253462,14.7254123891586,0 -17.2478112799374,14.7254960662515,0 -17.2477270602398,14.7256405894302,0 -17.2480349541832,14.7259824921272,0 -17.248078968644,14.7262183154111,0 -17.2480561018114,14.7262281691729,0 -17.2477947178621,14.7262849883451,0 -17.2475150545672,14.7257848688525,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.127">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">127</SimpleData>
+		<SimpleData name="Shape_Leng">577.355768087510910</SimpleData>
+		<SimpleData name="Shape_Area">11915.403962268603209</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2488081301112,14.7261344655692,0 -17.2486709033212,14.7259838477859,0 -17.2486566408667,14.7258968639692,0 -17.2486860756929,14.7256491985258,0 -17.2487621989804,14.725379812142,0 -17.24882485263,14.7254673522566,0 -17.2490334130933,14.7252916080628,0 -17.2491066222325,14.7251793907507,0 -17.2491418646024,14.7251171020517,0 -17.2493516363144,14.7252584030986,0 -17.2494594900324,14.7250316270328,0 -17.2493220976984,14.7249111675447,0 -17.2493855686846,14.7248274284091,0 -17.2496677540721,14.7249049019605,0 -17.2499250041109,14.7251629962053,0 -17.2496172547838,14.7258628672695,0 -17.2494732169209,14.7258179130852,0 -17.2493720396228,14.7259587976495,0 -17.2494088965253,14.7260738785612,0 -17.2494947948014,14.7261507079358,0 -17.249453649554,14.7262369471007,0 -17.2492750131739,14.7262119185657,0 -17.2491207401115,14.7260529590669,0 -17.249018391119,14.7261373921681,0 -17.2489317405666,14.7263331299427,0 -17.2489082727907,14.7263333579526,0 -17.2488081301112,14.7261344655692,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.128">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">128</SimpleData>
+		<SimpleData name="Shape_Leng">679.937986613549356</SimpleData>
+		<SimpleData name="Shape_Area">12980.954272674118329</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2469607462147,14.7262590963423,0 -17.2469611593593,14.7260192209602,0 -17.2469533130908,14.72564203331,0 -17.2468934393447,14.7255759399312,0 -17.2467800977717,14.7260391693644,0 -17.2467783380184,14.7258674406869,0 -17.2464522604308,14.7255889888842,0 -17.2465140810937,14.7254959048588,0 -17.2465958332439,14.7254348465465,0 -17.2466539331545,14.72536253474,0 -17.246721801117,14.7251790348537,0 -17.2468663765196,14.7252236125083,0 -17.2469345056343,14.7251446174356,0 -17.2471290551243,14.725137575182,0 -17.2471202188984,14.7252469100816,0 -17.2474168955808,14.7252172608962,0 -17.2474168351663,14.7251539417639,0 -17.2477835251263,14.7251829664764,0 -17.2477676253462,14.7254123891586,0 -17.247451310428,14.725478505508,0 -17.2475150545672,14.7257848688525,0 -17.2477947178621,14.7262849883451,0 -17.2474582009426,14.7264544042936,0 -17.2469308555678,14.7265486243118,0 -17.2469607462147,14.7262590963423,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.129">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">129</SimpleData>
+		<SimpleData name="Shape_Leng">417.729150271197113</SimpleData>
+		<SimpleData name="Shape_Area">6973.485629398322999</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.246134461798,14.7266107792114,0 -17.2459763743868,14.72656261517,0 -17.2458727382352,14.7265073223606,0 -17.2458186720597,14.7264155471733,0 -17.2458990854808,14.7262857375536,0 -17.2456560982647,14.7261131615321,0 -17.2456987575239,14.725892696067,0 -17.2457428243576,14.725896494377,0 -17.2457801479972,14.7259564441725,0 -17.2458973731347,14.7259856159177,0 -17.2458781050538,14.7260511664382,0 -17.2458318681429,14.7261181098484,0 -17.2459152176858,14.7261369132867,0 -17.2459641015245,14.7260721614559,0 -17.2459913015608,14.726083643496,0 -17.2461777534867,14.7258538198755,0 -17.2464522604308,14.7255889888842,0 -17.2467783380184,14.7258674406869,0 -17.2467800977717,14.7260391693644,0 -17.2465816177963,14.7261959942726,0 -17.2463840338748,14.726418556998,0 -17.2462416572414,14.7266155812226,0 -17.246134461798,14.7266107792114,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.130">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">130</SimpleData>
+		<SimpleData name="Shape_Leng">360.228381231971639</SimpleData>
+		<SimpleData name="Shape_Area">6504.186959443353771</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2493839457862,14.7268071154123,0 -17.2488682180493,14.7264089111984,0 -17.2489082727907,14.7263333579526,0 -17.2489317405666,14.7263331299427,0 -17.249018391119,14.7261373921681,0 -17.2491207401115,14.7260529590669,0 -17.2492750131739,14.7262119185657,0 -17.249453649554,14.7262369471007,0 -17.24989872204,14.7264238009361,0 -17.2499003662007,14.7265840202725,0 -17.2499476717376,14.7266349940806,0 -17.2500310589316,14.7266341835007,0 -17.2498622272855,14.7268316681964,0 -17.249785654402,14.7270755840489,0 -17.2493839457862,14.7268071154123,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.131">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">131</SimpleData>
+		<SimpleData name="Shape_Leng">866.260928974266676</SimpleData>
+		<SimpleData name="Shape_Area">19522.374964774338878</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2477247797881,14.7272591392184,0 -17.2477114854937,14.7271253066817,0 -17.2475068985065,14.7271105138184,0 -17.2474619427615,14.7270621368849,0 -17.2472757943609,14.7270702690547,0 -17.2472121014063,14.7271211691645,0 -17.2471241339821,14.7271154364508,0 -17.2470351300475,14.7272466155632,0 -17.2469508292912,14.7272580586291,0 -17.2469342182705,14.7272079137726,0 -17.2469052188055,14.7271629101204,0 -17.2468380974998,14.7271221617281,0 -17.2465857658795,14.7270670378011,0 -17.2464079032974,14.7269961831205,0 -17.2462681037941,14.7270741687179,0 -17.2461293246707,14.7271918637561,0 -17.2460515475641,14.7271018168219,0 -17.2459998545185,14.7269859810244,0 -17.2459051840052,14.7268266124538,0 -17.2458397772437,14.7266695449027,0 -17.2458727382352,14.7265073223606,0 -17.2459763743868,14.72656261517,0 -17.246134461798,14.7266107792114,0 -17.2462416572414,14.7266155812226,0 -17.2463840338748,14.726418556998,0 -17.2465816177963,14.7261959942726,0 -17.2467800977717,14.7260391693644,0 -17.2468934393447,14.7255759399312,0 -17.2469533130908,14.72564203331,0 -17.2469611593593,14.7260192209602,0 -17.2469607462147,14.7262590963423,0 -17.2469308555678,14.7265486243118,0 -17.2474582009426,14.7264544042936,0 -17.2477947178621,14.7262849883451,0 -17.2480223430126,14.7263896523373,0 -17.2479969420113,14.7265227664756,0 -17.2480249373275,14.7266426727879,0 -17.2480803699703,14.7270220796317,0 -17.2480389110392,14.7271258719316,0 -17.2479072189315,14.7271845904477,0 -17.2479088064421,14.7273394182372,0 -17.2477259753563,14.7273757504191,0 -17.2477247797881,14.7272591392184,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.132">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">132</SimpleData>
+		<SimpleData name="Shape_Leng">569.928839511076262</SimpleData>
+		<SimpleData name="Shape_Area">8830.206086737114674</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2494353718683,14.7272447688917,0 -17.2492645153627,14.7271524184517,0 -17.2492253609362,14.7270483251513,0 -17.2490372466618,14.7268743868597,0 -17.248918557049,14.7267416119846,0 -17.2487080383277,14.7267135262599,0 -17.2484833826459,14.726601640249,0 -17.2480223430126,14.7263896523373,0 -17.2477947178621,14.7262849883451,0 -17.2480561018114,14.7262281691729,0 -17.248078968644,14.7262183154111,0 -17.2482307354044,14.7261529163262,0 -17.2484150865915,14.7261112979026,0 -17.248452224497,14.7261029137751,0 -17.2486566408667,14.7258968639692,0 -17.2486709033212,14.7259838477859,0 -17.2488081301112,14.7261344655692,0 -17.2489082727907,14.7263333579526,0 -17.2488682180493,14.7264089111984,0 -17.2493839457862,14.7268071154123,0 -17.249785654402,14.7270755840489,0 -17.2496563424874,14.7273642070362,0 -17.2494353718683,14.7272447688917,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.133">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">133</SimpleData>
+		<SimpleData name="Shape_Leng">217.017318623780596</SimpleData>
+		<SimpleData name="Shape_Area">2492.136946561573950</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2469717611444,14.7274343980115,0 -17.2469667658055,14.7273473746554,0 -17.2470351300475,14.7272466155632,0 -17.2471241339821,14.7271154364508,0 -17.2472121014063,14.7271211691645,0 -17.2472757943609,14.7270702690547,0 -17.2474619427615,14.7270621368849,0 -17.2475068985065,14.7271105138184,0 -17.2477114854937,14.7271253066817,0 -17.2477247797881,14.7272591392184,0 -17.2475506576844,14.7272635840708,0 -17.2474910993879,14.7273641674233,0 -17.2473656573974,14.7274235803317,0 -17.2472712219276,14.7274999080779,0 -17.2471027375895,14.7275015439051,0 -17.2469717611444,14.7274343980115,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.134">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">134</SimpleData>
+		<SimpleData name="Shape_Leng">422.678132741201352</SimpleData>
+		<SimpleData name="Shape_Area">5853.731735555312298</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2488749320661,14.7272193131676,0 -17.2484347650127,14.726940768866,0 -17.2484752373662,14.7268410989941,0 -17.2482429497697,14.726747618696,0 -17.2480249373275,14.7266426727879,0 -17.2479969420113,14.7265227664756,0 -17.2480223430126,14.7263896523373,0 -17.2484833826459,14.726601640249,0 -17.2487080383277,14.7267135262599,0 -17.248918557049,14.7267416119846,0 -17.2490372466618,14.7268743868597,0 -17.2492253609362,14.7270483251513,0 -17.2492645153627,14.7271524184517,0 -17.2494353718683,14.7272447688917,0 -17.2492731933132,14.7275028301846,0 -17.2488749320661,14.7272193131676,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.135">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">135</SimpleData>
+		<SimpleData name="Shape_Leng">292.695818662446527</SimpleData>
+		<SimpleData name="Shape_Area">4842.667945295449499</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2459593474196,14.7275651174585,0 -17.2459790987293,14.7274971624449,0 -17.2460700997254,14.7274021671215,0 -17.2461293246707,14.7271918637561,0 -17.2462681037941,14.7270741687179,0 -17.2464079032974,14.7269961831205,0 -17.2465857658795,14.7270670378011,0 -17.2468380974998,14.7271221617281,0 -17.2469052188055,14.7271629101204,0 -17.2469342182705,14.7272079137726,0 -17.2469508292912,14.7272580586291,0 -17.2470351300475,14.7272466155632,0 -17.2469667658055,14.7273473746554,0 -17.2468457217287,14.7273998488247,0 -17.2466707129964,14.7275317750739,0 -17.24649165399,14.7276271437422,0 -17.2459593474196,14.7275651174585,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+  <Placemark id="parcelles.136">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parcelles">
+		<SimpleData name="OBJECTID">136</SimpleData>
+		<SimpleData name="Shape_Leng">454.551939633926906</SimpleData>
+		<SimpleData name="Shape_Area">7062.845329680797477</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2488776720655,14.7276815471174,0 -17.2486937743813,14.7277157183491,0 -17.2485823108279,14.727453411168,0 -17.2484903537243,14.7273614700087,0 -17.2482813805099,14.727331519419,0 -17.2479314497753,14.7273349182794,0 -17.2479088064421,14.7273394182372,0 -17.2479072189315,14.7271845904477,0 -17.2480389110392,14.7271258719316,0 -17.2480803699703,14.7270220796317,0 -17.2480249373275,14.7266426727879,0 -17.2482429497697,14.726747618696,0 -17.2484752373662,14.7268410989941,0 -17.2484347650127,14.726940768866,0 -17.2488749320661,14.7272193131676,0 -17.2492731933132,14.7275028301846,0 -17.2489655004482,14.7278037532121,0 -17.2488776720655,14.7276815471174,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

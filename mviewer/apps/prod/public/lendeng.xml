@@ -1,0 +1,32 @@
+<config xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" mviewerversion="3.13" mviewerstudioversion="4.2">
+<metadata>
+
+              <rdf:RDF>
+                  <rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+                      <dc:title>Lendeng</dc:title>
+                      <dc:creator>anonymous</dc:creator>
+                      <dc:identifier>e6f3330a3af2</dc:identifier>
+                      <dc:keywords />
+                      <dc:publisher>public</dc:publisher>
+                      <dc:description>27-06-2025-00-22-04</dc:description>
+                      <dc:date>2025-06-27-00-22-44</dc:date>
+                      <dc:relation>lendeng</dc:relation>
+                      <dc:subject>Agriculture</dc:subject>
+                  </rdf:Description>
+              </rdf:RDF>
+</metadata>
+<application title="Lendeng" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/default.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="true" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false" mapprint="false" addlayerstools="false">
+</application>
+<mapoptions projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" maxzoom="" zoom="7" extent="-588580.5168510808,5921206.447280059,-27226.981124746322,6361483.730202673" />
+<proxy url="proxy/?url=" />
+<olscompletion type="ban" url="https://data.geopf.fr/geocodage/search/" attribution="Base adresse nationale (BAN)" />
+<searchparameters bbox="false" localities="true" features="false" static="false" inputlabel="" querymaponclick="false" closeafterclick="false" />
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;" /> 
+    <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes" type="WMTS" url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'&gt;&lt;img src='https://geobretagne.fr/pub/logo/099_ign.jpg'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" /> 
+</baselayers>
+<themes mini="false"> 
+    <theme id="theme-20250627002217" name="Agriculture" collapsed="true" icon="fas fa-caret-right"> 
+    </theme> 
+</themes>
+</config>

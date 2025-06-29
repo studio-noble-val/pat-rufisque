@@ -18,10 +18,10 @@
 <application title="Zone agricole de Lendeng" logo="" favicon="" help="" titlehelp="" 
 iconhelp="fas fa-home" home="" style="css/themes/theme-designfr/theme_designfr.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="false" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false" mapprint="false" addlayerstools="false">
 </application>
-<mapoptions projection="EPSG:3857" 
-    center="-1919780.9203313626,1660187.0385918203" 
-        maxzoom="" zoom="11.585743379973435" 
-        extent="-1931902.3661380664,1651019.5585699435,-1907659.4745246589,1669354.518613697" />
+
+<mapoptions projection="EPSG:3857" center="-1919436.9537040794,1657144.844632803" maxzoom="" zoom="14" 
+extent="-1921653.6275243496,1655425.0114963865,-1917220.2798838092,1658864.6777692195" />
+
 <proxy url="proxy/?url=" />
 
 <searchparameters bbox="false" 
@@ -39,7 +39,7 @@ iconhelp="fas fa-home" home="" style="css/themes/theme-designfr/theme_designfr.c
     <theme id="theme-20250616180500" name="Lendeng" collapsed="false" icon="fas fa-seedling">
         <layer id="parcelles" name="Surfaces cultivées" 
             type="customlayer" 
-            url="apps/public/lendeng/customlayers/parcelles.js" 
+            url="apps/public/zone_de_lendeng/parcelles.js" 
             tooltip="true" 
             tooltipcontent="name" 
             visible="true"/>
