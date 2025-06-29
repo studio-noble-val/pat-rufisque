@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="bassin_retention" id="bassin_retention">
+	<SimpleField name="OBJECTID_1" type="float"></SimpleField>
+	<SimpleField name="Shape_Leng" type="float"></SimpleField>
+	<SimpleField name="Shape_Le_1" type="float"></SimpleField>
+	<SimpleField name="Shape_Area" type="float"></SimpleField>
+</Schema>
+<Folder><name>bassin_retention</name>
+  <Placemark id="bassin_retention.1">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#bassin_retention">
+		<SimpleData name="OBJECTID_1">1</SimpleData>
+		<SimpleData name="Shape_Leng">839.18308326100</SimpleData>
+		<SimpleData name="Shape_Le_1">839.18308326100</SimpleData>
+		<SimpleData name="Shape_Area">25007.63470850000</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-17.2466325671189,14.720165229789,0 -17.2464676721545,14.7200438086909,0 -17.2463556838084,14.7199967321468,0 -17.2461114350085,14.7199723884339,0 -17.2459711084672,14.7201588985137,0 -17.2458051575172,14.719784880149,0 -17.245394219472,14.7196090145575,0 -17.2455064370788,14.7195067610666,0 -17.2453092559618,14.7193543734429,0 -17.2451926465754,14.7192410558221,0 -17.2454160337402,14.7189408927535,0 -17.2454148402721,14.7188242966411,0 -17.2465262404306,14.718690452425,0 -17.2465297602897,14.7190341557863,0 -17.2468836053875,14.7190749373183,0 -17.2469731860566,14.7188597377704,0 -17.2470569324829,14.7188589251662,0 -17.2470583661368,14.7189988833463,0 -17.2471437285161,14.7190625620265,0 -17.247042549148,14.7192903456738,0 -17.2471510521838,14.7197377788056,0 -17.2469744060921,14.7197712097619,0 -17.2468908679646,14.7198870991522,0 -17.2470332189112,14.7200249056587,0 -17.2471090081054,14.7201921084931,0 -17.2472286025458,14.7204961557486,0 -17.2467930903676,14.7205457295497,0 -17.2466325671189,14.720165229789,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

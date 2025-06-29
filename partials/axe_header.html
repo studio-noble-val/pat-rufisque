@@ -1,0 +1,28 @@
+<!-- partials/axe_header.html -->
+<section class="mb-12 text-center">
+    <span class="inline-block bg-theme-{{theme_class}} text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
+        {{emoji}} {{categorie}}
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+        {{titre}}
+    </h2>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+        {{description}}
+    </p>
+
+    <!-- Métriques Clés -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p class="text-3xl font-bold text-theme-{{theme_class}}">{{kpi1_valeur}}</p>
+            <p class="text-gray-600">{{kpi1_label}}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p class="text-3xl font-bold text-theme-{{theme_class}}">{{kpi2_valeur}}</p>
+            <p class="text-gray-600">{{kpi2_label}}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p class="text-3xl font-bold text-theme-{{theme_class}}">{{kpi3_valeur}}</p>
+            <p class="text-gray-600">{{kpi3_label}}</p>
+        </div>
+    </div>
+</section>

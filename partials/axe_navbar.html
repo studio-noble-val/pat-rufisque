@@ -1,0 +1,28 @@
+<!-- partials/axe_navbar.html -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+        <!-- Lien Accueil / Logo -->
+        <a href="index.html" title="Accueil" class="flex-shrink-0 flex items-center gap-2 text-gray-700 hover:text-pat-green-principal transition-colors duration-300">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pat-green-principal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6M9 11.25h6M9 15.75h6M5.25 21v-3.375c0-.621.504-1.125 1.125-1.125h11.25c.621 0 1.125.504 1.125 1.125V21" />
+            </svg>
+            <span class="font-bold text-lg hidden sm:inline">PAT Rufisque</span>
+        </a>
+
+        <!-- Groupe de liens thématiques -->
+        <div class="flex items-center gap-6 sm:gap-8">
+            <a id="nav-gouvernance" href="page-gouvernance-alimentaire.html" class="nav-link text-gray-500 hover:text-theme-gouvernance border-b-2 border-transparent pb-1 transition-all duration-300">
+                <span class="hidden sm:inline font-semibold">Gouvernance</span>
+                <span class="sm:hidden text-2xl">🤝</span>
+            </a>
+            <a id="nav-cantines" href="page-cantines-scolaires.html" class="nav-link text-gray-500 hover:text-theme-cantines border-b-2 border-transparent pb-1 transition-all duration-300">
+                <span class="hidden sm:inline font-semibold">Cantines</span>
+                 <span class="sm:hidden text-2xl">🍽️</span>
+            </a>
+            <a id="nav-sad" href="page-systemes-alimentaires-durables.html" class="nav-link text-gray-500 hover:text-theme-sad border-b-2 border-transparent pb-1 transition-all duration-300">
+                <span class="hidden sm:inline font-semibold">Systèmes Durables</span>
+                 <span class="sm:hidden text-2xl">🌿</span>
+            </a>
+        </div>
+    </nav>
+</header>
