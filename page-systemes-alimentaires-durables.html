@@ -21,6 +21,11 @@
         /* Autres couleurs thématiques pour la navigation croisée */
         .text-theme-cantines { color: #2196F3; } /* Bleu cantines */
         .text-theme-gouvernance { color: #FF9800; } /* Orange gouvernance */
+
+        /* Style pour le diaporama */
+        .slideshow-image.active {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -58,6 +63,29 @@
         </nav>
     </header>
 
+    <!-- Diaporama d'images -->
+    <section id="slideshow-container" class="relative w-full h-64 md:h-96 bg-gray-800 overflow-hidden">
+        <!-- Les images du diaporama -->
+        <!-- NOTE: Remplacez les noms de fichiers 'placeholder-X.jpg' par les vrais noms de vos images du dossier statics/pic_lendeng/low/ -->
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L1.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L2.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L3.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L4.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L5.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L6.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L7.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L8.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L9.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_lendeng/low/L10.jpg');"></div>
+        
+        <!-- Superposition de dégradé et texte -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-4 md:p-8 text-white">
+            <h1 class="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">La Zone Maraîchère de Lendeng</h1>
+            <p class="mt-2 text-lg md:text-xl max-w-2xl drop-shadow-md">Un poumon vert essentiel pour l'alimentation et l'économie de Rufisque.</p>
+        </div>
+    </section>
+
     <main class="container mx-auto p-4 md:p-8">
 
         <!-- II. Titre principal et Métriques -->
@@ -89,7 +117,7 @@
             </div>
             <!-- Iframe ajoutée après les métriques. -->
             <div class="my-8 flex justify-center">
-                <iframe allowFullScreen style="border: none;" height="600" width="800" src="mviewer/?config=apps/public/zone_de_lendeng/zone_de_lendeng.xml"></iframe>
+                <iframe allowFullScreen style="border: none;" height="600" width="100%" src="mviewer/?config=apps/public/zone_de_lendeng/zone_de_lendeng.xml"></iframe>
             </div>
 
         </section>
@@ -281,6 +309,26 @@
                     }
                 });
             });
+
+            // --- Logique du Diaporama ---
+            const slideshowImages = document.querySelectorAll('.slideshow-image');
+            if (slideshowImages.length > 0) {
+                let currentImageIndex = 0;
+                
+                // Affiche la première image immédiatement
+                slideshowImages[currentImageIndex].classList.add('active');
+
+                setInterval(() => {
+                    // Masque l'image actuelle
+                    slideshowImages[currentImageIndex].classList.remove('active');
+                    
+                    // Passe à l'image suivante
+                    currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
+                    
+                    // Affiche la nouvelle image
+                    slideshowImages[currentImageIndex].classList.add('active');
+                }, 5000); // Change d'image toutes les 5 secondes
+            }
         });
     </script>
 </body>

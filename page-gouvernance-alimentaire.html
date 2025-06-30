@@ -22,6 +22,11 @@
         .text-theme-cantines { color: #2196F3; } /* Bleu cantines */
         .text-theme-zones-agricoles { color: #4CAF50; } /* Vert pour Zones Agricoles (cohérence avec PAT) */
         /* .text-theme-transformation { color: #9C27B0; } */ /* Violet transformation */
+
+        /* Style pour le diaporama */
+        .slideshow-image.active {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -59,19 +64,32 @@
         </nav>
     </header>
 
+    <!-- Diaporama d'images -->
+    <section id="slideshow-container" class="relative w-full h-64 md:h-96 bg-gray-800 overflow-hidden">
+        <!-- Les images du diaporama -->
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T1.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T2.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T3.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T4.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T5.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T6.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T7.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T8.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T9.jpg');"></div>
+        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T10.jpg');"></div>
+
+        <!-- Superposition de dégradé et texte -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-4 md:p-8 text-white">
+            <h1 class="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">Les TPE Agroalimentaires de Rufisque</h1>
+            <p class="mt-2 text-lg md:text-xl max-w-2xl drop-shadow-md">Un maillon essentiel de l'économie locale et de la transformation alimentaire.</p>
+        </div>
+    </section>
+
     <main class="container mx-auto p-4 md:p-8">
 
         <!-- II. Titre principal et Métriques -->
         <section class="mb-12 text-center">
-            <span class="inline-block bg-theme-gouvernance text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
-                🤝 Gouvernance Alimentaire
-            </span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-                Une Gouvernance Locale et Participative
-            </h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-                Renforcer la collaboration et l'implication des acteurs pour un système alimentaire territorial inclusif et efficace, en soutenant notamment les TPE et les initiatives locales.
-            </p>
 
             <!-- Métriques Clés (Exemples à adapter pour TPE et initiatives locales) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
@@ -90,7 +108,7 @@
             </div>
             <!-- Iframe ajoutée après les métriques -->
             <div class="my-8 flex justify-center">
-                <iframe allowFullScreen style="border: none;" height="600" width="80%" src=" mviewer/?config=apps/public/gouvernance/map_gouvernance.xml"></iframe>
+                <iframe allowFullScreen style="border: none;" height="600" width="100%" src=" mviewer/?config=apps/public/gouvernance/map_gouvernance.xml"></iframe>
             </div>
         </section>
 
@@ -137,10 +155,106 @@
 
                         <!-- Idée d'illustration : Photo montage de diverses activités de TPE (transformation de fruits, séchage de céréales, conditionnement de produits halieutiques). Commentaire pour le client : -->
                         <!-- CLIENT_NOTE: Envisager ici une image ou une galerie illustrant la diversité des TPE agroalimentaires locales. -->
-                        <div class="my-6 p-4 bg-gouvernance-orange-50 rounded-lg text-center">
-                            <p class="text-gouvernance-orange-800 font-semibold text-lg">Plus de <strong class="text-2xl">60%</strong> des TPE déclarent ne pas pouvoir s’approvisionner localement de manière stable.</p>
-                            <p class="text-sm text-gray-600">(Source: Diagnostic SAT, Conseil départemental de Rufisque & Grdr)</p>
+                        <!-- Panneau 1: TPE Agroalimentaires : Enjeux & Soutien (AVEC NOUVELLE MISE EN PAGE) -->
+                        <div id="tab-panel-tpe" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-tpe">
+                            <section>
+                                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                                    <span class="text-3xl mr-3">🏭</span> Les TPE agroalimentaires de Rufisque : leviers pour un système alimentaire durable
+                                </h3>
+                                
+                                <!-- NOUVELLE SECTION A DEUX COLONNES -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+                                    
+                                    <!-- COLONNE DE GAUCHE : STATISTIQUE DYNAMIQUE -->
+                                    <div>
+                                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                                            <!-- Graphique Circulaire -->
+                                            <div class="flex-shrink-0 w-36 h-36 mx-auto md:mx-0">
+                                                <div id="stat-chart-container" class="relative w-full h-full">
+                                                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                                                        <circle class="stroke-current text-gray-200" cx="50" cy="50" r="45" fill="transparent" stroke-width="10"></circle>
+                                                        <circle id="progress-circle" class="stroke-current text-theme-gouvernance transition-all duration-1000 ease-out" cx="50" cy="50" r="45" fill="transparent" stroke-width="10" stroke-linecap="round" transform="rotate(-90 50 50)" style="stroke-dasharray: 283; stroke-dashoffset: 283;"></circle>
+                                                    </svg>
+                                                    <div id="percentage-text" class="absolute inset-0 flex items-center justify-center text-3xl font-bold text-gouvernance-orange-800">0%</div>
+                                                </div>
+                                            </div>
+                                            <!-- Texte de la statistique -->
+                                            <div class="text-center md:text-left flex-grow">
+                                                <p class="text-xl font-semibold text-gray-800">
+                                                    Plus de <strong class="text-4xl font-bold text-theme-gouvernance">60%</strong> des TPE déclarent ne pas pouvoir s’approvisionner localement de manière stable.
+                                                </p>
+                                                <p class="mt-2 text-sm text-gray-500">(Source: Diagnostic SAT, Conseil départemental de Rufisque & Grdr)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- COLONNE DE DROITE : TEXTE D'INTRODUCTION -->
+                                    <div>
+                                        <p class="text-gray-700 mb-4">
+                                            Le département de Rufisque abrite un tissu dynamique de petites entreprises agroalimentaires (TPE), dont l’activité est essentielle à l’économie locale et à la transformation des produits agricoles. Ces unités, souvent dirigées par des femmes, interviennent dans la transformation de fruits, légumes, céréales ou produits halieutiques.
+                                        </p>
+                                        <p class="text-gray-700">
+                                            Pourtant, elles sont confrontées à plusieurs freins structurels : difficulté d’accès à des matières premières locales en quantité et qualité suffisantes, prix volatils, dépendance aux circuits longs, et faible structuration des filières.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </section>
                         </div>
+
+                        <script>
+                        // Ce script peut être déplacé à la fin de votre fichier HTML avec les autres scripts pour une meilleure organisation.
+                        // Assurez-vous qu'il ne soit chargé qu'une seule fois.
+                        document.addEventListener('DOMContentLoaded', () => {
+                            // On vérifie que les éléments existent avant de lancer le script (évite les erreurs si le script est global)
+                            const chartContainer = document.getElementById('stat-chart-container');
+                            if (!chartContainer) return;
+
+                            const progressCircle = document.getElementById('progress-circle');
+                            const percentageText = document.getElementById('percentage-text');
+                            
+                            const targetPercentage = 60; 
+                            const radius = progressCircle.r.baseVal.value;
+                            const circumference = 2 * Math.PI * radius;
+                            
+                            progressCircle.style.strokeDasharray = circumference;
+                            progressCircle.style.strokeDashoffset = circumference;
+
+                            let animationHasRun = false; // Sécurité pour ne lancer l'animation qu'une fois
+
+                            function animateChart(percentage) {
+                                if (animationHasRun) return;
+                                animationHasRun = true;
+
+                                const offset = circumference - (percentage / 100) * circumference;
+                                progressCircle.style.strokeDashoffset = offset;
+                                
+                                let currentPercent = 0;
+                                const interval = setInterval(() => {
+                                    if (currentPercent >= percentage) {
+                                        clearInterval(interval);
+                                        percentageText.textContent = `${percentage}%`; // Assure que la valeur finale est exacte
+                                    } else {
+                                        currentPercent++;
+                                        percentageText.textContent = `${currentPercent}%`;
+                                    }
+                                }, 20); // Ralenti légèrement pour une animation plus douce
+                            }
+
+                            const observer = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        animateChart(targetPercentage);
+                                        observer.unobserve(chartContainer); 
+                                    }
+                                });
+                            }, {
+                                threshold: 0.5 
+                            });
+
+                            observer.observe(chartContainer);
+                        });
+                        </script>
 
                         <p class="text-gray-700 mb-6">
                             Ce constat freine leur montée en gamme et leur compétitivité, alors même qu’elles représentent un vecteur central de valorisation de l’agriculture de proximité et de création d’emplois, notamment féminins.
@@ -150,20 +264,36 @@
                         <p class="text-gray-700 mb-6">
                             Face à ces défis, le Plan Alimentaire Territorial (PAT), porté par le Conseil départemental avec l’appui de CICODEV et du Grdr, a défini un plan d’action structuré autour de trois axes :
                         </p>
+
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange">
-                                <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">1. Faciliter l'approvisionnement local</h5>
-                                <p class="text-gray-600 text-sm">Mise en lien directe avec les producteurs et mise en place d’outils logistiques mutualisés (transport, stockage).</p>
+                            <!-- Carte 1 -->
+                            <div class="group bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange flex items-center gap-4 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+                                <img src="statics\gouvernance-1-kpi1.JPG" alt="Icône approvisionnement local" class="w-32 h-32 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                                <div>
+                                    <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">1. Faciliter l'approvisionnement local</h5>
+                                    <p class="text-gray-600 text-sm">Mise en lien directe avec les producteurs et mise en place d’outils logistiques mutualisés (transport, stockage).</p>
+                                </div>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange">
-                                <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">2. Améliorer la qualité et la sécurité</h5>
-                                <p class="text-gray-600 text-sm">Formations techniques et accompagnement vers les normes pour les produits transformés.</p>
+                            
+                            <!-- Carte 2 -->
+                            <div class="group bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange flex items-center gap-4 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+                                <img src="statics\gouvernance-1-kpi2.JPG" alt="Icône qualité et sécurité" class="w-32 h-32 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                                <div>
+                                    <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">2. Améliorer la qualité et la sécurité</h5>
+                                    <p class="text-gray-600 text-sm">Formations techniques et accompagnement vers les normes pour les produits transformés.</p>
+                                </div>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange">
-                                <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">3. Renforcer l'organisation économique</h5>
-                                <p class="text-gray-600 text-sm">Accès facilité aux financements et aux marchés publics (ex: cantines scolaires), notamment pour les groupements féminins.</p>
+                            
+                            <!-- Carte 3 -->
+                            <div class="group bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange flex items-center gap-4 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+                                <img src="statics\gouvernance-1-kpi3.JPG" alt="Icône organisation économique" class="w-32 h-32 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                                <div>
+                                    <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">3. Renforcer l'organisation économique</h5>
+                                    <p class="text-gray-600 text-sm">Accès facilité aux financements et aux marchés publics (ex: cantines scolaires), notamment pour les groupements féminins.</p>
+                                </div>
                             </div>
                         </div>
+
                         <p class="text-gray-700 mb-6">
                             Ces actions visent à faire des TPE des piliers d’un système alimentaire local, résilient et inclusif, ancré dans la richesse agricole du territoire de Rufisque.
                         </p>
@@ -309,6 +439,26 @@
                     }
                 });
             });
+
+            // --- Logique du Diaporama ---
+            const slideshowImages = document.querySelectorAll('.slideshow-image');
+            if (slideshowImages.length > 0) {
+                let currentImageIndex = 0;
+                
+                // Affiche la première image immédiatement
+                slideshowImages[currentImageIndex].classList.add('active');
+
+                setInterval(() => {
+                    // Masque l'image actuelle
+                    slideshowImages[currentImageIndex].classList.remove('active');
+                    
+                    // Passe à l'image suivante
+                    currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
+                    
+                    // Affiche la nouvelle image
+                    slideshowImages[currentImageIndex].classList.add('active');
+                }, 5000); // Change d'image toutes les 5 secondes
+            }
         });
     </script>
 </body>
