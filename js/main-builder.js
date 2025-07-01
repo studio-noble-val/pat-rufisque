@@ -50,24 +50,32 @@ async function buildHomePage() {
             return value !== undefined && value !== null ? value : '';
         });
 
-        mainContainer.innerHTML += render(accueilTpl, contenu);
+        let mainHtml = render(accueilTpl, contenu);
+
+        // Section Actions
+        let actionsItemsHtml = '';
+        contenu.actions_concretes.actions.forEach(action => { actionsItemsHtml += render(actionItemTpl, action); });
+        mainHtml += render(actionsSectionTpl, contenu);
+
+        // Section Axes
         let axesItemsHtml = '';
         contenu.axes_strategiques.axes.forEach((axe, index) => {
             const axeData = { ...axe, image_column_order_class: index % 2 === 1 ? 'md:order-last' : '' };
             axesItemsHtml += render(axeItemTpl, axeData);
         });
-        const axesSectionRendered = render(axesSectionTpl, contenu);
-        mainContainer.innerHTML += axesSectionRendered;
-        document.getElementById('axes-items-container').innerHTML = axesItemsHtml;
-        let actionsItemsHtml = '';
-        contenu.actions_concretes.actions.forEach(action => { actionsItemsHtml += render(actionItemTpl, action); });
-        const actionsSectionRendered = render(actionsSectionTpl, contenu);
-        mainContainer.innerHTML += actionsSectionRendered;
-        document.getElementById('actions-items-container').innerHTML = actionsItemsHtml;
+        mainHtml += render(axesSectionTpl, contenu);
+
+        // Section Alliance
         let allianceActeursHtml = '';
         contenu.alliance.acteurs_liste.forEach(acteur => { allianceActeursHtml += render(allianceActeurItemTpl, acteur); });
-        const allianceSectionRendered = render(allianceTpl, contenu);
-        mainContainer.innerHTML += allianceSectionRendered;
+        mainHtml += render(allianceTpl, contenu);
+
+        // Injection unique dans le DOM pour le contenu principal
+        mainContainer.innerHTML = mainHtml;
+
+        // Remplissage des conteneurs d'items maintenant qu'ils sont dans le DOM
+        document.getElementById('axes-items-container').innerHTML = axesItemsHtml;
+        document.getElementById('actions-items-container').innerHTML = actionsItemsHtml;
         document.getElementById('alliance-acteurs-list').innerHTML = allianceActeursHtml;
         footerContainer.innerHTML = render(footerTpl, contenu);
         initVideoFacade();

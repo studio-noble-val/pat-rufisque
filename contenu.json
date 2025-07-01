@@ -1,7 +1,8 @@
 {
     "accueil": {
-        "titre": "Rufisque s'engage pour une alimentation locale, saine et durable",
-        "description": "Découvrez comment la Politique Alimentaire Territoriale transforme notre communauté.",
+        "titre_prefix": "Rufisque s'engage pour une politique alimentaire",
+        "titre_highlight": "locale, saine et durable",
+        "description": "Avec la <strong class=\"font-semibold text-pat-green-principal\">PAT</strong> (Politique Alimentaire Territoriale), le Conseil départemental de Rufisque s'engage pour répondre aux défis urbains et climatiques.<br><br>Avec le GRDR et le SICODEV, nous construisons ensemble un système <strong class=\"font-semibold text-pat-green-darker\">local, résilient et équitable</strong>, en nous appuyant sur les savoir-faire et les dynamiques citoyennes du territoire.",
         "bouton_primaire": "Découvrir les Axes",
         "bouton_secondaire": "Voir nos Actions",
         "video_id": "J5zmO3twxZk",
