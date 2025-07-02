@@ -4,467 +4,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gouvernance Alimentaire - PAT Rufisque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Couleur thématique pour Gouvernance Alimentaire (Orange) */
-        .bg-theme-gouvernance { background-color: #FF9800; /* Orange */ }
         .text-theme-gouvernance { color: #FF9800; }
         .border-theme-gouvernance { border-color: #FF9800; }
+        .bg-theme-gouvernance-light { background-color: #FFF3E0; }
+        .text-theme-gouvernance-dark { color: #E65100; }
 
-        /* Couleurs pour les cartes/éléments spécifiques à la gouvernance */
-        .border-l-gouvernance-orange { border-left-color: #FF9800; }
-        .bg-gouvernance-orange-100 { background-color: #FFF3E0; } /* Orange très clair */
-        .bg-gouvernance-orange-50 { background-color: #FFF8E1; } /* Orange encore plus clair */
-        .text-gouvernance-orange-800 { color: #E65100; } /* Orange foncé */
-
-        /* Autres couleurs thématiques pour la navigation croisée */
-        .text-theme-cantines { color: #2196F3; } /* Bleu cantines */
-        .text-theme-zones-agricoles { color: #4CAF50; } /* Vert pour Zones Agricoles (cohérence avec PAT) */
-        /* .text-theme-transformation { color: #9C27B0; } */ /* Violet transformation */
-
-        /* Style pour le diaporama */
-        .slideshow-image.active {
-            opacity: 1;
-        }
+        .slideshow-image.active { opacity: 1; }
+        .slideshow-image { transition: opacity 1000ms ease-in-out; }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-700">
 
-    <!-- I. Header de navigation thématique (Nouveau style) -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
-        <nav class="container mx-auto flex items-center justify-center p-2 gap-2 sm:gap-4">
-            <!-- Lien Accueil -->
-            <a href="index.html" title="Accueil" class="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
+    <!-- NOUVELLE NAVBAR HARMONISÉE -->
+    <header class="sticky-header">
+        <nav class="container mx-auto flex items-center justify-center p-3 gap-3">
+            <a href="index.html" title="Accueil" class="flex-shrink-0 p-3 flex items-center justify-center rounded-lg bg-white border-2 border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
             </a>
-
-            <!-- Groupe de liens thématiques -->
-            <div class="flex-grow max-w-2xl flex items-center bg-gray-100 rounded-full p-1 gap-1">
-                <!-- Lien Gouvernance (Actif) -->
-                <a href="page-gouvernance-alimentaire.html" class="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-full bg-theme-gouvernance text-white shadow-md transform scale-105 transition-all duration-300">
-                    <span class="text-xl">🤝</span>
-                    <span class="hidden sm:inline font-bold">Gouvernance</span>
+            <div class="flex-grow grid grid-cols-3 gap-2">
+                <a href="page-gouvernance-alimentaire.html" class="text-center px-4 py-3 rounded-lg bg-pat-green-principal text-white font-bold shadow-lg">
+                    <span class="hidden sm:inline">🤝 Gouvernance</span>
+                    <span class="sm:hidden">Gouvernance</span>
                 </a>
-
-                <!-- Lien Cantines (Inactif) -->
-                <a href="page-cantines-scolaires.html" class="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-full hover:bg-white/80 transition-all duration-300 text-gray-700 hover:text-black">
-                    <span class="text-xl">🍽️</span>
-                    <span class="hidden sm:inline font-semibold">Cantines</span>
+                <a href="page-cantines-scolaires.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300">
+                    <span class="hidden sm:inline">🍽️ Cantines</span>
+                    <span class="sm:hidden">Cantines</span>
                 </a>
-
-                <!-- Lien Systèmes Durables (Inactif) -->
-                <a href="page-systemes-alimentaires-durables.html" class="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-full hover:bg-white/80 transition-all duration-300 text-gray-700 hover:text-black">
-                    <span class="text-xl">🌿</span>
-                    <span class="hidden sm:inline font-semibold">Systèmes Durables</span>
+                <a href="page-systemes-alimentaires-durables.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300">
+                    <span class="hidden sm:inline">🌿 Systèmes Durables</span>
+                    <span class="sm:hidden">Systèmes Durables</span>
                 </a>
             </div>
         </nav>
     </header>
 
-    <!-- Diaporama d'images AVEC KPIs INTÉGRÉS -->
-    <section id="slideshow-container" class="relative w-full h-[28rem] md:h-[32rem] bg-gray-800 overflow-hidden">
-        <!-- Les images du diaporama -->
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T1.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T2.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T3.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T4.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T5.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T6.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T7.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T8.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T9.jpg');"></div>
-        <div class="slideshow-image absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('statics/pic_tpe/low/T10.jpg');"></div>
-
-        <!-- Superposition de dégradé (vignette) -->
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/70"></div>
-        
-        <!-- Conteneur pour le titre en HAUT à GAUCHE avec contrôle de largeur -->
-        <div class="absolute top-0 left-0 p-4 md:p-8 text-left max-w-2xl">
-            <h1 class="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">Les TPE Agroalimentaires de Rufisque</h1>
-            <p class="mt-2 text-lg md:text-xl text-white/90 drop-shadow-md">Un maillon essentiel de l'économie locale et de la transformation alimentaire.</p>
-        </div>
-
-        <!-- Conteneur pour les KPIs en BAS -->
-        <div class="absolute bottom-0 left-0 w-full p-4 md:p-8 text-white">
-            <div class="container mx-auto">
-                <!-- KPIs INTÉGRÉS ET STYLISÉS -->
-                <div class="mt-4 md:mt-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
-                        <div class="bg-black/20 backdrop-blur-sm p-4 rounded-lg shadow-lg text-center border border-white/20">
-                            <p class="text-3xl font-bold text-theme-gouvernance">70%+</p>
-                            <p class="text-gray-200">TPE agro. portées par des femmes</p>
-                        </div>
-                        <div class="bg-black/20 backdrop-blur-sm p-4 rounded-lg shadow-lg text-center border border-white/20">
-                            <p class="text-3xl font-bold text-theme-gouvernance">9</p>
-                            <p class="text-gray-200">Établissements scolaires avec charte</p>
-                        </div>
-                        <div class="bg-black/20 backdrop-blur-sm p-4 rounded-lg shadow-lg text-center border border-white/20">
-                            <p class="text-3xl font-bold text-theme-gouvernance">3</p>
-                            <p class="text-gray-200">Axes d'action pour les TPE</p>
-                        </div>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Colonne Texte -->
+                <div class="text-center lg:text-left">
+                    <span class="inline-block bg-orange-100 text-orange-800 text-sm font-bold px-3 py-1 rounded-full mb-4">AXE STRATÉGIQUE 1</span>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">
+                        Les TPE Agroalimentaires de <span class="text-theme-gouvernance">Rufisque</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Un maillon essentiel de l'économie locale et de la transformation alimentaire, au cœur de notre gouvernance participative.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-gouvernance">70%+</p><p class="text-sm text-gray-600 font-semibold mt-1">TPE agro. portées par des femmes</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-gouvernance">9</p><p class="text-sm text-gray-600 font-semibold mt-1">Établissements scolaires avec charte</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-gouvernance">3</p><p class="text-sm text-gray-600 font-semibold mt-1">Axes d'action pour les TPE</p></div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <main class="container mx-auto p-4 md:p-8">
-
-        <!-- II. Iframe (anciennement avec les métriques) -->
-        <section class="mb-12 text-center">
-            <!-- Iframe laissée ici pour une meilleure visibilité et interaction -->
-            <div class="my-8 flex justify-center">
-                <iframe allowFullScreen style="border: none;" height="600" width="100%" src=" mviewer/?config=apps/public/gouvernance/map_gouvernance.xml"></iframe>
+                <!-- Colonne Diaporama -->
+                <div id="slideshow-container" class="relative w-full h-80 lg:h-96 rounded-2xl shadow-2xl overflow-hidden">
+                    <div class="slideshow-image active absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T1.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T2.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T3.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T4.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T5.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T6.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T7.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T8.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T9.jpg');"></div>
+                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T10.jpg');"></div>
+                </div>
             </div>
         </section>
 
-        <!-- Système d'onglets -->
-        <div class="mb-16">
-            <!-- Navigation des onglets -->
-            <div class="border-b border-gray-300 mb-6 overflow-x-auto">
-                <nav class="flex -mb-px gap-x-2" aria-label="Tabs">
-                    <button id="tab-button-tpe"
-                            class="tab-button flex-1 text-center py-3 px-2 sm:px-4 border-x border-t rounded-t-lg font-medium text-xs sm:text-sm bg-pat-green-principal text-white"
-                            data-tab-target="#tab-panel-tpe"
-                            role="tab" aria-controls="tab-panel-tpe" aria-selected="true">
-                        TPE Agroalimentaires : Enjeux & Soutien
-                    </button>
-                    <button id="tab-button-charte"
-                            class="tab-button flex-1 text-center py-3 px-2 sm:px-4 border-x border-t rounded-t-lg font-medium text-xs sm:text-sm bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-800"
-                            data-tab-target="#tab-panel-charte"
-                            role="tab" aria-controls="tab-panel-charte" aria-selected="false">
-                        Charte Restauration Scolaire Locale
-                    </button>
-                    <button id="tab-button-emploi-genre"
-                            class="tab-button flex-1 text-center py-3 px-2 sm:px-4 border-x border-t rounded-t-lg font-medium text-xs sm:text-sm bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-800"
-                            data-tab-target="#tab-panel-emploi-genre"
-                            role="tab" aria-controls="tab-panel-emploi-genre" aria-selected="false">
-                        Impact TPE : Emploi & Genre
-                    </button>
-                </nav>
+        <!-- Section Carte Iframe -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">Cartographie de la Gouvernance Alimentaire</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Explorez l'écosystème des acteurs de la transformation alimentaire à Rufisque.</p>
+                <div class="w-full bg-white p-2 rounded-2xl shadow-xl overflow-hidden border border-gray-200">
+                    <iframe allowFullScreen style="border: none; border-radius: 12px;" height="600" width="100%" src="mviewer/?config=apps/public/gouvernance/map_gouvernance.xml"></iframe>
+                </div>
             </div>
+        </section>
 
-            <!-- Panneaux de contenu des onglets -->
-            <div>
-                <!-- Panneau 1: TPE Agroalimentaires : Enjeux & Soutien -->
-                <div id="tab-panel-tpe" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-tpe">
-                    <section>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 flex items-center">
-                            <span class="text-3xl mr-3">🏭</span> Les TPE agroalimentaires de Rufisque : leviers pour un système alimentaire durable
-                        </h3>
+        <!-- Section Contenu avec Onglets -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto">
+                <!-- Navigation des onglets -->
+                <div class="border-b border-gray-200 mb-8">
+                    <nav class="flex -mb-px gap-x-2 sm:gap-x-4" aria-label="Tabs">
+                        <button id="tab-button-tpe" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-pat-green-principal text-pat-green-principal" data-tab-target="#tab-panel-tpe" role="tab" aria-selected="true">TPE : Enjeux & Soutien</button>
+                        <button id="tab-button-charte" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab-target="#tab-panel-charte" role="tab" aria-selected="false">Charte Restauration</button>
+                        <button id="tab-button-emploi-genre" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab-target="#tab-panel-emploi-genre" role="tab" aria-selected="false">Impact : Emploi & Genre</button>
+                    </nav>
+                </div>
 
-                        <!-- LIGNE 1 : Carte avec Image à gauche / Texte à droite -->
-                        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-6 mb-12">
-                            <!-- Colonne Image -->
-                            <div class="md:w-1/3 flex-shrink-0">
-                                <img src="statics/pic_tpe/gouv-onglet1-pic1.JPG" alt="Femmes transformatrices de produits locaux à Rufisque" class="rounded-lg mx-auto h-auto object-cover">
-                            </div>
-
-                            <!-- Colonne Texte -->
-                            <div class="md:w-2/3">
-                                <p class="text-gray-700 text-lg leading-relaxed">
-                                    Le département de Rufisque abrite un tissu dynamique de petites entreprises agroalimentaires (TPE), dont l’activité est essentielle à l’économie locale et à la transformation des produits agricoles.
-                                </p>
-                                <br>
-                                <p class="text-gray-700 text-lg leading-relaxed">
-                                    Ces unités, souvent dirigées par des femmes, interviennent dans la transformation de fruits, légumes, céréales ou produits halieutiques.
-                                </p>
-                            </div>
+                <!-- Panneaux de contenu des onglets -->
+                <div>
+                    <!-- Panneau 1: TPE Agroalimentaires : Enjeux & Soutien -->
+                    <div id="tab-panel-tpe" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-tpe">
+                        <div class="text-center mb-12">
+                            <h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Les TPE agroalimentaires de Rufisque : leviers pour un système alimentaire durable</h3>
+                            <p class="text-lg text-gray-600 max-w-4xl mx-auto">Le département de Rufisque abrite un tissu dynamique de petites entreprises agroalimentaires (TPE), dont l’activité est essentielle à l’économie locale et à la transformation des produits agricoles. Ces unités, souvent dirigées par des femmes, interviennent dans la transformation de fruits, légumes, céréales ou produits halieutiques.</p>
                         </div>
 
                         <!-- LIGNE 2 : Texte à gauche / Graphique à droite -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-12">
                             <!-- Colonne Texte -->
                             <div>
-                                <p class="text-gray-700 mb-4">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
                                     Pourtant, elles sont confrontées à plusieurs freins structurels : difficulté d’accès à des matières premières locales en quantité et qualité suffisantes, prix volatils, dépendance aux circuits longs, et faible structuration des filières.
                                 </p>
-                                <p class="text-gray-700 bg-gouvernance-orange-50 p-4 rounded-lg border-l-4 border-theme-gouvernance">
-                                    Ce constat freine leur montée en gamme et leur compétitivité, alors même qu’elles représentent un vecteur central de valorisation de l’agriculture de proximité et de création d’emplois, notamment féminins.
-                                </p>
+                                <blockquote class="bg-theme-gouvernance-light p-4 rounded-lg border-l-4 border-theme-gouvernance">
+                                    <p class="text-gray-800 font-medium">Ce constat freine leur montée en gamme et leur compétitivité, alors même qu’elles représentent un vecteur central de valorisation de l’agriculture de proximité et de création d’emplois, notamment féminins.</p>
+                                </blockquote>
                             </div>
-
                             <!-- Colonne Graphique -->
-                            <div>
-                                <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-l-gouvernance-orange flex flex-col md:flex-row items-center gap-6">
-                                    <!-- Graphique Circulaire -->
-                                    <div class="flex-shrink-0 w-36 h-36 mx-auto md:mx-0">
-                                        <div id="stat-chart-container" class="relative w-full h-full">
-                                            <svg class="w-full h-full" viewBox="0 0 100 100">
-                                                <circle class="stroke-current text-gray-200" cx="50" cy="50" r="45" fill="transparent" stroke-width="10"></circle>
-                                                <circle id="progress-circle" class="stroke-current text-theme-gouvernance transition-all duration-1000 ease-out" cx="50" cy="50" r="45" fill="transparent" stroke-width="10" stroke-linecap="round" transform="rotate(-90 50 50)" style="stroke-dasharray: 283; stroke-dashoffset: 283;"></circle>
-                                            </svg>
-                                            <div id="percentage-text" class="absolute inset-0 flex items-center justify-center text-3xl font-bold text-gouvernance-orange-800">0%</div>
-                                        </div>
-                                    </div>
-                                    <!-- Texte de la statistique -->
-                                    <div class="text-center md:text-left flex-grow">
-                                        <p class="text-lg font-semibold text-gray-800">
-                                            Plus de <strong class="text-4xl font-bold text-theme-gouvernance">60%</strong> des TPE déclarent ne pas pouvoir s’approvisionner localement de manière stable.
-                                        </p>
-                                        <p class="mt-2 text-xs text-gray-500">(Source: Diagnostic SAT, Conseil départemental de Rufisque & Grdr)</p>
+                            <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-theme-gouvernance flex flex-col sm:flex-row items-center gap-6">
+                                <div class="flex-shrink-0 w-36 h-36 mx-auto md:mx-0">
+                                    <div id="stat-chart-container" class="relative w-full h-full">
+                                        <svg class="w-full h-full" viewBox="0 0 100 100"><circle class="stroke-current text-gray-200" cx="50" cy="50" r="45" fill="transparent" stroke-width="10"></circle><circle id="progress-circle" class="stroke-current text-theme-gouvernance transition-all duration-1000 ease-out" cx="50" cy="50" r="45" fill="transparent" stroke-width="10" stroke-linecap="round" transform="rotate(-90 50 50)" style="stroke-dasharray: 283; stroke-dashoffset: 283;"></circle></svg>
+                                        <div id="percentage-text" class="absolute inset-0 flex items-center justify-center text-3xl font-bold text-theme-gouvernance-dark">0%</div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Script pour l'animation du graphique circulaire -->
-                        <script>
-                        document.addEventListener('DOMContentLoaded', () => {
-                            const chartContainer = document.getElementById('stat-chart-container');
-                            if (!chartContainer) return;
-
-                            const progressCircle = document.getElementById('progress-circle');
-                            const percentageText = document.getElementById('percentage-text');
-                            
-                            const targetPercentage = 60; 
-                            const radius = progressCircle.r.baseVal.value;
-                            const circumference = 2 * Math.PI * radius;
-                            
-                            progressCircle.style.strokeDasharray = circumference;
-                            progressCircle.style.strokeDashoffset = circumference;
-
-                            let animationHasRun = false;
-
-                            function animateChart(percentage) {
-                                if (animationHasRun) return;
-                                animationHasRun = true;
-
-                                const offset = circumference - (percentage / 100) * circumference;
-                                progressCircle.style.strokeDashoffset = offset;
-                                
-                                let currentPercent = 0;
-                                const interval = setInterval(() => {
-                                    if (currentPercent >= percentage) {
-                                        clearInterval(interval);
-                                        percentageText.textContent = `${percentage}%`;
-                                    } else {
-                                        currentPercent++;
-                                        percentageText.textContent = `${currentPercent}%`;
-                                    }
-                                }, 20); 
-                            }
-
-                            const observer = new IntersectionObserver((entries) => {
-                                entries.forEach(entry => {
-                                    if (entry.isIntersecting) {
-                                        // Un petit délai pour s'assurer que l'onglet est bien visible
-                                        setTimeout(() => animateChart(targetPercentage), 200);
-                                        observer.unobserve(chartContainer); 
-                                    }
-                                });
-                            }, {
-                                threshold: 0.5 
-                            });
-
-                            observer.observe(chartContainer);
-                        });
-                        </script>
-                        
-                        <!-- ===================================================== -->
-                        <!-- == FIN DE LA NOUVELLE STRUCTURE EN QUINCONCE == -->
-                        <!-- ===================================================== -->
-
-
-                        <h4 class="text-xl font-semibold text-gray-700 mt-12 mb-4">Plan d'action du PAT pour les TPE :</h4>
-                        <p class="text-gray-700 mb-6">
-                            Face à ces défis, le Plan Alimentaire Territorial (PAT), porté par le Conseil départemental avec l’appui de CICODEV et du Grdr, a défini un plan d’action structuré autour de trois axes :
-                        </p>
-
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                            <!-- Carte 1 -->
-                            <div class="group bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange flex items-center gap-4 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
-                                <img src="statics\gouvernance-1-kpi1.JPG" alt="Icône approvisionnement local" class="w-32 h-32 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
-                                <div>
-                                    <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">1. Faciliter l'approvisionnement local</h5>
-                                    <p class="text-gray-600 text-sm">Mise en lien directe avec les producteurs et mise en place d’outils logistiques mutualisés (transport, stockage).</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Carte 2 -->
-                            <div class="group bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange flex items-center gap-4 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
-                                <img src="statics\gouvernance-1-kpi2.JPG" alt="Icône qualité et sécurité" class="w-32 h-32 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
-                                <div>
-                                    <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">2. Améliorer la qualité et la sécurité</h5>
-                                    <p class="text-gray-600 text-sm">Formations techniques et accompagnement vers les normes pour les produits transformés.</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Carte 3 -->
-                            <div class="group bg-white p-6 rounded-lg shadow-md border-l-4 border-l-gouvernance-orange flex items-center gap-4 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
-                                <img src="statics\gouvernance-1-kpi3.JPG" alt="Icône organisation économique" class="w-32 h-32 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
-                                <div>
-                                    <h5 class="text-lg font-semibold text-theme-gouvernance mb-2">3. Renforcer l'organisation économique</h5>
-                                    <p class="text-gray-600 text-sm">Accès facilité aux financements et aux marchés publics (ex: cantines scolaires), notamment pour les groupements féminins.</p>
+                                <div class="text-center sm:text-left flex-grow">
+                                    <p class="text-lg font-semibold text-gray-800">Plus de <strong class="text-4xl font-bold text-theme-gouvernance">60%</strong> des TPE déclarent ne pas pouvoir s’approvisionner localement de manière stable.</p>
+                                    <p class="mt-2 text-xs text-gray-500">(Source: Diagnostic SAT, Conseil départemental de Rufisque & Grdr)</p>
                                 </div>
                             </div>
                         </div>
 
-                        <p class="text-gray-700 mb-6">
-                            Ces actions visent à faire des TPE des piliers d’un système alimentaire local, résilient et inclusif, ancré dans la richesse agricole du territoire de Rufisque.
-                        </p>
+                        <h4 class="text-2xl font-bold text-gray-800 mt-16 mb-6 text-center" style="font-family: 'Montserrat', sans-serif;">Plan d'action du PAT pour les TPE</h4>
+                        <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto text-center">Face à ces défis, le Plan Alimentaire Territorial (PAT), porté par le Conseil départemental avec l’appui de CICODEV et du Grdr, a défini un plan d’action structuré autour de trois axes :</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-theme-gouvernance text-center"><img src="statics/gouvernance-1-kpi1.JPG" alt="Icône approvisionnement local" class="w-32 h-32 object-contain mx-auto mb-4"><h5 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Faciliter l'approvisionnement local</h5><p class="text-gray-600">Mise en lien directe avec les producteurs et mise en place d’outils logistiques mutualisés (transport, stockage).</p></div>
+                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-theme-gouvernance text-center"><img src="statics/gouvernance-1-kpi2.JPG" alt="Icône qualité et sécurité" class="w-32 h-32 object-contain mx-auto mb-4"><h5 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Améliorer la qualité et la sécurité</h5><p class="text-gray-600">Formations techniques et accompagnement vers les normes pour les produits transformés.</p></div>
+                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-theme-gouvernance text-center"><img src="statics/gouvernance-1-kpi3.JPG" alt="Icône organisation économique" class="w-32 h-32 object-contain mx-auto mb-4"><h5 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Renforcer l'organisation économique</h5><p class="text-gray-600">Accès facilité aux financements et aux marchés publics (ex: cantines scolaires), notamment pour les groupements féminins.</p></div>
+                        </div>
 
-                        <div class="mt-8 p-6 bg-gray-100 rounded-lg italic">
+                        <blockquote class="mt-12 bg-gray-100 border-l-4 border-gray-300 p-6 rounded-r-lg">
                             <h5 class="font-semibold text-gray-700 mb-2">Témoignage (Placeholder) :</h5>
-                            <p class="text-gray-600">"Grâce à l'accompagnement du PAT, j'ai pu améliorer la qualité de mes jus locaux et trouver de nouveaux débouchés pour mes produits. Cela a changé beaucoup de choses pour ma famille." - <span class="font-medium">Mme Diop, transformatrice à Rufisque.</span></p>
-                        </div>
-                    </section>
-                </div>
-                <!-- Panneau 2: Charte Restauration Scolaire Locale -->
-                <div id="tab-panel-charte" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-charte">
-                    <section>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                            <span class="text-3xl mr-3">📜</span> Charte des femmes restauratrices pour une alimentation locale de qualité en milieu scolaire
-                        </h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                            <div class="md:col-span-2">
-                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Contexte et engagement</h4>
-                                <p class="text-gray-700 mb-3">
-                                    Dans le cadre du programme AMOPAR, mis en œuvre par le Conseil Départemental de Rufisque avec l’appui du GRDR et de CICODEV Afrique, une initiative structurante a été lancée pour améliorer l’offre alimentaire autour des établissements scolaires. Cette démarche vise à garantir à tous les élèves, y compris ceux qui ne bénéficient pas de la cantine scolaire, un accès à une alimentation saine, équilibrée, et issue du territoire.
-                                </p>
-                                <p class="text-gray-700">
-                                    Les femmes restauratrices et vendeuses de tables, actrices essentielles de la vie des écoles, ont été identifiées comme des partenaires incontournables pour cette transformation. Avec leur pleine implication, un processus participatif a permis d’aboutir à l’élaboration d’une charte d’engagement, véritable socle commun pour améliorer l’offre alimentaire et promouvoir les produits locaux.
-                                </p>
+                            <p class="text-gray-600 italic">"Grâce à l'accompagnement du PAT, j'ai pu améliorer la qualité de mes jus locaux et trouver de nouveaux débouchés pour mes produits. Cela a changé beaucoup de choses pour ma famille."</p>
+                            <cite class="block text-right mt-2 not-italic font-medium text-gray-800">- Mme Diop, transformatrice à Rufisque.</cite>
+                        </blockquote>
+                    </div>
+
+                    <!-- Panneau 2: Charte Restauration Scolaire Locale -->
+                    <div id="tab-panel-charte" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-charte">
+                        <div class="text-center mb-12"><h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Charte pour une alimentation locale de qualité en milieu scolaire</h3></div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                            <div class="md:col-span-3">
+                                <h4 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: 'Montserrat', sans-serif;">Contexte et engagement</h4>
+                                <p class="text-gray-700 mb-4 leading-relaxed">Dans le cadre du programme AMOPAR, mis en œuvre par le Conseil Départemental de Rufisque avec l’appui du GRDR et de CICODEV Afrique, une initiative structurante a été lancée pour améliorer l’offre alimentaire autour des établissements scolaires. Cette démarche vise à garantir à tous les élèves, y compris ceux qui ne bénéficient pas de la cantine scolaire, un accès à une alimentation saine, équilibrée, et issue du territoire.</p>
+                                <p class="text-gray-700 leading-relaxed">Les femmes restauratrices et vendeuses de tables, actrices essentielles de la vie des écoles, ont été identifiées comme des partenaires incontournables pour cette transformation. Avec leur pleine implication, un processus participatif a permis d’aboutir à l’élaboration d’une charte d’engagement, véritable socle commun pour améliorer l’offre alimentaire et promouvoir les produits locaux.</p>
                             </div>
-                             <!-- CLIENT_NOTE: Idée d'illustration : Photo de femmes restauratrices souriantes devant leurs stands à l'école, ou une infographie des points clés de la charte. -->
-                            <div class="md:col-span-1 flex items-center justify-center">
-                                <img src="https://placehold.co/300x250/FF9800/FFFFFF/png?text=Charte+Restauration" alt="Illustration Charte Restauration Scolaire" class="rounded-lg shadow-md max-h-64">
-                            </div>
+                            <div class="md:col-span-2 flex items-center justify-center"><img src="https://placehold.co/400x320/FF9800/FFFFFF/png?text=Charte+d'Engagement" alt="Illustration Charte Restauration Scolaire" class="rounded-xl shadow-lg w-full"></div>
                         </div>
-
-
-                        <h4 class="text-xl font-semibold text-gray-700 mt-8 mb-4">Les principes de la charte :</h4>
-                        <div class="space-y-4 mb-6">
-                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-gouvernance-orange"><strong>1. Promouvoir une alimentation saine et équilibrée :</strong> proposer des repas et collations nutritifs, pauvres en sucres et graisses saturées, riches en produits frais, naturels et locaux.</div>
-                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-gouvernance-orange"><strong>2. Valoriser les produits locaux et les circuits courts :</strong> privilégier l’achat de produits issus de l’agriculture et de la transformation locales (niébé, mil, patate douce, jus locaux, etc.).</div>
-                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-gouvernance-orange"><strong>3. Garantir l’hygiène et la sécurité alimentaire :</strong> adopter les bonnes pratiques d’hygiène et disposer d’un carnet de santé à jour.</div>
-                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-gouvernance-orange"><strong>4. Adapter les prix pour les élèves :</strong> proposer des mets et collations à des prix accessibles.</div>
-                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-gouvernance-orange"><strong>5. Gérer collectivement les fonds d’appui :</strong> utilisation transparente pour l’achat de produits alimentaires et l’amélioration des équipements.</div>
-                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-gouvernance-orange"><strong>6. Renforcer les compétences et diffuser les bonnes pratiques :</strong> partager les acquis et participer aux actions de sensibilisation.</div>
-                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-gouvernance-orange"><strong>7. Contribuer à un environnement scolaire favorable :</strong> améliorer le bien-être des élèves et lutter contre la malnutrition.</div>
+                        <h4 class="text-2xl font-bold text-gray-800 mt-16 mb-6 text-center" style="font-family: 'Montserrat', sans-serif;">Les 7 Principes de la Charte</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-theme-gouvernance"><strong>1. Alimentation saine et équilibrée :</strong> proposer des repas et collations nutritifs, pauvres en sucres et graisses saturées, riches en produits frais, naturels et locaux.</div>
+                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-theme-gouvernance"><strong>2. Valorisation des produits locaux :</strong> privilégier l’achat de produits issus de l’agriculture et de la transformation locales (niébé, mil, patate douce, jus locaux, etc.).</div>
+                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-theme-gouvernance"><strong>3. Hygiène et sécurité alimentaire :</strong> adopter les bonnes pratiques d’hygiène et disposer d’un carnet de santé à jour.</div>
+                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-theme-gouvernance"><strong>4. Prix adaptés :</strong> proposer des mets et collations à des prix accessibles aux élèves.</div>
+                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-theme-gouvernance"><strong>5. Gestion collective des fonds :</strong> utilisation transparente pour l’achat de produits alimentaires et l’amélioration des équipements.</div>
+                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-theme-gouvernance"><strong>6. Renforcement des compétences :</strong> partager les acquis et participer aux actions de sensibilisation.</div>
+                            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-theme-gouvernance col-span-1 sm:col-span-2 lg:col-span-1"><strong>7. Environnement scolaire favorable :</strong> améliorer le bien-être des élèves et lutter contre la malnutrition.</div>
                         </div>
-
-                        <h4 class="text-xl font-semibold text-gray-700 mt-8 mb-2">Une charte co-construite et évolutive</h4>
-                        <p class="text-gray-700 mb-3">
-                            Cette charte a été élaborée à l’issue d’ateliers de concertation organisés dans les neuf établissements enrôlés du département de Rufisque, en présence des équipes pédagogiques, des chargés de cantine, des représentants des parents d’élèves et des gouvernements scolaires. Elle constitue le socle des conventions de partenariat signées avec les établissements et les femmes, dans le cadre du plan d’accompagnement porté par le projet AMOPAR.
-                        </p>
-                        <p class="text-gray-700 mb-6">
-                            Elle est appelée à évoluer en fonction des retours de terrain, des évaluations menées, et des besoins exprimés par les restauratrices et les communautés éducatives.
-                        </p>
-                        <!-- CLIENT_NOTE: Lien vers le document complet de la charte. Mettre à jour le href lorsque le document sera disponible. -->
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-theme-gouvernance text-white font-semibold py-2 px-4 rounded-md hover:bg-orange-600 transition-colors">
-                            Télécharger la Charte (PDF) <span class="ml-1">🔗</span>
-                        </a>
-                    </section>
-                </div>
-
-                <!-- Panneau 3: Impact TPE : Emploi & Genre -->
-                <div id="tab-panel-emploi-genre" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-emploi-genre">
-                    <section>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-                            <span class="text-3xl mr-3">👩🏽‍🍳</span> Emploi et genre dans les TPE agroalimentaires de Rufisque : un levier à valoriser
-                        </h3>
-                        <p class="text-gray-700 mb-6">
-                            Dans le département de Rufisque, les très petites entreprises (TPE) de transformation agroalimentaire, souvent informelles, représentent un secteur vital pour l’emploi local, en particulier pour les femmes. Ces TPE, actives dans la transformation de fruits, légumes, céréales ou produits de la mer, jouent un rôle central dans l’économie de proximité et la valorisation des produits agricoles locaux.
-                        </p>
-
-                        <!-- CLIENT_NOTE: Idée d'illustration : Photos de femmes entrepreneures dans le secteur agroalimentaire, mettant en avant leur travail et leur leadership. -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="bg-gouvernance-orange-50 p-4 rounded-lg text-center">
-                                <p class="text-gouvernance-orange-800 font-semibold">Plus de <strong class="text-2xl">70%</strong> des transformatrices sont organisées en GIE ou associations féminines.</p>
-                                <p class="text-sm text-gray-600">(Source: Diagnostic PAT)</p>
-                            </div>
-                            <div class="bg-gouvernance-orange-50 p-4 rounded-lg text-center">
-                                <p class="text-gouvernance-orange-800 font-semibold"><strong class="text-2xl">77%</strong> des femmes en emploi dans les Niayes travaillent dans l’économie alimentaire, dont <strong class="text-2xl">98%</strong> des transformateurs sont des femmes.</p>
-                                <p class="text-sm text-gray-600">(Source: OCDE/SWAC)</p>
-                            </div>
+                        <div class="mt-12 text-center">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-theme-gouvernance text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-orange-600 transition-colors transform hover:-translate-y-1">Télécharger la Charte (PDF) <span class="ml-1">🔗</span></a>
                         </div>
+                    </div>
 
-                        <p class="text-gray-700 mb-3">
-                            Ces unités génèrent des revenus pour des centaines de ménages, notamment via les activités de cuisson, séchage, conditionnement ou commercialisation. Elles recrutent localement, souvent dans des quartiers populaires où l’accès à l’emploi est limité, contribuant ainsi à la résilience socio-économique des femmes et des jeunes.
-                        </p>
-                        <p class="text-gray-700 mb-6">
-                            Cependant, ces TPE font face à des freins structurels persistants : accès limité aux équipements de qualité, manque de certification sanitaire, difficultés d’accès au financement, et forte précarité de l’emploi féminin, souvent non déclaré ou saisonnier.
-                        </p>
-
-                        <h4 class="text-xl font-semibold text-gray-700 mt-8 mb-4">Actions du programme AMOPAR (intégré au PAT) :</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6 pl-5">
-                            <li>Appui à la structuration des GIE féminins, avec des formations à la gestion, la transformation et l’hygiène.</li>
-                            <li>Valorisation de la commande publique locale, notamment via les cantines scolaires, pour créer un marché durable pour les TPE locales.</li>
-                            <li>Accompagnement des femmes vers une montée en compétence et une formalisation progressive de leurs activités.</li>
-                        </ul>
-
-                        <p class="text-gray-700 font-medium bg-green-50 p-4 rounded-lg border-l-4 border-pat-green-principal">
-                            Ainsi, le soutien apporté dans le cadre du Plan Alimentaire Territorial aux TPE agroalimentaires est un investissement dans un secteur fortement féminisé, créateur d’emplois durables et vecteur d’autonomisation économique, au cœur des enjeux du développement local et de la transition alimentaire.
-                        </p>
-                    </section>
+                    <!-- Panneau 3: Impact TPE : Emploi & Genre -->
+                    <div id="tab-panel-emploi-genre" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-emploi-genre">
+                        <div class="text-center mb-12"><h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Emploi et genre dans les TPE agroalimentaires : un levier à valoriser</h3></div>
+                        <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">Dans le département de Rufisque, les très petites entreprises (TPE) de transformation agroalimentaire, souvent informelles, représentent un secteur vital pour l’emploi local, en particulier pour les femmes. Ces TPE, actives dans la transformation de fruits, légumes, céréales ou produits de la mer, jouent un rôle central dans l’économie de proximité et la valorisation des produits agricoles locaux.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-theme-gouvernance-light p-6 rounded-lg text-center shadow"><p class="text-theme-gouvernance-dark font-semibold">Plus de <strong class="text-3xl block font-bold">70%</strong> des transformatrices sont organisées en GIE ou associations féminines.</p><p class="text-sm text-gray-600 mt-2">(Source: Diagnostic PAT)</p></div>
+                            <div class="bg-theme-gouvernance-light p-6 rounded-lg text-center shadow"><p class="text-theme-gouvernance-dark font-semibold"><strong class="text-3xl block font-bold">77%</strong> des femmes en emploi dans les Niayes travaillent dans l’économie alimentaire.</p><p class="text-sm text-gray-600 mt-2">(Source: OCDE/SWAC)</p></div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed max-w-4xl mx-auto">Ces unités génèrent des revenus pour des centaines de ménages, notamment via les activités de cuisson, séchage, conditionnement ou commercialisation. Elles recrutent localement, souvent dans des quartiers populaires où l’accès à l’emploi est limité, contribuant ainsi à la résilience socio-économique des femmes et des jeunes. Cependant, ces TPE font face à des freins structurels persistants : accès limité aux équipements de qualité, manque de certification sanitaire, difficultés d’accès au financement, et forte précarité de l’emploi féminin, souvent non déclaré ou saisonnier.</p>
+                        <blockquote class="mt-8 bg-green-50 p-6 rounded-lg border-l-4 border-pat-green-principal">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Montserrat', sans-serif;">Actions du programme AMOPAR (intégré au PAT)</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Appui à la structuration des GIE féminins, avec des formations à la gestion, la transformation et l’hygiène.</li>
+                                <li>Valorisation de la commande publique locale, notamment via les cantines scolaires, pour créer un marché durable pour les TPE locales.</li>
+                                <li>Accompagnement des femmes vers une montée en compétence et une formalisation progressive de leurs activités.</li>
+                            </ul>
+                            <p class="mt-4 font-medium text-gray-800">Ainsi, le soutien apporté dans le cadre du Plan Alimentaire Territorial aux TPE agroalimentaires est un investissement dans un secteur fortement féminisé, créateur d’emplois durables et vecteur d’autonomisation économique, au cœur des enjeux du développement local et de la transition alimentaire.</p>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Fin du système d'onglets -->
-
+        </section>
     </main>
-
-    <footer class="bg-gray-800 text-white text-center p-8 mt-12">
-        <p>© 2024 PAT Rufisque - Tous droits réservés.</p>
-        <p class="mt-2">
-            <a href="index.html#actions" class="text-pat-green-principal hover:underline">Voir l'étude complète SAT 2027</a>
-        </p>
-    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabPanels = document.querySelectorAll('.tab-panel');
-
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     const targetPanelId = button.getAttribute('data-tab-target');
-
                     tabButtons.forEach(btn => {
-                        // Classes pour onglet inactif
-                        btn.classList.remove('bg-pat-green-principal', 'text-white');
-                        btn.classList.add('bg-gray-200', 'text-gray-600', 'hover:bg-gray-300', 'hover:text-gray-800');
+                        btn.classList.remove('border-pat-green-principal', 'text-pat-green-principal');
+                        btn.classList.add('border-transparent', 'text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300');
                         btn.setAttribute('aria-selected', 'false');
                     });
-                    tabPanels.forEach(panel => {
-                        panel.classList.add('hidden');
-                    });
-
-                    // Activer le bouton cliqué
-                    button.classList.remove('bg-gray-200', 'text-gray-600', 'hover:bg-gray-300', 'hover:text-gray-800');
-                    button.classList.add('bg-pat-green-principal', 'text-white');
+                    button.classList.add('border-pat-green-principal', 'text-pat-green-principal');
+                    button.classList.remove('border-transparent', 'text-gray-500');
                     button.setAttribute('aria-selected', 'true');
-
-                    // Afficher le panneau cible
-                    const targetPanel = document.querySelector(targetPanelId);
-                    if (targetPanel) {
-                        targetPanel.classList.remove('hidden');
-                    }
+                    tabPanels.forEach(panel => panel.classList.add('hidden'));
+                    document.querySelector(targetPanelId)?.classList.remove('hidden');
                 });
             });
 
-            // --- Logique du Diaporama ---
             const slideshowImages = document.querySelectorAll('.slideshow-image');
             if (slideshowImages.length > 0) {
                 let currentImageIndex = 0;
-                
-                // Affiche la première image immédiatement
-                slideshowImages[currentImageIndex].classList.add('active');
-
+                slideshowImages[0].classList.add('active');
                 setInterval(() => {
-                    // Masque l'image actuelle
                     slideshowImages[currentImageIndex].classList.remove('active');
-                    
-                    // Passe à l'image suivante
                     currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
-                    
-                    // Affiche la nouvelle image
                     slideshowImages[currentImageIndex].classList.add('active');
-                }, 5000); // Change d'image toutes les 5 secondes
+                }, 5000);
+            }
+
+            const chartContainer = document.getElementById('stat-chart-container');
+            if (chartContainer) {
+                const progressCircle = document.getElementById('progress-circle');
+                const percentageText = document.getElementById('percentage-text');
+                const targetPercentage = 60;
+                const radius = progressCircle.r.baseVal.value;
+                const circumference = 2 * Math.PI * radius;
+                progressCircle.style.strokeDasharray = circumference;
+                progressCircle.style.strokeDashoffset = circumference;
+                let animationHasRun = false;
+                const animateChart = (percentage) => {
+                    if (animationHasRun) return;
+                    animationHasRun = true;
+                    const offset = circumference - (percentage / 100) * circumference;
+                    progressCircle.style.strokeDashoffset = offset;
+                    let currentPercent = 0;
+                    const interval = setInterval(() => {
+                        if (currentPercent >= percentage) {
+                            clearInterval(interval);
+                            percentageText.textContent = `${percentage}%`;
+                        } else {
+                            currentPercent++;
+                            percentageText.textContent = `${currentPercent}%`;
+                        }
+                    }, 20);
+                };
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => animateChart(targetPercentage), 200);
+                            observer.unobserve(chartContainer);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                observer.observe(chartContainer);
             }
         });
     </script>

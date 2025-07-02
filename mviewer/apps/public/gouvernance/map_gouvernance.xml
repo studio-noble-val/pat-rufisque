@@ -17,8 +17,8 @@
 <proxy url="proxy/?url=" />
 <searchparameters bbox="false" localities="false" features="false" static="false" inputlabel="undefined" querymaponclick="false" closeafterclick="false" />
 <baselayers style="default"> 
-    <baselayer visible="false" id="esriworldimagery" thumbgallery="img/basemap/esriworldwide.jpg" title="Esri" label="Esri world imagery" type="OSM" url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="&lt;a href=&quot;https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9&quot; target=&quot;_blank&quot; &gt;Esri world imagery&lt;/a&gt;" /> 
-    <baselayer visible="true" id="osm" thumbgallery="img/basemap/osm.png" title="OSM" label="OpenStreetMap classique" type="OSM" url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;&lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;" /> 
+    <baselayer visible="true" id="esriworldimagery" thumbgallery="img/basemap/esriworldwide.jpg" title="Esri" label="Esri world imagery" type="OSM" url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="&lt;a href=&quot;https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9&quot; target=&quot;_blank&quot; &gt;Esri world imagery&lt;/a&gt;" /> 
+    <baselayer visible="false" id="osm" thumbgallery="img/basemap/osm.png" title="OSM" label="OpenStreetMap classique" type="OSM" url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;&lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;" /> 
 </baselayers>
 <themes mini="false">
     <theme id="theme-gouvernance-fournisseurs" name="Fournisseurs locaux par activité" collapsed="false" icon="fas fa-truck-fast">
