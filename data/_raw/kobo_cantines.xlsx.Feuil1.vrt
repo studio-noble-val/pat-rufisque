@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="cantines">
+        <SrcDataSource relativeToVRT="1">kobo_cantines.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Feuil1</SrcLayer>
+        <Field name="categorie" src="categorie" type="String"/>
+        <Field name="cuisine_ratachement" src="cuisine_ratachement" type="String"/>
+        <Field name="nom_etab" src="nom_etab" type="String"/>
+        <Field name="annee_ratachement" src="annee_ratachement" type="Integer"/>
+        <Field name="nb_repas_moyen" src="nb_repas_moyen" type="Integer"/>
+        <Field name="fille_pc" src="fille_pc" type="Integer"/>
+        <Field name="Merci de prendre une photo de l'école" src="Merci de prendre une photo de l'école" type="String"/>
+        <Field name="Merci de prendre une photo de l'école_URL" src="Merci de prendre une photo de l'école_URL" type="String"/>
+        <Field name="_id" src="_id" type="Integer"/>
+        <Field name="_uuid" src="_uuid" type="String"/>
+        <Field name="_submission_time" src="_submission_time" type="Date"/>
+        <Field name="_validation_status" src="_validation_status" type="String"/>
+        <Field name="_notes" src="_notes" type="String"/>
+        <Field name="_status" src="_status" type="String"/>
+        <Field name="_submitted_by" src="_submitted_by" type="String"/>
+        <Field name="__version__" src="__version__" type="String"/>
+        <Field name="_tags" src="_tags" type="String"/>
+        <Field name="_index" src="_index" type="Integer"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="long" y="lat"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

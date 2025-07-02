@@ -1,0 +1,89 @@
+{{#features}}
+<li id="{{feature_ol_uid}}" class="item">
+    <div class="item-header">
+        <i class="fas fa-school" style="color: #008064;"></i>
+        <h3>{{nom_etab}}</h3>
+    </div>
+    <div class="item-content">
+
+        <!-- Affiche l'image de l'école seulement si l'URL existe -->
+        {{#Merci de prendre une photo de l'école_URL}}
+            <img src="{{Merci de prendre une photo de l'école_URL}}" alt="Photo de {{nom_etab}}" class="info-image">
+        {{/Merci de prendre une photo de l'école_URL}}
+        
+        <div class="info-details">
+            <ul>
+                <li>
+                    <strong>Cuisine de rattachement :</strong>
+                    <span>{{cuisine_ratachement}}</span>
+                </li>
+                <li>
+                    <strong>Année de rattachement :</strong>
+                    <span>{{annee_ratachement}}</span>
+                </li>
+                <li>
+                    <strong>Repas servis (moyenne/jour) :</strong>
+                    <span>{{nb_repas_moyen}}</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</li>
+{{/features}}
+
+<style>
+    /* ----- STYLE GÉNÉRAL ----- */
+    .item {
+        margin-bottom: 20px; /* Espace en bas pour éviter d'être tronqué */
+    }
+    .item-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    .item h3 {
+        color: #008064;
+        font-size: 1.2em;
+        margin: 0; /* Retire la marge par défaut du h3 */
+    }
+    .item-content {
+        padding-top: 15px;
+    }
+
+    /* ----- STYLE DE L'IMAGE ----- */
+    .info-image {
+        width: 100%;
+        height: auto;
+        max-height: 250px; /* Limite la hauteur de l'image */
+        object-fit: cover; /* Assure que l'image remplit l'espace sans se déformer */
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    /* ----- STYLE DE LA LISTE D'INFORMATIONS ----- */
+    .info-details ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .info-details li {
+        display: flex;
+        justify-content: space-between; /* Aligne le libellé à gauche et la valeur à droite */
+        padding: 8px 0;
+        font-size: 0.95em;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .info-details li:last-child {
+        border-bottom: none; /* Retire la bordure du dernier élément */
+    }
+    .info-details li strong {
+        color: #333;
+    }
+    .info-details li span {
+        color: #555;
+        font-weight: bold;
+    }
+</style>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="cuisines_centrales">
+        <SrcDataSource relativeToVRT="1">kobo_cuisine.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Feuil1</SrcLayer>
+        <Field name="categorie" src="categorie" type="String"/>
+        <Field name="nom" src="nom" type="String"/>
+        <Field name="date_creation" src="date_creation" type="Date"/>
+        <Field name="nb_repas_max" src="nb_repas_max" type="Integer"/>
+        <Field name="collectivite" src="collectivite" type="String"/>
+        <Field name="_id" src="_id" type="Integer"/>
+        <Field name="_uuid" src="_uuid" type="String"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="long" y="lat"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

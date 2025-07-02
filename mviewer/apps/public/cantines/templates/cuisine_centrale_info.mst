@@ -1,0 +1,71 @@
+{{#features}}
+<li id="{{feature_ol_uid}}" class="item">
+    <div class="item-header">
+        <i class="fas fa-store-alt" style="color: #008064;"></i>
+        <h3>{{nom}}</h3>
+    </div>
+    <div class="item-content">
+        <p>
+            <strong>Collectivité :</strong> {{collectivite}} <br/>
+            <strong>Date de création :</strong> {{date_creation}} <br/>
+            <strong>Capacité maximale (repas/jour) :</strong> {{nb_repas_max}}
+        </p>
+
+        <h4>Statistiques annuelles</h4>
+        <div class="stats-container">
+            {{#statistiques_annuelles}}
+                <div class="stat-year">
+                    <strong>{{annee}}</strong>
+                    <ul>
+                        <li>Repas servis : {{#nb_repas_servis}}{{nb_repas_servis}}{{/nb_repas_servis}}{{^nb_repas_servis}}-{{/nb_repas_servis}}</li>
+                        <li>Écoles bénéficiaires : {{#nb_ecoles_beneficiaires}}{{nb_ecoles_beneficiaires}}{{/nb_ecoles_beneficiaires}}{{^nb_ecoles_beneficiaires}}-{{/nb_ecoles_beneficiaires}}</li>
+                        <li>GIE Transformatrices : {{#nb_gie_transformatrices}}{{nb_gie_transformatrices}}{{/nb_gie_transformatrices}}{{^nb_gie_transformatrices}}-{{/nb_gie_transformatrices}}</li>
+                        <li>GIE Maraîchers : {{#nb_gie_producteurs_maraichers}}{{nb_gie_producteurs_maraichers}}{{/nb_gie_producteurs_maraichers}}{{^nb_gie_producteurs_maraichers}}-{{/nb_gie_producteurs_maraichers}}</li>
+                        <li>Femmes cuisinières : {{#nb_femmes_cuisinieres}}{{nb_femmes_cuisinieres}}{{/nb_femmes_cuisinieres}}{{^nb_femmes_cuisinieres}}-{{/nb_femmes_cuisinieres}}</li>
+                        <li>Commerçants : {{#nb_commercants}}{{nb_commercants}}{{/nb_commercants}}{{^nb_commercants}}-{{/nb_commercants}}</li>
+                        <li>Coût moyen repas : {{#cout_moyen_unitaire_repas}}{{cout_moyen_unitaire_repas}} FCFA{{/cout_moyen_unitaire_repas}}{{^cout_moyen_unitaire_repas}}-{{/cout_moyen_unitaire_repas}}</li>
+                    </ul>
+                </div>
+            {{/statistiques_annuelles}}
+        </div>
+    </div>
+    <p><br><br></p>
+</li>
+
+{{/features}}
+
+<style>
+    /* NOUVELLE RÈGLE AJOUTÉE ICI */
+    .item {
+        /* Ajoute un espace en bas du conteneur pour éviter qu'il soit tronqué */
+        margin-bottom: 40px; 
+    }
+    .item h3 {
+        color: #008064;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .item-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .stats-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .stat-year {
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 10px;
+        flex: 1 1 200px;
+    }
+    .stat-year ul {
+        padding-left: 15px;
+        font-size: 0.9em;
+    }
+</style>

@@ -17,7 +17,8 @@
 </metadata>
 <application title="Un réseau de cuisnes centrales" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/theme-designfr/theme_designfr.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="false" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false" mapprint="false" addlayerstools="false">
 </application>
-<mapoptions projection="EPSG:3857" center="-1919780.9203313626,1660187.0385918203" maxzoom="" zoom="11.585743379973435" extent="-1931902.3661380664,1651019.5585699435,-1907659.4745246589,1669354.518613697" />
+
+<mapoptions projection="EPSG:3857" center="-1919780.9203313626,1660187.0385918203" maxzoom="" zoom="11.5" />
 <proxy url="proxy/?url=" />
 <searchparameters bbox="false" localities="false" features="false" static="false" inputlabel="undefined" querymaponclick="false" closeafterclick="false" />
 <baselayers style="default"> 
@@ -25,7 +26,36 @@
     <baselayer visible="true" id="osm" thumbgallery="img/basemap/osm.png" title="OSM" label="OpenStreetMap classique" type="OSM" url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;&lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;" /> 
 </baselayers>
 <themes mini="false"> 
-    <theme id="theme-Alimentation" name="Alimentation" collapsed="true" icon="fas fa-seedling "> 
+    <theme id="theme-Alimentation" name="Alimentation" collapsed="false" icon="fas fa-seedling "> 
+        <layer id="cuisine_centrale"
+               name="Cuisines centrales"
+               type="customlayer"
+               url="customlayers/cuisine_centrale.js"
+               visible="true"
+               queryable="true"
+               infoformat="application/vnd.ogc.gml"
+               infopanel="right-panel"
+               vectorlegend="false"
+               tooltip="true"
+               tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+               attribution="Source: PAT Rufisque">
+            <template url="apps/public/cantines/templates/cuisine_centrale_info.mst" />
+        </layer>
+        
+        <layer id="cantines_scolaires"
+               name="Cantines scolaires"
+               type="customlayer"
+               url="customlayers/cantines_scolaires.js"
+               visible="true"
+               queryable="true"
+               infoformat="application/vnd.ogc.gml"
+               infopanel="right-panel"
+               vectorlegend="true"
+               tooltip="true"
+               tooltipcontent="&lt;strong&gt;{{nom_etab}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+               attribution="Source: PAT Rufisque">
+            <template url="apps/public/cantines/templates/cantine_scolaire_info.mst" />
+        </layer>
     </theme> 
 </themes>
 </config>

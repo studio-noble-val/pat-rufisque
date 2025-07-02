@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="fournisseurs">
+        <SrcDataSource relativeToVRT="1">kobo_fournisseur.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Feuil1</SrcLayer>
+        <Field name="start" src="start" type="Date"/>
+        <Field name="end" src="end" type="Date"/>
+        <Field name="theme" src="theme" type="String"/>
+        <Field name="cuisine_ratachement" src="cuisine_ratachement" type="String"/>
+        <Field name="statut" src="statut" type="String"/>
+        <Field name="activite" src="activite" type="String"/>
+        <Field name="cereales" src="cereales" type="Integer"/>
+        <Field name="maraichage" src="maraichage" type="Integer"/>
+        <Field name="aviculture" src="aviculture" type="Integer"/>
+        <Field name="boucherie" src="boucherie" type="Integer"/>
+        <Field name="boutique" src="boutique" type="Integer"/>
+        <Field name="poisson" src="poisson" type="Integer"/>
+        <Field name="nb_employe" src="nb_employe" type="Integer"/>
+        <Field name="nb_femme" src="nb_femme" type="Integer"/>
+        <Field name="date_cuisine_centrale" src="date_cuisine_centrale" type="Integer"/>
+        <Field name="livraison_kg" src="livraison_kg" type="Integer"/>
+        <Field name="livraison_fcfa" src="livraison_fcfa" type="Integer"/>
+        <Field name="livraison_pc" src="livraison_pc" type="String"/>
+        <Field name="merci de prendre une photo" src="merci de prendre une photo" type="String"/>
+        <Field name="merci de prendre une photo_URL" src="merci de prendre une photo_URL" type="String"/>
+        <Field name="_id" src="_id" type="Integer"/>
+        <Field name="_uuid" src="_uuid" type="String"/>
+        <Field name="_submission_time" src="_submission_time" type="Date"/>
+        <Field name="_validation_status" src="_validation_status" type="String"/>
+        <Field name="_notes" src="_notes" type="String"/>
+        <Field name="_status" src="_status" type="String"/>
+        <Field name="_submitted_by" src="_submitted_by" type="String"/>
+        <Field name="__version__" src="__version__" type="String"/>
+        <Field name="_tags" src="_tags" type="String"/>
+        <Field name="_index" src="_index" type="Integer"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="long" y="lat"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

@@ -1,0 +1,66 @@
+{{#features}}
+<li id="{{feature_ol_uid}}" class="item">
+    <div class="item-header">
+        <i class="fas fa-truck-fast" style="color: #008064;"></i>
+        <!-- On utilise l'activité comme titre principal -->
+        <h3>{{activite}}</h3>
+    </div>
+    <div class="item-content">
+
+        <!-- Affiche l'image si l'URL existe -->
+        {{#merci de prendre une photo_URL}}
+            <img src="{{merci de prendre une photo_URL}}" alt="Photo du fournisseur" class="info-image">
+        {{/merci de prendre une photo_URL}}
+        
+        <!-- Section pour les secteurs d'activité avec pictogrammes -->
+        <h4>Secteurs d'activité</h4>
+        <div class="activity-icons">
+            {{#cereales}}<div class="icon-item"><i class="fas fa-leaf"></i><span>Céréales</span></div>{{/cereales}}
+            {{#maraichage}}<div class="icon-item"><i class="fas fa-carrot"></i><span>Maraîchage</span></div>{{/maraichage}}
+            {{#aviculture}}<div class="icon-item"><i class="fas fa-egg"></i><span>Aviculture</span></div>{{/aviculture}}
+            {{#boucherie}}<div class="icon-item"><i class="fas fa-drumstick-bite"></i><span>Boucherie</span></div>{{/boucherie}}
+            {{#boutique}}<div class="icon-item"><i class="fas fa-store"></i><span>Boutique</span></div>{{/boutique}}
+            {{#poisson}}<div class="icon-item"><i class="fas fa-fish"></i><span>Poissonnerie</span></div>{{/poisson}}
+        </div>
+
+        <!-- Section pour les détails -->
+        <h4>Détails</h4>
+        <div class="info-details">
+            <ul>
+                <li><strong>Statut juridique :</strong> <span>{{statut}}</span></li>
+                <li><strong>Rattaché à :</strong> <span>{{cuisine_ratachement}}</span></li>
+                <li><strong>Fournisseur depuis :</strong> <span>{{date_cuisine_centrale}}</span></li>
+                <li><strong>Employés :</strong> <span>{{nb_employe}} (dont {{nb_femme}} femmes)</span></li>
+                <li><strong>Livraison moyenne :</strong> <span>{{livraison_kg}} kg</span></li>
+                <li><strong>Valeur moyenne livrée :</strong> <span>{{livraison_fcfa}} FCFA</span></li>
+                <li><strong>Part du CA avec la cuisine :</strong> <span>{{livraison_pc}}</span></li>
+            </ul>
+        </div>
+    </div>
+</li>
+{{/features}}
+
+<style>
+    /* ----- STYLE GÉNÉRAL ----- */
+    .item { margin-bottom: 20px; font-family: sans-serif; }
+    .item-header { display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+    .item h3 { color: #008064; font-size: 1.2em; margin: 0; }
+    .item-content { padding-top: 15px; }
+    .item h4 { margin-top: 20px; margin-bottom: 10px; color: #333; border-bottom: 2px solid #008064; padding-bottom: 5px; font-size: 1.1em;}
+    
+    /* ----- STYLE DE L'IMAGE ----- */
+    .info-image { width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+
+    /* ----- STYLE DES PICTOGRAMMES D'ACTIVITÉ ----- */
+    .activity-icons { display: flex; flex-wrap: wrap; gap: 10px; }
+    .icon-item { display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f5f5f5; border-radius: 8px; padding: 10px; width: 80px; text-align: center; }
+    .icon-item i { font-size: 1.8em; color: #008064; margin-bottom: 5px; }
+    .icon-item span { font-size: 0.8em; color: #555; }
+
+    /* ----- STYLE DE LA LISTE D'INFORMATIONS ----- */
+    .info-details ul { list-style: none; padding: 0; margin: 0; }
+    .info-details li { display: flex; justify-content: space-between; padding: 8px 0; font-size: 0.95em; border-bottom: 1px solid #f0f0f0; }
+    .info-details li:last-child { border-bottom: none; }
+    .info-details li strong { color: #333; }
+    .info-details li span { color: #555; font-weight: bold; text-align: right; }
+</style>
