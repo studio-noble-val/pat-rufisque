@@ -10,210 +10,151 @@
     <link rel="stylesheet" href="css/shared-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        html { scroll-behavior: smooth; }
         .text-theme-sad { color: #4CAF50; }
-        .border-theme-sad { border-color: #4CAF50; }
-        .bg-theme-sad-light { background-color: #E8F5E9; }
-        .text-theme-sad-dark { color: #2E7D32; }
-
         .slideshow-image.active { opacity: 1; }
         .slideshow-image { transition: opacity 1000ms ease-in-out; }
+        
+        .sub-nav-sticky {
+            position: fixed;
+            top: 68px; /* Hauteur de la navbar principale */
+            left: 0;
+            right: 0;
+            z-index: 40;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transform: translateY(-100%); /* Caché par défaut */
+            transition: transform 0.3s ease-out;
+        }
+        .sub-nav-sticky.visible {
+            transform: translateY(0);
+        }
+        .sub-nav-button.active {
+            border-color: #4CAF50; /* .border-pat-green-principal */
+            color: #4CAF50; /* .text-pat-green-principal */
+            font-weight: 700;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700">
 
-    <!-- NOUVELLE NAVBAR HARMONISÉE -->
-    <header class="sticky-header">
+    <!-- NAVBAR PRINCIPALE STICKY -->
+    <header id="main-header" class="sticky-header">
         <nav class="container mx-auto flex items-center justify-center p-3 gap-3">
-            <a href="index.html" title="Accueil" class="flex-shrink-0 p-3 flex items-center justify-center rounded-lg bg-white border-2 border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-            </a>
+            <a href="index.html" title="Accueil" class="flex-shrink-0 p-3 flex items-center justify-center rounded-lg bg-white border-2 border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></a>
             <div class="flex-grow grid grid-cols-3 gap-2">
-                <a href="page-gouvernance-alimentaire.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300">
-                    <span class="hidden sm:inline">🤝 Gouvernance</span>
-                    <span class="sm:hidden">Gouvernance</span>
-                </a>
-                <a href="page-cantines-scolaires.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300">
-                    <span class="hidden sm:inline">🍽️ Cantines</span>
-                    <span class="sm:hidden">Cantines</span>
-                </a>
-                <a href="page-systemes-alimentaires-durables.html" class="text-center px-4 py-3 rounded-lg bg-pat-green-principal text-white font-bold shadow-lg">
-                    <span class="hidden sm:inline">🌿 Systèmes Durables</span>
-                    <span class="sm:hidden">Systèmes Durables</span>
-                </a>
+                <a href="page-gouvernance-alimentaire.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300"><span class="hidden sm:inline">🤝 Gouvernance</span><span class="sm:hidden">Gouvernance</span></a>
+                <a href="page-cantines-scolaires.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300"><span class="hidden sm:inline">🍽️ Cantines</span><span class="sm:hidden">Cantines</span></a>
+                <a href="page-systemes-alimentaires-durables.html" class="text-center px-4 py-3 rounded-lg bg-pat-green-principal text-white font-bold shadow-lg"><span class="hidden sm:inline">🌿 Systèmes Durables</span><span class="sm:hidden">Systèmes Durables</span></a>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- HERO SECTION -->
-        <section class="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Colonne Texte -->
-                <div class="text-center lg:text-left">
-                    <span class="inline-block bg-green-100 text-green-800 text-sm font-bold px-3 py-1 rounded-full mb-4">AXE STRATÉGIQUE 2</span>
-                    <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">
-                        La Zone Maraîchère de <span class="text-theme-sad">Lendeng</span>
-                    </h1>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Un poumon vert essentiel pour l'alimentation et l'économie de Rufisque, pilier de nos systèmes alimentaires durables.</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-sad">187</p><p class="text-sm text-gray-600 font-semibold mt-1">Membres GIE Lendeng</p></div>
-                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-sad">1000+</p><p class="text-sm text-gray-600 font-semibold mt-1">Emplois directs</p></div>
-                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-sad">3,5 Mds</p><p class="text-sm text-gray-600 font-semibold mt-1">FCFA CA annuel estimé</p></div>
-                    </div>
-                </div>
-                <!-- Colonne Diaporama -->
-                <div id="slideshow-container" class="relative w-full h-80 lg:h-96 rounded-2xl shadow-2xl overflow-hidden">
-                    <div class="slideshow-image active absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L1.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L2.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L3.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L4.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L5.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L6.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L7.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L8.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L9.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L10.jpg');"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Carte Iframe -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">La Zone de Lendeng : Territoire et Enjeux</h2>
-                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Explorez la géographie, les acteurs et les défis de ce bassin agricole stratégique.</p>
-                <div class="w-full bg-white p-2 rounded-2xl shadow-xl overflow-hidden border border-gray-200">
-                    <iframe allowFullScreen style="border: none; border-radius: 12px;" height="600" width="100%" src="mviewer/?config=apps/public/zone_de_lendeng/zone_de_lendeng.xml"></iframe>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Section Contenu avec Onglets -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <!-- SECTION HERO COMPACTE ET FUSIONNÉE -->
+        <section class="bg-white pt-8 pb-16 px-4 sm:px-6 lg:px-8">
             <div class="container mx-auto">
-                <!-- Navigation des onglets -->
-                <div class="border-b border-gray-200 mb-8">
-                    <nav class="flex -mb-px gap-x-2 sm:gap-x-4" aria-label="Tabs">
-                        <button id="tab-button-gie-lendeng" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-pat-green-principal text-pat-green-principal" data-tab-target="#tab-panel-gie-lendeng" role="tab" aria-selected="true">🧑‍🌾 GIE : Emplois & Dynamiques</button>
-                        <button id="tab-button-foncier-lendeng" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab-target="#tab-panel-foncier-lendeng" role="tab" aria-selected="false">🏞️ Foncier : Préservation & Enjeux</button>
-                        <button id="tab-button-irrigation-lendeng" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab-target="#tab-panel-irrigation-lendeng" role="tab" aria-selected="false">💧 Irrigation : Défis & Solutions</button>
-                    </nav>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-center lg:text-left"><span class="inline-block bg-green-100 text-green-800 text-sm font-bold px-3 py-1 rounded-full mb-4">AXE STRATÉGIQUE 2</span><h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">La Zone Maraîchère de <span class="text-theme-sad">Lendeng</span></h1><p class="text-lg text-gray-600 mb-8 leading-relaxed">Un poumon vert essentiel pour l'alimentation et l'économie de Rufisque.</p><div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center"><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-sad">187</p><p class="text-sm text-gray-600 font-semibold mt-1">Membres GIE Lendeng</p></div><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-sad">1000+</p><p class="text-sm text-gray-600 font-semibold mt-1">Emplois directs</p></div><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-sad">3,5 Mds</p><p class="text-sm text-gray-600 font-semibold mt-1">FCFA CA annuel estimé</p></div></div></div>
+                    <div id="slideshow-container" class="relative w-full h-80 lg:h-96 rounded-2xl shadow-2xl overflow-hidden"><div class="slideshow-image active absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L1.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L2.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L3.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L4.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L5.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L6.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L7.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L8.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L9.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_lendeng/low/L10.jpg');"></div></div>
                 </div>
-                
-                <!-- Panneaux de contenu des onglets -->
-                <div>
-                    <!-- Panneau 1: GIE Lendeng : Emplois & Dynamiques Sociales -->
-                    <div id="tab-panel-gie-lendeng" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-gie-lendeng">
-                        <div class="text-center mb-12"><h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Le GIE des Maraîchers de Lendeng : Rôle et Impacts</h3></div>
-                        <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">D’après le rapport sur la zone maraîchère de Lendeng (Grdr, 2025), le GIE des maraîchers de Lendeng, créé en 2018 et regroupant 187 membres, dont 30 femmes, joue un rôle structurant dans l’organisation de la production, la défense des intérêts des producteurs, l’approvisionnement en intrants, la gestion des équipements collectifs et les relations avec les partenaires publics et techniques.</p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-theme-sad">
-                                <h4 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: 'Montserrat', sans-serif;">1. Enjeux en termes d’emplois</h4>
-                                <ul class="list-disc list-inside text-gray-700 space-y-3">
-                                    <li><strong>Chiffre d’affaires estimé :</strong> Environ 3,5 milliards de FCFA par an pour l’ensemble des activités maraîchères sur 85,5 hectares cultivés.</li>
-                                    <li><strong>Activités induites :</strong> Plus de 1000 emplois directs et nombreux emplois indirects (transport, commerce, artisanat, restauration...).</li>
-                                    <li><strong>Femmes et transformation :</strong> Des femmes spécialisées dans la restauration sont actives sur place et vendent des repas aux ouvriers agricoles.</li>
-                                    <li><strong>Vente aux cantines scolaires :</strong> Approvisionnement des cantines de Rufisque, créant débouchés stables et emplois pour transformatrices locales.</li>
-                                </ul>
-                            </div>
-                            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-theme-sad">
-                                <h4 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: 'Montserrat', sans-serif;">2. Rôle du GIE dans l’accueil</h4>
-                                <ul class="list-disc list-inside text-gray-700 space-y-3">
-                                    <li><strong>Formations soutenues par l’OIM :</strong> Formation des membres (jeunes, migrants) aux techniques de compostage et transformation.</li>
-                                    <li><strong>Insertion socio-professionnelle :</strong> Accueil d’étudiants en agronomie (CIPA Dakar, Université de Dakar) favorisant transfert de compétences.</li>
-                                    <li><strong>Intégration communautaire :</strong> Accès à des terres en fermage, système de cotisation, appuis matériel/intrants.</li>
-                                    <li><strong>Rôle de médiation :</strong> Encadrement des usages fonciers pour éviter exclusions et favoriser l’entrée de jeunes exploitants.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <blockquote class="mt-12 bg-theme-sad-light p-6 rounded-lg border-l-4 border-theme-sad">
-                            <p class="font-medium text-gray-800 text-lg">Le GIE des maraîchers de Lendeng constitue un pilier de l’économie locale, avec une organisation structurée qui favorise l’emploi, l’inclusion sociale des jeunes et des migrants, et le développement durable du territoire. En tant que dispositif d’ancrage local, il illustre comment une gouvernance collective de l’agriculture peut répondre aux enjeux économiques et sociaux des zones périurbaines.</p>
-                        </blockquote>
+                <div id="navigation-hub" class="mt-16">
+                    <h2 class="text-2xl font-bold text-center text-gray-900 mb-8" style="font-family: 'Montserrat', sans-serif;">Explorer cette thématique</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <a href="#section-carte" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-green-300 hover:border-green-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 16.382V5.618a1 1 0 00-1.447-.894L15 7m-6 10v-5m6 5v-5m0 0l-6-3m6 3l6-3" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">La Carte</h3></a>
+                        <a href="#section-gie-lendeng" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-green-300 hover:border-green-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">GIE : Emplois & Dynamiques</h3></a>
+                        <a href="#section-foncier-lendeng" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-green-300 hover:border-green-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.881 15h8.238a2 2 0 011.664 3.09l-1.223 2.445A2 2 0 0115.06 22H8.94a2 2 0 01-1.664-1.465L6 18.09A2 2 0 017.88 15zM12 11V3m0 0L9 6m3-3l3 6" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">Foncier : Préservation & Enjeux</h3></a>
+                        <a href="#section-irrigation-lendeng" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-green-300 hover:border-green-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">Irrigation : Défis & Solutions</h3></a>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Panneau 2: Foncier Agricole de Lendeng : Préservation & Enjeux -->
-                    <div id="tab-panel-foncier-lendeng" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-foncier-lendeng">
-                         <div class="text-center mb-12"><h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">La Zone Maraîchère de Lendeng : Un Patrimoine Agricole à Préserver</h3></div>
-                         <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-6 leading-relaxed">La zone maraîchère de Lendeng, située dans la commune de Rufisque Est, constitue l’un des derniers bastions de production horticole de la région de Dakar. Elle s’étend sur plus de 56 hectares, dont 85 % sont exploités en maraîchage intensif, assurant plus de 1 000 emplois directs et générant un chiffre d’affaires annuel estimé à 3,5 milliards FCFA. La diversité des cultures, les dynamiques collectives du GIE des maraîchers, et l’implication des femmes en font une zone agricole stratégique pour l’économie locale, la sécurité alimentaire et la résilience territoriale.</p>
-                         <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 max-w-4xl mx-auto mb-12">
-                             <p class="text-red-900 font-medium">Malgré son importance, Lendeng est au cœur d’un processus de marginalisation foncière, en raison de la pression grandissante de l’urbanisation, des projets industriels voisins (SOCOCIM, SENICO, TER, autoroute) et des tensions politiques autour de l’usage des terres.</p>
-                         </div>
-                        <h4 class="text-2xl font-bold text-gray-800 mt-8 mb-4 text-center" style="font-family: 'Montserrat', sans-serif;">🏛️ Statut réglementaire et mobilisations</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                             <div>
-                                 <p class="text-gray-700 mb-3 leading-relaxed">Historiquement vouée à l’agriculture, la zone de Lendeng repose aujourd’hui sur une mosaïque foncière complexe : des terres appartenant à des familles lébou, d’autres régies par des titres de l’État ou issues du domaine national. Or, <strong class="text-theme-sad-dark">80% des exploitants ne détient aucun titre foncier formel</strong>, les rendant particulièrement vulnérables à l’expulsion.</p>
-                                 <p class="text-gray-700 mb-3 leading-relaxed">Ce contexte trouve sa racine dans le cadre législatif sénégalais. Face à ces menaces, des mesures de protection partielle ont été obtenues (arrêté présidentiel "non aedificandi" en 2018, confirmé par arrêté sous-préfet en avril 2022). Malgré cela, des projets immobiliers tentent régulièrement de voir le jour.</p>
-                             </div>
-                             <div>
-                                 <p class="text-gray-700 mb-3 leading-relaxed">Les exploitants de Lendeng (GIE) se mobilisent régulièrement. En mars 2024, une dizaine de maraîchers ont été arrêtés puis relâchés après avoir protesté contre la construction d’une station-service sur la zone protégée.</p>
-                                 <div class="bg-theme-sad-light p-4 rounded-md mt-4">
-                                     <p class="text-gray-700">Afin de préserver la vocation agricole, le GIE a instauré une <strong class="text-theme-sad-dark">interdiction de vente des terres</strong>. En cas de décès ou d’incapacité, le GIE encadre la transmission ou la mise en fermage. Toute vente, si inévitable, est strictement encadrée juridiquement et réservée à un usage agricole.</p>
-                                 </div>
-                             </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Panneau 3: Irrigation à Lendeng : Défis & Solutions -->
-                    <div id="tab-panel-irrigation-lendeng" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-irrigation-lendeng">
-                        <div class="text-center mb-12"><h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Enjeux de l’irrigation dans la zone maraîchère de Lendeng</h3></div>
-                        <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">La zone maraîchère de Lendeng (85,5 ha, 187 producteurs) fournit une diversité de légumes toute l’année. Cependant, l’accès à une ressource en eau stable, abordable et de qualité est un défi majeur.</p>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500">
-                                <h4 class="text-2xl font-bold text-red-700 mb-4" style="font-family: 'Montserrat', sans-serif;">Le défi : une dépendance coûteuse</h4>
-                                <p class="mb-4 text-gray-700">Dépendance au réseau d’eau potable (SEN’EAU) avec des factures pouvant représenter jusqu'à 25% des revenus des producteurs.</p>
-                                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                    <li><strong>Coût élevé des factures</strong></li>
-                                    <li><strong>Fiabilité incertaine (coupures fréquentes)</strong></li>
-                                    <li><strong>Inadaptation technique (fuites, surpression)</strong></li>
-                                </ul>
-                            </div>
-                            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-green-500">
-                                <h4 class="text-2xl font-bold text-green-700 mb-4" style="font-family: 'Montserrat', sans-serif;">La solution : le bassin de rétention</h4>
-                                <p class="mb-4 text-gray-700">Un bassin de rétention de 2,5 hectares, sous-exploité, peut stocker eaux de pluie et de ruissellement (pH neutre, salinité modérée).</p>
-                                <blockquote class="bg-green-50 p-4 rounded-md border-l-2 border-green-300">
-                                    <p class="text-gray-800">L’étude DV2E (2023) a classé la réhabilitation du bassin comme la <strong class="text-theme-sad-dark">solution la plus viable</strong> pour sécuriser l’accès à l’eau à moyen terme.</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="mt-12 text-center text-sm text-gray-500">
-                            <p class="font-semibold mb-2">Études de référence (liens à venir) :</p>
-                            <p>Rapport Bamba Sambe (2025) | Étude DV2E (2023) | Étude DV2E (2025)</p>
-                        </div>
-                    </div>
+        <!-- Ancre et Sous-menu Sticky -->
+        <div id="sub-nav-anchor"></div>
+        <div id="sub-nav" class="sub-nav-sticky">
+            <div class="container mx-auto">
+                <nav class="flex overflow-x-auto -mb-px" aria-label="Page Sections">
+                    <a href="#section-carte" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">🗺️ Carte</a>
+                    <a href="#section-gie-lendeng" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">GIE : Emplois & Dynamiques</a>
+                    <a href="#section-foncier-lendeng" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Foncier : Préservation & Enjeux</a>
+                    <a href="#section-irrigation-lendeng" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Irrigation : Défis & Solutions</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Section 1 : Carte -->
+        <section id="section-carte" class="pt-16 px-4 sm:px-6 lg:px-8 bg-section-alt scroll-mt-20">
+            <div class="container mx-auto text-center"><h2 class="text-3xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">La Zone de Lendeng : Territoire et Enjeux</h2><p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Explorez la géographie, les acteurs et les défis de ce bassin agricole stratégique.</p><div class="w-full bg-white p-2 rounded-2xl shadow-xl overflow-hidden border border-gray-200"><iframe allowFullScreen style="border: none; border-radius: 12px;" height="600" width="100%" src="mviewer/?config=apps/public/zone_de_lendeng/zone_de_lendeng.xml"></iframe></div></div>
+        </section>
+
+        <!-- Section 2 : GIE Lendeng : Emplois & Dynamiques Sociales -->
+        <section id="section-gie-lendeng" class="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center" style="font-family: 'Montserrat', sans-serif;">Le GIE des Maraîchers de Lendeng : Rôle et Impacts</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed text-center">D’après le rapport sur la zone maraîchère de Lendeng (Grdr, 2025), le GIE des maraîchers de Lendeng, créé en 2018 et regroupant 187 membres, dont 30 femmes, joue un rôle structurant dans l’organisation de la production, la défense des intérêts des producteurs, l’approvisionnement en intrants, la gestion des équipements collectifs et les relations avec les partenaires publics et techniques.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-green-500"><h3 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: 'Montserrat', sans-serif;">1. Enjeux en termes d’emplois</h3><ul class="list-disc list-inside text-gray-700 space-y-3"><li><strong>Chiffre d’affaires estimé :</strong> Environ 3,5 milliards de FCFA par an pour l’ensemble des activités maraîchères sur 85,5 hectares cultivés.</li><li><strong>Activités induites :</strong> Plus de 1000 emplois directs et nombreux emplois indirects (transport, commerce, artisanat, restauration...).</li><li><strong>Femmes et transformation :</strong> Des femmes spécialisées dans la restauration sont actives sur place et vendent des repas aux ouvriers agricoles.</li><li><strong>Vente aux cantines scolaires :</strong> Approvisionnement des cantines de Rufisque, créant débouchés stables et emplois pour transformatrices locales.</li></ul></div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-green-500"><h3 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: 'Montserrat', sans-serif;">2. Rôle du GIE dans l’accueil des jeunes et des migrants</h3><ul class="list-disc list-inside text-gray-700 space-y-3"><li><strong>Formations soutenues par l’OIM :</strong> Formation des membres (jeunes, migrants) aux techniques de compostage et transformation.</li><li><strong>Insertion socio-professionnelle :</strong> Accueil d’étudiants en agronomie (CIPA Dakar, Université de Dakar) favorisant transfert de compétences.</li><li><strong>Intégration communautaire :</strong> Accès à des terres en fermage, système de cotisation, appuis matériel/intrants.</li><li><strong>Rôle de médiation :</strong> Encadrement des usages fonciers pour éviter exclusions et favoriser l’entrée de jeunes exploitants.</li></ul></div>
                 </div>
+                <blockquote class="mt-12 bg-green-50 p-6 rounded-lg border-l-4 border-green-600"><p class="font-medium text-gray-800 text-lg">Le GIE des maraîchers de Lendeng constitue un pilier de l’économie locale, avec une organisation structurée qui favorise l’emploi, l’inclusion sociale des jeunes et des migrants, et le développement durable du territoire. En tant que dispositif d’ancrage local, il illustre comment une gouvernance collective de l’agriculture peut répondre aux enjeux économiques et sociaux des zones périurbaines.</p></blockquote>
+            </div>
+        </section>
+
+        <!-- Section 3 : Foncier Agricole de Lendeng : Préservation & Enjeux -->
+        <section id="section-foncier-lendeng" class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt scroll-mt-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center" style="font-family: 'Montserrat', sans-serif;">La Zone Maraîchère de Lendeng : Un Patrimoine Agricole à Préserver</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-6 leading-relaxed text-center">La zone maraîchère de Lendeng, située dans la commune de Rufisque Est, constitue l’un des derniers bastions de production horticole de la région de Dakar. Elle s’étend sur plus de 56 hectares, dont 85 % sont exploités en maraîchage intensif, assurant plus de 1 000 emplois directs et générant un chiffre d’affaires annuel estimé à 3,5 milliards FCFA. La diversité des cultures, les dynamiques collectives du GIE des maraîchers, et l’implication des femmes en font une zone agricole stratégique pour l’économie locale, la sécurité alimentaire et la résilience territoriale.</p>
+                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 max-w-4xl mx-auto mb-12"><p class="text-red-900 font-medium">Malgré son importance, Lendeng est au cœur d’un processus de marginalisation foncière, en raison de la pression grandissante de l’urbanisation, des projets industriels voisins (SOCOCIM, SENICO, TER, autoroute) et des tensions politiques autour de l’usage des terres.</p></div>
+                <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-3 text-center">🏛️ Statut réglementaire de la zone maraîchère de Lendeng</h3>
+                <p class="text-gray-700 mb-3 max-w-4xl mx-auto">Historiquement vouée à l’agriculture, la zone de Lendeng repose aujourd’hui sur une mosaïque foncière complexe : des terres appartenant à des familles lébou, d’autres régies par des titres de l’État ou issues du domaine national. Or, <strong class="text-green-800">80% des exploitants ne détient aucun titre foncier formel</strong>, les rendant particulièrement vulnérables à l’expulsion.</p>
+                <p class="text-gray-700 mb-3 max-w-4xl mx-auto">Ce contexte trouve sa racine dans le cadre législatif sénégalais (loi n°64-46 sur le domaine national, loi 96-07 sur la décentralisation). Face à ces menaces, des mesures de protection partielle ont été obtenues (arrêté présidentiel "non aedificandi" en 2018, confirmé par arrêté sous-préfet en avril 2022). Malgré cela, des projets immobiliers tentent régulièrement de voir le jour.</p>
+                <p class="text-sm text-gray-600 mb-4 text-center">Pour en savoir plus sur le contexte foncier : <a href="https://grdr.org/IMG/pdf/episode_2_histoires_sahel_versi0n_longue.pdf" target="_blank" rel="noopener noreferrer" class="text-pat-green-principal hover:underline">Histoires du Sahel - Épisode 2 (Grdr, 2021)</a></p>
+                <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-3 text-center">✊ Mobilisations pour la préservation de Lendeng</h3>
+                <p class="text-gray-700 mb-3 max-w-4xl mx-auto">Les exploitants de Lendeng (GIE) se mobilisent régulièrement. En mars 2024, une dizaine de maraîchers ont été arrêtés puis relâchés après avoir protesté contre la construction d’une station-service sur la zone protégée.</p>
+                <p class="text-gray-700 mb-3 bg-green-50 p-3 rounded-md max-w-4xl mx-auto">Afin de préserver la vocation agricole, le GIE a instauré une <strong class="text-green-800">interdiction de vente des terres</strong>. En cas de décès ou d’incapacité, le GIE encadre la transmission ou la mise en fermage. Toute vente, si inévitable, est strictement encadrée juridiquement et réservée à un usage agricole. Le GIE supervise également les contrats de location et joue un rôle d’arbitre.</p>
+                <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-3 text-center">🧭 Un enjeu stratégique pour la planification territoriale</h3>
+                <p class="text-gray-700 max-w-4xl mx-auto">Le Conseil départemental de Rufisque a inscrit la protection du foncier agricole comme un axe central de sa Politique Alimentaire Territoriale (PAT). Lendeng représente un levier pour une urbanisation maîtrisée et inclusive.</p>
+                <div class="mt-4 text-center"><p class="font-semibold text-gray-700">Documents de plaidoyer (Exemples) :</p><ul class="list-none text-sm"><li><a href="#" class="text-pat-green-principal hover:underline">[Lien vers un document de plaidoyer 1]</a></li><li><a href="#" class="text-pat-green-principal hover:underline">[Lien vers un document de plaidoyer 2]</a></li></ul></div>
+            </div>
+        </section>
+
+        <!-- Section 4 : Irrigation à Lendeng : Défis & Solutions -->
+        <section id="section-irrigation-lendeng" class="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center" style="font-family: 'Montserrat', sans-serif;">Enjeux de l’irrigation dans la zone maraîchère de Lendeng</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-10 text-center">La zone maraîchère de Lendeng (85,5 ha, 187 producteurs) fournit une diversité de légumes toute l’année. Cependant, l’accès à une ressource en eau stable, abordable et de qualité est un défi majeur.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md mb-6"><h3 class="text-xl font-semibold text-red-600 mb-3">Une dépendance coûteuse au réseau d’eau potable (SEN’EAU)</h3><ul class="list-disc list-inside text-gray-700 space-y-2 pl-5"><li><strong>Coût élevé :</strong> Factures d’eau jusqu’à 25 % des revenus des producteurs.</li><li><strong>Fiabilité incertaine :</strong> Coupures fréquentes limitant l’irrigation.</li><li><strong>Inadaptation technique :</strong> Fuites, mauvais diamètres de conduites (surpression, ruissellement), émetteurs à débit trop élevé.</li></ul></div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md"><h3 class="text-xl font-semibold text-green-800 mb-3">Le potentiel du bassin de rétention : une solution locale à optimiser</h3><p class="text-gray-700 mb-3">Un bassin de rétention de 2,5 hectares, réalisé sur fonds publics mais jamais réceptionné, est situé au cœur de la zone. Il peut stocker eaux de pluie et de ruissellement. L’eau du bassin est neutre en pH (7,2) et modérément saline (3,41 mS/cm). Malgré cela, le bassin reste sous-exploité faute de gestion organisée.</p><p class="text-gray-700 font-medium">L’étude DV2E (2023) a classé la réhabilitation du bassin comme la solution la plus viable pour sécuriser l’accès à l’eau à moyen terme. Une étude DV2E (2025) complétera avec des propositions techniques et de gouvernance pour une utilisation collective.</p><div class="mt-4"><p class="font-semibold text-gray-700">Études de référence :</p><ul class="list-disc list-inside text-sm"><li><a href="#" class="text-pat-green-principal hover:underline">Rapport Bamba Sambe (2025) - [Lien à ajouter]</a></li><li><a href="#" class="text-pat-green-principal hover:underline">Étude DV2E (2023) - [Lien à ajouter]</a></li><li><a href="#" class="text-pat-green-principal hover:underline">Étude DV2E (2025) - [Lien à ajouter]</a></li></ul></div></div>
             </div>
         </section>
     </main>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const tabPanels = document.querySelectorAll('.tab-panel');
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const targetPanelId = button.getAttribute('data-tab-target');
-                    tabButtons.forEach(btn => {
-                        btn.classList.remove('border-pat-green-principal', 'text-pat-green-principal');
-                        btn.classList.add('border-transparent', 'text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300');
-                        btn.setAttribute('aria-selected', 'false');
-                    });
-                    button.classList.add('border-pat-green-principal', 'text-pat-green-principal');
-                    button.classList.remove('border-transparent', 'text-gray-500');
-                    button.setAttribute('aria-selected', 'true');
-                    tabPanels.forEach(panel => panel.classList.add('hidden'));
-                    document.querySelector(targetPanelId)?.classList.remove('hidden');
-                });
-            });
-
             const slideshowImages = document.querySelectorAll('.slideshow-image');
-            if (slideshowImages.length > 0) {
-                let currentImageIndex = 0;
-                slideshowImages[0].classList.add('active');
-                setInterval(() => {
-                    slideshowImages[currentImageIndex].classList.remove('active');
-                    currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
-                    slideshowImages[currentImageIndex].classList.add('active');
-                }, 5000);
+            if (slideshowImages.length > 0) { let currentImageIndex = 0; slideshowImages[0].classList.add('active'); setInterval(() => { slideshowImages[currentImageIndex].classList.remove('active'); currentImageIndex = (currentImageIndex + 1) % slideshowImages.length; slideshowImages[currentImageIndex].classList.add('active'); }, 5000); }
+
+            const mainHeader = document.getElementById('main-header');
+            const subNav = document.getElementById('sub-nav');
+            const subNavAnchor = document.getElementById('sub-nav-anchor');
+            const navButtons = document.querySelectorAll('.sub-nav-button');
+            const sections = document.querySelectorAll('main section[id^="section-"]');
+
+            if (mainHeader && subNav && subNavAnchor) {
+                const headerHeight = mainHeader.offsetHeight;
+                
+                const stickyObserver = new IntersectionObserver( ([entry]) => { subNav.classList.toggle('visible', !entry.isIntersecting); }, { rootMargin: `-${headerHeight}px 0px 0px 0px`, threshold: 0 });
+                stickyObserver.observe(subNavAnchor);
+
+                const sectionObserver = new IntersectionObserver( (entries) => {
+                    let activeSectionId = null;
+                    entries.forEach(entry => { if (entry.isIntersecting) { activeSectionId = entry.target.getAttribute('id'); }});
+                    navButtons.forEach(btn => { const href = btn.getAttribute('href').substring(1); btn.classList.toggle('active', href === activeSectionId); });
+                }, { rootMargin: `-${headerHeight + 60}px 0px -40% 0px` });
+                sections.forEach(section => sectionObserver.observe(section));
             }
         });
     </script>

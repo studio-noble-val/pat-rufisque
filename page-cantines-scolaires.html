@@ -10,190 +10,144 @@
     <link rel="stylesheet" href="css/shared-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        html { scroll-behavior: smooth; }
         .text-theme-cantines { color: #2196F3; }
-        .border-theme-cantines { border-color: #2196F3; }
-
         .slideshow-image.active { opacity: 1; }
         .slideshow-image { transition: opacity 1000ms ease-in-out; }
+        
+        .sub-nav-sticky {
+            position: fixed;
+            top: 68px; /* Hauteur de la navbar principale. À ajuster si la navbar change */
+            left: 0;
+            right: 0;
+            z-index: 40;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transform: translateY(-100%); /* Caché par défaut */
+            transition: transform 0.3s ease-out;
+        }
+        .sub-nav-sticky.visible {
+            transform: translateY(0);
+        }
+        .sub-nav-button.active {
+            border-color: #4CAF50; /* .border-pat-green-principal */
+            color: #4CAF50; /* .text-pat-green-principal */
+            font-weight: 700;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700">
 
-    <!-- NOUVELLE NAVBAR HARMONISÉE -->
-    <header class="sticky-header">
+    <!-- NAVBAR PRINCIPALE STICKY -->
+    <header id="main-header" class="sticky-header">
         <nav class="container mx-auto flex items-center justify-center p-3 gap-3">
-            <a href="index.html" title="Accueil" class="flex-shrink-0 p-3 flex items-center justify-center rounded-lg bg-white border-2 border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-            </a>
+            <a href="index.html" title="Accueil" class="flex-shrink-0 p-3 flex items-center justify-center rounded-lg bg-white border-2 border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></a>
             <div class="flex-grow grid grid-cols-3 gap-2">
-                <a href="page-gouvernance-alimentaire.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300">
-                    <span class="hidden sm:inline">🤝 Gouvernance</span><span class="sm:hidden">Gouvernance</span>
-                </a>
-                <a href="page-cantines-scolaires.html" class="text-center px-4 py-3 rounded-lg bg-pat-green-principal text-white font-bold shadow-lg">
-                    <span class="hidden sm:inline">🍽️ Cantines</span><span class="sm:hidden">Cantines</span>
-                </a>
-                <a href="page-systemes-alimentaires-durables.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300">
-                    <span class="hidden sm:inline">🌿 Systèmes Durables</span><span class="sm:hidden">Systèmes Durables</span>
-                </a>
+                <a href="page-gouvernance-alimentaire.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300"><span class="hidden sm:inline">🤝 Gouvernance</span><span class="sm:hidden">Gouvernance</span></a>
+                <a href="page-cantines-scolaires.html" class="text-center px-4 py-3 rounded-lg bg-pat-green-principal text-white font-bold shadow-lg"><span class="hidden sm:inline">🍽️ Cantines</span><span class="sm:hidden">Cantines</span></a>
+                <a href="page-systemes-alimentaires-durables.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300"><span class="hidden sm:inline">🌿 Systèmes Durables</span><span class="sm:hidden">Systèmes Durables</span></a>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- HERO SECTION -->
-        <section class="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Colonne Texte -->
-                <div class="text-center lg:text-left">
-                    <span class="inline-block bg-blue-100 text-blue-800 text-sm font-bold px-3 py-1 rounded-full mb-4">AXE STRATÉGIQUE 3</span>
-                    <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">
-                        L'Alimentation Scolaire à <span class="text-theme-cantines">Rufisque</span>
-                    </h1>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Un pilier pour la nutrition, l'éducation et le développement local.</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-cantines">5,500+</p><p class="text-sm text-gray-600 font-semibold mt-1">élèves bénéficiaires</p></div>
-                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-cantines">4</p><p class="text-sm text-gray-600 font-semibold mt-1">cuisines centrales</p></div>
-                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-cantines">22</p><p class="text-sm text-gray-600 font-semibold mt-1">écoles desservies</p></div>
-                    </div>
-                </div>
-                <!-- Colonne Diaporama -->
-                <div id="slideshow-container" class="relative w-full h-80 lg:h-96 rounded-2xl shadow-2xl overflow-hidden">
-                    <div class="slideshow-image active absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C1.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C2.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C3.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C4.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C5.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C6.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C7.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C8.jpg');"></div>
-                    <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C9.jpg');"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Carte Iframe -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">Carte des Cantines Scolaires</h2>
-                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Visualisez la répartition et l'impact de notre programme de restauration scolaire sur le territoire de Rufisque.</p>
-                <div class="w-full bg-white p-2 rounded-2xl shadow-xl overflow-hidden border border-gray-200">
-                    <iframe allowFullScreen style="border: none; border-radius: 12px;" height="600" width="100%" src="mviewer/?config=apps/public/cantines/map_cantines.xml"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Contenu avec Onglets -->
-        <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <!-- NOUVELLE SECTION HERO COMPACTE ET FUSIONNÉE -->
+        <section class="bg-white pt-8 pb-16 px-4 sm:px-6 lg:px-8">
             <div class="container mx-auto">
-                <!-- Navigation des onglets -->
-                <div class="border-b border-gray-200 mb-8">
-                    <nav class="flex -mb-px gap-x-2 sm:gap-x-4" aria-label="Tabs">
-                        <button id="tab-button-modes" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-pat-green-principal text-pat-green-principal" data-tab-target="#tab-panel-modes" role="tab" aria-selected="true">Modes d'Alimentation</button>
-                        <button id="tab-button-impact" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab-target="#tab-panel-impact" role="tab" aria-selected="false">Impact Local & Synergies</button>
-                        <button id="tab-button-ressources" class="tab-button flex-1 text-center py-4 px-1 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab-target="#tab-panel-ressources" role="tab" aria-selected="false">Impacts & Ressources</button>
-                    </nav>
+                <!-- Contenu Hero (Texte + Diapo) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-center lg:text-left"><span class="inline-block bg-blue-100 text-blue-800 text-sm font-bold px-3 py-1 rounded-full mb-4">AXE STRATÉGIQUE 3</span><h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">L'Alimentation Scolaire à <span class="text-theme-cantines">Rufisque</span></h1><p class="text-lg text-gray-600 mb-8 leading-relaxed">Un pilier pour la nutrition, l'éducation et le développement local.</p><div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center"><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-cantines">5,500+</p><p class="text-sm text-gray-600 font-semibold mt-1">élèves bénéficiaires</p></div><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-cantines">4</p><p class="text-sm text-gray-600 font-semibold mt-1">cuisines centrales</p></div><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-cantines">22</p><p class="text-sm text-gray-600 font-semibold mt-1">écoles desservies</p></div></div></div>
+                    <div id="slideshow-container" class="relative w-full h-80 lg:h-96 rounded-2xl shadow-2xl overflow-hidden"><div class="slideshow-image active absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C1.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C2.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C3.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C4.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C5.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C6.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C7.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C8.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C9.jpg');"></div></div>
                 </div>
 
-                <!-- Panneaux de contenu des onglets -->
-                <div>
-                    <!-- Panneau 1: Modes d'Alimentation -->
-                    <div id="tab-panel-modes" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-modes">
-                        <div class="text-center mb-12">
-                            <h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Les différents modes d’alimentation scolaire à Rufisque</h3>
-                            <p class="text-lg text-gray-600 max-w-3xl mx-auto">À Rufisque, l’alimentation des élèves en journée repose sur une diversité de dispositifs complémentaires, adaptés aux contextes des établissements et aux ressources du territoire :</p>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-red-400"><div class="flex-shrink-0 bg-red-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg></div><div><h4 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les vendeuses de rue</h4><p class="text-gray-600 text-sm">Présentes autour ou dans l’enceinte des écoles, ces femmes proposent des aliments prêts à consommer tels que chips, bonbons, biscuits , jus  et des sandwish (pain + sauce haricot, lentille, petits pois .....) aux élèves. Ce modèle reste informel, mais essentiel dans presque toutes les  écoles sans cantine structurée.</p></div></div>
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-blue-400"><div class="flex-shrink-0 bg-blue-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div><div><h4 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cantines financées par l’Etat et les partenaires</h4><p class="text-gray-600 text-sm">L’évolution du taux de couverture des cantines par école au niveau national est erratique. Il est passé de 53% en 2012 à 13% en avril 2025 sur environ 12 000 écoles publiques. Cette baisse est dûe principalement par la fin des partenaires comme le PAM et non repris par l’Etat. De plus il n’existait quasiment de cantines scolaires dans le département de Rufisque avant la mise en place du PAT</p></div></div>
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-yellow-400"><div class="flex-shrink-0 bg-yellow-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197m0 0A10.99 10.99 0 0012 12a10.99 10.99 0 00-3-7.303m-3 7.303A11 11 0 013 11a11 11 0 016.658-10.035" /></svg></div><div><h4 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cantines d’écoles autogérées</h4><p class="text-gray-600 text-sm">Certaines écoles ont mis en place leurs propres cantines, parfois avec l’appui des parents d’élèves ou d’associations. Elles fonctionnent avec des cuisinières bénévoles et ou avec une motivation symbolique et selon les capacités d’organisation et de financement. Ces cantines autogérées représentent une part significative des initiatives locales, bien que leur pérennité dépende fortement de l'engagement communautaire et des ressources disponibles.</p></div></div>
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-green-400"><div class="flex-shrink-0 bg-green-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 2h8a1 1 0 001-1zM3 11h10M16 7h4v8h-4V7z" /></svg></div><div><h4 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cuisines centrales en circuit court</h4><p class="text-gray-600 text-sm">Mise en œuvre dans le cadre du Plan Alimentaire Territorial (PAT) avec l’appui du projet AMOPAR, ce modèle vise une institutionnalisation et l’implication des collectivités territoriales dans la gestion et le financement et une professionnalisation de l’alimentation scolaire. Les 4 cuisines centrales mise en place dans le département préparent en amont des repas sains et équilibrés, livrés quotidiennement à 22  écoles. Elles s'approvisionnent en produits frais et locaux issus des zones agricoles voisines auprès de 4 groupements maraichères de légumes, 15 GIE de femmes transformatrices de céréales locales, 8 producteurs avicoles, 2 GIE mareyeurs et 4 commeçants,</p></div></div>
-                        </div>
-                        <blockquote class="mt-12 bg-gray-100 border-l-4 border-gray-300 p-6 rounded-r-lg"><p class="text-gray-600 italic">Le rapport Gohin (2023) met en évidence que le modèle de cuisine centrale, approvisionnée en circuits court, bien que nécessitant des investissements initiaux plus importants, offre des avantages en termes d'efficacité, de qualité nutritionnelle et de soutien à l'économie locale. En particulier, il favorise l'emploi local, notamment féminin, en structurant les filières de production et de transformation alimentaires.</p></blockquote>
-                    </div>
-
-                    <!-- Panneau 2: Impact Local & Synergies -->
-                    <div id="tab-panel-impact" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-impact">
-                        <section class="mb-16">
-                            <div class="text-center mb-12">
-                                <h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Évolution de l’utilisation des produits locaux par les cuisines centrales</h3>
-                                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Un indicateur clé de notre impact sur l'économie du territoire.</p>
-                            </div>
-                            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-theme-cantines min-h-[300px] flex flex-col items-center justify-center text-center">
-                                <span class="text-5xl mb-4">📊</span><h4 class="text-xl font-semibold text-gray-800" style="font-family: 'Montserrat', sans-serif;">Placeholder pour la visualisation de données (graphique).</h4><p class="text-gray-500 mt-2">Ici sera intégré le graphique (ex: Chart.js, D3.js)</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="text-center mb-12">
-                                <h3 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Un système alimentaire interconnecté</h3>
-                                <p class="text-lg text-gray-600 max-w-3xl mx-auto">L’augmentation de l’usage de produits locaux est rendue possible par le renforcement du lien entre les cuisines centrales, les zones agricoles de proximité et les industries de transformation :</p>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-pat-green-principal"><h4 class="text-lg font-semibold text-pat-green-principal mb-2">Zones Agricoles</h4><p class="text-gray-600 text-sm">Les zones agricoles périurbaines et rurales (comme la zone maraîchère de Lendeng) fournissent des produits frais : légumes, fruits, céréales…</p></div>
-                                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-purple-600"><h4 class="text-lg font-semibold text-purple-600 mb-2">Industries Transformatrices</h4><p class="text-gray-600 text-sm">Les GIE de transformatrices locales, permettent de préparer et conditionner certains aliments (jus, sauces, céréales transformées…) de façon hygiénique et adaptée.</p></div>
-                                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-orange-500"><h4 class="text-lg font-semibold text-orange-500 mb-2">Structuration & Emploi</h4><p class="text-gray-600 text-sm">Cette structuration favorise l’emploi local, notamment féminin, tout en réduisant la dépendance aux produits importés.</p></div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <!-- Panneau 3: Impacts & Ressources -->
-                    <div id="tab-panel-ressources" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-button-ressources">
-                        <section class="mb-16">
-                            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl flex flex-col lg:flex-row items-center gap-8 border border-gray-200">
-                                <div class="lg:w-1/3 flex-shrink-0"><img src="statics/pic_tpe/cantine-onglet3-pic1.JPG" alt="Enfants souriants mangeant à la cantine scolaire" class="rounded-xl mx-auto h-auto w-full object-cover max-h-80 shadow-md"></div>
-                                <div class="lg:w-2/3">
-                                    <h3 class="text-3xl font-bold mb-4 text-gray-900" style="font-family: 'Montserrat', sans-serif;">Cantines scolaires : un levier pour la réussite éducative et le développement économique local</h3>
-                                    <blockquote class="relative bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg"><svg class="absolute top-4 left-4 h-10 w-10 text-blue-200/70 opacity-50" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.333 4C4.186 4 0 8.186 0 13.333c0 4.208 2.822 7.828 6.667 9.09v-5.26c-1.574-.83-2.667-2.457-2.667-4.297 0-2.58 2.087-4.666 4.667-4.666h2V4H9.333zm16 0c-5.147 0-9.333 4.186-9.333 9.333 0 4.208 2.822 7.828 6.667 9.09v-5.26c-1.574-.83-2.667-2.457-2.667-4.297 0-2.58 2.087-4.666 4.667-4.666h2V4h-2.333z"></path></svg><p class="relative pl-2 text-lg italic text-gray-800 leading-relaxed">L’introduction ou l’amélioration des cantines scolaires apporte bien plus que l’impact nutritionnel pour les élèves : elle constitue un investissement stratégique à fort impact sur la réussite scolaire et sur le tissu économique local.</p></blockquote>
-                                    <div class="mt-6 pl-2"><p class="text-sm font-semibold text-gray-700 mb-2">Cette affirmation est appuyée par les recherches suivantes :</p><ul class="space-y-2"><li class="flex items-start text-sm text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-0.5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg><span>Étude d’impact du <strong>GRDR (2022)</strong> menée dans la région de Kayes au Mali.</span></li><li class="flex items-start text-sm text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-0.5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg><span>Mémoire de recherche de <strong>Gohin (2023)</strong>.</span></li></ul></div>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="space-y-8">
-                                <div class="bg-white rounded-xl shadow-lg border-l-4 border-blue-600 overflow-hidden"><div class="p-6"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-blue-100 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0-.019 1.838l9.401 3.91a2 2 0 0 0 1.66 0l9.401-3.91Z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></div><h4 class="text-xl font-bold text-gray-800" style="font-family: 'Montserrat', sans-serif;">1. Effets positifs sur la réussite scolaire</h4></div><div><p class="text-gray-600 mb-4 leading-relaxed">Les cantines scolaires améliorent la fréquentation et les performances des élèves. L’étude du GRDR (2022) met en évidence une amélioration de l’assiduité et de la concentration des enfants.</p><div class="bg-blue-50 p-4 rounded-lg text-blue-900"><p>Selon Gohin (2023), <strong>88 % des enseignants</strong> interrogés déclarent un effet positif sur la concentration. Le taux de passage en classe supérieure a augmenté de <strong>10 points</strong> en deux ans dans les écoles concernées.</p></div></div></div></div>
-                                <div class="bg-white rounded-xl shadow-lg border-l-4 border-green-600 overflow-hidden"><div class="p-6"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-green-100 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4 class="text-xl font-bold text-gray-800" style="font-family: 'Montserrat', sans-serif;">2. Un moteur économique local</h4></div><div><p class="text-gray-600 mb-4 leading-relaxed">Les cantines scolaires structurent l’économie locale via les circuits courts. L’étude du GRDR estime qu’un franc CFA investi génère entre <strong>1,5 et 2 francs CFA</strong> de valeur ajoutée locale.</p><div class="bg-green-50 p-4 rounded-lg text-green-900"><p>Au Sénégal, <strong>68 % des produits</strong> proviennent d’un rayon de moins de 50 km. Les GIE féminins impliqués ont vu leurs revenus augmenter en moyenne de <strong>35 %</strong> en deux ans (Gohin, 2023).</p></div></div></div></div>
-                                <div class="bg-white rounded-xl shadow-lg border-l-4 border-orange-500 overflow-hidden"><div class="p-6"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-orange-100 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4 class="text-xl font-bold text-gray-800" style="font-family: 'Montserrat', sans-serif;">3. Levier de résilience et souveraineté alimentaire</h4></div><div><p class="text-gray-600 leading-relaxed">Les cantines favorisent les systèmes alimentaires locaux en offrant des débouchés stables à l’agriculture familiale. Elles participent à la sécurité alimentaire, notamment en zones rurales, et réduisent les inégalités sociales, contribuant ainsi à la souveraineté alimentaire du territoire.</p></div></div></div>
-                            </div>
-                            <div class="mt-16 bg-gray-50 p-8 rounded-2xl border border-gray-200 text-center">
-                                <h4 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: 'Montserrat', sans-serif;">Pour en savoir plus :</h4>
-                                <div class="max-w-md mx-auto mb-6"><ul class="list-disc list-inside text-gray-700 space-y-1 text-left"><li>Étude d'impact du GRDR (2022) - Région de Kayes, Mali.</li><li>Mémoire de recherche de Gohin (2023) - Sénégal.</li></ul></div>
-                                <a href="https://grdr.org/Devenez-partenaire-des-cantines-scolaires-responsables-solidaires-du" class="inline-block mt-2 px-6 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition-colors font-medium" target="_blank" rel="noopener noreferrer">Devenez partenaire (GRDR)</a>
-                            </div>
-                        </section>
+                <!-- Hub de Navigation (maintenant DANS la section hero) -->
+                <div id="navigation-hub" class="mt-16">
+                    <h2 class="text-2xl font-bold text-center text-gray-900 mb-8" style="font-family: 'Montserrat', sans-serif;">Explorer cette thématique</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <a href="#section-carte" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-blue-300 hover:border-blue-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 16.382V5.618a1 1 0 00-1.447-.894L15 7m-6 10v-5m6 5v-5m0 0l-6-3m6 3l6-3" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">La Carte</h3></a>
+                        <a href="#section-modes" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-blue-300 hover:border-blue-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">Modes d'Alimentation</h3></a>
+                        <a href="#section-impact-local" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-blue-300 hover:border-blue-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">Impact Local</h3></a>
+                        <a href="#section-ressources" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 text-center border-t-4 border-blue-300 hover:border-blue-500"><div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div><h3 class="font-bold text-lg text-gray-800" style="font-family: 'Montserrat', sans-serif;">Impacts & Ressources</h3></a>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Ancre pour le sous-menu sticky (se trouve après la section Hero/Hub) -->
+        <div id="sub-nav-anchor"></div>
+        
+        <!-- SOUS-MENU STICKY (initialement caché) -->
+        <div id="sub-nav" class="sub-nav-sticky">
+            <div class="container mx-auto">
+                <nav class="flex overflow-x-auto -mb-px" aria-label="Page Sections">
+                    <a href="#section-carte" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">🗺️ Carte</a>
+                    <a href="#section-modes" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Modes d'Alimentation</a>
+                    <a href="#section-impact-local" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Impact Local</a>
+                    <a href="#section-ressources" class="sub-nav-button flex-shrink-0 text-center py-4 px-4 border-b-2 font-semibold border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Ressources</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Section 1 : Carte -->
+        <section id="section-carte" class="pt-16 px-4 sm:px-6 lg:px-8 bg-section-alt scroll-mt-20">
+            <div class="container mx-auto text-center"><h2 class="text-3xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">Carte des Cantines Scolaires</h2><p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Visualisez la répartition et l'impact de notre programme de restauration scolaire sur le territoire de Rufisque.</p><div class="w-full bg-white p-2 rounded-2xl shadow-xl overflow-hidden border border-gray-200"><iframe allowFullScreen style="border: none; border-radius: 12px;" height="600" width="100%" src="mviewer/?config=apps/public/cantines/map_cantines.xml"></iframe></div></div>
+        </section>
+
+        <!-- Section 2 : Modes d'Alimentation -->
+        <section id="section-modes" class="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
+            <div class="container mx-auto"><div class="text-center mb-12"><h2 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Les différents modes d’alimentation scolaire à Rufisque</h2><p class="text-lg text-gray-600 max-w-3xl mx-auto">À Rufisque, l’alimentation des élèves en journée repose sur une diversité de dispositifs complémentaires, adaptés aux contextes des établissements et aux ressources du territoire :</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-red-400"><div class="flex-shrink-0 bg-red-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg></div><div><h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les vendeuses de rue</h3><p class="text-gray-600 text-sm">Présentes autour ou dans l’enceinte des écoles, ces femmes proposent des aliments prêts à consommer tels que chips, bonbons, biscuits , jus  et des sandwish (pain + sauce haricot, lentille, petits pois .....) aux élèves. Ce modèle reste informel, mais essentiel dans presque toutes les  écoles sans cantine structurée.</p></div></div><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-blue-400"><div class="flex-shrink-0 bg-blue-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div><div><h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cantines financées par l’Etat et les partenaires</h3><p class="text-gray-600 text-sm">L’évolution du taux de couverture des cantines par école au niveau national est erratique. Il est passé de 53% en 2012 à 13% en avril 2025 sur environ 12 000 écoles publiques. Cette baisse est dûe principalement par la fin des partenaires comme le PAM et non repris par l’Etat. De plus il n’existait quasiment de cantines scolaires dans le département de Rufisque avant la mise en place du PAT</p></div></div><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-yellow-400"><div class="flex-shrink-0 bg-yellow-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197m0 0A10.99 10.99 0 0012 12a10.99 10.99 0 00-3-7.303m-3 7.303A11 11 0 013 11a11 11 0 016.658-10.035" /></svg></div><div><h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cantines d’écoles autogérées</h3><p class="text-gray-600 text-sm">Certaines écoles ont mis en place leurs propres cantines, parfois avec l’appui des parents d’élèves ou d’associations. Elles fonctionnent avec des cuisinières bénévoles et ou avec une motivation symbolique et selon les capacités d’organisation et de financement. Ces cantines autogérées représentent une part significative des initiatives locales, bien que leur pérennité dépende fortement de l'engagement communautaire et des ressources disponibles.</p></div></div><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col sm:flex-row items-center gap-6 border-t-4 border-green-400"><div class="flex-shrink-0 bg-green-100 p-4 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 2h8a1 1 0 001-1zM3 11h10M16 7h4v8h-4V7z" /></svg></div><div><h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cuisines centrales en circuit court</h3><p class="text-gray-600 text-sm">Mise en œuvre dans le cadre du Plan Alimentaire Territorial (PAT) avec l’appui du projet AMOPAR, ce modèle vise une institutionnalisation et l’implication des collectivités territoriales dans la gestion et le financement et une professionnalisation de l’alimentation scolaire. Les 4 cuisines centrales mise en place dans le département préparent en amont des repas sains et équilibrés, livrés quotidiennement à 22  écoles. Elles s'approvisionnent en produits frais et locaux issus des zones agricoles voisines auprès de 4 groupements maraichères de légumes, 15 GIE de femmes transformatrices de céréales locales, 8 producteurs avicoles, 2 GIE mareyeurs et 4 commeçants,</p></div></div></div><blockquote class="mt-12 bg-gray-100 border-l-4 border-gray-300 p-6 rounded-r-lg"><p class="text-gray-600 italic">Le rapport Gohin (2023) met en évidence que le modèle de cuisine centrale, approvisionnée en circuits court, bien que nécessitant des investissements initiaux plus importants, offre des avantages en termes d'efficacité, de qualité nutritionnelle et de soutien à l'économie locale. En particulier, il favorise l'emploi local, notamment féminin, en structurant les filières de production et de transformation alimentaires.</p></blockquote></div>
+        </section>
+
+        <!-- Section 3 : Impact Local & Synergies -->
+        <section id="section-impact-local" class="py-16 px-4 sm:px-6 lg:px-8 bg-section-alt scroll-mt-20">
+            <div class="container mx-auto"><div class="mb-16"><div class="text-center mb-12"><h2 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Évolution de l’utilisation des produits locaux par les cuisines centrales</h2></div><div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 min-h-[300px] flex flex-col items-center justify-center text-center"><span class="text-5xl mb-4">📊</span><h3 class="text-xl font-semibold text-gray-800" style="font-family: 'Montserrat', sans-serif;">Placeholder pour la visualisation de données (graphique).</h3><p class="text-gray-500 mt-2">Ici sera intégré le graphique (ex: Chart.js, D3.js)</p></div></div><div><div class="text-center mb-12"><h2 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Un système alimentaire interconnecté</h2><p class="text-lg text-gray-600 max-w-3xl mx-auto">L’augmentation de l’usage de produits locaux est rendue possible par le renforcement du lien entre les cuisines centrales, les zones agricoles de proximité et les industries de transformation :</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-pat-green-principal"><h3 class="text-lg font-semibold text-pat-green-principal mb-2">Zones Agricoles</h3><p class="text-gray-600 text-sm">Les zones agricoles périurbaines et rurales (comme la zone maraîchère de Lendeng) fournissent des produits frais : légumes, fruits, céréales…</p></div><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-purple-600"><h3 class="text-lg font-semibold text-purple-600 mb-2">Industries Transformatrices</h3><p class="text-gray-600 text-sm">Les GIE de transformatrices locales, permettent de préparer et conditionner certains aliments (jus, sauces, céréales transformées…) de façon hygiénique et adaptée.</p></div><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-orange-500"><h3 class="text-lg font-semibold text-orange-500 mb-2">Structuration & Emploi</h3><p class="text-gray-600 text-sm">Cette structuration favorise l’emploi local, notamment féminin, tout en réduisant la dépendance aux produits importés.</p></div></div></div></div>
+        </section>
+
+        <!-- Section 4 : Impacts & Ressources -->
+        <section id="section-ressources" class="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
+            <div class="container mx-auto"><div class="mb-16"><div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl flex flex-col lg:flex-row items-center gap-8 border border-gray-200"><div class="lg:w-1/3 flex-shrink-0"><img src="statics/pic_tpe/cantine-onglet3-pic1.JPG" alt="Enfants souriants mangeant à la cantine scolaire" class="rounded-xl mx-auto h-auto w-full object-cover max-h-80 shadow-md"></div><div class="lg:w-2/3"><h2 class="text-3xl font-bold mb-4 text-gray-900" style="font-family: 'Montserrat', sans-serif;">Cantines scolaires : un levier pour la réussite éducative et le développement économique local</h2><blockquote class="relative bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg"><svg class="absolute top-4 left-4 h-10 w-10 text-blue-200/70 opacity-50" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.333 4C4.186 4 0 8.186 0 13.333c0 4.208 2.822 7.828 6.667 9.09v-5.26c-1.574-.83-2.667-2.457-2.667-4.297 0-2.58 2.087-4.666 4.667-4.666h2V4H9.333zm16 0c-5.147 0-9.333 4.186-9.333 9.333 0 4.208 2.822 7.828 6.667 9.09v-5.26c-1.574-.83-2.667-2.457-2.667-4.297 0-2.58 2.087-4.666 4.667-4.666h2V4h-2.333z"></path></svg><p class="relative pl-2 text-lg italic text-gray-800 leading-relaxed">L’introduction ou l’amélioration des cantines scolaires apporte bien plus que l’impact nutritionnel pour les élèves : elle constitue un investissement stratégique à fort impact sur la réussite scolaire et sur le tissu économique local.</p></blockquote><div class="mt-6 pl-2"><p class="text-sm font-semibold text-gray-700 mb-2">Cette affirmation est appuyée par les recherches suivantes :</p><ul class="space-y-2"><li class="flex items-start text-sm text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-0.5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg><span>Étude d’impact du <strong>GRDR (2022)</strong> menée dans la région de Kayes au Mali.</span></li><li class="flex items-start text-sm text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-0.5 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg><span>Mémoire de recherche de <strong>Gohin (2023)</strong>.</span></li></ul></div></div></div></div><div><div class="space-y-8"><div class="bg-white rounded-xl shadow-lg border-l-4 border-blue-600 overflow-hidden"><div class="p-6"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-blue-100 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0-.019 1.838l9.401 3.91a2 2 0 0 0 1.66 0l9.401-3.91Z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></div><h3 class="text-xl font-bold text-gray-800" style="font-family: 'Montserrat', sans-serif;">1. Effets positifs sur la réussite scolaire</h3></div><div><p class="text-gray-600 mb-4 leading-relaxed">Les cantines scolaires améliorent la fréquentation et les performances des élèves. L’étude du GRDR (2022) met en évidence une amélioration de l’assiduité et de la concentration des enfants.</p><div class="bg-blue-50 p-4 rounded-lg text-blue-900"><p>Selon Gohin (2023), <strong>88 % des enseignants</strong> interrogés déclarent un effet positif sur la concentration. Le taux de passage en classe supérieure a augmenté de <strong>10 points</strong> en deux ans dans les écoles concernées.</p></div></div></div></div><div class="bg-white rounded-xl shadow-lg border-l-4 border-green-600 overflow-hidden"><div class="p-6"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-green-100 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3 class="text-xl font-bold text-gray-800" style="font-family: 'Montserrat', sans-serif;">2. Un moteur économique local</h3></div><div><p class="text-gray-600 mb-4 leading-relaxed">Les cantines scolaires structurent l’économie locale via les circuits courts. L’étude du GRDR estime qu’un franc CFA investi génère entre <strong>1,5 et 2 francs CFA</strong> de valeur ajoutée locale.</p><div class="bg-green-50 p-4 rounded-lg text-green-900"><p>Au Sénégal, <strong>68 % des produits</strong> proviennent d’un rayon de moins de 50 km. Les GIE féminins impliqués ont vu leurs revenus augmenter en moyenne de <strong>35 %</strong> en deux ans (Gohin, 2023).</p></div></div></div></div><div class="bg-white rounded-xl shadow-lg border-l-4 border-orange-500 overflow-hidden"><div class="p-6"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-orange-100 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="text-xl font-bold text-gray-800" style="font-family: 'Montserrat', sans-serif;">3. Levier de résilience et souveraineté alimentaire</h3></div><div><p class="text-gray-600 leading-relaxed">Les cantines favorisent les systèmes alimentaires locaux en offrant des débouchés stables à l’agriculture familiale. Elles participent à la sécurité alimentaire, notamment en zones rurales, et réduisent les inégalités sociales, contribuant ainsi à la souveraineté alimentaire du territoire.</p></div></div></div></div><div class="mt-16 bg-gray-50 p-8 rounded-2xl border border-gray-200 text-center"><h3 class="text-2xl font-bold text-gray-800 mb-4" style="font-family: 'Montserrat', sans-serif;">Pour en savoir plus :</h3><div class="max-w-md mx-auto mb-6"><ul class="list-disc list-inside text-gray-700 space-y-1 text-left"><li>Étude d'impact du GRDR (2022) - Région de Kayes, Mali.</li><li>Mémoire de recherche de Gohin (2023) - Sénégal.</li></ul></div><a href="https://grdr.org/Devenez-partenaire-des-cantines-scolaires-responsables-solidaires-du" class="inline-block mt-2 px-6 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition-colors font-medium" target="_blank" rel="noopener noreferrer">Devenez partenaire (GRDR)</a></div></div>
         </section>
     </main>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const tabPanels = document.querySelectorAll('.tab-panel');
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const targetPanelId = button.getAttribute('data-tab-target');
-                    tabButtons.forEach(btn => {
-                        btn.classList.remove('border-pat-green-principal', 'text-pat-green-principal');
-                        btn.classList.add('border-transparent', 'text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300');
-                        btn.setAttribute('aria-selected', 'false');
-                    });
-                    button.classList.add('border-pat-green-principal', 'text-pat-green-principal');
-                    button.classList.remove('border-transparent', 'text-gray-500');
-                    button.setAttribute('aria-selected', 'true');
-                    tabPanels.forEach(panel => panel.classList.add('hidden'));
-                    document.querySelector(targetPanelId)?.classList.remove('hidden');
-                });
-            });
-
             const slideshowImages = document.querySelectorAll('.slideshow-image');
-            if (slideshowImages.length > 0) {
-                let currentImageIndex = 0;
-                slideshowImages[0].classList.add('active');
-                setInterval(() => {
-                    slideshowImages[currentImageIndex].classList.remove('active');
-                    currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
-                    slideshowImages[currentImageIndex].classList.add('active');
-                }, 5000);
+            if (slideshowImages.length > 0) { let currentImageIndex = 0; slideshowImages[0].classList.add('active'); setInterval(() => { slideshowImages[currentImageIndex].classList.remove('active'); currentImageIndex = (currentImageIndex + 1) % slideshowImages.length; slideshowImages[currentImageIndex].classList.add('active'); }, 5000); }
+
+            const mainHeader = document.getElementById('main-header');
+            const subNav = document.getElementById('sub-nav');
+            const subNavAnchor = document.getElementById('sub-nav-anchor');
+            const navButtons = document.querySelectorAll('.sub-nav-button');
+            const sections = document.querySelectorAll('main section[id^="section-"]');
+
+            if (mainHeader && subNav && subNavAnchor) {
+                const headerHeight = mainHeader.offsetHeight;
+                
+                const stickyObserver = new IntersectionObserver(
+                    ([entry]) => { subNav.classList.toggle('visible', !entry.isIntersecting); },
+                    { rootMargin: `-${headerHeight}px 0px 0px 0px`, threshold: 0 }
+                );
+                stickyObserver.observe(subNavAnchor);
+
+                const sectionObserver = new IntersectionObserver(
+                    (entries) => {
+                        let activeSectionId = null;
+                        entries.forEach(entry => {
+                            // Si une section est visible à plus de 40% en haut de l'écran, on la considère active
+                            if (entry.isIntersecting) {
+                                activeSectionId = entry.target.getAttribute('id');
+                            }
+                        });
+                        
+                        navButtons.forEach(btn => {
+                            const href = btn.getAttribute('href').substring(1);
+                            btn.classList.toggle('active', href === activeSectionId);
+                        });
+                    },
+                    { rootMargin: `-${headerHeight + 60}px 0px -40% 0px` } // Zone de détection ajustée
+                );
+                sections.forEach(section => sectionObserver.observe(section));
             }
         });
     </script>
