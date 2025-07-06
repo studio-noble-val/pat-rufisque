@@ -54,17 +54,23 @@
             {
                 "titre": "Cantines Scolaires Améliorées",
                 "description": "Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.",
-                "badge": "Impact Direct"
+                "badge": "Impact Direct",
+                "picto_url": "statics/pictoKPIcantine.JPG",
+                "picto_alt": "Pictogramme représentant une cantine scolaire"
             },
             {
                 "titre": "Soutien aux Producteurs Locaux",
                 "description": "Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.",
-                "badge": "Économie Locale"
+                "badge": "Économie Locale",
+                "picto_url": "statics/pictoKPIproducteurs.JPG",
+                "picto_alt": "Pictogramme représentant le soutien aux producteurs"
             },
             {
                 "titre": "Ateliers de Sensibilisation",
                 "description": "Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.",
-                "badge": "Santé Publique"
+                "badge": "Santé Publique",
+                "picto_url": "statics/pictoKPIateliers.JPG",
+                "picto_alt": "Pictogramme représentant la sensibilisation"
             }
         ],
         "cta_etude": {

@@ -1,11 +1,12 @@
+<!--
+MODIFICATIONS :
+- Retour à une structure simple avec padding sur la carte principale.
+- L'image est maintenant centrée (`mx-auto`) avec une taille contrôlée (`w-32 h-32`).
+- `object-contain` est utilisé pour que l'illustration ne soit pas déformée.
+- Le fond blanc de l'image se fondra avec le fond blanc de la carte.
+-->
 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col text-center">
-    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pat-green-principal text-white mx-auto mb-5">
-        <!-- NOTE: L'icône est statique pour l'instant, on pourrait la rendre dynamique via le JSON si besoin -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <!-- L'icône pourrait être différente pour chaque carte -->
-            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
-        </svg>
-    </div>
+    <img src="{{picto_url}}" alt="{{picto_alt}}" class="w-32 h-32 object-contain mx-auto mb-5">
     <h3 class="text-lg sm:text-xl font-semibold text-pat-green-darker mb-2">{{titre}}</h3>
     <p class="text-gray-600 text-sm mb-4 flex-grow">{{description}}</p>
     <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">{{badge}}</span>
