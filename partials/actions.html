@@ -3,7 +3,14 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">{{actions_concretes.titre}}</h2>
         <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto text-center">{{actions_concretes.description}}</p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="actions-items-container">
+        <!-- 
+          MODIFICATION CLÉ: 
+          On remplace 'grid' par 'flex flex-wrap' pour permettre aux éléments de passer à la ligne.
+          'justify-center' va centrer les éléments sur chaque ligne. C'est ce qui centrera la 3ème carte 
+          lorsqu'elle sera seule sur la deuxième ligne. 'items-stretch' donne à toutes les cartes d'une même
+          ligne la même hauteur pour un meilleur alignement.
+        -->
+        <div class="flex flex-wrap justify-center items-stretch gap-8" id="actions-items-container">
             <!-- Les cartes d'action seront injectées ici par JavaScript -->
         </div>
 

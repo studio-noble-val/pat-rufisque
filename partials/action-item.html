@@ -1,13 +1,25 @@
-<!--
-MODIFICATIONS :
-- Retour à une structure simple avec padding sur la carte principale.
-- L'image est maintenant centrée (`mx-auto`) avec une taille contrôlée (`w-32 h-32`).
-- `object-contain` est utilisé pour que l'illustration ne soit pas déformée.
-- Le fond blanc de l'image se fondra avec le fond blanc de la carte.
+<!-- 
+  MODIFICATIONS CLÉES:
+  1. La carte devient flexible et gère sa propre largeur pour s'adapter au conteneur flex.
+  2. Le contenu interne passe de horizontal à vertical sur mobile.
 -->
-<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col text-center">
-    <img src="{{picto_url}}" alt="{{picto_alt}}" class="w-32 h-32 object-contain mx-auto mb-5">
-    <h3 class="text-lg sm:text-xl font-semibold text-pat-green-darker mb-2">{{titre}}</h3>
-    <p class="text-gray-600 text-sm mb-4 flex-grow">{{description}}</p>
-    <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">{{badge}}</span>
+<div class="group bg-white p-6 rounded-lg shadow-lg border-l-4 border-pat-green-principal flex flex-col md:flex-row items-center text-center md:text-left gap-6 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.34rem)]">
+    
+    <!-- 
+      Image: on ajoute une marge en bas pour mobile, qui sera annulée sur desktop
+    -->
+    <img src="{{picto_url}}" alt="{{picto_alt}}" class="w-24 h-24 md:w-32 md:h-32 object-contain flex-shrink-0 mb-4 md:mb-0 transition-transform duration-300 group-hover:scale-110">
+    
+    <!-- 
+      Contenu Textuel: La disposition des éléments est gérée par les classes 'flex' et 'text-center'
+      du conteneur parent.
+    -->
+    <div class="flex flex-col flex-grow h-full items-center md:items-start">
+        <h3 class="text-lg sm:text-xl font-semibold text-pat-green-darker mb-2">{{titre}}</h3>
+        <p class="text-gray-600 text-sm mb-4 flex-grow">{{description}}</p>
+        <!--
+          Le badge est maintenant centré sur mobile et aligné à gauche sur desktop
+        -->
+        <span class="mt-auto inline-block badge-impact text-xs font-bold px-3 py-1.5 rounded-full">{{badge}}</span>
+    </div>
 </div>
