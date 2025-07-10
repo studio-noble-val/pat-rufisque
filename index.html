@@ -71,6 +71,18 @@
     
     <!-- Le script d'assemblage -->
     <script src="js/main-builder.js"></script>
+    <script>
+        const height = document.body.scrollHeight;
+        window.addEventListener('load', () => {
+        const height = document.body.scrollHeight;
+        parent.postMessage({ iframeHeight: height }, '*');
+        });
+
+        window.addEventListener('resize', () => {
+        const height = document.body.scrollHeight;
+        parent.postMessage({ iframeHeight: height }, '*');
+        });
+    </script>
 
 </body>
 </html>
