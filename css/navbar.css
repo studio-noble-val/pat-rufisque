@@ -1,0 +1,46 @@
+/* css/navbar.css */
+
+/* S'assure que le contenu principal n'est pas caché sous la navbar fixe */
+body {
+    padding-top: 68px;
+}
+
+/* Styles pour la barre de navigation principale fixe */
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50; /* Doit être au-dessus de la sub-nav */
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Styles pour le conteneur de la sous-navigation collante */
+.sub-nav-sticky {
+    position: fixed;
+    top: 68px; /* Se positionne juste en dessous de la navbar principale */
+    left: 0;
+    right: 0;
+    z-index: 40;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transform: translateY(-100%); /* Est cachée par défaut en dehors de l'écran */
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden; /* Améliore la gestion du masquage */
+}
+
+/* Classe pour rendre la sous-navigation visible */
+.sub-nav-sticky.visible {
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Style pour le bouton actif dans la sous-navigation */
+.sub-nav-button.active {
+    border-color: #4CAF50; /* Couleur verte par défaut, peut être surchargée */
+    color: #4CAF50;
+    font-weight: 700;
+}

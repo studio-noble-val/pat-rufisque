@@ -1,3 +1,5 @@
+<!-- pages-cantines-scolaires.html -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,52 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared-styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/navbar.js" defer></script>
     <style>
         html { scroll-behavior: smooth; }
         .text-theme-cantines { color: #2196F3; }
         .slideshow-image.active { opacity: 1; }
         .slideshow-image { transition: opacity 1000ms ease-in-out; }
-        
-        .sub-nav-sticky {
-            position: fixed;
-            top: 68px; /* Hauteur de la navbar principale. À ajuster si la navbar change */
-            left: 0;
-            right: 0;
-            z-index: 40;
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            transform: translateY(-100%); /* Caché par défaut */
-            transition: transform 0.3s ease-out;
-        }
-        .sub-nav-sticky.visible {
-            transform: translateY(0);
-        }
-        .sub-nav-button.active {
-            border-color: #4CAF50; /* .border-pat-green-principal */
-            color: #4CAF50; /* .text-pat-green-principal */
-            font-weight: 700;
-        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700">
 
-    <!-- NAVBAR PRINCIPALE STICKY -->
-    <header id="main-header" class="sticky-header">
-        <nav class="container mx-auto flex items-center justify-center p-3 gap-3">
-            <a href="index.html" title="Accueil" class="flex-shrink-0 p-3 flex items-center justify-center rounded-lg bg-white border-2 border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></a>
-            <div class="flex-grow grid grid-cols-3 gap-2">
-                <a href="page-gouvernance-alimentaire.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300"><span class="hidden sm:inline">🤝 Gouvernance</span><span class="sm:hidden">Gouvernance</span></a>
-                <a href="page-cantines-scolaires.html" class="text-center px-4 py-3 rounded-lg bg-pat-green-principal text-white font-bold shadow-lg"><span class="hidden sm:inline">🍽️ Cantines</span><span class="sm:hidden">Cantines</span></a>
-                <a href="page-systemes-alimentaires-durables.html" class="text-center px-4 py-3 rounded-lg border-2 border-pat-green-darker text-pat-green-darker font-bold hover:bg-pat-green-darker hover:text-white transition-all duration-300"><span class="hidden sm:inline">🌿 Systèmes Durables</span><span class="sm:hidden">Systèmes Durables</span></a>
-            </div>
-        </nav>
-    </header>
+    <div id="navbar-container"></div>
 
     <main>
         <!-- NOUVELLE SECTION HERO COMPACTE ET FUSIONNÉE -->
-        <section class="bg-white pt-8 pb-16 px-4 sm:px-6 lg:px-8">
+        <section id="hero-section" class="bg-white pt-8 pb-16 px-4 sm:px-6 lg:px-8">
             <div class="container mx-auto">
                 <!-- Contenu Hero (Texte + Diapo) -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -74,8 +47,6 @@
             </div>
         </section>
 
-        <!-- Ancre pour le sous-menu sticky (se trouve après la section Hero/Hub) -->
-        <div id="sub-nav-anchor"></div>
         
         <!-- SOUS-MENU STICKY (initialement caché) -->
         <div id="sub-nav" class="sub-nav-sticky">
@@ -110,46 +81,6 @@
         </section>
     </main>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const slideshowImages = document.querySelectorAll('.slideshow-image');
-            if (slideshowImages.length > 0) { let currentImageIndex = 0; slideshowImages[0].classList.add('active'); setInterval(() => { slideshowImages[currentImageIndex].classList.remove('active'); currentImageIndex = (currentImageIndex + 1) % slideshowImages.length; slideshowImages[currentImageIndex].classList.add('active'); }, 5000); }
 
-            const mainHeader = document.getElementById('main-header');
-            const subNav = document.getElementById('sub-nav');
-            const subNavAnchor = document.getElementById('sub-nav-anchor');
-            const navButtons = document.querySelectorAll('.sub-nav-button');
-            const sections = document.querySelectorAll('main section[id^="section-"]');
-
-            if (mainHeader && subNav && subNavAnchor) {
-                const headerHeight = mainHeader.offsetHeight;
-                
-                const stickyObserver = new IntersectionObserver(
-                    ([entry]) => { subNav.classList.toggle('visible', !entry.isIntersecting); },
-                    { rootMargin: `-${headerHeight}px 0px 0px 0px`, threshold: 0 }
-                );
-                stickyObserver.observe(subNavAnchor);
-
-                const sectionObserver = new IntersectionObserver(
-                    (entries) => {
-                        let activeSectionId = null;
-                        entries.forEach(entry => {
-                            // Si une section est visible à plus de 40% en haut de l'écran, on la considère active
-                            if (entry.isIntersecting) {
-                                activeSectionId = entry.target.getAttribute('id');
-                            }
-                        });
-                        
-                        navButtons.forEach(btn => {
-                            const href = btn.getAttribute('href').substring(1);
-                            btn.classList.toggle('active', href === activeSectionId);
-                        });
-                    },
-                    { rootMargin: `-${headerHeight + 60}px 0px -40% 0px` } // Zone de détection ajustée
-                );
-                sections.forEach(section => sectionObserver.observe(section));
-            }
-        });
-    </script>
 </body>
 </html>
