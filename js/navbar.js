@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             initializeStickyNav();
 
-            initializeBurgerMenu();
+            initializeMobileMenu();
         })
         .catch(error => {
             console.error("Erreur lors du chargement de la navbar:", error);
@@ -116,14 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function initializeBurgerMenu() {
-        const burgerButton = document.querySelector('.md\\:hidden button');
-        const navLinks = document.querySelector('.hidden.md\\:flex');
+    // --- NOUVELLE FONCTION POUR LE MENU BURGER ---
+    function initializeMobileMenu() {
+        const button = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
 
-        if (burgerButton && navLinks) {
-            burgerButton.addEventListener('click', () => {
-
-                navLinks.classList.toggle('open');
+        if (button && menu) {
+            button.addEventListener('click', () => {
+                // On bascule la classe qui gère l'affichage et le style
+                menu.classList.toggle('mobile-menu-open');
             });
         }
     }

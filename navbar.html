@@ -2,20 +2,20 @@
 <header id="main-header" class="flex items-center h-[68px]">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex justify-between items-center">
-            <!-- TITRE : On change la couleur du texte pour un gris très foncé/noir -->
-            <a href="index.html" class="text-2xl font-bold text-gray-900" id="brand-title">Accueil</a>
+            <a href="index.html" class="text-2xl font-bold text-gray-900" id="brand-title">PAT RUFISQUE</a>
             
-            <!-- LIENS DE NAVIGATION PRINCIPAUX -->
-            <!-- On assigne une classe commune "main-nav-link" pour un ciblage facile en CSS -->
-            <div class="hidden md:flex items-center space-x-4">
+            <!-- 1. PANNEAU DE NAVIGATION -->
+            <!-- On ajoute un ID et des classes pour le comportement mobile/desktop -->
+            <div id="mobile-menu" class="hidden md:flex md:items-center md:space-x-4">
                 <a href="page-gouvernance-alimentaire.html" class="main-nav-link nav-gouvernance">Gouvernance</a>
                 <a href="page-systemes-alimentaires-durables.html" class="main-nav-link nav-sad">Systèmes Durables</a>
                 <a href="page-cantines-scolaires.html" class="main-nav-link nav-cantines">Cantines Scolaires</a>
             </div>
             
-            <!-- Menu mobile (inchangé) -->
+            <!-- 2. BOUTON BURGER -->
+            <!-- On ajoute un ID au bouton -->
             <div class="md:hidden">
-                <button class="text-gray-700">
+                <button id="mobile-menu-button" class="text-gray-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
