@@ -38,9 +38,31 @@ body {
     visibility: visible;
 }
 
+.active-background-slider {
+    position: absolute;
+    bottom: 0; /* Aligné avec la bordure du bas */
+    height: 100%; /* Toute la hauteur du bouton */
+    background-color: #FF9800; /* La couleur orange du thème */
+    border-radius: 0 0 0 0; /* Coins arrondis en haut */
+    z-index: -1; /* Se place derrière le texte des boutons */
+    transition: left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+/* Style pour tous les boutons du sous-menu pour une transition douce */
+.sub-nav-button {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
 /* Style pour le bouton actif dans la sous-navigation */
 .sub-nav-button.active {
-    border-color: #4CAF50; /* Couleur verte par défaut, peut être surchargée */
-    color: #4CAF50;
+    border-color: #FF9800 !important; /* Bordure assortie (important pour forcer le style) */
+    color: white !important; /* Texte en blanc pour contraster avec le curseur */
     font-weight: 700;
+}
+
+/* On s'assure que le survol (hover) ne change pas la couleur du texte du lien actif */
+.sub-nav-button.active:hover {
+    color: white !important;
 }
