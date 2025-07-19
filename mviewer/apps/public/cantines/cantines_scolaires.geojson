@@ -457,6 +457,17 @@
           14.69148
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cuisine_ratachement": "test",
+        "nom_etab": "test",
+        "nb_repas_moyen": "test",
+        "fille_pc": "test",
+        "Merci de prendre une photo de l'Ã©cole": "test"
+      },
+      "geometry": null
     }
   ]
 }
