@@ -1,18 +1,58 @@
-// --- DÉFINITION DE L'ACTIVITÉ À FILTRER ---
-// C'EST LA SEULE LIGNE À MODIFIER POUR CHAQUE FICHIER
-const ACTIVITY_FIELD = 'maraichage'; // Ex: 'maraichage', 'aviculture', etc.
+// Fichier : gouvernance_template_customlayer.js
+// A copier/coller pour chaque activité.
 
-// --- CONFIGURATION COMMUNE ---
+// ======================================================================
+// === SEULE PARTIE À MODIFIER POUR CHAQUE COUCHE =======================
+// ======================================================================
+
+// 1. Définir le nom du champ à filtrer (ex: 'cereales', 'maraichage'...)
+const ACTIVITY_FIELD = 'maraichage'; 
+
+// 2. Définir l'identifiant unique de la couche (doit correspondre au 'id' du XML)
+const LAYER_ID = 'fournisseurs_maraichage';
+
+// ======================================================================
+// === LE RESTE DU CODE EST IDENTIQUE POUR TOUTES LES COUCHES ===========
+// ======================================================================
+
+// --- Configuration commune ---
 const GEOJSON_FILE_URL = 'apps/public/gouvernance/fournisseurs.geojson';
-const LAYER_ID = `fournisseurs_${ACTIVITY_FIELD}`;
 
-// Styles et légende (identiques à votre ancien fichier)
+// --- Styles et Légende ---
 const statusStyles = {
-    'Gie': new ol.style.Style({ image: new ol.style.Circle({ fill: new ol.style.Fill({ color: 'rgba(255, 165, 0, 0.8)' }), stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }), radius: 5 }) }),
-    'Entreprise individuelle/ SUARL': new ol.style.Style({ image: new ol.style.Circle({ fill: new ol.style.Fill({ color: 'rgba(0, 128, 255, 0.8)' }), stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }), radius: 5 }) }),
-    'default': new ol.style.Style({ image: new ol.style.Circle({ fill: new ol.style.Fill({ color: 'rgba(128, 128, 128, 0.8)' }), stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }), radius: 5 }) })
+    'Gie': new ol.style.Style({
+        image: new ol.style.Circle({
+            fill: new ol.style.Fill({ color: 'rgba(255, 165, 0, 0.8)' }),
+            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
+            radius: 5
+        })
+    }),
+    'Entreprise individuelle/ SUARL': new ol.style.Style({
+        image: new ol.style.Circle({
+            fill: new ol.style.Fill({ color: 'rgba(0, 128, 255, 0.8)' }),
+            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
+            radius: 5
+        })
+    }),
+    'default': new ol.style.Style({
+        image: new ol.style.Circle({
+            fill: new ol.style.Fill({ color: 'rgba(128, 128, 128, 0.8)' }),
+            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
+            radius: 5
+        })
+    })
 };
-const legend = { items: [{ label: "GIE", geometry: "Point", styles: [statusStyles['Gie']] }, { label: "Entreprise individuelle/ SUARL", geometry: "Point", styles: [statusStyles['Entreprise individuelle/ SUARL']] }] };
+const legend = {
+    items: [{
+        label: "GIE",
+        geometry: "Point",
+        styles: [statusStyles['Gie']]
+    }, {
+        label: "Entreprise individuelle/ SUARL",
+        geometry: "Point",
+        styles: [statusStyles['Entreprise individuelle/ SUARL']]
+    }]
+};
 const styleFunction = function (feature, resolution) {
     const statut = feature.get('statut');
     const livraisonKg = feature.get('livraison_kg') || 0;
@@ -25,38 +65,27 @@ const styleFunction = function (feature, resolution) {
     return style;
 };
 
-// --- SOURCE FILTRÉE ---
+// --- Création de la source et filtrage ---
 const vectorSource = new ol.source.Vector({
-    format: new ol.format.GeoJSON(),
-    // On utilise un loader personnalisé pour filtrer les données
-    loader: function(extent, resolution, projection, success, failure) {
-        fetch(GEOJSON_FILE_URL)
-            .then(response => response.json())
-            .then(data => {
-                const format = new ol.format.GeoJSON();
-                let features = format.readFeatures(data);
-                
-                // C'est ici que la magie opère : on filtre les features !
-                features = features.filter(feature => {
-                    return feature.get(ACTIVITY_FIELD) === 1;
-                });
-
-                vectorSource.addFeatures(features);
-                success(features);
-            })
-            .catch(err => {
-                console.error("Erreur de chargement ou de filtrage du GeoJSON pour la couche " + LAYER_ID, err);
-                failure();
-            });
-    },
-    strategy: ol.loadingstrategy.all
+    url: GEOJSON_FILE_URL,
+    format: new ol.format.GeoJSON()
 });
 
-// Création de la couche OpenLayers
+vectorSource.on('featuresloadend', function(event) {
+    const source = event.target; 
+    const allFeatures = source.getFeatures();
+    const filteredFeatures = allFeatures.filter(feature => {
+        return feature.get(ACTIVITY_FIELD) === 1;
+    });
+    source.clear();
+    source.addFeatures(filteredFeatures);
+});
+
+// --- Création de la couche OpenLayers ---
 const layer = new ol.layer.Vector({
     source: vectorSource,
     style: styleFunction
 });
 
-// Enregistrement de la couche
+// --- Enregistrement de la couche dans mviewer ---
 new CustomLayer(LAYER_ID, layer, legend);

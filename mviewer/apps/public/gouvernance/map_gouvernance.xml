@@ -21,22 +21,58 @@
     <baselayer visible="false" id="osm" thumbgallery="img/basemap/osm.png" title="OSM" label="OpenStreetMap classique" type="OSM" url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;&lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;" /> 
 </baselayers>
 <themes mini="false">
-    <theme id="theme-gouvernance-fournisseurs" name="Fournisseurs locaux par activité" collapsed="false" icon="fas fa-truck-fast">
+
+    <theme id="theme-gouvernance-activite" 
+        name="Fournisseurs locaux par activité" 
+        collapsed="false" 
+        icon="fas fa-truck-fast">
 
 
-        <layer id="fournisseurs_locaux"
-               name="Fournisseurs Locaux"
+        <layer id="fournisseurs_cereales"
+               name="Transformation de céréales"
                type="customlayer"
-               url="customlayers/fournisseurs_locaux.js"
+               url="customlayers/fournisseurs_cereales.js"
                visible="true"
                infoformat="application/vnd.ogc.gml"
                vectorlegend="false"
                tooltip="true"
                tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                attribution="Source: PAT Rufisque">
+        </layer>
 
+        <layer id="fournisseurs_maraichage"
+               name="Maraichage / agriculture"
+               type="customlayer"
+               url="customlayers/fournisseurs_maraichage.js"
+               visible="true"
+               infoformat="application/vnd.ogc.gml"
+               vectorlegend="false"
+               tooltip="true"
+               tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+               attribution="Source: PAT Rufisque">
         </layer>
 
     </theme>
+
+    <theme id="theme-gouvernance-structure" 
+        name="Structure administratives" 
+        collapsed="true" 
+        icon="fas fa-truck-fast">
+
+
+        <layer id="fournisseurs_locaux"
+               name="types de structures"
+               type="customlayer"
+               url="customlayers/fournisseurs_locaux.js"
+               visible="false"
+               infoformat="application/vnd.ogc.gml"
+               vectorlegend="false"
+               tooltip="true"
+               tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+               attribution="Source: PAT Rufisque">
+        </layer>
+
+    </theme>
+
 </themes>
 </config>

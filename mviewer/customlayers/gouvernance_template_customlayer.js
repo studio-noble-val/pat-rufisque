@@ -6,17 +6,17 @@
 // ======================================================================
 
 // 1. Infos de base
-const ACTIVITY_FIELD = 'cereales';
-const LAYER_ID = 'fournisseurs_cereales';
-const LAYER_LABEL = 'Transformation de céréales';
+const ACTIVITY_FIELD = 'METTRE_LE_NOM_DU_CHAMP_ICI';
+const LAYER_ID = 'METTRE_L_ID_DE_LA_COUCHE_ICI';
+const LAYER_LABEL = 'METTRE_LE_LABEL_POUR_LA_LEGENDE';
 
 // 2. Style de l'icône
-const BACKGROUND_COLOR = '#E67E22'; // Couleur du cercle de fond (ex: '#FF5733')
-const ICON_UNICODE = '\uf4d8';     // Code Unicode de l'icône FontAwesome (ici, une ampoule)
+const BACKGROUND_COLOR = '#CCCCCC'; // Couleur du cercle de fond (ex: '#FF5733')
+const ICON_UNICODE = '\uf0eb';     // Code Unicode de l'icône FontAwesome (ici, une ampoule)
 
 // 3. Décalage (si besoin)
 const OFFSET_X = 0; // en mètres
-const OFFSET_Y = 35; // en mètres
+const OFFSET_Y = 0; // en mètres
 
 // ======================================================================
 // === LE RESTE DU CODE EST AUTOMATIQUE ================================
