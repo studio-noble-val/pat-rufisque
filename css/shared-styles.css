@@ -28,4 +28,41 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre standard pour le header */
 }
 
-/* Autres styles globaux potentiels à ajouter ici */
+.carte-interactive {
+    /* Styles de base pour la mise en page et l'apparence */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Corresponds à gap-4 de Tailwind */
+    
+    /* Styles de base pour l'esthétique */
+    padding: 1.5rem; /* Corresponds à p-6 */
+    border-radius: 0.5rem; /* Corresponds à rounded-lg */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* Corresponds à shadow-md */
+    
+    /* La transition pour l'animation */
+    transition: all 300ms ease-in-out;
+}
+
+.carte-interactive:hover {
+    /* L'ombre s'agrandit au survol */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* Corresponds à shadow-xl */
+    /* La carte se soulève légèrement */
+    transform: translateY(-0.25rem); /* Corresponds à -translate-y-1 */
+}
+
+/* Cible l'image à l'intérieur de la carte */
+.carte-interactive-image {
+    /* Empêche l'image de rétrécir */
+    flex-shrink: 0;
+    /* Assure que l'image est contenue sans être déformée */
+    object-fit: contain;
+    
+    /* La transition pour l'effet de zoom */
+    transition: transform 300ms ease-in-out;
+}
+
+/* Applique le zoom sur l'image quand la carte est survolée */
+.carte-interactive:hover .carte-interactive-image {
+    transform: scale(1.1); /* Corresponds à group-hover:scale-110 */
+}
