@@ -59,7 +59,8 @@
                       closeafterclick="false" />
 
     <baselayers style="default">
-        <baselayer visible="false" 
+
+        <baselayer visible="true" 
                    id="esriworldimagery" 
                    thumbgallery="img/basemap/esriworldwide.jpg" 
                    title="Esri" 
@@ -68,7 +69,7 @@
                    url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" 
                    attribution="&lt;a href=&quot;https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9&quot; target=&quot;_blank&quot; &gt;Esri world imagery&lt;/a&gt;" />
         
-        <baselayer visible="true" 
+        <baselayer visible="false" 
                    id="osm" 
                    thumbgallery="img/basemap/osm.png" 
                    title="OSM" 
@@ -84,15 +85,51 @@
                name="Lendeng" 
                collapsed="false" 
                icon="fas fa-seedling">
-               
+
             <layer id="parcelles" 
                    name="Surfaces cultivées" 
                    type="customlayer" 
                    url="apps/public/zone_de_lendeng/parcelles.js" 
                    tooltip="true" 
                    tooltipcontent="name" 
+                   visible="false" />
+
+            <layer id="zones_inondables" 
+                   name="zones_inondables" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/zones_inondables.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
                    visible="true" />
-                   
+
+            <layer id="limite_zone" 
+                   name="Limite de la zone cultivée" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/limite_zone.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="true" />
+        </theme>
+        <theme id="theme-20250616180501" 
+               name="Aménagements" 
+               collapsed="false" 
+               icon="fas fa-hard-hat">
+
+            <layer id="routes" 
+                   name="Voies d'accès" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/routes.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="true" />
+
+            <layer id="bassin_retention" 
+                   name="Bassin de rétention" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/bassin_retention.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="true" />
         </theme>
         
     </themes>

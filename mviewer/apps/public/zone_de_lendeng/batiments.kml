@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Bâtiments</name>
+  <Placemark>
+    <name>Bâtiment principal</name>
+    <description>Ceci est le bâtiment principal de l'exploitation.</description>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            -17.248,14.715,0 -17.248,14.7155,0 -17.2475,14.7155,0 -17.2475,14.715,0 -17.248,14.715,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+</Document>
+</kml>
