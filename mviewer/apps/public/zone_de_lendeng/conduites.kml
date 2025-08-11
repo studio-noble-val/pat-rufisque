@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="conduites" id="conduites">
+	<SimpleField name="Shape_Leng" type="float"></SimpleField>
+	<SimpleField name="Denominati" type="string"></SimpleField>
+</Schema>
+<Folder><name>conduites</name>
+  <Placemark id="conduites.1">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">915.82978775100</SimpleData>
+		<SimpleData name="Denominati">DN 400</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2522590733891,14.7248622038646,0 -17.2497054312839,14.7286006201112,0 -17.2484963293601,14.729999558621,0 -17.2472687170164,14.7315497976322,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.2">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">596.24165787400</SimpleData>
+		<SimpleData name="Denominati">DN 360</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2491207240121,14.7219517490295,0 -17.2491891211078,14.7235363584987,0 -17.2512158369814,14.7244940885158,0 -17.2522590733891,14.7248622038646,0 -17.2527693170623,14.7250422452142,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.3">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">1238.45840578000</SimpleData>
+		<SimpleData name="Denominati">DN 360</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2459227934773,14.7124628913099,0 -17.2465972145021,14.7128330877794,0 -17.2478783069965,14.7134344664413,0 -17.2486543778408,14.7137928742019,0 -17.2488535588529,14.7152520095845,0 -17.2489591120173,14.716658460311,0 -17.2488690937247,14.7175270627682,0 -17.2487903782102,14.7182306197664,0 -17.2489329475939,14.7194512032378,0 -17.2490667075908,14.720043260522,0 -17.2491319870943,14.7206010774623,0 -17.2490818476269,14.7208366947959,0 -17.2490926026501,14.7213002343675,0 -17.2491207240121,14.7219517490295,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.4">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">400.98699251600</SimpleData>
+		<SimpleData name="Denominati">DN 75</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488955601266,14.7184727358852,0 -17.2451797224509,14.718258929498,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.5">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">412.37988953700</SimpleData>
+		<SimpleData name="Denominati">DN 75</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488918360692,14.7187220770781,0 -17.2484163157637,14.7187180196175,0 -17.2450760348668,14.718996972025,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.6">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">81.43648446590</SimpleData>
+		<SimpleData name="Denominati">DN 75</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2467785959524,14.7129774521688,0 -17.246095462069,14.713292521314,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.7">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">87.49391487270</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2463087476085,14.720617406014,0 -17.2456227900641,14.7201941254814,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.8">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">129.90684970900</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488717678583,14.7252861643743,0 -17.2477024228343,14.7249991835422,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.9">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">123.55017211800</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2507839718113,14.7245912144337,0 -17.249808042833,14.7251776164131,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.10">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">107.34377634700</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2503380448488,14.7243003174964,0 -17.2497574492443,14.7245783886362,0 -17.2494205332667,14.7244882987382,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.11">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">83.12250715120</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.250362212407,14.7241682895913,0 -17.2506830208149,14.7234852694089,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.12">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">177.70157215100</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2503457636593,14.7235392776868,0 -17.2490042406071,14.7226049647297,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.13">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">105.83567067900</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2507294280084,14.7244195683963,0 -17.2503457636593,14.7235392776868,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.14">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">23.16312234190</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.249956854311,14.7239620876311,0 -17.2497420542455,14.7239524915653,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.15">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">303.40881098400</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2501151220607,14.7277458813342,0 -17.2488717678583,14.7252861643743,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.16">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">208.37728730400</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2486668796237,14.7158390766662,0 -17.2478618609011,14.7156824175555,0 -17.2471033706994,14.7148891454386,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.17">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">154.75724516500</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488999228885,14.7216294166012,0 -17.2474664714822,14.7217222002761,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.18">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">15.20453696030</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490476766642,14.7213011884812,0 -17.2489508237284,14.7213186413205,0 -17.2489915566283,14.7213309303951,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.19">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">279.44646576700</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489023092684,14.7206689310813,0 -17.2463087476085,14.720617406014,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.20">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">10.03676123400</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490570312016,14.7203351328183,0 -17.2490394563378,14.7204241859899,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.21">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">139.21866754400</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490172377146,14.7202271168977,0 -17.2484876812062,14.7202514417155,0 -17.2477731132341,14.7205096252764,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.22">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">461.10150400100</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488518037503,14.7160052664194,0 -17.2473695679213,14.7169277524244,0 -17.2469229612402,14.7173948657439,0 -17.2472617618263,14.7191802306078,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.23">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">176.36622551200</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489917655588,14.720051982873,0 -17.2479223548636,14.7201074172094,0 -17.2473570736423,14.7200747505894,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.24">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">51.22678206030</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489930244657,14.7201747654723,0 -17.2489432065516,14.720253246018,0 -17.2486210227216,14.7204507297286,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.25">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">131.96313232700</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489902267913,14.7199019036053,0 -17.2491100656624,14.7192025733223,0 -17.2492259597859,14.719518572827,0 -17.2492274747628,14.7196663202858,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.26">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">9.84719999880</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489911389396,14.719990867575,0 -17.2489907555054,14.7199534704006,0 -17.2489904813571,14.7199267320623,0 -17.2489902267913,14.7199019036053,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.27">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">20.35520000010</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489911389396,14.719990867575,0 -17.2489914422123,14.7200204463421,0 -17.2489917655588,14.720051982873,0 -17.2489925933301,14.7201327164638,0 -17.2489930244657,14.7201747654723,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.28">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">176.55365529100</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489022092252,14.7199628841356,0 -17.2477696939916,14.7198080708147,0 -17.2473570736423,14.7200747505894,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.29">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">84.66843299070</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488610852561,14.7184474536607,0 -17.2480940046881,14.7186141521528,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.30">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">286.70872329800</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488415614525,14.7174538167381,0 -17.2486586750452,14.7174439116343,0 -17.2483072471615,14.717123024089,0 -17.2477761359058,14.7169602862531,0 -17.2483105315554,14.7174435166709,0 -17.248277180233,14.7178146430033,0 -17.2483915033608,14.7181132581929,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.31">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">231.55521384000</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488719093544,14.7169333210767,0 -17.2475502254538,14.7168873117657,0 -17.2476968289341,14.7174057669163,0 -17.2478929032229,14.717592705424,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.32">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">188.52737098900</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2486415463198,14.7168804421767,0 -17.2479635919624,14.7164093325816,0 -17.247611470491,14.7166640574198,0 -17.2475203659918,14.7164441951908,0 -17.2475443205763,14.7162169106369,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.33">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">43.00668857760</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488475950475,14.7169155289426,0 -17.2486415463198,14.7168804421767,0 -17.2487292518998,14.7170445362952,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.34">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">76.27405303560</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489195064362,14.7166902201242,0 -17.2488853325265,14.7165151261987,0 -17.2488518037503,14.7160052664194,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.35">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">21.42032826650</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488059135037,14.7157007211447,0 -17.2486668796237,14.7158390766662,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.36">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">385.07582020000</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2487824988221,14.715663084952,0 -17.2468175349596,14.715626231666,0 -17.2465343163088,14.7163124431772,0 -17.2464395970721,14.717134056189,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.37">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">305.70027273000</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488092237332,14.7152145728877,0 -17.2479409105505,14.7159807060452,0 -17.2480913486109,14.7167307042588,0 -17.2472118165751,14.7166878331397,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.38">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">249.97646168500</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2476399515667,14.7133761691692,0 -17.2472024440901,14.7143048354956,0 -17.2473443352641,14.7146090635687,0 -17.247496650653,14.714935643207,0 -17.247038899235,14.7152479947619,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.39">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">76.81947460260</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.247480675261,14.7133325133302,0 -17.2469651576969,14.7138120503348,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.40">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">9.20987239402</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2463016074518,14.712809380405,0 -17.2463144562991,14.7128916456695,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.41">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">10.35163830440</SimpleData>
+		<SimpleData name="Denominati">DN 63</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2460485119626,14.7126036596134,0 -17.2459772384282,14.7126663874251,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.42">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">366.59149940800</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2471831717178,14.7131982707619,0 -17.2463286944294,14.7153592707592,0 -17.2456534797996,14.7152304303622,0 -17.2453231673733,14.7151711276811,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.43">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">581.05008750100</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490293408418,14.7214142631793,0 -17.2480552380127,14.7220247894823,0 -17.243990900981,14.7231842246764,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.44">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">343.33601098200</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.248730017419,14.7240059315939,0 -17.2456245700708,14.723307721284,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.45">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">606.48181053200</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2474222605321,14.7311895815504,0 -17.2458961849458,14.7259152067869,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.46">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">493.69409499400</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.247463209561,14.7311505161799,0 -17.2463981154348,14.7268121602217,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.47">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">368.55330918900</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2485994919168,14.7297318963005,0 -17.2474740343923,14.7273210989971,0 -17.2467749653719,14.727366490485,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.48">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">522.41517141300</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2496995937723,14.7284498310603,0 -17.2479878032317,14.7261579691821,0 -17.2473005324069,14.7243939629026,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.49">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">120.85864759600</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2500158544701,14.7278886035148,0 -17.2496169743472,14.7268679977386,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.50">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">97.73858492470</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2500383290969,14.7278636878491,0 -17.2492667998088,14.7273989714911,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.51">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">109.49911760800</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2500470461983,14.7278435735806,0 -17.2490491785001,14.7276549629583,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.52">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">98.77644551260</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2500836671649,14.7277998208628,0 -17.2494344922504,14.7271695347785,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.53">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">272.20154990800</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2501060381996,14.7277722308379,0 -17.2483873638884,14.7259693698751,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.54">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">278.81056378000</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2501343941553,14.7277258876219,0 -17.248575895092,14.7257147242583,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.55">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">241.58073332000</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2508699510455,14.7246588617325,0 -17.248730017419,14.7240059315939,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.56">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">1385.00920095000</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2507717501427,14.7244814356381,0 -17.2504659401409,14.7243589992514,0 -17.250657579507,14.7238345416567,0 -17.2501580518098,14.7223285964726,0 -17.2442865384637,14.7221443030798,0 -17.2460361931639,14.723133780421,0 -17.2459248283182,14.7236183798123,0 -17.2456885904339,14.7239450968867,0 -17.2471611319526,14.7236208104193,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.57">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">190.71842585800</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489530417987,14.7222476336327,0 -17.2504970200159,14.7230908629018,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.58">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">447.44858430800</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489415720507,14.722234058309,0 -17.245824298252,14.7249058327205,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.59">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">710.37125302100</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490066691967,14.7222375135669,0 -17.2455515443807,14.7244458448708,0 -17.2440755823118,14.7234320897101,0 -17.2434257024705,14.7233571520866,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.60">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">570.31245655400</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490813509358,14.7222003503893,0 -17.2450905764254,14.7225040176402,0 -17.2443172850968,14.7214975064585,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.61">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">41.45614874460</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488007182471,14.719712155045,0 -17.248577738838,14.720017427295,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.62">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">44.48336915370</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489584372164,14.7212874162212,0 -17.2485456616941,14.7212760713849,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.63">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">8.59217991566</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489415583654,14.7210449920643,0 -17.248861799183,14.7210444267934,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.64">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">194.97336333400</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489715568159,14.7198482026648,0 -17.2488672389003,14.7196141215751,0 -17.2475857980928,14.7204589770754,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.65">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">100.49040344200</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489361126069,14.7198220245566,0 -17.2481011670818,14.7194171236041,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.66">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">47.58495994720</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2487340415951,14.7194620943348,0 -17.2486496892778,14.7194123281769,0 -17.2488007182471,14.719712155045,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.67">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">247.13638661000</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488559080591,14.7183472188382,0 -17.2476231975211,14.7185065256397,0 -17.2481011670818,14.7194171236041,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.68">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">296.68225208800</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488555994876,14.7183171178731,0 -17.2472172216366,14.7183960508288,0 -17.2474113394395,14.7182342765747,0 -17.2469760918286,14.7179176021573,0 -17.2472741878729,14.7178193885396,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.69">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">442.21843438400</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488971088075,14.7169552319586,0 -17.2472582591705,14.7172884576526,0 -17.2466520446695,14.7179739253719,0 -17.2456802892715,14.7181227036761,0 -17.2453750253446,14.7185298651095,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.70">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">61.75859181430</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2488614882566,14.7168685981783,0 -17.2486001902857,14.7163719431257,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.71">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">124.99278754300</SimpleData>
+		<SimpleData name="Denominati">DN 50</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2469300411259,14.713060957247,0 -17.2464040857638,14.7140675645897,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.72">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">380.77207627600</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2470937495377,14.7131330481557,0 -17.2466659832966,14.714213292191,0 -17.2457053808351,14.7162955642676,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.73">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">204.75630000000</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.248734002281,14.7241543417417,0 -17.2468333135408,14.7241727967735,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.74">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">625.25214511600</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2482803753045,14.7225432245025,0 -17.2430646824251,14.7250219859119,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.75">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">343.50496153800</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2500653258519,14.7278186932741,0 -17.2498361848502,14.724723189011,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.76">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">169.10826874000</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2508162013739,14.7246295271026,0 -17.2492938096417,14.7250024029656,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.77">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">57.80888042460</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2503080924961,14.7241802968718,0 -17.250195917332,14.7236695383054,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.78">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">306.39790005900</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2499037558755,14.724024971894,0 -17.2472316404706,14.7249736204755,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.79">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">223.84831268900</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489882709789,14.722209708023,0 -17.2472045574805,14.7232472569406,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.80">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">406.65977887100</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489881354949,14.7221964960557,0 -17.2453005749326,14.7229829515284,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.81">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">368.03178645800</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490385856989,14.7221914106184,0 -17.2456255351458,14.7223400439177,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.82">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">396.01846575100</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489845496726,14.7221804208734,0 -17.2472153951492,14.7253168558085,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.83">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">212.81266424000</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490209865764,14.7221788833052,0 -17.2471262302269,14.7227231464485,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.84">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">148.63281187000</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490200810148,14.7221331253873,0 -17.2476992173272,14.7225213112951,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.85">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">478.48888511700</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489496096124,14.722131112871,0 -17.2465714122478,14.7257823862375,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.86">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">92.59539324200</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490179981197,14.7221136934337,0 -17.2482803753045,14.7225432245025,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.87">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">16.43194182470</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.248734002281,14.7241543417417,0 -17.248730017419,14.7240059315939,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.88">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">422.08339690400</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.250156261304,14.7277077272469,0 -17.248734002281,14.7241543417417,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.89">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">410.94281559800</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490312442944,14.7215998875311,0 -17.2463711789392,14.7242611748482,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.90">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">246.20114567100</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2490286936886,14.7212639683615,0 -17.2467921665889,14.7208060055102,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.91">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">75.60287339920</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2489048489342,14.7199858344735,0 -17.2495134908751,14.7203259317927,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+  <Placemark id="conduites.92">
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#conduites">
+		<SimpleData name="Shape_Leng">384.84858913900</SimpleData>
+		<SimpleData name="Denominati">DN 40</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>-17.2463468297588,14.7128398952481,0 -17.2455393854178,14.716226992405,0</coordinates></LineString></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

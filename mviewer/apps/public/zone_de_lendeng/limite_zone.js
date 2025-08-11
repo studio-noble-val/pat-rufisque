@@ -24,7 +24,7 @@ const kmlLayerBatiments = new ol.layer.Vector({
     style: new ol.style.Style({
         // Style for the stroke of the polygons
         stroke: new ol.style.Stroke({
-            color: 'rgba(0, 61, 71, 0)', // Dark red
+            color: 'rgba(0, 61, 71, 50)', // Dark red
             width: 2
         }),
         // Style for the fill of the polygons

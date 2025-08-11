@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="pompes" id="pompes">
+	<SimpleField name="Pompes" type="string"></SimpleField>
+	<SimpleField name="X" type="float"></SimpleField>
+	<SimpleField name="Y" type="float"></SimpleField>
+	<SimpleField name="Marque" type="string"></SimpleField>
+	<SimpleField name="Propriéta" type="string"></SimpleField>
+	<SimpleField name="Date_d_acq" type="string"></SimpleField>
+	<SimpleField name="Superficie" type="float"></SimpleField>
+	<SimpleField name="Source_d_" type="string"></SimpleField>
+	<SimpleField name="Débit__m3" type="string"></SimpleField>
+	<SimpleField name="HMT__m_" type="string"></SimpleField>
+	<SimpleField name="Etat_gén" type="string"></SimpleField>
+</Schema>
+<Folder><name>pompes</name>
+  <Placemark id="pompes.1">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P1</SimpleData>
+		<SimpleData name="X">258101.00000000000</SimpleData>
+		<SimpleData name="Y">1628430.00000000000</SimpleData>
+		<SimpleData name="Marque">LIKOU</SimpleData>
+		<SimpleData name="Propriéta">Ndaraw Diamé</SimpleData>
+		<SimpleData name="Date_d_acq">45566</SimpleData>
+		<SimpleData name="Superficie">0.95000000000</SimpleData>
+		<SimpleData name="Source_d_">Solaire</SimpleData>
+		<SimpleData name="Débit__m3">28</SimpleData>
+		<SimpleData name="HMT__m_">11</SimpleData>
+		<SimpleData name="Etat_gén">Neuf</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2466522798408,14.7188014741159</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.2">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P2</SimpleData>
+		<SimpleData name="X">258252.00000000000</SimpleData>
+		<SimpleData name="Y">1628450.00000000000</SimpleData>
+		<SimpleData name="Marque">TURKISH</SimpleData>
+		<SimpleData name="Propriéta">Fara Diamé</SimpleData>
+		<SimpleData name="Date_d_acq">45627</SimpleData>
+		<SimpleData name="Superficie">2.28000000000</SimpleData>
+		<SimpleData name="Source_d_">Solaire</SimpleData>
+		<SimpleData name="Débit__m3">28</SimpleData>
+		<SimpleData name="HMT__m_">11</SimpleData>
+		<SimpleData name="Etat_gén">Neuf</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2452524758606,14.71899575743</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.3">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P3</SimpleData>
+		<SimpleData name="X">258253.00000000000</SimpleData>
+		<SimpleData name="Y">1628430.00000000000</SimpleData>
+		<SimpleData name="Marque">TURKISH</SimpleData>
+		<SimpleData name="Propriéta">Fara Diamé</SimpleData>
+		<SimpleData name="Date_d_acq">45627</SimpleData>
+		<SimpleData name="Superficie">2.28000000000</SimpleData>
+		<SimpleData name="Source_d_">Solaire</SimpleData>
+		<SimpleData name="Débit__m3">28</SimpleData>
+		<SimpleData name="HMT__m_">11</SimpleData>
+		<SimpleData name="Etat_gén">Neuf</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.245241343994,14.718815158081</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.4">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P4</SimpleData>
+		<SimpleData name="X">258075.00000000000</SimpleData>
+		<SimpleData name="Y">1628760.00000000000</SimpleData>
+		<SimpleData name="Marque">KIPOR</SimpleData>
+		<SimpleData name="Propriéta">Ibrahima Mar</SimpleData>
+		<SimpleData name="Date_d_acq">45292</SimpleData>
+		<SimpleData name="Superficie">2.39000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">30</SimpleData>
+		<SimpleData name="HMT__m_">13</SimpleData>
+		<SimpleData name="Etat_gén">Usure modérée</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2469241644194,14.7217805030467</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.5">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P5</SimpleData>
+		<SimpleData name="X">258024.00000000000</SimpleData>
+		<SimpleData name="Y">1628770.00000000000</SimpleData>
+		<SimpleData name="Marque">ND</SimpleData>
+		<SimpleData name="Propriéta">Ibrahima Mar</SimpleData>
+		<SimpleData name="Date_d_acq">ND</SimpleData>
+		<SimpleData name="Superficie">2.39000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">ND</SimpleData>
+		<SimpleData name="HMT__m_">ND</SimpleData>
+		<SimpleData name="Etat_gén">Vétuste</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2473985023064,14.7218662528477</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.6">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P6</SimpleData>
+		<SimpleData name="X">257973.00000000000</SimpleData>
+		<SimpleData name="Y">1629280.00000000000</SimpleData>
+		<SimpleData name="Marque">ND</SimpleData>
+		<SimpleData name="Propriéta">Taye Ndoye</SimpleData>
+		<SimpleData name="Date_d_acq">ND</SimpleData>
+		<SimpleData name="Superficie">0.28000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">ND</SimpleData>
+		<SimpleData name="HMT__m_">ND</SimpleData>
+		<SimpleData name="Etat_gén">ND</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2479191470147,14.7264692250081</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.7">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P7</SimpleData>
+		<SimpleData name="X">257917.00000000000</SimpleData>
+		<SimpleData name="Y">1628850.00000000000</SimpleData>
+		<SimpleData name="Marque">WP30X</SimpleData>
+		<SimpleData name="Propriéta">Ablaye Diagne</SimpleData>
+		<SimpleData name="Date_d_acq">45292</SimpleData>
+		<SimpleData name="Superficie">0.82000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">60</SimpleData>
+		<SimpleData name="HMT__m_">30</SimpleData>
+		<SimpleData name="Etat_gén">Etat correct</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2483991490197,14.7225793653682</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.8">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P8</SimpleData>
+		<SimpleData name="X">258026.00000000000</SimpleData>
+		<SimpleData name="Y">1628940.00000000000</SimpleData>
+		<SimpleData name="Marque">COVAX</SimpleData>
+		<SimpleData name="Propriéta">Ibrahima Koulibaly</SimpleData>
+		<SimpleData name="Date_d_acq">2022</SimpleData>
+		<SimpleData name="Superficie">0.35000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">22</SimpleData>
+		<SimpleData name="HMT__m_">15</SimpleData>
+		<SimpleData name="Etat_gén">Etat correct</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.247395676043,14.7234022897493</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.9">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P9</SimpleData>
+		<SimpleData name="X">258033.00000000000</SimpleData>
+		<SimpleData name="Y">1629020.00000000000</SimpleData>
+		<SimpleData name="Marque">TURKISH</SimpleData>
+		<SimpleData name="Propriéta">Ablaye Yade</SimpleData>
+		<SimpleData name="Date_d_acq">45658</SimpleData>
+		<SimpleData name="Superficie">1.12000000000</SimpleData>
+		<SimpleData name="Source_d_">Solaire</SimpleData>
+		<SimpleData name="Débit__m3">28</SimpleData>
+		<SimpleData name="HMT__m_">11</SimpleData>
+		<SimpleData name="Etat_gén">Neuf</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.247338104407,14.7241256765704</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.10">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P10</SimpleData>
+		<SimpleData name="X">258049.00000000000</SimpleData>
+		<SimpleData name="Y">1629050.00000000000</SimpleData>
+		<SimpleData name="Marque">COVAX</SimpleData>
+		<SimpleData name="Propriéta">Mbaye Faye</SimpleData>
+		<SimpleData name="Date_d_acq">45292</SimpleData>
+		<SimpleData name="Superficie">0.43000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">22</SimpleData>
+		<SimpleData name="HMT__m_">15</SimpleData>
+		<SimpleData name="Etat_gén">Etat correct</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2471923589141,14.7243981518741</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.11">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P11</SimpleData>
+		<SimpleData name="X">258059.00000000000</SimpleData>
+		<SimpleData name="Y">1629120.00000000000</SimpleData>
+		<SimpleData name="Marque">EXCALIBUR</SimpleData>
+		<SimpleData name="Propriéta">Adama Baldé</SimpleData>
+		<SimpleData name="Date_d_acq">45261</SimpleData>
+		<SimpleData name="Superficie">0.59000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">30</SimpleData>
+		<SimpleData name="HMT__m_">15</SimpleData>
+		<SimpleData name="Etat_gén">Etat correct</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2471060127674,14.7250314645416</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.12">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P12</SimpleData>
+		<SimpleData name="X">258321.00000000000</SimpleData>
+		<SimpleData name="Y">1628530.00000000000</SimpleData>
+		<SimpleData name="Marque">SHMIGEI</SimpleData>
+		<SimpleData name="Propriéta">Aliou Gueye</SimpleData>
+		<SimpleData name="Date_d_acq">45383</SimpleData>
+		<SimpleData name="Superficie">2.25000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">36</SimpleData>
+		<SimpleData name="HMT__m_">22.5</SimpleData>
+		<SimpleData name="Etat_gén">Bon état</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2446193799454,14.7197247241797</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.13">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P13</SimpleData>
+		<SimpleData name="X">258306.00000000000</SimpleData>
+		<SimpleData name="Y">1628520.00000000000</SimpleData>
+		<SimpleData name="Marque">SHMIGEI</SimpleData>
+		<SimpleData name="Propriéta">Aliou Gueye</SimpleData>
+		<SimpleData name="Date_d_acq">45383</SimpleData>
+		<SimpleData name="Superficie">2.25000000000</SimpleData>
+		<SimpleData name="Source_d_">Gazoil</SimpleData>
+		<SimpleData name="Débit__m3">36</SimpleData>
+		<SimpleData name="HMT__m_">22.5</SimpleData>
+		<SimpleData name="Etat_gén">Bon état</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2447576931949,14.7196330297641</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.14">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P14</SimpleData>
+		<SimpleData name="X">258290.00000000000</SimpleData>
+		<SimpleData name="Y">1628520.00000000000</SimpleData>
+		<SimpleData name="Marque">TURKISH</SimpleData>
+		<SimpleData name="Propriéta">Diouldé Diallo</SimpleData>
+		<SimpleData name="Date_d_acq">45627</SimpleData>
+		<SimpleData name="Superficie">0.56000000000</SimpleData>
+		<SimpleData name="Source_d_">Solaire</SimpleData>
+		<SimpleData name="Débit__m3">28</SimpleData>
+		<SimpleData name="HMT__m_">15</SimpleData>
+		<SimpleData name="Etat_gén">Neuf</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2449062134293,14.7196315899826</coordinates></Point>
+  </Placemark>
+  <Placemark id="pompes.15">
+	<ExtendedData><SchemaData schemaUrl="#pompes">
+		<SimpleData name="Pompes">P15</SimpleData>
+		<SimpleData name="X">258242.00000000000</SimpleData>
+		<SimpleData name="Y">1628880.00000000000</SimpleData>
+		<SimpleData name="Marque">TURKISH</SimpleData>
+		<SimpleData name="Propriéta">Daouda Diallo</SimpleData>
+		<SimpleData name="Date_d_acq">45597</SimpleData>
+		<SimpleData name="Superficie">2.67000000000</SimpleData>
+		<SimpleData name="Source_d_">Solaire</SimpleData>
+		<SimpleData name="Débit__m3">28</SimpleData>
+		<SimpleData name="HMT__m_">15</SimpleData>
+		<SimpleData name="Etat_gén">Neuf</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-17.2453850703211,14.7228796773954</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

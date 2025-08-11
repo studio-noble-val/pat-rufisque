@@ -21,11 +21,11 @@
     </metadata>
 
     <application title="Zone agricole de Lendeng" 
-                 logo="" 
+                 logo="img/logo/worldwide.svg" 
                  favicon="" 
                  help="" 
                  titlehelp="" 
-                 iconhelp="fas fa-home" 
+                 iconhelp="fas fa-expand" 
                  home="" 
                  style="css/themes/theme-designfr/theme_designfr.css" 
                  zoomtools="true" 
@@ -82,14 +82,14 @@
     <themes mini="false">
         
         <theme id="theme-20250616180500" 
-               name="Lendeng" 
+               name="Ressources en eau" 
                collapsed="false" 
-               icon="fas fa-seedling">
+               icon="fas fa-tint">
 
 
 
             <layer id="voies_ruissellement" 
-                   name="voies_ruissellement" 
+                   name="Voies de ruissellement" 
                    type="customlayer" 
                    url="apps/public/zone_de_lendeng/voies_ruissellement.js" 
                    tooltip="true" 
@@ -97,7 +97,7 @@
                    visible="true" />
 
             <layer id="zones_inondables" 
-                   name="zones_inondables" 
+                   name="Zones inondables" 
                    type="customlayer" 
                    url="apps/public/zone_de_lendeng/zones_inondables.js" 
                    tooltip="true" 
@@ -112,19 +112,43 @@
                    tooltipcontent="name" 
                    visible="true" />
 
-            <layer id="limite_zone" 
-                   name="Limite de la zone cultivée" 
-                   type="customlayer" 
-                   url="apps/public/zone_de_lendeng/limite_zone.js" 
-                   tooltip="true" 
-                   tooltipcontent="name" 
-                   visible="true" />
+
         </theme>
 
         <theme id="theme-20250616180501" 
-               name="Aménagements" 
+               name="Aménagements hydrauliques" 
                collapsed="false" 
-               icon="fas fa-hard-hat">
+               icon="fas fa-faucet">
+
+       <layer id="pompes" 
+                   name="Pompes" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/pompes.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="false" />
+
+       <layer id="pt_alim" 
+                   name="Points d'alimentation" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/pt_alim.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="false" />
+
+       <layer id="conduites" 
+                   name="Réseau d'alimentation" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/conduites.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="false" />
+        </theme>
+
+        <theme id="theme-20250616180502" 
+               name="Limites de la zone" 
+               collapsed="true" 
+               icon="fas fa-map-marked">
 
             <layer id="routes" 
                    name="Voies d'accès" 
@@ -134,17 +158,24 @@
                    tooltipcontent="name" 
                    visible="true" />
 
-            <layer id="parcelles" 
+            <layer id="limite_zone" 
+                   name="Limite de la zone cultivée" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/limite_zone.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="true" />
+
+              <layer id="parcelles" 
                    name="Surfaces cultivées" 
                    type="customlayer" 
                    url="apps/public/zone_de_lendeng/parcelles.js" 
                    tooltip="true" 
                    tooltipcontent="name" 
                    visible="false" />
-
-
         </theme>
-        
+
+
     </themes>
 
 </config>
