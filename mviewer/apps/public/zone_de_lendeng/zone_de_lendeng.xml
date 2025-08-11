@@ -86,18 +86,28 @@
                collapsed="false" 
                icon="fas fa-seedling">
 
-            <layer id="parcelles" 
-                   name="Surfaces cultivées" 
+
+
+            <layer id="voies_ruissellement" 
+                   name="voies_ruissellement" 
                    type="customlayer" 
-                   url="apps/public/zone_de_lendeng/parcelles.js" 
+                   url="apps/public/zone_de_lendeng/voies_ruissellement.js" 
                    tooltip="true" 
                    tooltipcontent="name" 
-                   visible="false" />
+                   visible="true" />
 
             <layer id="zones_inondables" 
                    name="zones_inondables" 
                    type="customlayer" 
                    url="apps/public/zone_de_lendeng/zones_inondables.js" 
+                   tooltip="true" 
+                   tooltipcontent="name" 
+                   visible="true" />
+
+            <layer id="bassin_retention" 
+                   name="Bassin de rétention" 
+                   type="customlayer" 
+                   url="apps/public/zone_de_lendeng/bassin_retention.js" 
                    tooltip="true" 
                    tooltipcontent="name" 
                    visible="true" />
@@ -110,6 +120,7 @@
                    tooltipcontent="name" 
                    visible="true" />
         </theme>
+
         <theme id="theme-20250616180501" 
                name="Aménagements" 
                collapsed="false" 
@@ -123,13 +134,15 @@
                    tooltipcontent="name" 
                    visible="true" />
 
-            <layer id="bassin_retention" 
-                   name="Bassin de rétention" 
+            <layer id="parcelles" 
+                   name="Surfaces cultivées" 
                    type="customlayer" 
-                   url="apps/public/zone_de_lendeng/bassin_retention.js" 
+                   url="apps/public/zone_de_lendeng/parcelles.js" 
                    tooltip="true" 
                    tooltipcontent="name" 
-                   visible="true" />
+                   visible="false" />
+
+
         </theme>
         
     </themes>
