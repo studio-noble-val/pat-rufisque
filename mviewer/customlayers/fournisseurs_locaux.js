@@ -1,51 +1,47 @@
-// Définition des variables
-const GEOJSON_FILE_URL = 'apps/public/gouvernance/fournisseurs.geojson';
+// Fichier : gouvernance_template_customlayer.js
+// A copier/coller pour chaque activité.
+
+// ======================================================================
+// === SEULE PARTIE À MODIFIER POUR CHAQUE COUCHE =======================
+// ======================================================================
+
+// 1. Définir le nom du champ à filtrer (ex: 'cereales', 'maraichage'...)
+const ACTIVITY_FIELD = 'locaux'; 
+
+// 2. Définir l'identifiant unique de la couche (doit correspondre au 'id' du XML)
 const LAYER_ID = 'fournisseurs_locaux';
 
-// --- Style par statut ---
-// Un objet qui mappe chaque valeur de 'statut' à un style OpenLayers.
+// ======================================================================
+// === LE RESTE DU CODE EST IDENTIQUE POUR TOUTES LES COUCHES ===========
+// ======================================================================
+
+// --- Configuration commune ---
+const GEOJSON_FILE_URL = 'apps/public/gouvernance/fournisseurs.geojson';
+
+// --- Styles et Légende ---
 const statusStyles = {
     'Gie': new ol.style.Style({
         image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(255, 165, 0, 0.8)' // Orange pour les GIE
-            }),
-            stroke: new ol.style.Stroke({
-                color: 'white',
-                width: 1.5
-            }),
-            radius: 5 // Le rayon sera modifié dynamiquement
+            fill: new ol.style.Fill({ color: 'rgba(255, 165, 0, 0.8)' }),
+            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
+            radius: 5
         })
     }),
     'Entreprise individuelle/ SUARL': new ol.style.Style({
         image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(0, 128, 255, 0.8)' // Bleu pour les entreprises
-            }),
-            stroke: new ol.style.Stroke({
-                color: 'white',
-                width: 1.5
-            }),
-            radius: 5 // Le rayon sera modifié dynamiquement
+            fill: new ol.style.Fill({ color: 'rgba(0, 128, 255, 0.8)' }),
+            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
+            radius: 5
         })
     }),
-    // Style par défaut si le statut n'est pas trouvé
     'default': new ol.style.Style({
         image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(128, 128, 128, 0.8)' // Gris
-            }),
-            stroke: new ol.style.Stroke({
-                color: 'white',
-                width: 1.5
-            }),
+            fill: new ol.style.Fill({ color: 'rgba(128, 128, 128, 0.8)' }),
+            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
             radius: 5
         })
     })
 };
-
-// --- Légende pour la carte ---
-// Mviewer utilisera cet objet pour construire la légende grâce à `vectorlegend="true"`
 const legend = {
     items: [{
         label: "GIE",
@@ -57,36 +53,39 @@ const legend = {
         styles: [statusStyles['Entreprise individuelle/ SUARL']]
     }]
 };
-
-// --- Fonction de style dynamique ---
 const styleFunction = function (feature, resolution) {
     const statut = feature.get('statut');
     const livraisonKg = feature.get('livraison_kg') || 0;
-
-    // 1. Choisir le style de base en fonction du statut
-    let style = statusStyles[statut] || statusStyles['default'];
-    style = style.clone(); // Toujours cloner pour ne pas altérer le style de la légende
-
-    // 2. Calculer le rayon en fonction de 'livraison_kg'
+    let style = (statusStyles[statut] || statusStyles['default']).clone();
     const minKg = 20, maxKg = 150;
     const minRadius = 5, maxRadius = 15;
     let radius = minRadius + ((livraisonKg - minKg) / (maxKg - minKg)) * (maxRadius - minRadius);
-    radius = Math.max(minRadius, Math.min(radius, maxRadius)); // Assure que le rayon reste dans les bornes
-
-    // 3. Appliquer le rayon calculé
+    radius = Math.max(minRadius, Math.min(radius, maxRadius));
     style.getImage().setRadius(radius);
-
     return style;
 };
 
-// Création de la couche OpenLayers
+// --- Création de la source et filtrage ---
+const vectorSource = new ol.source.Vector({
+    url: GEOJSON_FILE_URL,
+    format: new ol.format.GeoJSON()
+});
+
+vectorSource.on('featuresloadend', function(event) {
+    const source = event.target; 
+    const allFeatures = source.getFeatures();
+    const filteredFeatures = allFeatures.filter(feature => {
+        return feature.get(ACTIVITY_FIELD) === 1;
+    });
+    source.clear();
+    source.addFeatures(filteredFeatures);
+});
+
+// --- Création de la couche OpenLayers ---
 const layer = new ol.layer.Vector({
-    source: new ol.source.Vector({
-        url: GEOJSON_FILE_URL,
-        format: new ol.format.GeoJSON()
-    }),
+    source: vectorSource,
     style: styleFunction
 });
 
-// Enregistrement de la couche personnalisée dans mviewer
+// --- Enregistrement de la couche dans mviewer ---
 new CustomLayer(LAYER_ID, layer, legend);

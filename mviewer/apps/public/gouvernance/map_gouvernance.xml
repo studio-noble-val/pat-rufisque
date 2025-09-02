@@ -42,7 +42,7 @@
     <mapoptions projection="EPSG:3857" 
                 center="-1919780.9203313626,1655187.0385918203" 
                 maxzoom="" 
-                zoom="12" />
+                zoom="11" />
 
     <proxy url="proxy/?url=" />
 
@@ -97,6 +97,54 @@
                    name="Maraichage / agriculture"
                    type="customlayer"
                    url="customlayers/fournisseurs_maraichage.js"
+                   visible="true"
+                   infoformat="application/vnd.ogc.gml"
+                   vectorlegend="false"
+                   tooltip="true"
+                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   attribution="Source: PAT Rufisque">
+            </layer>
+
+            <layer id="fournisseurs_aviculture"
+                   name="Aviculture"
+                   type="customlayer"
+                   url="customlayers/fournisseurs_aviculture.js"
+                   visible="true"
+                   infoformat="application/vnd.ogc.gml"
+                   vectorlegend="false"
+                   tooltip="true"
+                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   attribution="Source: PAT Rufisque">
+            </layer>
+
+            <layer id="fournisseurs_boucherie"
+                   name="boucherie"
+                   type="customlayer"
+                   url="customlayers/fournisseurs_boucherie.js"
+                   visible="true"
+                   infoformat="application/vnd.ogc.gml"
+                   vectorlegend="false"
+                   tooltip="true"
+                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   attribution="Source: PAT Rufisque">
+            </layer>
+
+            <layer id="fournisseurs_poisson"
+                   name="Pisciculture"
+                   type="customlayer"
+                   url="customlayers/fournisseurs_poisson.js"
+                   visible="true"
+                   infoformat="application/vnd.ogc.gml"
+                   vectorlegend="false"
+                   tooltip="true"
+                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   attribution="Source: PAT Rufisque">
+            </layer>
+
+            <layer id="fournisseurs_boutique"
+                   name="Boutiques"
+                   type="customlayer"
+                   url="customlayers/fournisseurs_boutique.js"
                    visible="true"
                    infoformat="application/vnd.ogc.gml"
                    vectorlegend="false"

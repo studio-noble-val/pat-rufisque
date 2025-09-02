@@ -1,5 +1,5 @@
 // Fichier : template_customlayer_icon.js
-// MODÈLE À COPIER/COLLER POUR CHAQUE ACTIVITÉ - VERSION RAPIDE
+// MODÈLE À COPIER/COLLER POUR CHAQUE ACTIVITÉ - VERSION HYBRIDE (SVG ou FontAwesome)
 
 // ======================================================================
 // === SEULE PARTIE À MODIFIER POUR CHAQUE COUCHE =======================
@@ -10,9 +10,10 @@ const ACTIVITY_FIELD = 'cereales';
 const LAYER_ID = 'fournisseurs_cereales';
 const LAYER_LABEL = 'Transformation de céréales';
 
-// 2. Style de l'icône
-const BACKGROUND_COLOR = '#E67E22'; // Couleur du cercle de fond (ex: '#FF5733')
-const ICON_UNICODE = '\uf4d8';     // Code Unicode de l'icône FontAwesome (ici, une ampoule)
+// 2. Style du pictogramme (HYBRIDE: SVG prioritaire, sinon FontAwesome)
+const BACKGROUND_COLOR = '#E67E22';      // Couleur du cercle de fond
+const ICON_SVG_PATH = null;             // Chemin vers l'icône SVG (ex: 'statics/picto_cereales.svg')
+const ICON_UNICODE = '\uf4d8';          // Icône FontAwesome (tranche de pain) si SVG non fourni
 
 // 3. Décalage (si besoin)
 const OFFSET_X = 0; // en mètres
@@ -26,30 +27,33 @@ const OFFSET_Y = 35; // en mètres
 const GEOJSON_FILE_URL = 'apps/public/gouvernance/fournisseurs.geojson';
 
 // --- Définition du style ---
-// On crée un style pour le cercle de fond et un pour l'icône
-// On les passera dans un tableau pour qu'ils se superposent
 const backgroundStyle = new ol.style.Style({
     image: new ol.style.Circle({
-        radius: 12, // Rayon du cercle de fond
-        fill: new ol.style.Fill({
-            color: BACKGROUND_COLOR
-        }),
+        radius: 12,
+        fill: new ol.style.Fill({ color: BACKGROUND_COLOR }),
         stroke: new ol.style.Stroke({ color: 'white', width: 2 })
     })
 });
 
-const iconStyle = new ol.style.Style({
-    text: new ol.style.Text({
-        text: ICON_UNICODE,
-        // Police et poids pour Font Awesome 5 "Solid" (fas)
-        font: '900 14px "Font Awesome 5 Free"',
-        fill: new ol.style.Fill({
-            color: 'white' // L'icône elle-même sera blanche
+let iconStyle;
+if (ICON_SVG_PATH) {
+    iconStyle = new ol.style.Style({
+        image: new ol.style.Icon({
+            src: ICON_SVG_PATH,
+            // Vous pouvez ajuster l'échelle si vos SVG ne sont pas à la bonne taille
+            // scale: 0.8 
         })
-    })
-});
+    });
+} else {
+    iconStyle = new ol.style.Style({
+        text: new ol.style.Text({
+            text: ICON_UNICODE,
+            font: '900 14px "Font Awesome 5 Free"',
+            fill: new ol.style.Fill({ color: 'white' })
+        })
+    });
+}
 
-// Le style final est la superposition des deux
 const finalLayerStyle = [backgroundStyle, iconStyle];
 
 // --- Définition de la légende ---
@@ -57,7 +61,7 @@ const legend = {
     items: [{
         label: LAYER_LABEL,
         geometry: "Point",
-        styles: finalLayerStyle // La légende utilise le même style que la couche
+        styles: finalLayerStyle
     }]
 };
 
@@ -67,7 +71,7 @@ const vectorSource = new ol.source.Vector({
 });
 
 vectorSource.on('featuresloadend', function(event) {
-    const source = event.target; 
+    const source = event.target;
     const allFeatures = source.getFeatures();
     const filteredFeatures = allFeatures.filter(feature => feature.get(ACTIVITY_FIELD) === 1);
     filteredFeatures.forEach(feature => {

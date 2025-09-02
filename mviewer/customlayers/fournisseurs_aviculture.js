@@ -1,91 +1,89 @@
-// Fichier : gouvernance_template_customlayer.js
-// A copier/coller pour chaque activité.
+// Fichier : template_customlayer_icon.js
+// MODÈLE À COPIER/COLLER POUR CHAQUE ACTIVITÉ - VERSION RAPIDE
 
 // ======================================================================
 // === SEULE PARTIE À MODIFIER POUR CHAQUE COUCHE =======================
 // ======================================================================
 
-// 1. Définir le nom du champ à filtrer (ex: 'cereales', 'maraichage'...)
-const ACTIVITY_FIELD = 'METTRE_LE_NOM_DU_CHAMP_ICI'; 
+// 1. Infos de base
+const ACTIVITY_FIELD = 'aviculture';
+const LAYER_ID = 'fournisseurs_aviculture';
+const LAYER_LABEL = 'Fournisseurs en aviculture';
 
-// 2. Définir l'identifiant unique de la couche (doit correspondre au 'id' du XML)
-const LAYER_ID = 'METTRE_L_ID_DE_LA_COUCHE_ICI';
+// 2. Style de l\'icône
+const BACKGROUND_COLOR = '#D2B48C'; // Couleur du cercle de fond (brun clair)
+const ICON_UNICODE = '\uf52d';     // Code Unicode de l\'icône FontAwesome (plume)
+
+// 3. Décalage (si besoin)
+const OFFSET_X = 0; // en mètres
+const OFFSET_Y = 0; // en mètres
 
 // ======================================================================
-// === LE RESTE DU CODE EST IDENTIQUE POUR TOUTES LES COUCHES ===========
+// === LE RESTE DU CODE EST AUTOMATIQUE ================================
 // ======================================================================
 
 // --- Configuration commune ---
 const GEOJSON_FILE_URL = 'apps/public/gouvernance/fournisseurs.geojson';
 
-// --- Styles et Légende ---
-const statusStyles = {
-    'Gie': new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({ color: 'rgba(255, 165, 0, 0.8)' }),
-            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
-            radius: 5
-        })
-    }),
-    'Entreprise individuelle/ SUARL': new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({ color: 'rgba(0, 128, 255, 0.8)' }),
-            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
-            radius: 5
-        })
-    }),
-    'default': new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({ color: 'rgba(128, 128, 128, 0.8)' }),
-            stroke: new ol.style.Stroke({ color: 'white', width: 1.5 }),
-            radius: 5
+// --- Définition du style ---
+// On crée un style pour le cercle de fond et un pour l\'icône
+// On les passera dans un tableau pour qu\'ils se superposent
+const backgroundStyle = new ol.style.Style({
+    image: new ol.style.Circle({
+        radius: 12, // Rayon du cercle de fond
+        fill: new ol.style.Fill({
+            color: BACKGROUND_COLOR
+        }),
+        stroke: new ol.style.Stroke({ color: 'white', width: 2 })
+    })
+});
+
+const iconStyle = new ol.style.Style({
+    text: new ol.style.Text({
+        text: ICON_UNICODE,
+        // Police et poids pour Font Awesome 5 "Solid" (fas)
+        font: '900 14px "Font Awesome 5 Free"',
+        fill: new ol.style.Fill({
+            color: 'white' // L\'icône elle-même sera blanche
         })
     })
-};
+});
+
+// Le style final est la superposition des deux
+const finalLayerStyle = [backgroundStyle, iconStyle];
+
+// --- Définition de la légende ---
 const legend = {
     items: [{
-        label: "GIE",
+        label: LAYER_LABEL,
         geometry: "Point",
-        styles: [statusStyles['Gie']]
-    }, {
-        label: "Entreprise individuelle/ SUARL",
-        geometry: "Point",
-        styles: [statusStyles['Entreprise individuelle/ SUARL']]
+        styles: finalLayerStyle // La légende utilise le même style que la couche
     }]
 };
-const styleFunction = function (feature, resolution) {
-    const statut = feature.get('statut');
-    const livraisonKg = feature.get('livraison_kg') || 0;
-    let style = (statusStyles[statut] || statusStyles['default']).clone();
-    const minKg = 20, maxKg = 150;
-    const minRadius = 5, maxRadius = 15;
-    let radius = minRadius + ((livraisonKg - minKg) / (maxKg - minKg)) * (maxRadius - minRadius);
-    radius = Math.max(minRadius, Math.min(radius, maxRadius));
-    style.getImage().setRadius(radius);
-    return style;
-};
 
-// --- Création de la source et filtrage ---
+// --- Création de la source et filtrage (logique inchangée) ---
 const vectorSource = new ol.source.Vector({
-    url: GEOJSON_FILE_URL,
-    format: new ol.format.GeoJSON()
+    url: GEOJSON_FILE_URL, format: new ol.format.GeoJSON()
 });
 
 vectorSource.on('featuresloadend', function(event) {
     const source = event.target; 
     const allFeatures = source.getFeatures();
-    const filteredFeatures = allFeatures.filter(feature => {
-        return feature.get(ACTIVITY_FIELD) === 1;
+    const filteredFeatures = allFeatures.filter(feature => feature.get(ACTIVITY_FIELD) === 1);
+    filteredFeatures.forEach(feature => {
+        const geom = feature.getGeometry();
+        if (geom) {
+            const coords = geom.getCoordinates();
+            geom.setCoordinates([coords[0] + OFFSET_X, coords[1] + OFFSET_Y]);
+        }
     });
     source.clear();
     source.addFeatures(filteredFeatures);
 });
 
-// --- Création de la couche OpenLayers ---
+// --- Création de la couche et enregistrement ---
 const layer = new ol.layer.Vector({
     source: vectorSource,
-    style: styleFunction
+    style: finalLayerStyle
 });
-
-// --- Enregistrement de la couche dans mviewer ---
 new CustomLayer(LAYER_ID, layer, legend);
