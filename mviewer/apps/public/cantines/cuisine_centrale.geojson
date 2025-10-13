@@ -12,7 +12,7 @@
       "type": "Feature",
       "properties": {
         "categorie": "Gestionnaire cuisine centrale",
-        "nom": "Cuisine centrale Yené",
+        "nom": "Cuisine centrale Yene test",
         "date_creation": "2021-05-01",
         "nb_repas_max": 1000,
         "collectivite": "Yene",
