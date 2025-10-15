@@ -133,7 +133,7 @@
       "properties": {
         "categorie": "cantine",
         "cuisine_ratachement": "Cuisine centrale Yene",
-        "nom_etab": "Ecole élémentaire Niangal 1 test déplacement",
+        "nom_etab": "Ecole élémentaire Niangal 1 Localisation fausse",
         "annee_ratachement": "2022",
         "nb_repas_moyen": "320",
         "fille_pc": "70",
@@ -153,8 +153,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -17.17106768180956,
-          14.63171455348958
+          -17.17139538430172,
+          14.631942933049723
         ]
       }
     },
@@ -403,7 +403,7 @@
       "properties": {
         "categorie": "cantine",
         "cuisine_ratachement": "Lycée moderne (Rufisque Est)",
-        "nom_etab": "Cem sangalkam test",
+        "nom_etab": "Cem sangalkam",
         "annee_ratachement": "2020",
         "nb_repas_moyen": "250",
         "fille_pc": "68",
