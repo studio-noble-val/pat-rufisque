@@ -133,10 +133,10 @@
       "properties": {
         "categorie": "cantine",
         "cuisine_ratachement": "Cuisine centrale Yene",
-        "nom_etab": "Ecole élémentaire Niangal 1",
-        "annee_ratachement": 2022,
-        "nb_repas_moyen": 320,
-        "fille_pc": 70,
+        "nom_etab": "Ecole élémentaire Niangal 1 test déplacement",
+        "annee_ratachement": "2022",
+        "nb_repas_moyen": "320",
+        "fille_pc": "70",
         "nom_photo": "20250509_101737-10_17_51.jpg",
         "nom_photo_URL": "https://kc-eu.kobotoolbox.org/media/original?media_file=niamde%2Fattachments%2F5b170915c7414151acc4e86742b5b6f5%2F7d2aa705-3874-4c43-a96f-461f3e33237c%2F20250509_101737-10_17_51.jpg",
         "_id": 662821819,
@@ -153,8 +153,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -17.185453,
-          14.629217
+          -17.17106768180956,
+          14.63171455348958
         ]
       }
     },
