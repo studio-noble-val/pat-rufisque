@@ -14,12 +14,12 @@
         "categorie": "Gestionnaire cuisine centrale",
         "nom": "Cuisine centrale Yene",
         "date_creation": "2021-05-01",
-        "nb_repas_max": "1000",
+        "nb_repas_max": 1000,
         "collectivite": "Yene",
         "_id": 662688666,
         "_uuid": "525b75ba-d495-492e-88c8-9c8ff240e498",
-        "statistiques_annuelles": "[object Object],[object Object],[object Object],[object Object]",
-        "statistiques_globales": "[object Object]"
+        "statistiques_annuelles": [],
+        "statistiques_globales": {}
       },
       "geometry": {
         "type": "Point",
