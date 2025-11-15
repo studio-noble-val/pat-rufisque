@@ -14,63 +14,18 @@
         "categorie": "Gestionnaire cuisine centrale",
         "nom": "Cuisine centrale Yene",
         "date_creation": "2021-05-01",
-        "nb_repas_max": 1000,
+        "nb_repas_max": "1000",
         "collectivite": "Yene",
         "_id": 662688666,
         "_uuid": "525b75ba-d495-492e-88c8-9c8ff240e498",
-        "statistiques_annuelles": [
-          {
-            "annee": "2021-2022",
-            "nb_repas_servis": 20241,
-            "nb_ecoles_beneficiaires": 5,
-            "nb_gie_transformatrices": 3,
-            "nb_gie_producteurs_maraichers": 1,
-            "nb_femmes_cuisinieres": 8,
-            "nb_commercants": 1,
-            "cout_moyen_unitaire_repas": 314
-          },
-          {
-            "annee": "2022-2023",
-            "nb_repas_servis": 69583,
-            "nb_ecoles_beneficiaires": 7,
-            "nb_gie_transformatrices": 3,
-            "nb_gie_producteurs_maraichers": 0,
-            "nb_femmes_cuisinieres": 9,
-            "nb_commercants": 1,
-            "cout_moyen_unitaire_repas": 412
-          },
-          {
-            "annee": "2023-2024",
-            "nb_repas_servis": null,
-            "nb_ecoles_beneficiaires": 6,
-            "nb_gie_transformatrices": 4,
-            "nb_gie_producteurs_maraichers": 1,
-            "nb_femmes_cuisinieres": 9,
-            "nb_commercants": 1,
-            "cout_moyen_unitaire_repas": null
-          },
-          {
-            "annee": "2024-2025",
-            "nb_repas_servis": null,
-            "nb_ecoles_beneficiaires": 5,
-            "nb_gie_transformatrices": 3,
-            "nb_gie_producteurs_maraichers": 1,
-            "nb_femmes_cuisinieres": 9,
-            "nb_commercants": 1,
-            "cout_moyen_unitaire_repas": null
-          }
-        ],
-        "statistiques_globales": {
-          "total_repas_servis": 99034,
-          "nb_gie_transformatrices": 3,
-          "nb_gie_producteurs_maraichers": 1
-        }
+        "statistiques_annuelles": [],
+        "statistiques_globales": {}
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -17.165745,
-          14.60802
+          -17.157104511648388,
+          14.617097767460494
         ]
       }
     },

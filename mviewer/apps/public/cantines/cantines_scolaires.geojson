@@ -14,7 +14,7 @@
         "categorie": "cantine",
         "cuisine_ratachement": "Cuisine centrale Yene",
         "nom_etab": "École Élémentaire NIANGAL 2",
-        "annee_ratachement": 2024,
+        "annee_ratachement": "2024",
         "nb_repas_moyen": "125",
         "fille_pc": "62",
         "nom_photo": "17467219617108898578622041787352-16_33_33.jpg",
@@ -133,10 +133,10 @@
       "properties": {
         "categorie": "cantine",
         "cuisine_ratachement": "Cuisine centrale Yene",
-        "nom_etab": "Ecole élémentaire Niangal 1",
-        "annee_ratachement": 2022,
-        "nb_repas_moyen": 320,
-        "fille_pc": 70,
+        "nom_etab": "Ecole élémentaire Niangal 1 Localisation fausse",
+        "annee_ratachement": "2022",
+        "nb_repas_moyen": "320",
+        "fille_pc": "70",
         "nom_photo": "20250509_101737-10_17_51.jpg",
         "nom_photo_URL": "https://kc-eu.kobotoolbox.org/media/original?media_file=niamde%2Fattachments%2F5b170915c7414151acc4e86742b5b6f5%2F7d2aa705-3874-4c43-a96f-461f3e33237c%2F20250509_101737-10_17_51.jpg",
         "_id": 662821819,
@@ -153,8 +153,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -17.185453,
-          14.629217
+          -17.17139538430172,
+          14.631942933049723
         ]
       }
     },
@@ -164,9 +164,9 @@
         "categorie": "cantine",
         "cuisine_ratachement": "Cuisine centrale Yene",
         "nom_etab": "Ecole élémentaire Nditakh",
-        "annee_ratachement": 2024,
-        "nb_repas_moyen": 250,
-        "fille_pc": 64,
+        "annee_ratachement": "2024",
+        "nb_repas_moyen": "251",
+        "fille_pc": "64",
         "nom_photo": "1000360322-13_41_59.jpg",
         "nom_photo_URL": "https://kc-eu.kobotoolbox.org/media/original?media_file=niamde%2Fattachments%2F5b170915c7414151acc4e86742b5b6f5%2Fe3bb056e-1462-4fd5-92c7-8e7377ba540b%2F1000360322-13_41_59.jpg",
         "_id": 662878362,
@@ -404,9 +404,9 @@
         "categorie": "cantine",
         "cuisine_ratachement": "Lycée moderne (Rufisque Est)",
         "nom_etab": "Cem sangalkam",
-        "annee_ratachement": 2020,
-        "nb_repas_moyen": 250,
-        "fille_pc": 68,
+        "annee_ratachement": "2020",
+        "nb_repas_moyen": "250",
+        "fille_pc": "68",
         "nom_photo": "17479935078007748410000358611197-9_46_11.jpg",
         "nom_photo_URL": "https://kc-eu.kobotoolbox.org/media/original?media_file=niamde%2Fattachments%2F5b170915c7414151acc4e86742b5b6f5%2Fc75a8649-3b25-451d-bf62-4ddbddf2fde1%2F17479935078007748410000358611197-9_46_11.jpg",
         "_id": 666669391,
