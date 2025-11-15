@@ -202,10 +202,12 @@
                     <div class="text-center mb-12">
                         <h2 class="text-3xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Évolution de l’utilisation des produits locaux par les cuisines centrales</h2>
                     </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 min-h-[300px] flex flex-col items-center justify-center text-center">
-                        <span class="text-5xl mb-4">📊</span>
-                        <h3 class="text-xl font-semibold text-gray-800" style="font-family: 'Montserrat', sans-serif;">Placeholder pour la visualisation de données (graphique).</h3>
-                        <p class="text-gray-500 mt-2">Ici sera intégré le graphique (ex: Chart.js, D3.js)</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-blue-600"><canvas id="repasServisChart"></canvas></div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-green-600"><canvas id="ecolesBeneficiairesChart"></canvas></div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-yellow-600"><canvas id="gieTransformatricesChart"></canvas></div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-purple-600"><canvas id="gieProducteursChart"></canvas></div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-red-600"><canvas id="femmesCuisinieresChart"></canvas></div>
                     </div>
                 </div>
                 <div>
@@ -351,6 +353,127 @@
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const labels = ['2021', '2022', '2023', '2024'];
+        const chartColors = {
+            repas: 'rgba(33, 150, 243, 0.7)', // blue
+            ecoles: 'rgba(76, 175, 80, 0.7)', // green
+            transformatrices: 'rgba(255, 193, 7, 0.7)', // yellow
+            producteurs: 'rgba(156, 39, 176, 0.7)', // purple
+            cuisinieres: 'rgba(244, 67, 54, 0.7)' // red
+        };
+
+        // Chart 1: Nombre de repas servis
+        new Chart(document.getElementById('repasServisChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Nombre de repas servis',
+                    data: [36625, 68583, 119143, 218265],
+                    backgroundColor: chartColors.repas,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'Nombre de repas servis', font: { size: 16, family: 'Montserrat' } },
+                    legend: { display: false }
+                },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // Chart 2: Nombre d'écoles bénéficiaires
+        new Chart(document.getElementById('ecolesBeneficiairesChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: "Nombre d'écoles bénéficiaires",
+                    data: [5, 9, 15, 20],
+                    backgroundColor: chartColors.ecoles,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: "Nombre d'écoles bénéficiaires", font: { size: 16, family: 'Montserrat' } },
+                    legend: { display: false }
+                },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // Chart 3: Nbre GIE transformatrices
+        new Chart(document.getElementById('gieTransformatricesChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Nbre GIE transformatrices',
+                    data: [2, 5, 7, 9],
+                    backgroundColor: chartColors.transformatrices,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'Nbre GIE transformatrices', font: { size: 16, family: 'Montserrat' } },
+                    legend: { display: false }
+                },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // Chart 4: Nbre GIE producteurs maraichers
+        new Chart(document.getElementById('gieProducteursChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Nbre GIE producteurs maraichers',
+                    data: [2, 2, 3, 4],
+                    backgroundColor: chartColors.producteurs,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'Nbre GIE producteurs maraichers', font: { size: 16, family: 'Montserrat' } },
+                    legend: { display: false }
+                },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // Chart 5: Nbre femmes cuisinières
+        new Chart(document.getElementById('femmesCuisinieresChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Nbre femmes cuisinières',
+                    data: [10, 18, 20, 31],
+                    backgroundColor: chartColors.cuisinieres,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'Nbre femmes cuisinières', font: { size: 16, family: 'Montserrat' } },
+                    legend: { display: false }
+                },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    </script>
 </body>
 
 </html>
