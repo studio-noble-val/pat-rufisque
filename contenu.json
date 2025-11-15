@@ -2,7 +2,7 @@
     "accueil": {
         "titre_prefix": "> Rufisque s'engage pour une politique alimentaire",
         "titre_highlight": "locale, saine et durable",
-        "description": "Avec la <strong class=\"font-semibold text-pat-green-principal\">PAT</strong> (Politique Alimentaire Territoriale), le Conseil départemental de Rufisque s'engage pour répondre aux défis urbains et climatiques.<br><br>En partenariat avec le <strong class=\"font-semibold text-pat-green-darker\">GRDR</strong> et le <strong class=\"font-semibold text-pat-green-darker\">SICODEV</strong>, nous bâtissons un modèle alimentaire durable et solidaire, qui puise sa force dans <strong class=\"font-semibold text-pat-green-principal\">les forces vives du territoire, les savoir-faire locaux et la mobilisation citoyenne</strong>.",
+        "description": "Avec la <strong class=\"font-semibold text-pat-green-principal\">PAT</strong> (Politique Alimentaire Territoriale), le Conseil départemental de Rufisque s'engage pour répondre aux défis urbains et climatiques.<br><br>Avec l’appui du <strong class=\"font-semibold text-pat-green-darker\">GRDR</strong> et de <strong class=\"font-semibold text-pat-green-darker\">CICODEV</strong>, le département de Rufisque bâti un modèle alimentaire durable et solidaire, qui puise sa force dans <strong class=\"font-semibold text-pat-green-principal\">les forces vives du territoire, les savoir-faire locaux et la mobilisation citoyenne</strong>.",
         "bouton_primaire": "Notre stratégie",
         "bouton_secondaire": "Voir nos Actions",
         "video_id": "J5zmO3twxZk",
@@ -27,7 +27,7 @@
                 "id": "systemes",
                 "numero": 2,
                 "titre": "Renforcement des Systèmes Alimentaires Durables",
-                "description": "Soutenir les producteurs locaux, améliorer les circuits courts et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire.",
+                "description": "Soutenir les producteurs locaux et promouvoir des pratiques agricoles respectueuses de l'environnement pour garantir la souveraineté alimentaire. Structurer des circuits courts entre agriculteurs, transformatrices et restauration scolaire.",
                 "lien_page": "page-systemes-alimentaires-durables.html",
                 "image_url": "statics/thumb_vid_pat_agriculture.jpg",
                 "image_alt": "Illustration du renforcement des systèmes alimentaires durables",
@@ -38,7 +38,7 @@
                 "id": "education",
                 "numero": 3,
                 "titre": "Éducation Nutritionnelle et Accès à une Alimentation Saine",
-                "description": "Sensibiliser les populations aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les plus vulnérables.",
+                "description": "Sensibiliser les etablissements et les restauratrices aux bonnes pratiques nutritionnelles et faciliter l'accès physique et économique à des aliments sains, notamment pour les élèves les plus vulnérables.",
                 "lien_page": "page-cantines-scolaires.html",
                 "image_url": "statics/thumb_vid_pat_cantines.jpg",
                 "image_alt": "Illustration de l'éducation nutritionnelle et de l'accès à une alimentation saine",
@@ -52,22 +52,22 @@
         "description": "Des initiatives tangibles qui améliorent le quotidien et construisent un système alimentaire résilient.",
         "actions": [
             {
-                "titre": "Cantines Scolaires Améliorées",
-                "description": "Fourniture de repas nutritifs et locaux à plus de 5,500 élèves grâce à 4 cuisines centrales modernisées.",
+                "titre": "Cantines Scolaires Locales",
+                "description": "Accès facilité à plus 5.500 repas nutritifs et locaux par jour grâce à 4 cuisines centrales modernisées , selon un modèle de cofinancement (élèves, collectivités, partenaires).",
                 "badge": "Réusite scolaire",
                 "picto_url": "statics/pictoKPIcantine.JPG",
                 "picto_alt": "Pictogramme représentant une cantine scolaire"
             },
             {
                 "titre": "Soutien aux Producteurs Locaux",
-                "description": "Accompagnement technique et accès facilité au marché pour les agriculteurs et éleveurs de la région.",
+                "description": "Accompagnement technique et accès facilité au marché pour les agriculteurs et transformatrices agroalimentaires de la région.",
                 "badge": "Économie Locale",
                 "picto_url": "statics/pictoKPIproducteurs.JPG",
                 "picto_alt": "Pictogramme représentant le soutien aux producteurs"
             },
             {
                 "titre": "Ateliers de Sensibilisation",
-                "description": "Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires pour toutes les tranches d'âge.",
+                "description": "Programmes d'éducation nutritionnelle et de promotion de bonnes pratiques alimentaires les élèces et formations à l'hygiène et à la sécurité sanitaire des restauratrices.",
                 "badge": "Santé Publique",
                 "picto_url": "statics/pictoKPIateliers.JPG",
                 "picto_alt": "Pictogramme représentant la sensibilisation"
@@ -76,7 +76,7 @@
         "cta_etude": {
             "texte": "Pour une analyse approfondie de nos stratégies et de nos impacts, consultez notre étude complète :",
             "bouton": "Télécharger l'étude SAT 2027 (PDF)",
-            "lien_pdf": "chemin/vers/votre/etude_sat_2027.pdf"
+            "lien_pdf": "statics/etude_sat_2027.pdf"
         }
     },
     "alliance": {
@@ -84,15 +84,15 @@
         "description": "Une gouvernance multi-acteurs pour une action concertée et efficace sur le territoire de Rufisque.",
         "acteurs_titre": "Les Acteurs Clés de la PAT :",
         "acteurs_liste": [
-            {"nom": "Collectivités Locales", "details": "Ville de Rufisque, Communes", "badge_class": "badge-acteur-collectivites"},
-            {"nom": "Société Civile", "details": "Organisations paysannes, Associations de consommateurs", "badge_class": "badge-acteur-societe"},
-            {"nom": "Secteur Privé", "details": "Entreprises agro-alimentaires, Commerçants", "badge_class": "badge-acteur-prive"},
-            {"nom": "Recherche & Formation", "details": "Universités, Centres techniques", "badge_class": "badge-acteur-recherche"},
-            {"nom": "Partenaires T&F", "details": "ONG Nationales et Internationales, Bailleurs", "badge_class": "badge-acteur-partenaires"}
+            {"nom": "Collectivités Locales", "details": "Conseil Départemental de Rufisque, Communes de Rufisque Est, Bargny, Yenne, Bambilor", "badge_class": "badge-acteur-collectivites"},
+            {"nom": "Société Civile", "details": "Organisation paysanne de Lendeng, Associations de parents d’élèves", "badge_class": "badge-acteur-societe"},
+            {"nom": "Secteur Privé", "details": "Transformatrices agro-alimentaires, Commerçants", "badge_class": "badge-acteur-prive"},
+            {"nom": "Recherche & Formation", "details": "Universités, Centres de Recherche CIRAD, UCAD", "badge_class": "badge-acteur-recherche"},
+            {"nom": "Partenaires T&F", "details": "ONG Nationales et Internationales, Bailleurs, AFD, Ville de Montpellier", "badge_class": "badge-acteur-partenaires"}
         ],
         "citation": {
-            "texte": "\"La force de notre initiative réside dans la collaboration étroite entre tous les maillons de la chaîne alimentaire, du producteur au consommateur, avec l'appui de nos partenaires.\"",
-            "auteur": "- Un acteur de la PAT Rufisque"
+            "texte": "\"L'intérêt de ce plan est de mettre en avant la défense des exploitations familiales de Rufisque pour développer, à partir de la zone des Niayes, une agriculture de qualité.\"",
+            "auteur": "Gorgui CISS - 1er Vice-Président du Conseil Départemental"
         }
     },
     "footer": {
