@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared-styles.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/pages-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/navbar.js" defer></script>
+    <script src="js/pages-animations.js" defer></script>
     <style>
         html { scroll-behavior: smooth; }
         .text-theme-gouvernance { color: #FF9800; }
-        .slideshow-image.active { opacity: 1; }
-        .slideshow-image { transition: opacity 1000ms ease-in-out; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700 theme-gouvernance">
@@ -29,8 +29,35 @@
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="text-center lg:text-left">
-                        <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">Les TPE Agroalimentaires de <span class="text-theme-gouvernance">Rufisque</span></h1><p class="text-lg text-gray-600 mb-8 leading-relaxed">Un maillon essentiel de l'économie locale et de la transformation alimentaire.</p><div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center"><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-gouvernance">70%+</p><p class="text-sm text-gray-600 font-semibold mt-1">TPE agro. portées par des femmes</p></div><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-gouvernance">9</p><p class="text-sm text-gray-600 font-semibold mt-1">Établissements scolaires avec charte</p></div><div class="bg-gray-50 p-4 rounded-lg"><p class="text-4xl font-bold text-theme-gouvernance">3</p><p class="text-sm text-gray-600 font-semibold mt-1">Axes d'action pour les TPE</p></div></div></div>
-                    <div id="slideshow-container" class="relative w-full h-80 lg:h-96 rounded-2xl shadow-2xl overflow-hidden"><div class="slideshow-image active absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T1.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T2.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T3.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T4.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T5.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T6.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T7.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T8.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T9.jpg');"></div><div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/T10.jpg');"></div></div>
+                        <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">Les TPE Agroalimentaires de <span class="text-theme-gouvernance">Rufisque</span></h1>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">Un maillon essentiel de l'économie locale et de la transformation alimentaire.</p>
+                        <div class="hero-kpi-grid">
+                            <div class="hero-kpi-item">
+                                <p class="hero-kpi-value">70%+</p>
+                                <p class="hero-kpi-label">TPE agro. portées par des femmes</p>
+                            </div>
+                            <div class="hero-kpi-item">
+                                <p class="hero-kpi-value">9</p>
+                                <p class="hero-kpi-label">Établissements scolaires avec charte</p>
+                            </div>
+                            <div class="hero-kpi-item">
+                                <p class="hero-kpi-value">3</p>
+                                <p class="hero-kpi-label">Axes d'action pour les TPE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slideshow-container" class="slideshow-container">
+                        <div class="slideshow-image active" style="background-image: url('statics/pic_tpe/low/T1.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T2.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T3.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T4.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T5.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T6.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T7.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T8.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T9.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/T10.jpg');"></div>
+                    </div>
                 </div>
                 <div id="navigation-hub" class="mt-16">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -12,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared-styles.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/pages-styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/navbar.js" defer></script>
+    <script src="js/pages-animations.js" defer></script>
     <style>
         html {
             scroll-behavior: smooth;
@@ -21,14 +23,6 @@
 
         .text-theme-cantines {
             color: #2196F3;
-        }
-
-        .slideshow-image.active {
-            opacity: 1;
-        }
-
-        .slideshow-image {
-            transition: opacity 1000ms ease-in-out;
         }
     </style>
 </head>
@@ -46,31 +40,31 @@
                     <div class="text-center lg:text-left">
                         <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900" style="font-family: 'Montserrat', sans-serif;">L'Alimentation Scolaire à <span class="text-theme-cantines">Rufisque</span></h1>
                         <p class="text-lg text-gray-600 mb-8 leading-relaxed">Un pilier pour la nutrition, l'éducation et le développement local.</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <p class="text-4xl font-bold text-theme-cantines">5,500+</p>
-                                <p class="text-sm text-gray-600 font-semibold mt-1">élèves bénéficiaires</p>
+                        <div class="hero-kpi-grid">
+                            <div class="hero-kpi-item">
+                                <p class="hero-kpi-value">5,500+</p>
+                                <p class="hero-kpi-label">élèves bénéficiaires</p>
                             </div>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <p class="text-4xl font-bold text-theme-cantines">4</p>
-                                <p class="text-sm text-gray-600 font-semibold mt-1">cuisines centrales</p>
+                            <div class="hero-kpi-item">
+                                <p class="hero-kpi-value">4</p>
+                                <p class="hero-kpi-label">cuisines centrales</p>
                             </div>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <p class="text-4xl font-bold text-theme-cantines">22</p>
-                                <p class="text-sm text-gray-600 font-semibold mt-1">écoles desservies</p>
+                            <div class="hero-kpi-item">
+                                <p class="hero-kpi-value">22</p>
+                                <p class="hero-kpi-label">écoles desservies</p>
                             </div>
                         </div>
                     </div>
-                    <div id="slideshow-container" class="relative w-full h-80 lg:h-96 rounded-2xl shadow-2xl overflow-hidden">
-                        <div class="slideshow-image active absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C1.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C2.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C3.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C4.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C5.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C6.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C7.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C8.jpg');"></div>
-                        <div class="slideshow-image absolute w-full h-full bg-cover bg-center opacity-0" style="background-image: url('statics/pic_tpe/low/C9.jpg');"></div>
+                    <div id="slideshow-container" class="slideshow-container">
+                        <div class="slideshow-image active" style="background-image: url('statics/pic_tpe/low/C1.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C2.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C3.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C4.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C5.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C6.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C7.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C8.jpg');"></div>
+                        <div class="slideshow-image" style="background-image: url('statics/pic_tpe/low/C9.jpg');"></div>
                     </div>
                 </div>
 
@@ -145,52 +139,48 @@
                 </div>
 
             <!-- Bloc de 4 cartes avec emplacements pour images PNG -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="grid-cards-2 mb-6">
 
                 <!-- Carte 1 : Vendeuses de rue -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex items-center gap-4 border-l-4 border-red-400">
-                    <!-- Emplacement pour image PNG carrée -->
-                    <img src="statics/pic_cantines/cantines-onglet1-vendeuses-de-rue.JPG" alt="Icône Vendeuses de rue" class="w-32 h-32 object-cover flex-shrink-0 rounded-md">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les vendeuses de rue</h3>
-                        <p class="text-gray-600 text-sm">Présentes autour ou dans l’enceinte des écoles, ces femmes proposent des aliments prêts à consommer tels que chips, bonbons, biscuits , jus et des sandwich (pain + thon, omelette, sauce haricot) aux élèves. Ce modèle reste informel, mais essentiel dans presque toutes les écoles sans cantine structurée.</p>
+                <div class="card-with-image border-l-4 border-red-400">
+                    <img src="statics/pic_cantines/cantines-onglet1-vendeuses-de-rue.JPG" alt="Icône Vendeuses de rue" class="card-with-image-picture">
+                    <div class="card-with-image-content">
+                        <h3 class="card-with-image-title">Les vendeuses de rue</h3>
+                        <p class="card-with-image-text">Présentes autour ou dans l'enceinte des écoles, ces femmes proposent des aliments prêts à consommer tels que chips, bonbons, biscuits, jus et des sandwich (pain + thon, omelette, sauce haricot) aux élèves. Ce modèle reste informel, mais essentiel dans presque toutes les écoles sans cantine structurée.</p>
                     </div>
                 </div>
 
                 <!-- Carte 2 : Cantines financées -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex items-center gap-4 border-l-4 border-blue-400">
-                    <!-- Emplacement pour image PNG carrée -->
-                    <img src="statics/pic_cantines/cuisine-etat.PNG" alt="Icône Cantines financées" class="w-32 h-32 object-cover flex-shrink-0 rounded-md">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cantines financées par l’Etat et les partenaires</h3>
-                        <p class="text-gray-600 text-sm">L’évolution du taux de couverture des cantines par école au niveau national est erratique. Il est passé de 53% en 2012 à 13% en avril 2025 sur environ 12 000 écoles publiques. Cette baisse s’explique principalement par le retrait de partenaires comme le PAM, sans que l’Etat n’ait pris le relais. De plus il n’existait quasiment pas de cantines scolaires dans le département de Rufisque avant la mise en place du PAT</p>
+                <div class="card-with-image border-l-4 border-blue-400">
+                    <img src="statics/pic_cantines/cuisine-etat.PNG" alt="Icône Cantines financées" class="card-with-image-picture">
+                    <div class="card-with-image-content">
+                        <h3 class="card-with-image-title">Les cantines financées par l'Etat et les partenaires</h3>
+                        <p class="card-with-image-text">L'évolution du taux de couverture des cantines par école au niveau national est erratique. Il est passé de 53% en 2012 à 13% en avril 2025 sur environ 12 000 écoles publiques. Cette baisse s'explique principalement par le retrait de partenaires comme le PAM, sans que l'Etat n'ait pris le relais. De plus il n'existait quasiment pas de cantines scolaires dans le département de Rufisque avant la mise en place du PAT.</p>
                     </div>
                 </div>
 
                 <!-- Carte 3 : Cantines autogérées -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex items-center gap-4 border-l-4 border-yellow-400">
-                    <!-- Emplacement pour image PNG carrée -->
-                    <img src="statics/pic_cantines/cuisines-auto.PNG" alt="Icône Cantines autogérées" class="w-32 h-32 object-cover flex-shrink-0 rounded-md">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cantines d’écoles autogérées</h3>
-                        <p class="text-gray-600 text-sm">Certaines écoles ont mis en place leurs propres cantines, parfois avec l’appui des parents d’élèves ou d’associations. Elles fonctionnent avec des cuisinières bénévoles et ou avec une motivation symbolique et selon les capacités d’organisation et de financement. Ces cantines autogérées représentent une part significative des initiatives locales, bien que leur pérennité dépende fortement de l'engagement communautaire et des ressources disponibles.</p>
+                <div class="card-with-image border-l-4 border-yellow-400">
+                    <img src="statics/pic_cantines/cuisines-auto.PNG" alt="Icône Cantines autogérées" class="card-with-image-picture">
+                    <div class="card-with-image-content">
+                        <h3 class="card-with-image-title">Les cantines d'écoles autogérées</h3>
+                        <p class="card-with-image-text">Certaines écoles ont mis en place leurs propres cantines, parfois avec l'appui des parents d'élèves ou d'associations. Elles fonctionnent avec des cuisinières bénévoles et ou avec une motivation symbolique et selon les capacités d'organisation et de financement. Ces cantines autogérées représentent une part significative des initiatives locales, bien que leur pérennité dépende fortement de l'engagement communautaire et des ressources disponibles.</p>
                     </div>
                 </div>
 
                 <!-- Carte 4 : Cuisines centrales -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex items-center gap-4 border-l-4 border-green-400">
-                    <!-- Emplacement pour image PNG carrée -->
-                    <img src="statics/pic_cantines/cuisine-centrales.PNG" alt="Icône Cuisines centrales" class="w-32 h-32 object-cover flex-shrink-0 rounded-md">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2" style="font-family: 'Montserrat', sans-serif;">Les cuisines centrales en circuit court</h3>
-                        <p class="text-gray-600 text-sm">Mise en œuvre dans le cadre du Plan Alimentaire Territorial (PAT) avec l’appui du projet AMOPAR, ce modèle vise une institutionnalisation et l’implication des collectivités territoriales dans la gestion et le financement et une professionnalisation de l’alimentation scolaire. Les 4 cuisines centrales mises en place dans le département préparent en amont des repas sains et équilibrés, livrés quotidiennement à 22 écoles. Elles s'approvisionnent en produits frais et locaux issus des zones agricoles voisines auprès de 4 groupements  de producteurs de légumes, 15 GIE de femmes transformatrices de céréales locales, 8 producteurs avicoles, 2 GIE mareyeurs et 4 commeçants,</p>
+                <div class="card-with-image border-l-4 border-green-400">
+                    <img src="statics/pic_cantines/cuisine-centrales.PNG" alt="Icône Cuisines centrales" class="card-with-image-picture">
+                    <div class="card-with-image-content">
+                        <h3 class="card-with-image-title">Les cuisines centrales en circuit court</h3>
+                        <p class="card-with-image-text">Mise en œuvre dans le cadre du Plan Alimentaire Territorial (PAT) avec l'appui du projet AMOPAR, ce modèle vise une institutionnalisation et l'implication des collectivités territoriales dans la gestion et le financement et une professionnalisation de l'alimentation scolaire. Les 4 cuisines centrales mises en place dans le département préparent en amont des repas sains et équilibrés, livrés quotidiennement à 22 écoles. Elles s'approvisionnent en produits frais et locaux issus des zones agricoles voisines auprès de 4 groupements de producteurs de légumes, 15 GIE de femmes transformatrices de céréales locales, 8 producteurs avicoles, 2 GIE mareyeurs et 4 commerçants.</p>
                     </div>
                 </div>
-                
+
             </div>
 
-                <blockquote class="mt-12 bg-gray-100 border-l-4 border-gray-300 p-6 rounded-r-lg">
-                    <p class="text-gray-600 italic">Le rapport Gohin (2023) met en évidence que le modèle de cuisine centrale, approvisionnée en circuits court, bien que nécessitant des investissements initiaux plus importants, offre des avantages en termes d'efficacité, de qualité nutritionnelle et de soutien à l'économie locale. En particulier, il favorise l'emploi local, notamment féminin, en structurant les filières de production et de transformation alimentaires.</p>
+                <blockquote class="blockquote-standard mt-12">
+                    <p>Le rapport Gohin (2023) met en évidence que le modèle de cuisine centrale, approvisionnée en circuits court, bien que nécessitant des investissements initiaux plus importants, offre des avantages en termes d'efficacité, de qualité nutritionnelle et de soutien à l'économie locale. En particulier, il favorise l'emploi local, notamment féminin, en structurant les filières de production et de transformation alimentaires.</p>
                 </blockquote>
             </div>
         </section>
@@ -216,35 +206,32 @@
                         <p class="text-lg text-gray-600 max-w-3xl mx-auto">L’augmentation de l’usage de produits locaux est rendue possible par le renforcement du lien entre les cuisines centrales, les zones agricoles de proximité et les industries de transformation :</p>
                     </div>
 <!-- Bloc adapté avec la nouvelle structure et les effets conservés -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+<div class="grid-cards-3 mb-6">
 
     <!-- Carte 1 : Zones Agricoles -->
-    <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 border-l-4 border-pat-green-principal">
-        <!-- Image de remplacement -->
-        <img src="statics/pic_cantines/agriculture.PNG" alt="Icône zones agricoles" class="w-32 h-32 object-cover flex-shrink-0">
-        <div>
+    <div class="card-with-image border-l-4 border-pat-green-principal">
+        <img src="statics/pic_cantines/agriculture.PNG" alt="Icône zones agricoles" class="card-with-image-picture">
+        <div class="card-with-image-content">
             <h3 class="text-lg font-semibold text-pat-green-principal mb-2">Zones Agricoles</h3>
             <p class="text-gray-600 text-sm">Les zones agricoles périurbaines et rurales (comme la zone maraîchère de Lendeng) fournissent des produits frais : légumes, fruits, céréales…</p>
         </div>
     </div>
 
     <!-- Carte 2 : Industries Transformatrices -->
-    <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 border-l-4 border-purple-600">
-        <!-- Image de remplacement -->
-        <img src="statics/pic_cantines/gie.PNG" alt="Icône industries transformatrices" class="w-32 h-32 object-cover flex-shrink-0">
-        <div>
+    <div class="card-with-image border-l-4 border-purple-600">
+        <img src="statics/pic_cantines/gie.PNG" alt="Icône industries transformatrices" class="card-with-image-picture">
+        <div class="card-with-image-content">
             <h3 class="text-lg font-semibold text-purple-600 mb-2">Industries Transformatrices</h3>
             <p class="text-gray-600 text-sm">Les GIE de transformatrices locales, permettent de préparer et conditionner certains aliments (jus, sauces, céréales transformées…) de façon hygiénique et adaptée.</p>
         </div>
     </div>
 
     <!-- Carte 3 : Structuration & Emploi -->
-    <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 border-l-4 border-orange-500">
-        <!-- Image de remplacement -->
-        <img src="statics/pic_cantines/emploi.PNG" alt="Icône structuration et emploi" class="w-32 h-32 object-cover flex-shrink-0">
-        <div>
+    <div class="card-with-image border-l-4 border-orange-500">
+        <img src="statics/pic_cantines/emploi.PNG" alt="Icône structuration et emploi" class="card-with-image-picture">
+        <div class="card-with-image-content">
             <h3 class="text-lg font-semibold text-orange-500 mb-2">Structuration & Emploi</h3>
-            <p class="text-gray-600 text-sm">Cette structuration favorise l’emploi local, notamment féminin, tout en réduisant la dépendance aux produits importés.</p>
+            <p class="text-gray-600 text-sm">Cette structuration favorise l'emploi local, notamment féminin, tout en réduisant la dépendance aux produits importés.</p>
         </div>
     </div>
 

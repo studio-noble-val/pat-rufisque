@@ -1,0 +1,457 @@
+/**
+ * CSS Harmonisé pour les pages thématiques du PAT Rufisque
+ * Cantines Scolaires / Gouvernance Alimentaire / Systèmes Alimentaires Durables
+ */
+
+/* ========================================
+   1. KPI CARDS AVEC GRAPHIQUES CIRCULAIRES
+   ======================================== */
+
+.kpi-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.kpi-circular-chart {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+}
+
+.kpi-circular-chart svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.kpi-circular-chart .circle-bg {
+    fill: none;
+    stroke: #e5e7eb;
+    stroke-width: 8;
+}
+
+.kpi-circular-chart .circle-progress {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s ease-out;
+}
+
+.kpi-circular-chart .percentage-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.kpi-card-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-top: 0.5rem;
+}
+
+/* Couleurs thématiques pour les graphiques circulaires */
+.theme-cantines .circle-progress { stroke: #2196F3; }
+.theme-cantines .percentage-label { color: #2196F3; }
+
+.theme-gouvernance .circle-progress { stroke: #FF9800; }
+.theme-gouvernance .percentage-label { color: #FF9800; }
+
+.theme-sad .circle-progress { stroke: #4CAF50; }
+.theme-sad .percentage-label { color: #4CAF50; }
+
+/* ========================================
+   2. CARDS AVEC IMAGES (Modes d'alimentation, TPE, etc.)
+   ======================================== */
+
+.card-with-image {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card-with-image:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-with-image-picture {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    align-self: center;
+}
+
+.card-with-image-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-with-image-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-with-image-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Responsive pour les cards avec images */
+@media (max-width: 640px) {
+    .card-with-image {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-with-image-picture {
+        width: 100%;
+        height: 200px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* ========================================
+   3. CARTE INTERACTIVE (pour les axes d'action)
+   ======================================== */
+
+.carte-interactive {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.carte-interactive:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.carte-interactive-image {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .carte-interactive {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carte-interactive-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* ========================================
+   4. GRAPHIQUES CHART.JS (Charts cantines)
+   ======================================== */
+
+.chart-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 280px;
+}
+
+.chart-container canvas {
+    max-height: 100%;
+}
+
+/* ========================================
+   5. SECTIONS HERO HARMONISÉES
+   ======================================== */
+
+.hero-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+    .hero-kpi-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.hero-kpi-item {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.hero-kpi-value {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.hero-kpi-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+/* Couleurs thématiques pour les KPI hero */
+.theme-cantines .hero-kpi-value { color: #2196F3; }
+.theme-gouvernance .hero-kpi-value { color: #FF9800; }
+.theme-sad .hero-kpi-value { color: #4CAF50; }
+
+/* ========================================
+   6. SLIDESHOW HARMONISÉ
+   ======================================== */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.slideshow-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.slideshow-image.active {
+    opacity: 1;
+}
+
+/* Responsive slideshow */
+@media (max-width: 1024px) {
+    .slideshow-container {
+        height: 24rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .slideshow-container {
+        height: 20rem;
+    }
+}
+
+/* ========================================
+   7. NAVIGATION HUB HARMONISÉ
+   ======================================== */
+
+.nav-hub-card {
+    display: block;
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    border-top: 4px solid;
+}
+
+.nav-hub-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.nav-hub-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    margin: 0 auto 1rem;
+}
+
+.nav-hub-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #1f2937;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Couleurs thématiques pour nav hub */
+.theme-cantines .nav-hub-card { border-color: #93c5fd; }
+.theme-cantines .nav-hub-card:hover { border-color: #2196F3; }
+.theme-cantines .nav-hub-icon { background: #dbeafe; color: #2196F3; }
+
+.theme-gouvernance .nav-hub-card { border-color: #fed7aa; }
+.theme-gouvernance .nav-hub-card:hover { border-color: #FF9800; }
+.theme-gouvernance .nav-hub-icon { background: #ffedd5; color: #FF9800; }
+
+.theme-sad .nav-hub-card { border-color: #a7f3d0; }
+.theme-sad .nav-hub-card:hover { border-color: #4CAF50; }
+.theme-sad .nav-hub-icon { background: #d1fae5; color: #4CAF50; }
+
+/* ========================================
+   8. BLOCKQUOTES HARMONISÉS
+   ======================================== */
+
+.blockquote-standard {
+    background: #f3f4f6;
+    border-left: 4px solid #9ca3af;
+    padding: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-style: italic;
+    color: #4b5563;
+    margin: 2rem 0;
+}
+
+.blockquote-highlight {
+    background: #f0fdf4;
+    border-left: 4px solid #4CAF50;
+    padding: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin: 2rem 0;
+}
+
+.blockquote-warning {
+    background: #fef2f2;
+    border-left: 4px solid #ef4444;
+    padding: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin: 2rem 0;
+}
+
+/* ========================================
+   9. GRILLES RESPONSIVE HARMONISÉES
+   ======================================== */
+
+.grid-cards-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid-cards-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.grid-cards-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid-cards-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cards-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-cards-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .grid-cards-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cards-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ========================================
+   10. ANIMATION D'ENTRÉE POUR TOUS LES ÉLÉMENTS
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* ========================================
+   11. UTILITÉS RESPONSIVE POUR IMAGES
+   ======================================== */
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.img-responsive-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* ========================================
+   12. SECTIONS ALTERNÉES (BG)
+   ======================================== */
+
+.bg-section-alt {
+    background-color: #f9fafb;
+}
