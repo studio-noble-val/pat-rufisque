@@ -12,12 +12,7 @@ Cet éditeur vous permet de **modifier les données géographiques** du site PAT
 
 Pour utiliser l'éditeur, vous devez d'abord configurer votre accès GitHub.
 
-### Étape 1 : Être collaborateur du dépôt
-
-Vous devez être ajouté comme **collaborateur** sur le dépôt GitHub `studio-noble-val/pat-rufisque`.
-
-
-### Étape 2 : Créer un Personal Access Token (PAT)
+### Étape 1 : Créer un Personal Access Token (PAT)
 
 Un **Personal Access Token** est comme un mot de passe temporaire qui donne accès au dépôt GitHub.
 
@@ -52,11 +47,22 @@ Un **Personal Access Token** est comme un mot de passe temporaire qui donne acc�
 
 ---
 
+## 🔒 Sécurité et bonnes pratiques
+
+### ⚠️ Votre token est sensible !
+
+- 🔐 **Ne le partagez JAMAIS** avec personne
+- 🔐 **Ne le publiez pas** sur internet, forums, emails, etc.
+- 🔐 **Ne le commitez pas** dans un fichier Git
+- 🔐 Conservez-le dans un **endroit sûr** (gestionnaire de mots de passe recommandé)
+
+---
+
 ## 🚀 Utilisation de l'éditeur
 
 ### 1️⃣ Connexion
 
-1. Ouvrez l'éditeur : https://pat-rufisque.pages.dev/edit/
+1. Ouvrez l'éditeur
 2. Collez votre **Personal Access Token** dans le champ prévu
 3. Cliquez sur **"Se connecter"**
 
@@ -89,7 +95,7 @@ Un **Personal Access Token** est comme un mot de passe temporaire qui donne acc�
    - Les champs obligatoires sont généralement marqués
 
 4. **Déplacer le point** (optionnel) :
-   - Le marqueur **rouge** sur la carte peut être **déplacé** avec la souris
+   - Le marqueur **bleu** sur la carte peut être **déplacé** avec la souris
    - Glissez-le simplement vers sa nouvelle position
    - Les nouvelles coordonnées seront automatiquement enregistrées
 
@@ -101,52 +107,6 @@ Un **Personal Access Token** est comme un mot de passe temporaire qui donne acc�
 6. **Annuler** :
    - Cliquez sur **"Annuler"** pour fermer sans sauvegarder
 
-### 4️⃣ Vérifier vos modifications
-
-Après avoir sauvegardé :
-- Les modifications sont **immédiatement enregistrées** sur GitHub
-- Un **commit automatique** est créé avec vos changements
-- Le site principal sera **mis à jour automatiquement** dans quelques minutes
-
-Pour voir l'historique des modifications :
-👉 https://github.com/studio-noble-val/pat-rufisque/commits/main
-
----
-
-## 🔒 Sécurité et bonnes pratiques
-
-### ⚠️ Votre token est sensible !
-
-- 🔐 **Ne le partagez JAMAIS** avec personne
-- 🔐 **Ne le publiez pas** sur internet, forums, emails, etc.
-- 🔐 **Ne le commitez pas** dans un fichier Git
-- 🔐 Conservez-le dans un **endroit sûr** (gestionnaire de mots de passe recommandé)
-
-### 📅 Expiration du token
-
-- Les tokens ont une **date d'expiration** pour votre sécurité
-- Quand le token expire, vous devrez en **créer un nouveau**
-- GitHub vous enverra un email de rappel quelques jours avant l'expiration
-
-### 🗑️ Révoquer un token
-
-Si vous pensez que votre token a été compromis ou si vous ne l'utilisez plus :
-
-1. Allez sur : https://github.com/settings/tokens
-2. Trouvez votre token dans la liste
-3. Cliquez sur **"Delete"** pour le révoquer
-4. Créez-en un nouveau si nécessaire
-
-### ✅ Permissions du token
-
-Le token `repo` donne accès à :
-- ✅ Lecture des fichiers du dépôt
-- ✅ Modification des fichiers du dépôt
-- ✅ Création de commits
-
-⚠️ Il donne également accès à **tout le dépôt**, pas seulement les données GeoJSON. Utilisez-le avec précaution.
-
----
 
 ## 📊 Données modifiables
 
@@ -190,16 +150,6 @@ L'éditeur permet de modifier **3 couches de données** :
 - ✅ Patientez 2-3 minutes (temps de déploiement Cloudflare)
 - ✅ Videz le cache de votre navigateur (Ctrl+F5)
 - ✅ Vérifiez que la sauvegarde a bien fonctionné (message de confirmation)
-
----
-
-## 📞 Support
-
-Pour toute question ou problème :
-
-1. **Vérifiez d'abord cette documentation**
-2. **Consultez l'historique GitHub** pour voir si vos modifications sont enregistrées
-3. **Contactez l'administrateur du projet** si le problème persiste
 
 ---
 
