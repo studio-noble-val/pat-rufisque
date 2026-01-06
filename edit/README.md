@@ -4,7 +4,7 @@
 
 Cet éditeur vous permet de **modifier les données géographiques** du site PAT Rufisque directement depuis votre navigateur, sans avoir besoin d'outils techniques complexes.
 
-**URL de l'éditeur** : https://pat-rufisque.pages.dev/edit/
+**URL du site** : https://pat-rufisque.pages.dev
 
 ---
 
