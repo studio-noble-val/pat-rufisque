@@ -86,11 +86,15 @@
                    type="customlayer"
                    url="customlayers/fournisseurs_cereales.js"
                    visible="true"
-                   infoformat="application/vnd.ogc.gml"
+                   queryable="true"
+                   fields="activite,statut,cuisine_ratachement,nb_employe,nb_femme,livraison_kg,livraison_fcfa,livraison_pc,date_cuisine_centrale"
+                   aliases="Activité,Statut,Cuisine de rattachement,Nombre d'employés,Dont femmes,Livraison (kg),Livraison (FCFA),Part du CA,Fournisseur depuis"
+                   featurecount="10"
                    vectorlegend="false"
                    tooltip="true"
-                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   tooltipcontent="&lt;strong&gt;{{activite}}&lt;/strong&gt;&lt;br/&gt;{{statut}}&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                    attribution="Source: PAT Rufisque">
+                <template url="apps/public/gouvernance/templates/fournisseur_info.mst" />
             </layer>
 
             <layer id="fournisseurs_maraichage"
@@ -98,11 +102,15 @@
                    type="customlayer"
                    url="customlayers/fournisseurs_maraichage.js"
                    visible="true"
-                   infoformat="application/vnd.ogc.gml"
+                   queryable="true"
+                   fields="activite,statut,cuisine_ratachement,nb_employe,nb_femme,livraison_kg,livraison_fcfa,livraison_pc,date_cuisine_centrale"
+                   aliases="Activité,Statut,Cuisine de rattachement,Nombre d'employés,Dont femmes,Livraison (kg),Livraison (FCFA),Part du CA,Fournisseur depuis"
+                   featurecount="10"
                    vectorlegend="false"
                    tooltip="true"
-                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   tooltipcontent="&lt;strong&gt;{{activite}}&lt;/strong&gt;&lt;br/&gt;{{statut}}&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                    attribution="Source: PAT Rufisque">
+                <template url="apps/public/gouvernance/templates/fournisseur_info.mst" />
             </layer>
 
             <layer id="fournisseurs_aviculture"
@@ -110,11 +118,15 @@
                    type="customlayer"
                    url="customlayers/fournisseurs_aviculture.js"
                    visible="true"
-                   infoformat="application/vnd.ogc.gml"
+                   queryable="true"
+                   fields="activite,statut,cuisine_ratachement,nb_employe,nb_femme,livraison_kg,livraison_fcfa,livraison_pc,date_cuisine_centrale"
+                   aliases="Activité,Statut,Cuisine de rattachement,Nombre d'employés,Dont femmes,Livraison (kg),Livraison (FCFA),Part du CA,Fournisseur depuis"
+                   featurecount="10"
                    vectorlegend="false"
                    tooltip="true"
-                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   tooltipcontent="&lt;strong&gt;{{activite}}&lt;/strong&gt;&lt;br/&gt;{{statut}}&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                    attribution="Source: PAT Rufisque">
+                <template url="apps/public/gouvernance/templates/fournisseur_info.mst" />
             </layer>
 
             <layer id="fournisseurs_boucherie"
@@ -122,11 +134,15 @@
                    type="customlayer"
                    url="customlayers/fournisseurs_boucherie.js"
                    visible="true"
-                   infoformat="application/vnd.ogc.gml"
+                   queryable="true"
+                   fields="activite,statut,cuisine_ratachement,nb_employe,nb_femme,livraison_kg,livraison_fcfa,livraison_pc,date_cuisine_centrale"
+                   aliases="Activité,Statut,Cuisine de rattachement,Nombre d'employés,Dont femmes,Livraison (kg),Livraison (FCFA),Part du CA,Fournisseur depuis"
+                   featurecount="10"
                    vectorlegend="false"
                    tooltip="true"
-                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   tooltipcontent="&lt;strong&gt;{{activite}}&lt;/strong&gt;&lt;br/&gt;{{statut}}&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                    attribution="Source: PAT Rufisque">
+                <template url="apps/public/gouvernance/templates/fournisseur_info.mst" />
             </layer>
 
             <layer id="fournisseurs_poisson"
@@ -134,11 +150,15 @@
                    type="customlayer"
                    url="customlayers/fournisseurs_poisson.js"
                    visible="true"
-                   infoformat="application/vnd.ogc.gml"
+                   queryable="true"
+                   fields="activite,statut,cuisine_ratachement,nb_employe,nb_femme,livraison_kg,livraison_fcfa,livraison_pc,date_cuisine_centrale"
+                   aliases="Activité,Statut,Cuisine de rattachement,Nombre d'employés,Dont femmes,Livraison (kg),Livraison (FCFA),Part du CA,Fournisseur depuis"
+                   featurecount="10"
                    vectorlegend="false"
                    tooltip="true"
-                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   tooltipcontent="&lt;strong&gt;{{activite}}&lt;/strong&gt;&lt;br/&gt;{{statut}}&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                    attribution="Source: PAT Rufisque">
+                <template url="apps/public/gouvernance/templates/fournisseur_info.mst" />
             </layer>
 
             <layer id="fournisseurs_boutique"
@@ -146,11 +166,15 @@
                    type="customlayer"
                    url="customlayers/fournisseurs_boutique.js"
                    visible="true"
-                   infoformat="application/vnd.ogc.gml"
+                   queryable="true"
+                   fields="activite,statut,cuisine_ratachement,nb_employe,nb_femme,livraison_kg,livraison_fcfa,livraison_pc,date_cuisine_centrale"
+                   aliases="Activité,Statut,Cuisine de rattachement,Nombre d'employés,Dont femmes,Livraison (kg),Livraison (FCFA),Part du CA,Fournisseur depuis"
+                   featurecount="10"
                    vectorlegend="false"
                    tooltip="true"
-                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   tooltipcontent="&lt;strong&gt;{{activite}}&lt;/strong&gt;&lt;br/&gt;{{statut}}&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                    attribution="Source: PAT Rufisque">
+                <template url="apps/public/gouvernance/templates/fournisseur_info.mst" />
             </layer>
 
         </theme>
@@ -165,11 +189,15 @@
                    type="customlayer"
                    url="customlayers/fournisseurs_locaux.js"
                    visible="false"
-                   infoformat="application/vnd.ogc.gml"
+                   queryable="true"
+                   fields="activite,statut,cuisine_ratachement,nb_employe,nb_femme,livraison_kg,livraison_fcfa,livraison_pc,date_cuisine_centrale"
+                   aliases="Activité,Statut,Cuisine de rattachement,Nombre d'employés,Dont femmes,Livraison (kg),Livraison (FCFA),Part du CA,Fournisseur depuis"
+                   featurecount="10"
                    vectorlegend="false"
                    tooltip="true"
-                   tooltipcontent="&lt;strong&gt;{{nom}}&lt;/strong&gt;&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
+                   tooltipcontent="&lt;strong&gt;{{activite}}&lt;/strong&gt;&lt;br/&gt;{{statut}}&lt;br/&gt;&lt;em&gt;Cliquer pour voir les détails&lt;/em&gt;"
                    attribution="Source: PAT Rufisque">
+                <template url="apps/public/gouvernance/templates/fournisseur_info.mst" />
             </layer>
 
         </theme>
