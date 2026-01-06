@@ -16,10 +16,6 @@ Pour utiliser l'éditeur, vous devez d'abord configurer votre accès GitHub.
 
 Vous devez être ajouté comme **collaborateur** sur le dépôt GitHub `studio-noble-val/pat-rufisque`.
 
-Si ce n'est pas encore fait, demandez à l'administrateur du projet de vous inviter via :
-```
-https://github.com/studio-noble-val/pat-rufisque/settings/access
-```
 
 ### Étape 2 : Créer un Personal Access Token (PAT)
 
