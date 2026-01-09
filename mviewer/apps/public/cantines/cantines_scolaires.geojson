@@ -344,9 +344,9 @@
         "categorie": "cantine",
         "cuisine_ratachement": "Lycée moderne (Rufisque Est)",
         "nom_etab": "Lycée Bargny",
-        "annee_ratachement": 2022,
-        "nb_repas_moyen": 250,
-        "fille_pc": 70,
+        "annee_ratachement": "2022",
+        "nb_repas_moyen": "250",
+        "fille_pc": "70",
         "nom_photo": "1000005213-11_29_43.jpg",
         "nom_photo_URL": "https://kc-eu.kobotoolbox.org/media/original?media_file=niamde%2Fattachments%2F5b170915c7414151acc4e86742b5b6f5%2Fb0eb8058-bd01-47ab-b5e3-092a43a01dc8%2F1000005213-11_29_43.jpg",
         "_id": 665253913,
@@ -363,8 +363,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -17.225449,
-          14.692826
+          -17.224566613505306,
+          14.692465410628072
         ]
       }
     },
